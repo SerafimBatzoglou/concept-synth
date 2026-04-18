@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">ABD logo</title>
+  <desc id="desc">A finite-world reasoning graph with one highlighted red exception node.</desc>
+  <defs>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="512" cy="512" r="456" fill="#f2f4f8" stroke="#d5dde8" stroke-width="14"/>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M401 748 C457 704 573 700 650 742" stroke="#bcc7d8" stroke-width="14"/>
+
+    <path d="M270 479 L380 315" stroke="#4b5a70" stroke-width="22"/>
+    <path d="M380 315 L586 281" stroke="#4b5a70" stroke-width="22"/>
+    <path d="M586 281 L740 405" stroke="#4b5a70" stroke-width="22"/>
+    <path d="M740 405 L748 632" stroke="#4b5a70" stroke-width="22"/>
+    <path d="M748 632 L555 781" stroke="#2f3d54" stroke-width="26"/>
+    <path d="M555 781 L317 671" stroke="#2f3d54" stroke-width="26"/>
+    <path d="M317 671 L270 479" stroke="#4b5a70" stroke-width="22"/>
+
+    <path d="M380 315 L740 405" stroke="#7b879c" stroke-opacity=".72" stroke-width="16"/>
+    <path d="M317 671 L740 405" stroke="#7b879c" stroke-opacity=".72" stroke-width="16"/>
+    <path d="M270 479 L748 632" stroke="#7b879c" stroke-opacity=".72" stroke-width="16"/>
+    <path d="M586 281 L555 781" stroke="#7b879c" stroke-opacity=".58" stroke-width="16"/>
+  </g>
+
+  <g fill="#121a31">
+    <circle cx="270" cy="479" r="34"/>
+    <circle cx="380" cy="315" r="34"/>
+    <circle cx="586" cy="281" r="34"/>
+    <circle cx="740" cy="405" r="34"/>
+    <circle cx="317" cy="671" r="34"/>
+    <circle cx="555" cy="781" r="34"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <circle cx="748" cy="632" r="80" fill="#ff5a52" fill-opacity=".23"/>
+    <circle cx="748" cy="632" r="42" fill="#ff3b33" stroke="#dc2017" stroke-width="8"/>
+  </g>
+</svg>

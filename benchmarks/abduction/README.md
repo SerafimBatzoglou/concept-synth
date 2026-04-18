@@ -1,5 +1,9 @@
 # ABD: Default-Exception Abduction in Finite First-Order Worlds
 
+<p align="center">
+  <img src="assets/abd-logo.svg" alt="ABD logo" width="240">
+</p>
+
 **ABD is a solver-checkable benchmark for synthesizing exception rules in
 small finite first-order worlds.** Each instance asks a model to infer a
 single abnormality definition that repairs a default theory across multiple
@@ -134,6 +138,8 @@ ABD is designed to make abduction evaluation:
 
 Paths below are relative to `benchmarks/abduction/` unless noted.
 
+- `assets/abd-logo.svg`
+  ABD logo for the benchmark release.
 - `data/abd_instances_v1.yaml.gz`
   Canonical benchmark instances only.
 - `data/abd_holdouts_v1.jsonl.gz`

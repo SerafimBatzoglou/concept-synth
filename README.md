@@ -11,6 +11,8 @@ The first public release is the ABD benchmark:
 
 - [`benchmarks/abduction/`](benchmarks/abduction/)
 
+<img src="benchmarks/abduction/assets/abd-logo.svg" alt="ABD logo" width="180">
+
 Paper: [arXiv:2602.18843](https://arxiv.org/abs/2602.18843)
 Summary: [gist.science paper summary](https://gist.science/paper/2602.18843)
 
