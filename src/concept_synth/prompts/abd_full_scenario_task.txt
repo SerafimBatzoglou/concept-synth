@@ -1,0 +1,87 @@
+# First-Order Logic Abduction (Full Observation)
+
+## Task Overview
+
+You are given a **default reasoning theory** and several finite "worlds" with **full observation**:
+- A set of theory axioms involving an abnormality predicate Ab(x)
+- Multiple worlds, each with a finite domain and complete predicate interpretations
+- Your task: find a formula α(x) that defines which objects are "abnormal"
+
+Each world contains:
+- A finite domain of objects (named a0, a1, a2, ...)
+- Complete interpretations of predicates P(x), Q(x), R(x,y), S(x,y)
+
+**Closed World Assumption**: Only the facts explicitly listed as TRUE are true. Any predicate application not listed should be assumed FALSE.
+
+## Abnormality Semantics
+
+The abnormality predicate Ab(x) is defined by your formula:
+- **Ab(x) ↔ α(x)**: An object a is abnormal if and only if α(a) evaluates to TRUE
+
+The theory axioms use Ab(x) to express default rules with exceptions. For example:
+- "P(x) ∧ ¬Ab(x) → Q(x)" means: normally, P-objects have Q, unless they are abnormal
+
+**Your goal**: Find a formula α(x) such that:
+1. **Validity**: When Ab(x) is defined as α(x), all theory axioms are satisfied in every training world
+2. **Parsimony**: Among valid formulas, prefer those that minimize the number of abnormal objects
+
+## Scoring / Tie-breaks (important)
+
+- α(x) is a SINGLE global formula shared across all worlds.
+- Primary objective: **Validity** (must satisfy all axioms in every training world).
+- Secondary objective: **Parsimony** — minimize the total number of abnormal objects across training worlds:
+  cost = Σ_world |{ a in Domain_world : α(a) is TRUE }|
+- Tertiary objective: **Simplicity** — if multiple formulas have the same validity + cost, prefer smaller formulas (lower AST / fewer operators / fewer quantifiers).
+
+## Output Format
+
+You must output your formula in S-expression syntax. The grammar is:
+
+```
+α ::= (P x)              -- unary predicate applied to variable
+    | (R x y)            -- binary predicate applied to two variables  
+    | (= x y)            -- equality of two variables
+    | (not α)            -- negation
+    | (and α₁ α₂ ...)    -- conjunction (2 or more arguments)
+    | (or α₁ α₂ ...)     -- disjunction (2 or more arguments)
+    | (forall v α)       -- universal quantification
+    | (exists v α)       -- existential quantification
+```
+
+**Important constraints:**
+- Your formula must have exactly one free variable: x
+- All other variables must be bound by quantifiers (forall or exists)
+- Variable names should be: x (free), y, z, w (bound by quantifiers)
+- **Do NOT mention Ab in your formula.**
+- **Use ONLY the predicate symbols listed in AllowedAlphaPredicates for this instance.**
+- **If your formula uses any predicate in ForbiddenAlphaPredicates, it is invalid.**
+- **Do NOT use object names like a0, a1, … inside α(x). Use variables only.**
+- Prefer simpler formulas; aim for minimal abnormal set
+- **No implication or biconditional**: Express these using other connectives:
+  - "A implies B" should be written as `(or (not A) B)`
+  - "A if and only if B" should be written as `(and (or (not A) B) (or (not B) A))`
+
+## Examples of Valid Formulas
+
+**Note**: Examples below are syntactic illustrations; only use predicates that appear in AllowedAlphaPredicates for THIS instance.
+
+- `(P x)` — "x is abnormal if x satisfies P"
+- `(and (P x) (not (Q x)))` — "x is abnormal if x has P but not Q"
+- `(exists y (and (R x y) (not (P y))))` — "x is abnormal if x has an R-successor without P"
+- `(not (exists y (R x y)))` — "x is abnormal if x has no R-successors"
+- `(forall y (or (not (R x y)) (Q y)))` — "x is abnormal if all R-successors of x have Q"
+
+## Evaluation
+
+Your formula will be evaluated on:
+1. **Validity**: Does defining Ab(x) ↔ α(x) satisfy all theory axioms in every world?
+2. **Parsimony**: How many objects are marked as abnormal? (fewer is better)
+3. **Generalization**: Does the formula also work on held-out test worlds?
+
+**Note**: A trivially true formula like `(or (P x) (not (P x)))` makes everything abnormal (valid but not parsimonious). A trivially false formula makes nothing abnormal (may violate axioms).
+
+---
+
+## Problem Instance
+
+

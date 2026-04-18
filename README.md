@@ -17,6 +17,26 @@ The first public release is the ABD KR 2026 benchmark artifact:
 
 Paper link: [arXiv:2602.18843](https://arxiv.org/abs/2602.18843)
 
-The ABD release includes the benchmark bundle, prompts, frozen evaluation
-cache, evaluation scripts, and instructions to regenerate the reported tables
-locally from the frozen cache.
+The ABD release includes the benchmark bundle, prompt templates, frozen
+evaluation cache, table-regeneration scripts, and a standalone installable
+Python package with:
+
+- prompt rendering
+- evaluator CLI
+- Z3 checker and parser support
+
+Install the runnable package from the repo root with:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e .
+```
+
+Then, for example:
+
+```bash
+concept-synth-abd-build-prompt --instance-id ABD_FULL_TH10_000
+./benchmarks/abduction/scripts/rebuild_eval_cache.sh --limit 5
+./benchmarks/abduction/scripts/reproduce_tables.sh benchmarks/abduction/generated_eval/abd_combined_v1_eval_cache.jsonl
+```

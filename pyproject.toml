@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "concept-synth"
+version = "0.1.0"
+description = "Public benchmark artifacts and runnable ABD tooling for Concept Synth."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Serafim Batzoglou", email = "serafim.batzoglou@gmail.com" },
+]
+dependencies = [
+  "PyYAML>=6.0",
+  "z3-solver>=4.12",
+]
+
+[project.scripts]
+concept-synth-abd = "concept_synth.abd_cli:main"
+concept-synth-abd-build-prompt = "concept_synth.abd_cli:prompt_main"
+concept-synth-abd-evaluate = "concept_synth.abd_cli:evaluate_main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+concept_synth = ["prompts/*.txt"]
+

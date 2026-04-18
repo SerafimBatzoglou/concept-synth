@@ -1,12 +1,17 @@
 .DS_Store
 __pycache__/
 *.pyc
+.venv/
+build/
+dist/
+*.egg-info/
 
 # Optional local decompression of the benchmark bundle
 benchmarks/abduction/data/abd_combined_v1.yaml
 
 # Local regeneration output
 benchmarks/abduction/generated_tables/
+benchmarks/abduction/generated_eval/
 
 # Old local paper-layout outputs from the initial export draft
 benchmarks/abduction/paper/

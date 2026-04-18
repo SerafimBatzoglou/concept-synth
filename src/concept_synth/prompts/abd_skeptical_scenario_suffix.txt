@@ -1,0 +1,52 @@
+
+---
+
+## Your Task
+
+Analyze the theory axioms and training worlds carefully. Remember: your formula must work for ALL possible completions of unknown atoms, not just some favorable completion.
+
+**Solve method (reason internally; do NOT output your reasoning):**
+1. Understand the theory axioms: What do they require? When might they be violated?
+2. For each world, note which predicate facts are known vs. unknown
+3. Identify which objects would violate an axiom in ANY completion
+4. Consider the WORST-CASE completion: which objects might be forced abnormal when unknowns are resolved unfavorably?
+5. Look for a pattern: Which objects must be abnormal to ensure axioms hold NO MATTER HOW unknowns are completed?
+6. Formulate your hypothesis as an S-expression formula
+7. **Verify**: For each world, check that for ALL completions of unknowns, Ab(x) ↔ α(x) satisfies all axioms
+
+**Example reasoning** (assumes predicates shown are allowed for α in this instance):
+- Theory: "P(x) ∧ ¬Ab(x) → Q(x)" (normally, P-objects have Q)
+- World:
+  - Known: P(a0)=T
+  - Known: P(a1)=T
+  - Unknown: Q(a1)
+- Analysis for SKEPTICAL semantics:
+  - a0 is forced abnormal: Q(a0)=F is KNOWN, so if a0 were normal, the default would fail.
+  - a1 MUST ALSO be abnormal under skeptical semantics: Q(a1) is unknown, so in the WORST-CASE completion where Q(a1)=F, the default would fail if a1 were normal.
+  - Unlike existential completion where we could rely on Q(a1)=T, skeptical requires robustness against Q(a1)=F.
+- Candidate: α(x) = (P x) marks ALL P-objects abnormal, ensuring robustness.
+
+**Key insight**: Focus on what might go WRONG if unknowns are completed adversarially:
+- An object with unknown predicates in the antecedent/consequent of a default might be forced abnormal to handle the worst case.
+- You cannot assume a "helpful" completion of unknowns — you must be prepared for the least favorable assignment.
+
+**Important**:
+- Your formula must make axioms satisfied in ALL training worlds for ALL completions
+- Minimize the worst-case number of abnormal objects when possible
+- Do NOT mention Ab in your formula
+- Use ONLY predicates from AllowedAlphaPredicates; using ForbiddenAlphaPredicates is invalid
+- Do NOT use object names like a0, a1, … inside α(x); use variables only
+
+---
+
+## Output
+
+Your output must be exactly ONE LINE containing ONLY valid JSON with exactly these keys:
+- "formula": a single S-expression formula string with one free variable x
+- "description": a short plain-English description (one sentence)
+
+Do NOT include code fences, prefixes, or any other text.
+
+Example of correct output:
+{"formula":"(P x)","description":"All P-objects are abnormal to ensure robustness against any completion."}
+
