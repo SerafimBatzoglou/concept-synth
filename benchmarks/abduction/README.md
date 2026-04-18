@@ -7,6 +7,7 @@ worlds, with exact evaluation of validity, parsimony, and holdout
 generalization.
 
 Paper: [arXiv:2602.18843](https://arxiv.org/abs/2602.18843)
+Summary: [gist.science paper summary](https://gist.science/paper/2602.18843)
 
 Contact: serafim.batzoglou@gmail.com
 
