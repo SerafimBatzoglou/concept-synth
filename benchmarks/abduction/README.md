@@ -7,9 +7,6 @@ Paper: [arXiv:2602.18843](https://arxiv.org/abs/2602.18843)
 
 Contact: serafim.batzoglou@gmail.com
 
-This is the first public benchmark release inside the broader `concept-synth`
-repository.
-
 ## Project Overview
 
 ABD studies default-exception abduction in a controlled relational setting.
