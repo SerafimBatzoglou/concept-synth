@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SerafimBatzoglou/concept-synth/benchmarks/abduction/schemas/benchmark_record.schema.json",
+  "title": "ABD Benchmark Record",
+  "type": "object",
+  "required": ["schemaVersion", "instanceId", "problemDescription", "problem"],
+  "properties": {
+    "schemaVersion": {
+      "const": "abd_benchmark_record_v1"
+    },
+    "instanceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "problemDescription": {
+      "type": "object",
+      "required": ["instanceId", "scenario", "theoryId", "numTrainWorlds"],
+      "properties": {
+        "instanceId": { "type": "string", "minLength": 1 },
+        "scenario": { "type": "string", "minLength": 1 },
+        "theoryId": { "type": "string", "minLength": 1 },
+        "numTrainWorlds": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "problem": {
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "instanceId",
+        "scenario",
+        "theoryId",
+        "axioms",
+        "allowedAlphaPreds",
+        "gold",
+        "trainWorlds"
+      ],
+      "properties": {
+        "schemaVersion": { "const": "abd_problem_v1" },
+        "instanceId": { "type": "string", "minLength": 1 },
+        "scenario": { "type": "string", "minLength": 1 },
+        "theoryId": { "type": "string", "minLength": 1 },
+        "axioms": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "allowedAlphaPreds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "gold": {
+          "type": "object"
+        },
+        "trainWorlds": {
+          "type": "array",
+          "items": { "type": "object" }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

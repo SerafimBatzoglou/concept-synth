@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SerafimBatzoglou/concept-synth/benchmarks/abduction/schemas/prediction_record.schema.json",
+  "title": "ABD Prediction Record",
+  "type": "object",
+  "required": ["schemaVersion", "instanceId", "scenario", "theoryId", "model"],
+  "properties": {
+    "schemaVersion": {
+      "const": "abd_prediction_record_v1"
+    },
+    "instanceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario": {
+      "type": "string",
+      "minLength": 1
+    },
+    "theoryId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model": {
+      "type": "string",
+      "minLength": 1
+    },
+    "success": {
+      "type": ["boolean", "null"]
+    },
+    "rawResponse": {
+      "type": ["string", "null"]
+    },
+    "extractedFormula": {
+      "type": ["string", "null"]
+    },
+    "extractedDescription": {
+      "type": ["string", "null"]
+    },
+    "parseError": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}

@@ -32,7 +32,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-from eval_cache_reader import EvalCacheReader, EvalCacheRecord
+from concept_synth.abduction.eval_cache import EvalCacheReader, EvalCacheRecord
 
 # =============================================================================
 # Model display configuration

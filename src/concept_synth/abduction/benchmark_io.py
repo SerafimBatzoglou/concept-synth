@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import gzip
 import json
+import re
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional
 
@@ -59,7 +60,7 @@ def load_problem_index(dataset_path: str) -> Dict[str, Dict[str, Any]]:
 def read_jsonl(path: str) -> List[Dict[str, Any]]:
     """Load a JSONL file into memory."""
     rows: List[Dict[str, Any]] = []
-    with open(path, "r", encoding="utf-8") as handle:
+    with open_text(path) as handle:
         for line in handle:
             line = line.strip()
             if line:
@@ -87,10 +88,49 @@ def iter_embedded_results(
 def guess_holdout_path(dataset_path: str) -> Optional[str]:
     """Find the shipped holdout sidecar next to a dataset when it is unambiguous."""
     dataset_file = Path(dataset_path)
+    dataset_name = dataset_name_from_path(dataset_path)
+
+    canonical_name = re.sub(r"_instances_", "_holdouts_", dataset_name)
+    canonical_candidates = []
+    if canonical_name != dataset_name:
+        canonical_candidates = [
+            dataset_file.parent / f"{canonical_name}.jsonl.gz",
+            dataset_file.parent / f"{canonical_name}.jsonl",
+        ]
+        for candidate in canonical_candidates:
+            if candidate.exists():
+                return str(candidate)
+
     base_name = dataset_file.name[:-3] if dataset_file.name.endswith(".gz") else dataset_file.name
-    candidates = sorted(dataset_file.parent.glob(f"{base_name}.holdout*.jsonl"))
+    candidates = sorted(dataset_file.parent.glob(f"{base_name}.holdout*.jsonl*"))
     if len(candidates) == 1:
         return str(candidates[0])
+    return None
+
+
+def guess_predictions_path(dataset_path: str) -> Optional[str]:
+    """Find the canonical released predictions file for a benchmark dataset."""
+    dataset_file = Path(dataset_path)
+    dataset_name = dataset_name_from_path(dataset_path)
+    predictions_dir = dataset_file.parent.parent / "predictions"
+
+    canonical_name = re.sub(r"_instances_", "_predictions_", dataset_name)
+    candidates = []
+    if canonical_name != dataset_name:
+        candidates.extend(
+            [
+                predictions_dir / f"{canonical_name}.jsonl.gz",
+                predictions_dir / f"{canonical_name}.jsonl",
+            ]
+        )
+
+    candidates.extend(
+        sorted(predictions_dir.glob(f"{dataset_name}*predictions*.jsonl*"))
+    )
+
+    for candidate in candidates:
+        if candidate.exists():
+            return str(candidate)
     return None
 
 
@@ -101,4 +141,3 @@ def dataset_name_from_path(dataset_path: str) -> str:
         if name.endswith(suffix):
             return name[: -len(suffix)]
     return Path(dataset_path).stem
-

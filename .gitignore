@@ -7,7 +7,7 @@ dist/
 *.egg-info/
 
 # Optional local decompression of the benchmark bundle
-benchmarks/abduction/data/abd_combined_v1.yaml
+benchmarks/abduction/data/abd_instances_v1.yaml
 
 # Local regeneration output
 benchmarks/abduction/generated_tables/

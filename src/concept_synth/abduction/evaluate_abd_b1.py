@@ -812,7 +812,9 @@ def load_holdouts_from_jsonl(holdout_path: str) -> Dict[str, List[Dict[str, Any]
     if not os.path.exists(holdout_path):
         return holdouts
 
-    with open(holdout_path, 'r') as f:
+    from .benchmark_io import open_text
+
+    with open_text(holdout_path) as f:
         for line in f:
             line = line.strip()
             if not line:

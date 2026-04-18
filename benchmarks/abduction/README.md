@@ -1,7 +1,10 @@
 # ABD: Default-Exception Abduction in Finite First-Order Worlds
 
-**ABD is a solver-checkable benchmark for synthesizing exception rules in small finite first-order worlds.**
-Each instance asks a model to infer a single abnormality definition that repairs a default theory across multiple worlds, with exact evaluation of validity, parsimony, and holdout generalization.
+**ABD is a solver-checkable benchmark for synthesizing exception rules in
+small finite first-order worlds.** Each instance asks a model to infer a
+single abnormality definition that repairs a default theory across multiple
+worlds, with exact evaluation of validity, parsimony, and holdout
+generalization.
 
 Paper: [arXiv:2602.18843](https://arxiv.org/abs/2602.18843)
 
@@ -130,30 +133,37 @@ ABD is designed to make abduction evaluation:
 
 Paths below are relative to `benchmarks/abduction/` unless noted.
 
-- `data/abd_combined_v1.yaml.gz`
-  Released benchmark bundle, compressed for Git hosting.
-- `data/abd_combined_v1.yaml.holdout_k5_seed0_delta12.jsonl`
-  Released holdout sidecar paired with the benchmark bundle.
-- `eval/abd_combined_v1_eval_cache.jsonl`
-  Frozen per-instance evaluation cache used for the reported tables.
-- `eval/abd_combined_v1_eval_cache.jsonl.meta.json`
-  Metadata preserved from the original internal evaluation pass.
-- `prompts/templates/`
-  System prompt plus the ABD-Full, ABD-Partial, and ABD-Skeptical prompt
-  templates.
+- `data/abd_instances_v1.yaml.gz`
+  Canonical benchmark instances only.
+- `data/abd_holdouts_v1.jsonl.gz`
+  Canonical holdout worlds.
+- `predictions/abd_predictions_v1.jsonl.gz`
+  Released model predictions.
+- `eval/abd_eval_cache_v1.jsonl`
+  Frozen per-instance evaluation cache for the released predictions.
+- `eval/abd_eval_cache_v1.meta.json`
+  Sanitized metadata for the frozen evaluation cache.
+- `release_manifest.json`
+  Hashes, sizes, counts, and release-level provenance for the canonical files.
+- `schemas/`
+  JSON Schemas for benchmark, holdout, prediction, and eval rows.
 - `prompts/examples/`
   One concrete prompt example per scenario.
 - `analysis/`
-  Standalone table-regeneration code adapted for the public artifact.
+  Table-regeneration code for the released eval cache.
 - `scripts/rebuild_eval_cache.sh`
-  Rebuild an eval cache from the released embedded model outputs.
+  Rebuild an eval cache from the released prediction file.
 - `scripts/reproduce_tables.sh`
   Regenerate the reported tables from a selected eval cache.
 - `docs/provenance.md`
   Source mapping, release scope, and omitted items.
+- `docs/release_contract.md`
+  Canonical artifact layout and compatibility expectations.
+- `docs/release_checklist.md`
+  Pre-release checklist for future benchmark updates.
 - `../../src/concept_synth/abduction/`
-  ABD-specific package with the prompt builder, evaluator CLI, checker, and
-  eval-cache utilities.
+  ABD-specific package with the prompt builder, evaluator CLI, checker,
+  eval-cache utilities, parser support, and source-of-truth prompt templates.
 - `../../src/concept_synth/`
   Shared package-level utilities and generic logic support used by ABD and
   future benchmark families.
@@ -167,6 +177,9 @@ Local output directories created during reproduction:
 
 ## Reproducing the Release
 
+All released benchmark data, predictions, prompts, cached outputs, scripts, and
+code in this repository are covered by the MIT License in the repository root.
+
 ### Environment
 
 From the repository root:
@@ -174,7 +187,7 @@ From the repository root:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -e .
+pip install -e ".[dev]"
 ```
 
 ### Regenerate the Reported Tables from the Frozen Cache
@@ -191,16 +204,16 @@ This writes local outputs to `benchmarks/abduction/generated_tables/`.
 concept-synth-abd-build-prompt --instance-id ABD_FULL_TH10_000
 ```
 
-### Rebuild an Eval Cache from the Released Embedded Outputs
+### Rebuild an Eval Cache from the Released Predictions
 
 ```bash
 ./benchmarks/abduction/scripts/rebuild_eval_cache.sh
 ```
 
-This reads the released benchmark bundle plus holdout sidecar and writes a
-fresh cache to:
+This reads the released benchmark instances, holdouts, and predictions and
+writes a fresh cache to:
 
-`benchmarks/abduction/generated_eval/abd_combined_v1_eval_cache.jsonl`
+`benchmarks/abduction/generated_eval/abd_eval_cache_v1.jsonl`
 
 The full rebuild evaluates the released outputs with exact Z3 checking, so it
 is materially slower than regenerating tables from the frozen cache.
@@ -219,10 +232,31 @@ concept-synth-abd-evaluate \
 The evaluator writes the same `abd_eval_v1` JSONL schema consumed by
 `analysis/make_tables.py`.
 
+### Prompt Templates
+
+The prompt template source of truth lives in:
+
+- [`src/concept_synth/abduction/prompts/`](../../src/concept_synth/abduction/prompts/)
+
+The benchmark tree keeps prompt examples only.
+
 ### Regenerate Tables from a Fresh Cache
 
 ```bash
 ./benchmarks/abduction/scripts/reproduce_tables.sh \
-  benchmarks/abduction/generated_eval/abd_combined_v1_eval_cache.jsonl
+  benchmarks/abduction/generated_eval/abd_eval_cache_v1.jsonl
 ```
 
+### Validate the Release Locally
+
+```bash
+pytest -q
+```
+
+### Notes
+
+- The canonical benchmark file does not embed model outputs.
+- The canonical predictions file does not embed evaluation scores.
+- The frozen eval metadata is sanitized to remove internal workspace paths.
+- Two partial instances have zero holdout worlds by design; this is recorded in
+  `release_manifest.json`.

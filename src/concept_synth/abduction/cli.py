@@ -13,6 +13,7 @@ from .abd_b1_prompt import build_abd_b1_prompt, get_abd_b1_system_prompt
 from .benchmark_io import (
     get_instance_id,
     guess_holdout_path,
+    guess_predictions_path,
     iter_embedded_results,
     load_problem_index,
     read_jsonl,
@@ -245,6 +246,7 @@ def _evaluate_result_to_record(
 
 def _load_results(
     problems: Dict[str, Dict[str, Any]],
+    dataset_path: str,
     predictions_path: Optional[str],
     models: Optional[set[str]],
 ) -> List[Dict[str, Any]]:
@@ -253,7 +255,19 @@ def _load_results(
         if models:
             rows = [row for row in rows if row.get("model") in models]
         return rows
-    return iter_embedded_results(problems, models=models)
+
+    embedded = iter_embedded_results(problems, models=models)
+    if embedded:
+        return embedded
+
+    guessed_predictions = guess_predictions_path(dataset_path)
+    if guessed_predictions:
+        rows = read_jsonl(guessed_predictions)
+        if models:
+            rows = [row for row in rows if row.get("model") in models]
+        return rows
+
+    return []
 
 
 def build_prompt_parser() -> argparse.ArgumentParser:
@@ -263,7 +277,7 @@ def build_prompt_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--dataset",
-        default="benchmarks/abduction/data/abd_combined_v1.yaml.gz",
+        default="benchmarks/abduction/data/abd_instances_v1.yaml.gz",
         help="Path to the benchmark bundle (.yaml or .yaml.gz).",
     )
     parser.add_argument("--instance-id", help="Benchmark instance id to render.")
@@ -289,7 +303,7 @@ def build_evaluate_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--dataset",
-        default="benchmarks/abduction/data/abd_combined_v1.yaml.gz",
+        default="benchmarks/abduction/data/abd_instances_v1.yaml.gz",
         help="Path to the benchmark bundle (.yaml or .yaml.gz).",
     )
     parser.add_argument(
@@ -298,7 +312,7 @@ def build_evaluate_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--predictions",
-        help="Optional JSONL file with instanceId/model/extractedFormula or response fields.",
+        help="Optional JSONL or JSONL.GZ file with instanceId/model/extractedFormula or response fields.",
     )
     parser.add_argument(
         "--model",
@@ -352,7 +366,7 @@ def evaluate_main(argv: Optional[List[str]] = None) -> int:
     models = set(args.models) if args.models else None
     holdout_path = args.holdouts or guess_holdout_path(args.dataset)
     holdouts = load_holdouts_from_jsonl(holdout_path) if holdout_path else {}
-    results = _load_results(problems, args.predictions, models)
+    results = _load_results(problems, args.dataset, args.predictions, models)
 
     if args.limit is not None:
         results = results[: args.limit]

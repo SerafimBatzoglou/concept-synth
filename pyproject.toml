@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "concept-synth"
-version = "0.1.0"
+version = "0.1.1"
 description = "Public benchmark artifacts and runnable ABD tooling for Concept Synth."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -14,6 +14,12 @@ authors = [
 dependencies = [
   "PyYAML>=6.0",
   "z3-solver>=4.12",
+]
+
+[project.optional-dependencies]
+dev = [
+  "jsonschema>=4.23",
+  "pytest>=8.0",
 ]
 
 [project.scripts]
@@ -30,3 +36,6 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 "concept_synth.abduction" = ["prompts/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

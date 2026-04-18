@@ -1,0 +1,49 @@
+{
+  "schema_version": "abd_eval_v1",
+  "release_tag": "abduction-v1.1",
+  "generated_at": "2026-04-18T23:17:52.541766+00:00",
+  "dataset_name": "abd_instances_v1",
+  "dataset_path": "benchmarks/abduction/data/abd_instances_v1.yaml.gz",
+  "dataset_sha256": "289c70667b8f2f12f59358697129e48992ff49099d71056eec46b6b5d8e9b4a3",
+  "holdout_path": "benchmarks/abduction/data/abd_holdouts_v1.jsonl.gz",
+  "holdout_sha256": "1aeca01efb89eac5dfa54e4a42554fd5eb1b98db0895e939bb2d17eac73dd1c9",
+  "predictions_path": "benchmarks/abduction/predictions/abd_predictions_v1.jsonl.gz",
+  "predictions_sha256": "395df61e4b94246b11cf0bdc1d95a58f4a128b5bd08fa58e0cafdbc7e6b47375",
+  "eval_path": "benchmarks/abduction/eval/abd_eval_cache_v1.jsonl",
+  "eval_sha256": "a0a15a3aa40b3b61913513b9b17780c5586cdb78920011eae990395f9e08237c",
+  "run_id": "released_abd_eval_cache_v1",
+  "row_count": 7171,
+  "instance_count": 600,
+  "models": [
+    "claude-opus-4-5-20251101",
+    "claude-opus-4-6",
+    "deepseek-reasoner",
+    "gemini-3-pro-preview",
+    "gemini-3.1-pro-preview",
+    "gpt-4o",
+    "gpt-5.2",
+    "gpt-5.4",
+    "grok4",
+    "grok4.1fast",
+    "hermes4",
+    "kimi-k2-thinking"
+  ],
+  "model_counts": {
+    "claude-opus-4-5-20251101": 600,
+    "claude-opus-4-6": 600,
+    "deepseek-reasoner": 600,
+    "gemini-3-pro-preview": 600,
+    "gemini-3.1-pro-preview": 600,
+    "gpt-4o": 600,
+    "gpt-5.2": 600,
+    "gpt-5.4": 600,
+    "grok4": 599,
+    "grok4.1fast": 572,
+    "hermes4": 600,
+    "kimi-k2-thinking": 600
+  },
+  "notes": [
+    "Sanitized public metadata for the released ABD eval cache.",
+    "Internal absolute paths and original internal command lines were removed."
+  ]
+}

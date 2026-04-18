@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "abd_release_manifest_v1",
+  "releaseTag": "abduction-v1.1",
+  "releaseDate": "2026-04-18",
+  "license": "MIT",
+  "paper": {
+    "title": "ABD: Default-Exception Abduction in Finite First-Order Worlds",
+    "arxiv": "https://arxiv.org/abs/2602.18843"
+  },
+  "artifacts": [
+    {
+      "path": "benchmarks/abduction/data/abd_instances_v1.yaml.gz",
+      "sizeBytes": 638286,
+      "sha256": "42ddcffcddc3b51ed699643a5c037e0e1a7ce77ff2bad412c16b9feb427e6f57"
+    },
+    {
+      "path": "benchmarks/abduction/data/abd_holdouts_v1.jsonl.gz",
+      "sizeBytes": 333073,
+      "sha256": "1aeca01efb89eac5dfa54e4a42554fd5eb1b98db0895e939bb2d17eac73dd1c9"
+    },
+    {
+      "path": "benchmarks/abduction/predictions/abd_predictions_v1.jsonl.gz",
+      "sizeBytes": 12665176,
+      "sha256": "395df61e4b94246b11cf0bdc1d95a58f4a128b5bd08fa58e0cafdbc7e6b47375"
+    },
+    {
+      "path": "benchmarks/abduction/eval/abd_eval_cache_v1.jsonl",
+      "sizeBytes": 13850970,
+      "sha256": "a0a15a3aa40b3b61913513b9b17780c5586cdb78920011eae990395f9e08237c"
+    },
+    {
+      "path": "benchmarks/abduction/eval/abd_eval_cache_v1.meta.json",
+      "sizeBytes": 1676,
+      "sha256": "e2a0ebc195633f32bb50bd3c9b8f60218ff09677fea182b1cd9572a4fd4e8ef7"
+    },
+    {
+      "path": "benchmarks/abduction/schemas/benchmark_record.schema.json",
+      "sizeBytes": 1867,
+      "sha256": "b7babe6f9910f73b59379d3f6b41652bea3ae38c578e342b9fc1d871d5b1421a"
+    },
+    {
+      "path": "benchmarks/abduction/schemas/holdout_record.schema.json",
+      "sizeBytes": 780,
+      "sha256": "c1498489dda8fe35f5f3f795c6cda5c83eda6fcb30714fd26008956a8826a622"
+    },
+    {
+      "path": "benchmarks/abduction/schemas/prediction_record.schema.json",
+      "sizeBytes": 1041,
+      "sha256": "a0fc5c5da8cb96d2159841e81c222a03f34304c9361bf5b3073585fa8dc8eeca"
+    },
+    {
+      "path": "benchmarks/abduction/schemas/eval_cache_record.schema.json",
+      "sizeBytes": 1417,
+      "sha256": "9d6e6aca9420d9079f89d38211d3238ac27680f6ca5b566357238bbb0d91a341"
+    }
+  ],
+  "counts": {
+    "benchmarkInstances": 600,
+    "scenarioCounts": {
+      "ABD_FULL": 195,
+      "ABD_PARTIAL": 243,
+      "ABD_SKEPTICAL": 162
+    },
+    "theoryCounts": {
+      "TH10": 117,
+      "TH11": 166,
+      "TH12": 87,
+      "TH2": 38,
+      "TH3": 14,
+      "TH5": 25,
+      "TH7": 153
+    },
+    "holdoutRows": 2983,
+    "instancesWithHoldouts": 598,
+    "instancesWithoutHoldouts": [
+      "ABD_PARTIAL_TH11_062b",
+      "ABD_PARTIAL_TH7_087"
+    ],
+    "predictionRows": 7171,
+    "predictionModelCounts": {
+      "claude-opus-4-5-20251101": 600,
+      "claude-opus-4-6": 600,
+      "deepseek-reasoner": 600,
+      "gemini-3-pro-preview": 600,
+      "gemini-3.1-pro-preview": 600,
+      "gpt-4o": 600,
+      "gpt-5.2": 600,
+      "gpt-5.4": 600,
+      "grok4": 599,
+      "grok4.1fast": 572,
+      "hermes4": 600,
+      "kimi-k2-thinking": 600
+    },
+    "evalRows": 7171,
+    "evalModelCounts": {
+      "claude-opus-4-5-20251101": 600,
+      "claude-opus-4-6": 600,
+      "deepseek-reasoner": 600,
+      "gemini-3-pro-preview": 600,
+      "gemini-3.1-pro-preview": 600,
+      "gpt-4o": 600,
+      "gpt-5.2": 600,
+      "gpt-5.4": 600,
+      "grok4": 599,
+      "grok4.1fast": 572,
+      "hermes4": 600,
+      "kimi-k2-thinking": 600
+    }
+  }
+}

@@ -129,11 +129,15 @@ def get_predicate_scope_from_problem(problem: Dict[str, Any]) -> tuple[Set[str],
         except KeyError:
             pass  # Unknown theory, fall through
 
-    # Priority 2: Try to get from theory dict
-    allowed = theory.get("allowedAlphaPredicates")
+    # Priority 2: Try to get from the normalized problem schema
+    allowed = prob_data.get("allowedAlphaPreds")
+
+    # Priority 3: Try to get from theory dict
+    if allowed is None:
+        allowed = theory.get("allowedAlphaPredicates")
     forbidden = theory.get("forbiddenAlphaPredicates")
 
-    # Priority 3: Try problemDescription if not in theory
+    # Priority 4: Try problemDescription if not in theory
     if allowed is None:
         allowed = desc.get("allowedAlphaPredicates")
     if forbidden is None:
