@@ -151,9 +151,12 @@ Paths below are relative to `benchmarks/abduction/` unless noted.
   Regenerate the reported tables from a selected eval cache.
 - `docs/provenance.md`
   Source mapping, release scope, and omitted items.
+- `../../src/concept_synth/abduction/`
+  ABD-specific package with the prompt builder, evaluator CLI, checker, and
+  eval-cache utilities.
 - `../../src/concept_synth/`
-  Standalone public Python package with the prompt builder, evaluator CLI, Z3
-  checker, parser, grounding support, and eval-cache utilities.
+  Shared package-level utilities and generic logic support used by ABD and
+  future benchmark families.
 
 Local output directories created during reproduction:
 

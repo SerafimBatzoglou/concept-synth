@@ -2629,7 +2629,9 @@ def sample_alpha_template_skeptical(
     Returns:
         AlphaTemplate or None if no valid templates
     """
-    from concept_synth.abd_b1_alpha_templates import get_templates_for_tier
+    raise RuntimeError(
+        "alpha-template generation is not included in the public ABD package"
+    )
 
     if tier_weights is None:
         tier_weights = {0: 0.0, 1: 0.35, 2: 0.55, 3: 0.10}

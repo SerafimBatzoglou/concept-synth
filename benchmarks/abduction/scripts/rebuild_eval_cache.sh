@@ -8,7 +8,7 @@ OUTPUT_PATH="${OUTPUT_PATH:-$ROOT_DIR/generated_eval/abd_combined_v1_eval_cache.
 mkdir -p "$(dirname "$OUTPUT_PATH")"
 
 PYTHONPATH="$REPO_ROOT/src${PYTHONPATH:+:$PYTHONPATH}" \
-python3 -m concept_synth.abd_cli evaluate \
+python3 -m concept_synth.abduction.cli evaluate \
   --dataset "$ROOT_DIR/data/abd_combined_v1.yaml.gz" \
   --holdouts "$ROOT_DIR/data/abd_combined_v1.yaml.holdout_k5_seed0_delta12.jsonl" \
   --output "$OUTPUT_PATH" \

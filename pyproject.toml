@@ -17,9 +17,9 @@ dependencies = [
 ]
 
 [project.scripts]
-concept-synth-abd = "concept_synth.abd_cli:main"
-concept-synth-abd-build-prompt = "concept_synth.abd_cli:prompt_main"
-concept-synth-abd-evaluate = "concept_synth.abd_cli:evaluate_main"
+concept-synth-abd = "concept_synth.abduction.cli:main"
+concept-synth-abd-build-prompt = "concept_synth.abduction.cli:prompt_main"
+concept-synth-abd-evaluate = "concept_synth.abduction.cli:evaluate_main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -29,5 +29,4 @@ include-package-data = true
 where = ["src"]
 
 [tool.setuptools.package-data]
-concept_synth = ["prompts/*.txt"]
-
+"concept_synth.abduction" = ["prompts/*.txt"]

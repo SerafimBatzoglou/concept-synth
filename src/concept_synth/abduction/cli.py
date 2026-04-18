@@ -9,15 +9,15 @@ import time
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from concept_synth.abd_b1_prompt import build_abd_b1_prompt, get_abd_b1_system_prompt
-from concept_synth.benchmark_io import (
+from .abd_b1_prompt import build_abd_b1_prompt, get_abd_b1_system_prompt
+from .benchmark_io import (
     get_instance_id,
     guess_holdout_path,
     iter_embedded_results,
     load_problem_index,
     read_jsonl,
 )
-from concept_synth.eval_cache import (
+from .eval_cache import (
     EvalCacheRecord,
     EvalCacheWriter,
     HoldoutEval,
@@ -26,7 +26,7 @@ from concept_synth.eval_cache import (
     TrainEval,
     generate_run_id,
 )
-from concept_synth.evaluate_abd_b1 import (
+from .evaluate_abd_b1 import (
     evaluate_abd_b1,
     evaluate_on_holdouts,
     extract_alpha_from_response,

@@ -37,9 +37,9 @@ except ModuleNotFoundError:
         _path = parent
     from concept_synth.bootstrap import add_repo_root
 add_repo_root(__file__)
-from concept_synth.abd_formula_utils import get_used_predicates
-from concept_synth.abd_b1_theory_library import TheorySpec, get_theory
-from concept_synth.abd_b1_z3_checker import (
+from .abd_formula_utils import get_used_predicates
+from .abd_b1_theory_library import TheorySpec, get_theory
+from .abd_b1_z3_checker import (
     AbdValidityResult,
     check_abd_full_all_worlds,
     check_abd_full_validity,

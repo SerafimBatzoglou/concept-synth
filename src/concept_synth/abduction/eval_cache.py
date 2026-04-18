@@ -80,7 +80,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 
 import yaml
 
-from concept_synth.benchmark_io import dataset_name_from_path
+from .benchmark_io import dataset_name_from_path
 
 
 # Schema version - increment when schema changes
@@ -618,7 +618,7 @@ def create_eval_cache_record(
     if gold_alpha:
         try:
             from concept_synth.sexpr_parser import parse_sexpr_formula
-            from concept_synth.ast_utils import ast_size
+            from concept_synth.metrics import ast_size
             gold_ast = parse_sexpr_formula(gold_alpha)
             gold_ast_size = ast_size(gold_ast)
         except Exception:
@@ -654,7 +654,7 @@ def create_eval_cache_record(
     if formula and parse_ok:
         try:
             from concept_synth.sexpr_parser import parse_sexpr_formula
-            from concept_synth.ast_utils import ast_size
+            from concept_synth.metrics import ast_size
             pred_ast = parse_sexpr_formula(formula)
             ast_size_val = ast_size(pred_ast)
         except Exception:

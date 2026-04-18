@@ -25,6 +25,10 @@ Python package with:
 - evaluator CLI
 - Z3 checker and parser support
 
+Task-family-specific code lives in subpackages such as
+`concept_synth.abduction`, leaving room for future releases under the broader
+`concept_synth` namespace.
+
 Install the runnable package from the repo root with:
 
 ```bash

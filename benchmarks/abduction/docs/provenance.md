@@ -12,11 +12,11 @@
 | `prompts/examples/*` | `results/abduction/paper/prompts/prompt_*_example.txt` | Appendix prompt examples |
 | `analysis/make_tables.py` | adapted from `scripts/make_tables.py` | Standalone table regeneration |
 | `analysis/eval_cache_reader.py` | adapted from `src/concept_synth/eval_cache.py` | Standalone JSONL cache reader |
-| `../../src/concept_synth/abd_b1_prompt.py` | `src/concept_synth/abd_b1_prompt.py` | Public prompt builder |
-| `../../src/concept_synth/evaluate_abd_b1.py` | `src/concept_synth/evaluate_abd_b1.py` | Public ABD evaluator core |
-| `../../src/concept_synth/abd_b1_z3_checker.py` | `src/concept_synth/abd_b1_z3_checker.py` | Public Z3 validity/cost checker |
+| `../../src/concept_synth/abduction/abd_b1_prompt.py` | `src/concept_synth/abd_b1_prompt.py` | Public prompt builder |
+| `../../src/concept_synth/abduction/evaluate_abd_b1.py` | `src/concept_synth/evaluate_abd_b1.py` | Public ABD evaluator core |
+| `../../src/concept_synth/abduction/abd_b1_z3_checker.py` | `src/concept_synth/abd_b1_z3_checker.py` | Public Z3 validity/cost checker |
 | `../../src/concept_synth/sexpr_parser.py` and `../../src/concept_synth/fo_grounding_z3.py` | `src/concept_synth/sexpr_parser.py` and `src/concept_synth/fo_grounding_z3.py` | Public parser and grounding support |
-| `../../src/concept_synth/abd_cli.py` | new release-local wrapper | Public prompt/evaluation CLI |
+| `../../src/concept_synth/abduction/cli.py` | new release-local wrapper | Public prompt/evaluation CLI |
 | `scripts/rebuild_eval_cache.sh` | new release-local wrapper | Rebuild eval cache from released embedded outputs |
 | `scripts/reproduce_tables.sh` | new release-local wrapper | Local regeneration entrypoint |
 

@@ -112,7 +112,7 @@ def get_predicate_scope_from_problem(problem: Dict[str, Any]) -> tuple[Set[str],
     Returns:
         Tuple of (allowed_preds, forbidden_preds)
     """
-    from concept_synth.abd_b1_theory_library import get_theory
+    from .abd_b1_theory_library import get_theory
 
     prob_data = problem.get("problem", problem)
     theory = prob_data.get("theory", {})
