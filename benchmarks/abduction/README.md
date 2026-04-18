@@ -32,10 +32,6 @@ whether it transfers to matched holdout worlds.
 The current release contains 600 benchmark instances spanning three observation
 regimes and seven default theories.
 
-This public repo is intentionally not a copy of the full private
-`concept_synth` monorepo. Unrelated projects, intermediate benchmarks,
-provider-specific inference code, and manuscript artifacts are excluded.
-
 ## Worlds and Tasks
 
 ### Finite Relational Worlds
@@ -227,12 +223,3 @@ The evaluator writes the same `abd_eval_v1` JSONL schema consumed by
   benchmarks/abduction/generated_eval/abd_combined_v1_eval_cache.jsonl
 ```
 
-## Notes
-
-- This public repo does not ship the paper PDF or pre-generated paper tables.
-- The frozen eval cache is included so the reported tables can be regenerated
-  locally without rerunning the checker.
-- The public repo also ships enough code to rerun the released checker on the
-  bundled outputs or on external prediction files.
-- Provider-specific live inference plumbing from the internal monorepo is still
-  excluded.
