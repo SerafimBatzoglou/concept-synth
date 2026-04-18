@@ -1,0 +1,17 @@
+{
+  "schema_version": "abd_eval_v1",
+  "dataset_name": "abd_combined_v1",
+  "dataset_path": "results/abduction/abd_combined_v1.yaml",
+  "dataset_sha256": "f5bca9f9ec746389de4af7ff7646cc60d5715463e47895ec4081833142e0a07d",
+  "holdout_path": "results/abduction/abd_combined_v1.yaml.holdout_k5_seed0_delta12.jsonl",
+  "holdout_sha256": "abbb85669cebbad2e83f0fc80e159079a0c007964ba3c610a199492c62068516",
+  "run_id": "eval_20260307_161344_68d06ed",
+  "git_sha": "68d06ed",
+  "timestamp": "2026-03-07T18:55:11.596095",
+  "models": [
+    "gpt-5.4"
+  ],
+  "command_line": "/Users/serafimbatzoglou/concept_synth/src/concept_synth/evaluate_abd_b1_batch.py --problems results/abduction/abd_combined_v1.yaml --holdout-file results/abduction/abd_combined_v1.yaml.holdout_k5_seed0_delta12.jsonl --holdout-k 5 --write-jsonl results/abduction/abd_combined_v1_eval_cache.jsonl --resume --workers 8 --output results/abduction/eval_reports_gpt54",
+  "records_written": 600,
+  "total_keys": 7499
+}

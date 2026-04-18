@@ -1,0 +1,192 @@
+# First-Order Logic Abduction (Full Observation)
+
+## Task Overview
+
+You are given a **default reasoning theory** and several finite "worlds" with **full observation**:
+- A set of theory axioms involving an abnormality predicate Ab(x)
+- Multiple worlds, each with a finite domain and complete predicate interpretations
+- Your task: find a formula alpha(x) that defines which objects are "abnormal"
+
+Each world contains:
+- A finite domain of objects (named a0, a1, a2, ...)
+- Complete interpretations of predicates P(x), Q(x), R(x,y), S(x,y)
+
+**Closed World Assumption**: Only the facts explicitly listed as TRUE are true. Any predicate application not listed should be assumed FALSE.
+
+## Abnormality Semantics
+
+The abnormality predicate Ab(x) is defined by your formula:
+- **Ab(x) <-> alpha(x)**: An object a is abnormal if and only if alpha(a) evaluates to TRUE
+
+The theory axioms use Ab(x) to express default rules with exceptions. For example:
+- "P(x) AND NOTAb(x) -> Q(x)" means: normally, P-objects have Q, unless they are abnormal
+
+**Your goal**: Find a formula alpha(x) such that:
+1. **Validity**: When Ab(x) is defined as alpha(x), all theory axioms are satisfied in every prompt world
+2. **Parsimony**: Among valid formulas, prefer those that minimize the number of abnormal objects
+
+## Scoring / Tie-breaks (important)
+
+- alpha(x) is a SINGLE global formula shared across all worlds.
+- Primary objective: **Validity** (must satisfy all axioms in every prompt world).
+- Secondary objective: **Parsimony** -- minimize the total number of abnormal objects across prompt worlds:
+  cost = SUM_world |{ a in Domain_world : alpha(a) is TRUE }|
+- Tertiary objective: **Simplicity** -- if multiple formulas have the same validity + cost, prefer smaller formulas (lower AST / fewer operators / fewer quantifiers).
+
+## Output Format
+
+You must output your formula in S-expression syntax. The grammar is:
+
+```
+alpha ::= (P x)              -- unary predicate applied to variable
+    | (R x y)            -- binary predicate applied to two variables  
+    | (= x y)            -- equality of two variables
+    | (not alpha)            -- negation
+    | (and alpha_1 alpha_2 ...)    -- conjunction (2 or more arguments)
+    | (or alpha_1 alpha_2 ...)     -- disjunction (2 or more arguments)
+    | (forall v alpha)       -- universal quantification
+    | (exists v alpha)       -- existential quantification
+```
+
+**Important constraints:**
+- Your formula must have exactly one free variable: x
+- All other variables must be bound by quantifiers (forall or exists)
+- Variable names should be: x (free), y, z, w (bound by quantifiers)
+- **Do NOT mention Ab in your formula.**
+- **Use ONLY the predicate symbols listed in AllowedAlphaPredicates for this instance.**
+- **If your formula uses any predicate in ForbiddenAlphaPredicates, it is invalid.**
+- **Do NOT use object names like a0, a1, ... inside alpha(x). Use variables only.**
+- Prefer simpler formulas; aim for minimal abnormal set
+- **No implication or biconditional**: Express these using other connectives:
+  - "A implies B" should be written as `(or (not A) B)`
+  - "A if and only if B" should be written as `(and (or (not A) B) (or (not B) A))`
+
+## Examples of Valid Formulas
+
+**Note**: Examples below are syntactic illustrations; only use predicates that appear in AllowedAlphaPredicates for THIS instance.
+
+- `(P x)` -- "x is abnormal if x satisfies P"
+- `(and (P x) (not (Q x)))` -- "x is abnormal if x has P but not Q"
+- `(exists y (and (R x y) (not (P y))))` -- "x is abnormal if x has an R-successor without P"
+- `(not (exists y (R x y)))` -- "x is abnormal if x has no R-successors"
+- `(forall y (or (not (R x y)) (Q y)))` -- "x is abnormal if all R-successors of x have Q"
+
+## Evaluation
+
+Your formula will be evaluated on:
+1. **Validity**: Does defining Ab(x) <-> alpha(x) satisfy all theory axioms in every world?
+2. **Parsimony**: How many objects are marked as abnormal? (fewer is better)
+3. **Generalization**: Does the formula also work on held-out test worlds?
+
+**Note**: A trivially true formula like `(or (P x) (not (P x)))` makes everything abnormal (valid but not parsimonious). A trivially false formula makes nothing abnormal (may violate axioms).
+
+---
+
+## Problem Instance
+
+
+**AllowedAlphaPredicates**: ["P", "R"]
+**ForbiddenAlphaPredicates**: ["Ab", "Q", "S"]
+
+**Theory ID**: TH7
+
+**Axioms**:
+1. `(forall x (implies (and (exists y (and (R x y) (P y))) (not (Ab x))) (exists z (and (S x z) (Q z)))))`
+
+## Prompt Worlds
+
+### World W0
+Domain: {a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10}
+
+**Predicates** (Closed World Assumption: unlisted atoms are false):
+- P: {a7, a3, a0, a9}
+- Q: {a0, a6, a8}
+- R: {(a10, a9), (a8, a2), (a5, a8), (a0, a2), (a7, a9), (a3, a1), (a4, a4), (a0, a8), (a4, a2), (a2, a1), (a0, a10), (a3, a4), (a9, a9), (a1, a1), (a6, a4), (a4, a0), (a4, a1), (a6, a1), (a10, a0), (a9, a7), (a8, a10), (a6, a10), (a5, a1), (a1, a6), (a1, a8), (a6, a5), (a8, a1)}
+- S: {(a4, a7), (a10, a7), (a3, a1), (a4, a3), (a0, a0), (a5, a0), (a4, a6), (a8, a3), (a10, a8), (a4, a5), (a2, a3), (a6, a2), (a9, a10), (a8, a9), (a2, a9), (a5, a5), (a7, a9), (a3, a7), (a5, a6)}
+
+### World W1
+Domain: {a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10}
+
+**Predicates** (Closed World Assumption: unlisted atoms are false):
+- P: {a6, a1}
+- Q: {a5, a10, a0, a2}
+- R: {(a10, a7), (a4, a1), (a4, a9), (a9, a5), (a10, a8), (a6, a3), (a7, a7), (a10, a9), (a8, a6), (a4, a0), (a6, a9), (a2, a8), (a1, a1), (a2, a0), (a3, a10), (a7, a3), (a0, a5), (a3, a7), (a10, a5), (a0, a0)}
+- S: {(a2, a3), (a10, a7), (a7, a1), (a4, a0), (a4, a7), (a5, a9), (a9, a5), (a2, a5), (a7, a9), (a7, a3), (a1, a1), (a6, a4), (a6, a2), (a6, a1), (a2, a1), (a1, a6), (a8, a4), (a7, a0), (a7, a4), (a8, a10)}
+
+### World W2
+Domain: {a0, a1, a2, a3, a4, a5, a6, a7, a8, a9}
+
+**Predicates** (Closed World Assumption: unlisted atoms are false):
+- P: {a5, a9}
+- Q: {a4, a6, a7, a3}
+- R: {(a6, a5), (a2, a7), (a4, a8), (a1, a4), (a0, a5), (a5, a5), (a7, a2), (a4, a3), (a3, a4), (a7, a3), (a6, a3), (a5, a7), (a8, a6), (a7, a5), (a9, a1), (a1, a0), (a6, a7), (a8, a1), (a3, a2), (a4, a1), (a0, a0)}
+- S: {(a1, a3), (a2, a1), (a7, a9), (a6, a2), (a0, a5), (a2, a4), (a4, a7), (a5, a2), (a6, a7), (a2, a8), (a1, a8), (a0, a8), (a7, a4), (a8, a1), (a7, a7), (a5, a0), (a3, a8)}
+
+### World W3
+Domain: {a0, a1, a2, a3, a4, a5, a6, a7, a8, a9}
+
+**Predicates** (Closed World Assumption: unlisted atoms are false):
+- P: {a7, a1, a0}
+- Q: {a5, a8}
+- R: {(a1, a6), (a2, a6), (a8, a3), (a9, a4), (a8, a8), (a9, a6), (a6, a4), (a0, a0), (a3, a2), (a6, a2), (a3, a0), (a5, a1), (a3, a9), (a7, a5), (a7, a8), (a8, a9), (a0, a5), (a2, a3)}
+- S: {(a6, a0), (a6, a3), (a4, a8), (a8, a1), (a6, a4), (a9, a8), (a9, a4), (a3, a7), (a0, a3), (a6, a1), (a0, a1), (a1, a5), (a5, a8), (a9, a3), (a3, a8)}
+
+### World W4
+Domain: {a0, a1, a2, a3, a4, a5, a6, a7, a8, a9}
+
+**Predicates** (Closed World Assumption: unlisted atoms are false):
+- P: {a1, a4, a5, a7}
+- Q: {a7, a2, a9}
+- R: {(a5, a8), (a1, a6), (a4, a5), (a8, a3), (a9, a9), (a8, a8), (a0, a0), (a5, a6), (a3, a4), (a2, a9), (a6, a9), (a7, a6), (a1, a0)}
+- S: {(a7, a6), (a0, a0), (a9, a2), (a1, a8), (a1, a3), (a2, a1), (a2, a3), (a5, a8), (a3, a1), (a1, a4), (a4, a7)}
+
+### World W5
+Domain: {a0, a1, a2, a3, a4, a5, a6, a7, a8, a9}
+
+**Predicates** (Closed World Assumption: unlisted atoms are false):
+- P: {a8, a3, a7}
+- Q: {a3, a6, a4}
+- R: {(a8, a8), (a1, a0), (a9, a4), (a5, a8), (a9, a3), (a3, a5), (a0, a4), (a3, a6), (a8, a3), (a5, a1), (a3, a7), (a2, a4), (a3, a2), (a4, a0), (a5, a3), (a1, a3), (a7, a8), (a6, a4), (a9, a0), (a6, a5), (a1, a5)}
+- S: {(a8, a8), (a3, a3), (a4, a9), (a7, a8), (a6, a3), (a6, a5), (a6, a6), (a8, a4), (a9, a4), (a9, a2), (a8, a3), (a1, a4), (a0, a5)}
+
+---
+
+## Your Task
+
+Analyze the theory axioms and prompt worlds carefully. Find a formula alpha(x) that defines abnormality such that all axioms are satisfied.
+
+**Solve method (reason internally; do NOT output your reasoning):**
+1. Understand the theory axioms: What do they require? When might they be violated?
+2. For each world, identify which objects would violate an axiom if they were NOT abnormal
+3. Look for a pattern: What property characterizes objects that MUST be abnormal?
+4. Check for parsimony: Is there a simpler formula that still satisfies all axioms?
+5. Formulate your hypothesis as an S-expression formula
+6. **Verify**: For each world, check that defining Ab(x) <-> alpha(x) makes all axioms true
+
+**Reminder**: Validity comes first. Only after you have a valid alpha(x), optimize parsimony (fewer abnormal objects), then simplify the formula.
+
+**Example reasoning** (assumes predicates shown are allowed for alpha in this instance):
+- Theory: "P(x) AND NOTAb(x) -> Q(x)" (normally, P-objects have Q)
+- World: P(a0)=T, Q(a0)=F, P(a1)=T, Q(a1)=T
+- Analysis: a0 has P but not Q, so if a0 is not abnormal, the axiom fails
+- Result: alpha(x) = (and (P x) (not (Q x))) makes a0 abnormal, satisfying the axiom
+
+**Important**: 
+- Your formula must make the axioms true in ALL prompt worlds
+- Minimize the number of abnormal objects when possible
+- Do NOT mention Ab in your formula
+- Use ONLY predicates from AllowedAlphaPredicates; using ForbiddenAlphaPredicates is invalid
+- Do NOT use object names like a0, a1, ... inside alpha(x); use variables only
+
+---
+
+## Output
+
+Your output must be exactly ONE LINE containing ONLY valid JSON with exactly these keys:
+- "formula": a single S-expression formula string with one free variable x
+- "description": a short plain-English description (one sentence)
+
+Do NOT include code fences, prefixes, or any other text.
+
+Example of correct output:
+{"formula":"(and (P x) (not (Q x)))","description":"Objects with P but not Q are abnormal."}

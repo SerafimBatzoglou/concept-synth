@@ -1,0 +1,43 @@
+
+---
+
+## Your Task
+
+Analyze the theory axioms and training worlds carefully. Find a formula α(x) that defines abnormality such that all axioms are satisfied.
+
+**Solve method (reason internally; do NOT output your reasoning):**
+1. Understand the theory axioms: What do they require? When might they be violated?
+2. For each world, identify which objects would violate an axiom if they were NOT abnormal
+3. Look for a pattern: What property characterizes objects that MUST be abnormal?
+4. Check for parsimony: Is there a simpler formula that still satisfies all axioms?
+5. Formulate your hypothesis as an S-expression formula
+6. **Verify**: For each world, check that defining Ab(x) ↔ α(x) makes all axioms true
+
+**Reminder**: Validity comes first. Only after you have a valid α(x), optimize parsimony (fewer abnormal objects), then simplify the formula.
+
+**Example reasoning** (assumes predicates shown are allowed for α in this instance):
+- Theory: "P(x) ∧ ¬Ab(x) → Q(x)" (normally, P-objects have Q)
+- World: P(a0)=T, Q(a0)=F, P(a1)=T, Q(a1)=T
+- Analysis: a0 has P but not Q, so if a0 is not abnormal, the axiom fails
+- Result: α(x) = (and (P x) (not (Q x))) makes a0 abnormal, satisfying the axiom
+
+**Important**: 
+- Your formula must make the axioms true in ALL training worlds
+- Minimize the number of abnormal objects when possible
+- Do NOT mention Ab in your formula
+- Use ONLY predicates from AllowedAlphaPredicates; using ForbiddenAlphaPredicates is invalid
+- Do NOT use object names like a0, a1, … inside α(x); use variables only
+
+---
+
+## Output
+
+Your output must be exactly ONE LINE containing ONLY valid JSON with exactly these keys:
+- "formula": a single S-expression formula string with one free variable x
+- "description": a short plain-English description (one sentence)
+
+Do NOT include code fences, prefixes, or any other text.
+
+Example of correct output:
+{"formula":"(and (P x) (not (Q x)))","description":"Objects with P but not Q are abnormal."}
+
