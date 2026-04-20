@@ -112,7 +112,7 @@ def test_eval_cache_is_sanitized() -> None:
 def test_manifest_hashes_and_counts() -> None:
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
 
-    assert manifest["releaseTag"] == "abduction-v1.1"
+    assert manifest["releaseTag"] == "abduction-v1.2"
     assert manifest["license"] == "MIT"
     assert manifest["counts"]["benchmarkInstances"] == 600
     assert manifest["counts"]["predictionRows"] == 7171
@@ -128,4 +128,3 @@ def test_manifest_hashes_and_counts() -> None:
         assert path.exists(), artifact["path"]
         assert path.stat().st_size == artifact["sizeBytes"]
         assert _sha256(path) == artifact["sha256"]
-

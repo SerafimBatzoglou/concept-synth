@@ -16,5 +16,5 @@
 4. Check that `CITATION.cff`, `LICENSE`, and the benchmark README match the
    intended public release.
 5. Commit the release state on `main`.
-6. Publish a new immutable tag such as `abduction-v1.1`.
+6. Publish a new immutable tag such as `abduction-v1.2`.
 7. Create the matching GitHub release and attach the release notes.

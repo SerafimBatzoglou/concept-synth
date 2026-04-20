@@ -1,7 +1,7 @@
 {
   "schemaVersion": "abd_release_manifest_v1",
-  "releaseTag": "abduction-v1.1",
-  "releaseDate": "2026-04-18",
+  "releaseTag": "abduction-v1.2",
+  "releaseDate": "2026-04-20",
   "license": "MIT",
   "paper": {
     "title": "ABD: Default-Exception Abduction in Finite First-Order Worlds",
@@ -25,13 +25,13 @@
     },
     {
       "path": "benchmarks/abduction/eval/abd_eval_cache_v1.jsonl",
-      "sizeBytes": 13850970,
-      "sha256": "a0a15a3aa40b3b61913513b9b17780c5586cdb78920011eae990395f9e08237c"
+      "sizeBytes": 13849655,
+      "sha256": "0a99caf1412eb347087a67ba41e1427f5994390b5013fc2b5614c488e4f3bf87"
     },
     {
       "path": "benchmarks/abduction/eval/abd_eval_cache_v1.meta.json",
-      "sizeBytes": 1676,
-      "sha256": "e2a0ebc195633f32bb50bd3c9b8f60218ff09677fea182b1cd9572a4fd4e8ef7"
+      "sizeBytes": 1744,
+      "sha256": "a2331dbbb084f80fc11212702e7a490fa1015d8220bdc9ea9284bfb7031fb0a0"
     },
     {
       "path": "benchmarks/abduction/schemas/benchmark_record.schema.json",
@@ -63,12 +63,12 @@
     },
     "theoryCounts": {
       "TH10": 117,
-      "TH11": 166,
       "TH12": 87,
+      "TH7": 153,
+      "TH11": 166,
       "TH2": 38,
-      "TH3": 14,
       "TH5": 25,
-      "TH7": 153
+      "TH3": 14
     },
     "holdoutRows": 2983,
     "instancesWithHoldouts": 598,
@@ -78,18 +78,18 @@
     ],
     "predictionRows": 7171,
     "predictionModelCounts": {
-      "claude-opus-4-5-20251101": 600,
-      "claude-opus-4-6": 600,
       "deepseek-reasoner": 600,
-      "gemini-3-pro-preview": 600,
-      "gemini-3.1-pro-preview": 600,
-      "gpt-4o": 600,
       "gpt-5.2": 600,
-      "gpt-5.4": 600,
+      "gemini-3-pro-preview": 600,
       "grok4": 599,
       "grok4.1fast": 572,
       "hermes4": 600,
-      "kimi-k2-thinking": 600
+      "claude-opus-4-5-20251101": 600,
+      "gpt-4o": 600,
+      "claude-opus-4-6": 600,
+      "kimi-k2-thinking": 600,
+      "gemini-3.1-pro-preview": 600,
+      "gpt-5.4": 600
     },
     "evalRows": 7171,
     "evalModelCounts": {

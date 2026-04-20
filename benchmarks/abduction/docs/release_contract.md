@@ -14,7 +14,7 @@ Paths are relative to `benchmarks/abduction/`.
 - `eval/abd_eval_cache_v1.meta.json`
 - `release_manifest.json`
 
-These files are the public source of truth for the `abduction-v1.1` release.
+These files are the public source of truth for the `abduction-v1.2` release.
 
 ## Separation of concerns
 

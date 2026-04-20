@@ -84,8 +84,29 @@ class GroundingContext:
 # =============================================================================
 
 
+def _infer_predicate_arities_from_unknown_atoms(
+    unknown_atoms: Dict[str, List[Any]],
+) -> Dict[str, int]:
+    """Infer predicate arities from unknown atom payloads."""
+    predicate_arities: Dict[str, int] = {}
+    for pred_name, atoms in unknown_atoms.items():
+        arity = 1
+        for atom in atoms:
+            atom_str = str(atom).strip()
+            if atom_str.startswith("(") and atom_str.endswith(")"):
+                inner = atom_str[1:-1]
+                parts = [part.strip() for part in inner.split(",") if part.strip()]
+                if len(parts) >= 2:
+                    arity = len(parts)
+            break
+        predicate_arities[str(pred_name)] = arity
+    return predicate_arities
+
+
 def build_unknown_vars_from_atoms(
-    unknown_atoms: Dict[str, List[Any]], world_id: str, predicate_arities: Dict[str, int]
+    unknown_atoms: Dict[str, List[Any]],
+    world_id: str,
+    predicate_arities: Optional[Dict[str, int]] = None,
 ) -> Dict[Tuple[str, Tuple[str, ...]], Any]:
     """
     Build Z3 boolean variables for unknown atoms.
@@ -94,6 +115,9 @@ def build_unknown_vars_from_atoms(
         unknown_atoms: Dictionary mapping predicate names to lists of unknown ground atoms.
                        Format: {'P': ['a0', 'a1'], 'R': ['(a0, a1)', '(a2, a3)']}
         world_id: Unique identifier for this world (for stable variable naming)
+        predicate_arities: Optional predicate arity map. When omitted, infer
+            arities from the unknown atom payloads for backward compatibility
+            with older two-argument call sites.
 
     Returns:
         Dictionary mapping (pred_name, args_tuple) to Z3 BoolRef
@@ -104,6 +128,8 @@ def build_unknown_vars_from_atoms(
         raise RuntimeError("Z3 is not installed. Install with: pip install z3-solver")
 
     unknown_vars = {}
+    if predicate_arities is None:
+        predicate_arities = _infer_predicate_arities_from_unknown_atoms(unknown_atoms)
 
     unary_preds, binary_preds = split_predicates_by_arity(predicate_arities)
 

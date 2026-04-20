@@ -896,11 +896,17 @@ def evaluate_on_holdouts(
         try:
             # Evaluate based on scenario
             if scenario == "ABD_PARTIAL":
-                result = check_abd_partial_validity(world, axioms_ast, alpha_ast, timeout_ms)
+                result = check_abd_partial_validity(
+                    world, axioms_ast, alpha_ast, timeout_ms=timeout_ms
+                )
             elif scenario == "ABD_SKEPTICAL":
-                result = check_abd_skeptical_validity(world, axioms_ast, alpha_ast, timeout_ms)
+                result = check_abd_skeptical_validity(
+                    world, axioms_ast, alpha_ast, timeout_ms=timeout_ms
+                )
             else:
-                result = check_abd_full_validity(world, axioms_ast, alpha_ast, timeout_ms)
+                result = check_abd_full_validity(
+                    world, axioms_ast, alpha_ast, timeout_ms=timeout_ms
+                )
 
             if result.valid:
                 valid_count += 1
