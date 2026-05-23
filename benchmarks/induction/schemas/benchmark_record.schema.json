@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SerafimBatzoglou/concept-synth/benchmarks/induction/schemas/benchmark_record.schema.json",
+  "title": "INDUCTION Benchmark Record",
+  "type": "object",
+  "required": ["schemaVersion", "instanceId", "task", "scenario", "problem", "problemDescription"],
+  "properties": {
+    "schemaVersion": {
+      "const": "induction_benchmark_record_v1"
+    },
+    "instanceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task": {
+      "enum": ["FullObs", "CI", "EC"]
+    },
+    "scenario": {
+      "enum": ["AD", "C", "E"]
+    },
+    "problemType": {
+      "type": "string"
+    },
+    "problem": {
+      "type": "object",
+      "required": ["instanceId", "scenario", "signature", "worlds", "task"],
+      "properties": {
+        "instanceId": { "type": "string", "minLength": 1 },
+        "schemaVersion": { "type": "string" },
+        "scenario": { "enum": ["AD", "C", "E"] },
+        "signature": { "type": "object" },
+        "backgroundAxioms": { "type": "array" },
+        "worlds": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["worldId", "domain", "predicates", "targetExtension"],
+            "properties": {
+              "worldId": { "type": "string", "minLength": 1 },
+              "domain": { "type": "array", "items": { "type": "string" } },
+              "predicates": { "type": "object" },
+              "unknownAtoms": { "type": "object" },
+              "targetExtension": {
+                "type": "object",
+                "required": ["T_true"],
+                "properties": {
+                  "T_true": { "type": "array", "items": { "type": "string" } },
+                  "T_false": { "type": "array", "items": { "type": "string" } }
+                },
+                "additionalProperties": true
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "task": { "type": "object" }
+      },
+      "additionalProperties": true
+    },
+    "problemDescription": {
+      "type": "object",
+      "required": ["scenario", "hiddenTarget"],
+      "properties": {
+        "scenario": { "enum": ["AD", "C", "E"] },
+        "hiddenTarget": {
+          "type": "object",
+          "required": ["formula"],
+          "properties": {
+            "formula": { "type": "string", "minLength": 1 },
+            "astSize": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

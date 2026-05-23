@@ -1,0 +1,31 @@
+
+---
+
+## Your Task
+
+Analyze the training worlds carefully. Identify what **distinguishes** objects where T is TRUE from objects where T is FALSE. Your formula must capture this distinction.
+
+**Think step by step:**
+1. For each training world, compare the T-TRUE objects against the T-FALSE objects
+2. Look for properties (unary predicates P, Q) or relationships (binary predicates R, S) that **correlate** with T
+3. Check: Do all T-TRUE objects share some property? Do all T-FALSE objects lack it?
+4. Consider whether the pattern involves existential quantification ("there exists a y such that...") or universal quantification ("for all y...")
+5. Formulate your hypothesis as an S-expression formula
+6. **Verify**: For each object in each training world, check that your formula gives TRUE exactly when T is TRUE, and FALSE exactly when T is FALSE
+
+**Important**: Your formula must correctly classify BOTH the positive examples (T=TRUE) AND the negative examples (T=FALSE). A formula that is always true or always false will fail unless T has that exact pattern.
+
+**Prefer the simplest formula that fits all worlds; avoid redundant conjuncts and unnecessary predicates.**
+
+---
+
+## Output
+
+Your final answer must be exactly ONE LINE containing ONLY valid JSON with exactly these keys:
+- "formula": a single S-expression formula string with one free variable x
+- "description": a short plain-English description (one sentence)
+
+Do NOT include code fences, prefixes, or any other text.
+
+Example of correct output:
+{"formula":"(exists y (and (R x y) (P y)))","description":"x has an R-successor that satisfies P."}

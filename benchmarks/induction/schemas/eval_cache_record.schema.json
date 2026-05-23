@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SerafimBatzoglou/concept-synth/benchmarks/induction/schemas/eval_cache_record.schema.json",
+  "title": "INDUCTION Eval Cache Record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "dataset_name",
+    "dataset_path",
+    "instance_id",
+    "task",
+    "scenario",
+    "model_id",
+    "run_id",
+    "completed",
+    "valid",
+    "parse_ok",
+    "prediction",
+    "gold_formula",
+    "gold_ast",
+    "evaluation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "induction_eval_v1"
+    },
+    "dataset_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dataset_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "instance_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task": {
+      "enum": ["FullObs", "CI", "EC"]
+    },
+    "scenario": {
+      "enum": ["AD", "C", "E"]
+    },
+    "model_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "valid": {
+      "type": "boolean"
+    },
+    "parse_ok": {
+      "type": "boolean"
+    },
+    "prediction": {
+      "type": "object"
+    },
+    "gold_formula": {
+      "type": "string"
+    },
+    "gold_ast": {
+      "type": ["integer", "null"]
+    },
+    "ast_delta": {
+      "type": ["integer", "null"]
+    },
+    "evaluation": {
+      "type": "object"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

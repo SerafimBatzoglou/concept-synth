@@ -8,10 +8,34 @@ dist/
 
 # Optional local decompression of the benchmark bundle
 benchmarks/abduction/data/abd_instances_v1.yaml
+benchmarks/induction/data/induction_*_v1.yaml
 
 # Local regeneration output
 benchmarks/abduction/generated_tables/
 benchmarks/abduction/generated_eval/
+benchmarks/induction/generated_tables/
+benchmarks/induction/generated_eval/
+benchmarks/induction/generated_instances/
 
 # Old local paper-layout outputs from the initial export draft
 benchmarks/abduction/paper/
+
+# Local model-run and batch artifacts are not part of public releases
+results/
+batch_job_*.json
+batch_raw_results*
+batch_results*
+.env
+.env.*
+
+# Paper build byproducts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz

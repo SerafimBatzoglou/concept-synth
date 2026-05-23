@@ -1,0 +1,62 @@
+# First-Order Logic Concept Synthesis
+
+## Task Overview
+
+You are given several finite "worlds," each containing:
+- A finite domain of objects (named a0, a1, a2, ...)
+- Interpretations of predicates (which objects/pairs satisfy each predicate)
+- A target concept T(x) that specifies which objects are "positive" (T is TRUE) and which are "negative" (T is FALSE)
+
+**Closed World Assumption**: Only the facts explicitly listed as TRUE are true. Any predicate application (P(a), R(a,b), etc.) not explicitly listed should be assumed FALSE.
+
+**Your goal**: Find a first-order logic formula φ(x) with one free variable x that **perfectly separates** the positive and negative examples:
+- φ(c) must evaluate to TRUE for every object c where T(c) is TRUE
+- φ(c) must evaluate to FALSE for every object c where T(c) is FALSE
+
+The formula must work correctly for ALL objects in ALL input worlds. Input worlds include T labels.
+
+## Output Format
+
+You must output your formula in S-expression syntax. The grammar is:
+
+```
+φ ::= (P x)              -- unary predicate applied to variable
+    | (R x y)            -- binary predicate applied to two variables
+    | (= x y)            -- equality of two variables
+    | (not φ)            -- negation
+    | (and φ₁ φ₂ ...)    -- conjunction (2 or more arguments)
+    | (or φ₁ φ₂ ...)     -- disjunction (2 or more arguments)
+    | (forall v φ)       -- universal quantification
+    | (exists v φ)       -- existential quantification
+```
+
+**Important constraints:**
+- Your formula must have exactly one free variable: x
+- All other variables must be bound by quantifiers (forall or exists)
+- Variable names should be: x (free), y, z, w (bound by quantifiers)
+- Prefer simpler formulas; avoid redundant conjuncts and case-splitting; do not sacrifice correctness for brevity.
+- **No implication or biconditional**: Express these using other connectives:
+  - "A implies B" should be written as `(or (not A) B)`
+  - "A if and only if B" should be written as `(and (or (not A) B) (or (not B) A))`
+
+## Examples of Valid Formulas
+
+- `(P x)` — "x satisfies P"
+- `(and (P x) (Q x))` — "x satisfies both P and Q"
+- `(or (P x) (not (Q x)))` — "x satisfies P or x does not satisfy Q"
+- `(exists y (R x y))` — "there exists some y such that R(x,y)"
+- `(forall y (or (not (R x y)) (P y)))` — "for all y, either R(x,y) is false or P(y) is true"
+- `(exists y (and (R x y) (forall z (S y z))))` — nested quantifiers
+- `(not (exists y (R x y)))` — "there is no y such that R(x,y)"
+
+## Evaluation
+
+Your formula will be evaluated on:
+1. **Input-world correctness**: Does φ(c) = TRUE exactly when T(c) = TRUE, and φ(c) = FALSE exactly when T(c) = FALSE in the released input worlds?
+2. **Simplicity**: Simpler formulas (smaller AST size) are preferred
+
+**Note**: A trivially true formula like `(= x x)` is only correct if T(c) is TRUE for ALL objects. A trivially false formula is only correct if T(c) is FALSE for ALL objects.
+
+---
+
+## Problem Instance

@@ -1,0 +1,113 @@
+{
+  "artifacts": [
+    {
+      "path": "benchmarks/induction/data/induction_fullobs_v1.yaml.gz",
+      "sha256": "55e21dee281be6ab779119dcce609d7d969e5528863c82a38fa4782fca0100ed",
+      "sizeBytes": 270583
+    },
+    {
+      "path": "benchmarks/induction/data/induction_ci_v1.yaml.gz",
+      "sha256": "506c8977541e73dcd2f17675412cb0c2d82106d0060abcae1052b08ea3394fa0",
+      "sizeBytes": 160341
+    },
+    {
+      "path": "benchmarks/induction/data/induction_ec_v1.yaml.gz",
+      "sha256": "a60c423eccd0dfea2101f0290efa710b0725f5f2f2c99258eac70f9337c051dd",
+      "sizeBytes": 88318
+    },
+    {
+      "path": "benchmarks/induction/predictions/induction_predictions_v1.jsonl.gz",
+      "sha256": "072b3686f830d04527f053008a81012eef7a6b7cc1914cd9cb78b33c742eb725",
+      "sizeBytes": 31848792
+    },
+    {
+      "path": "benchmarks/induction/eval/induction_eval_cache_v1.jsonl",
+      "sha256": "ae094a89861284e9f7407977a61029d397ed4b3dd96e505ddd9b345a703c6cfe",
+      "sizeBytes": 19917193
+    },
+    {
+      "path": "benchmarks/induction/eval/induction_eval_cache_v1.meta.json",
+      "sha256": "f45aa5a42aa0db18ad8c278a0871490b0202789f64469b73e96ead1349ffb1d1",
+      "sizeBytes": 3478
+    },
+    {
+      "path": "benchmarks/induction/schemas/benchmark_record.schema.json",
+      "sha256": "01f494336fafc48efd79d1be1cfd3d40dd7481d80ef6b0a986bd854cb22ef1a6",
+      "sizeBytes": 2618
+    },
+    {
+      "path": "benchmarks/induction/schemas/prediction_record.schema.json",
+      "sha256": "e79efb196a0d58208fe7f6cfaf8edf3515b85f6b98214a08e31f31a5664d56ee",
+      "sizeBytes": 1262
+    },
+    {
+      "path": "benchmarks/induction/schemas/eval_cache_record.schema.json",
+      "sha256": "69b3f8acd5892217248e79a749d9c42d7612fac08e4a56aeb0934ce5a419c62f",
+      "sizeBytes": 1582
+    }
+  ],
+  "benchmark": "INDUCTION",
+  "counts": {
+    "benchmarkInstances": 775,
+    "benchmarkInstancesByTask": {
+      "CI": 200,
+      "EC": 200,
+      "FullObs": 375
+    },
+    "evalModelCounts": {
+      "claude-opus-4-5-20251101": 775,
+      "claude-opus-4-6": 775,
+      "deepseek-reasoner": 774,
+      "deepseek4pro": 768,
+      "gemini-3-pro-preview": 775,
+      "gemini-3.1-pro-preview": 775,
+      "gemini-3.5-flash": 775,
+      "gpt-4o": 775,
+      "gpt-5.2": 775,
+      "gpt-5.4": 774,
+      "grok4": 774,
+      "grok4.1fast": 775,
+      "grok4.3": 775,
+      "hermes4": 775,
+      "qwen-3.5": 573
+    },
+    "evalRows": 11413,
+    "evalRowsByTask": {
+      "CI": 2939,
+      "EC": 2913,
+      "FullObs": 5561
+    },
+    "predictionModelCounts": {
+      "claude-opus-4-5-20251101": 775,
+      "claude-opus-4-6": 775,
+      "deepseek-reasoner": 774,
+      "deepseek4pro": 768,
+      "gemini-3-pro-preview": 775,
+      "gemini-3.1-pro-preview": 775,
+      "gemini-3.5-flash": 775,
+      "gpt-4o": 775,
+      "gpt-5.2": 775,
+      "gpt-5.4": 774,
+      "grok4": 774,
+      "grok4.1fast": 775,
+      "grok4.3": 775,
+      "hermes4": 775,
+      "qwen-3.5": 573
+    },
+    "predictionRows": 11413,
+    "predictionRowsByTask": {
+      "CI": 2939,
+      "EC": 2913,
+      "FullObs": 5561
+    }
+  },
+  "license": "MIT",
+  "paper": {
+    "title": "INDUCTION: Finite-Structure Concept Synthesis in First-Order Logic",
+    "venue": "ICML 2026"
+  },
+  "releaseDate": "2026-05-23",
+  "releaseTag": "induction-v1.0",
+  "schemaVersion": "induction_release_manifest_v1",
+  "sourceRepository": "https://github.com/SerafimBatzoglou/concept-synth"
+}

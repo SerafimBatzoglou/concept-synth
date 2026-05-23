@@ -1,0 +1,73 @@
+# First-Order Logic Concept Synthesis (Partial Observation)
+
+## Task Overview
+
+You are given several finite "worlds" with **partial observations**:
+- Some predicate facts are **known** (observed as TRUE or FALSE)
+- Some predicate facts are **unknown** (not observed)
+
+Each world contains:
+- A finite domain of objects (named a0, a1, a2, ...)
+- Known facts: predicates whose truth values have been observed
+- Unknown atoms: predicates whose truth values are hidden
+- A target concept T(x) that specifies which objects are "positive" (T is TRUE) and which are "negative" (T is FALSE)
+
+**Observation Rules**:
+- Atoms listed under "Known Facts" or "Predicates" with explicit TRUE values are TRUE
+- Atoms listed under "Unknown Atoms" have unknown truth values
+- Any atom NOT listed as TRUE and NOT listed as Unknown is FALSE
+
+The target T(x) values are always fully specified (not unknown).
+
+**Your goal**: Find a first-order logic formula φ(x) with one free variable x that **perfectly separates** the positive and negative examples:
+- φ(c) must be TRUE for every object c where T(c) is TRUE
+- φ(c) must be FALSE for every object c where T(c) is FALSE
+
+**Completion semantics**: For each world separately, there must exist at least one assignment of truth values to the unknown atoms such that φ matches T for all objects in that world.
+
+## Output Format
+
+You must output your formula in S-expression syntax. The grammar is:
+
+```
+φ ::= (P x)              -- unary predicate applied to variable
+    | (R x y)            -- binary predicate applied to two variables
+    | (= x y)            -- equality of two variables
+    | (not φ)            -- negation
+    | (and φ₁ φ₂ ...)    -- conjunction (2 or more arguments)
+    | (or φ₁ φ₂ ...)     -- disjunction (2 or more arguments)
+    | (forall v φ)       -- universal quantification
+    | (exists v φ)       -- existential quantification
+```
+
+**Important constraints:**
+- Your formula must have exactly one free variable: x
+- All other variables must be bound by quantifiers (forall or exists)
+- Variable names should be: x (free), y, z, w (bound by quantifiers)
+- Prefer simpler formulas when multiple solutions exist
+- Your formula must be as simple as possible; aim for AST as low as possible. ASTs > 60 are way too high. If you can’t find a lower AST formula, still output your best formula
+- **No implication or biconditional**: Express these using other connectives:
+  - "A implies B" should be written as `(or (not A) B)`
+  - "A if and only if B" should be written as `(and (or (not A) B) (or (not B) A))`
+
+## Examples of Valid Formulas
+
+- `(P x)` — "x satisfies P"
+- `(and (P x) (Q x))` — "x satisfies both P and Q"
+- `(or (P x) (not (Q x)))` — "x satisfies P or x does not satisfy Q"
+- `(exists y (R x y))` — "there exists some y such that R(x,y)"
+- `(forall y (or (not (R x y)) (P y)))` — "for all y, either R(x,y) is false or P(y) is true"
+- `(exists y (and (R x y) (forall z (S y z))))` — nested quantifiers
+- `(not (exists y (R x y)))` — "there is no y such that R(x,y)"
+
+## Evaluation
+
+Your formula will be evaluated on:
+1. **Existential-completion correctness**: For each input world, is there some valid completion of the unknown atoms under which φ(c) = TRUE exactly when T(c) = TRUE, and φ(c) = FALSE exactly when T(c) = FALSE?
+2. **Simplicity**: Simpler formulas (smaller AST size) are preferred
+
+**Note**: A trivially true formula like `(= x x)` is only correct if T(c) is TRUE for ALL objects. A trivially false formula is only correct if T(c) is FALSE for ALL objects.
+
+---
+
+## Problem Instance

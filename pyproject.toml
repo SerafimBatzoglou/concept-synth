@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "concept-synth"
 version = "0.1.1"
-description = "Public benchmark artifacts and runnable ABD tooling for Concept Synth."
+description = "Public benchmark artifacts and runnable ABD/INDUCTION tooling for Concept Synth."
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
@@ -26,6 +26,10 @@ dev = [
 concept-synth-abd = "concept_synth.abduction.cli:main"
 concept-synth-abd-build-prompt = "concept_synth.abduction.cli:prompt_main"
 concept-synth-abd-evaluate = "concept_synth.abduction.cli:evaluate_main"
+concept-synth-induction = "concept_synth.induction.cli:main"
+concept-synth-induction-build-prompt = "concept_synth.induction.cli:prompt_main"
+concept-synth-induction-evaluate = "concept_synth.induction.cli:evaluate_main"
+concept-synth-induction-generate = "concept_synth.induction.cli:generate_main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -36,6 +40,7 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 "concept_synth.abduction" = ["prompts/*.txt"]
+"concept_synth.induction" = ["prompts/*.txt"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

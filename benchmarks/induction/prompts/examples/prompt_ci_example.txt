@@ -1,0 +1,211 @@
+# First-Order Logic Concept Synthesis (Zendo-Style)
+
+## Task Overview
+
+You are given two sets of finite "worlds":
+- **YES worlds**: Worlds where the hidden rule is satisfied
+- **NO worlds**: Worlds where the hidden rule is NOT satisfied
+
+Each world contains:
+- A finite domain of objects (named a0, a1, a2, ...)
+- Interpretations of predicates (which objects/pairs satisfy each predicate)
+- A target concept T(x) that labels certain objects as "positive examples"
+
+**Closed World Assumption**: Only the facts explicitly listed as TRUE are true. Any predicate application (P(a), R(a,b), etc.) not explicitly listed should be assumed FALSE.
+
+Your goal is to find a first-order logic formula φ(x) with one free variable x such that:
+- In YES worlds: φ(x) **exactly matches** T(x) for all objects (φ(a)=TRUE iff a∈T_true)
+- In NO worlds: φ(x) **fails to match** T(x) — at least one object is misclassified
+
+Think of this like the game Zendo: you must find the secret rule that all YES worlds follow but NO worlds violate.
+
+## Validity Criterion (Important)
+
+Define **Match(W, φ)** := for all a in domain(W): W ⊨ φ(a) iff a ∈ T_true(W)
+
+Your formula is **correct** iff:
+1. For every YES world W: Match(W, φ) is TRUE
+2. For every NO world W: Match(W, φ) is FALSE
+
+This means your formula must work perfectly in YES worlds, and must have at least one error in each NO world.
+
+## Output Format
+
+You must output your formula in S-expression syntax. The grammar is:
+
+```
+φ ::= (P x)              -- unary predicate applied to variable
+    | (R x y)            -- binary predicate applied to two variables
+    | (= x y)            -- equality of two variables
+    | (not φ)            -- negation
+    | (and φ₁ φ₂ ...)    -- conjunction (2 or more arguments)
+    | (or φ₁ φ₂ ...)     -- disjunction (2 or more arguments)
+    | (forall v φ)       -- universal quantification
+    | (exists v φ)       -- existential quantification
+```
+
+**Important constraints:**
+- Your formula must have exactly one free variable: x
+- All other variables must be bound by quantifiers (forall or exists)
+- Variable names should be: x (free), y, z, w (bound by quantifiers)
+- Prefer simpler formulas; avoid redundant conjuncts and case-splitting; do not sacrifice correctness for brevity.
+- **No implication or biconditional**: Express these using other connectives:
+  - "A implies B" should be written as `(or (not A) B)`
+  - "A if and only if B" should be written as `(and (or (not A) B) (or (not B) A))`
+
+## Examples of Valid Formulas
+
+- `(P x)` — "x satisfies P"
+- `(and (P x) (Q x))` — "x satisfies both P and Q"
+- `(or (P x) (not (Q x)))` — "x satisfies P or x does not satisfy Q"
+- `(exists y (R x y))` — "there exists some y such that R(x,y)"
+- `(forall y (or (not (R x y)) (P y)))` — "for all y, either R(x,y) is false or P(y) is true"
+- `(exists y (and (R x y) (forall z (S y z))))` — nested quantifiers
+- `(not (exists y (R x y)))` — "there is no y such that R(x,y)"
+
+## Evaluation
+
+Your formula will be evaluated on:
+1. **YES-world fit**: Does φ(c) match T(c) for all objects c in all YES worlds?
+2. **NO-world distinction**: Does φ fail to match T in all NO worlds?
+3. **Simplicity**: Simpler formulas (smaller AST size) are preferred
+
+---
+
+## Problem Instance
+
+
+
+## YES Worlds (formula is perfect here):
+
+### World: yes_0
+Domain: {a0, a1, a2, a3, a4, a5, a6, a7}
+
+**Predicates:**
+- P: a2, a3, a4, a5, a6
+- Q: a0, a1, a2, a3, a4, a7
+- R: (a0, a2), (a0, a4), (a0, a6), (a1, a3), (a2, a0), (a2, a2), (a2, a5), (a2, a7), (a3, a0), (a3, a1), (a3, a3), (a3, a4), (a3, a5), (a4, a2), (a4, a3), (a5, a1), (a5, a4), (a5, a7), (a6, a7), (a7, a0), (a7, a1), (a7, a2), (a7, a6)
+- S: (a1, a4), (a2, a0), (a2, a2), (a2, a3), (a2, a4), (a2, a7), (a3, a2), (a3, a5), (a4, a1), (a5, a2), (a6, a0), (a6, a3), (a7, a0)
+
+**Target T(x):**
+- T is TRUE for: {a1, a2, a3, a4, a5, a6, a7}
+- T is FALSE for: {a0}
+
+### World: yes_1
+Domain: {a0, a1, a2, a3, a4, a5, a6, a7, a8, a9}
+
+**Predicates:**
+- P: a1, a2, a7, a9
+- Q: a1, a2, a4, a5, a6, a9
+- R: (a0, a0), (a0, a2), (a1, a3), (a1, a4), (a1, a6), (a1, a8), (a2, a0), (a2, a2), (a2, a6), (a2, a7), (a2, a8), (a3, a9), (a4, a2), (a4, a4), (a5, a2), (a5, a3), (a5, a5), (a5, a6), (a6, a2), (a6, a3), (a6, a6), (a7, a0), (a7, a2), (a7, a5), (a8, a1), (a8, a3), (a8, a4), (a8, a6), (a9, a2), (a9, a3), (a9, a5), (a9, a6)
+- S: (a0, a4), (a1, a1), (a1, a4), (a1, a6), (a1, a8), (a1, a9), (a2, a1), (a2, a2), (a2, a3), (a2, a6), (a2, a8), (a2, a9), (a3, a2), (a3, a6), (a4, a4), (a4, a6), (a4, a7), (a5, a1), (a5, a3), (a5, a6), (a5, a8), (a6, a0), (a6, a1), (a6, a5), (a6, a6), (a7, a1), (a7, a5), (a7, a7), (a7, a8), (a8, a1), (a8, a6), (a8, a8), (a9, a0), (a9, a1), (a9, a5), (a9, a6)
+
+**Target T(x):**
+- T is TRUE for: {a0, a1, a2, a3, a4, a5, a6, a7, a8, a9}
+
+### World: yes_2
+Domain: {a0, a1, a2, a3, a4, a5, a6, a7, a8}
+
+**Predicates:**
+- P: a0, a4, a5, a6, a7, a8
+- Q: a0, a2, a4, a5, a6, a8
+- R: (a0, a3), (a1, a1), (a1, a4), (a2, a0), (a2, a1), (a2, a3), (a3, a2), (a4, a1), (a4, a7), (a5, a1), (a5, a8), (a6, a0), (a6, a3), (a6, a5), (a6, a6), (a6, a7), (a7, a2), (a7, a5), (a7, a6), (a7, a7), (a8, a3)
+- S: (a1, a3), (a1, a6), (a2, a5), (a2, a8), (a3, a1), (a3, a3), (a3, a6), (a4, a1), (a4, a2), (a4, a3), (a4, a7), (a5, a1), (a5, a2), (a5, a3), (a5, a4), (a5, a6), (a5, a7), (a6, a1), (a6, a3), (a6, a7), (a7, a2), (a7, a7), (a8, a3), (a8, a6)
+
+**Target T(x):**
+- T is TRUE for: {a1, a2, a3, a4, a5, a6, a7, a8}
+- T is FALSE for: {a0}
+
+### World: yes_3
+Domain: {a0, a1, a2, a3, a4, a5, a6}
+
+**Predicates:**
+- P: a0, a2, a3, a4, a6
+- Q: a0, a2, a3, a4, a5, a6
+- R: (a0, a3), (a0, a5), (a0, a6), (a2, a2), (a2, a4), (a3, a5), (a3, a6), (a4, a0), (a4, a3), (a4, a4), (a4, a5), (a5, a2), (a6, a1), (a6, a3)
+- S: (a0, a0), (a0, a1), (a0, a2), (a2, a1), (a2, a3), (a2, a6), (a3, a2), (a3, a5), (a5, a1), (a5, a5), (a5, a6), (a6, a1), (a6, a2), (a6, a3), (a6, a5)
+
+**Target T(x):**
+- T is TRUE for: {a0, a2, a3, a5, a6}
+- T is FALSE for: {a1, a4}
+
+### World: yes_4
+Domain: {a0, a1, a2, a3, a4, a5, a6}
+
+**Predicates:**
+- P: a2, a3, a4
+- Q: a3, a4, a5
+- R: (a0, a2), (a0, a3), (a1, a2), (a1, a4), (a1, a5), (a2, a3), (a3, a3), (a3, a5), (a4, a0), (a4, a2), (a5, a1), (a5, a5), (a6, a2), (a6, a3), (a6, a5), (a6, a6)
+- S: (a0, a0), (a0, a4), (a0, a5), (a1, a2), (a2, a1), (a2, a2), (a2, a3), (a3, a0), (a3, a2), (a4, a2), (a4, a5), (a6, a1), (a6, a3), (a6, a5)
+
+**Target T(x):**
+- T is TRUE for: {a0, a1, a2, a3, a4, a6}
+- T is FALSE for: {a5}
+
+### World: yes_5
+Domain: {a0, a1, a2, a3, a4, a5, a6}
+
+**Predicates:**
+- P: a2, a4, a5, a6
+- Q: a1, a2, a3, a4, a5
+- R: (a0, a0), (a0, a1), (a0, a3), (a1, a5), (a2, a0), (a2, a1), (a2, a2), (a2, a5), (a3, a0), (a3, a4), (a3, a5), (a4, a0), (a4, a1), (a4, a3), (a5, a6), (a6, a2), (a6, a3), (a6, a6)
+- S: (a0, a0), (a0, a3), (a0, a6), (a2, a1), (a2, a2), (a2, a6), (a3, a0), (a3, a2), (a3, a5), (a4, a3), (a4, a5), (a5, a2), (a5, a3), (a6, a1), (a6, a4)
+
+**Target T(x):**
+- T is TRUE for: {a0, a2, a3, a4, a5, a6}
+- T is FALSE for: {a1}
+
+### World: yes_6
+Domain: {a0, a1, a2, a3, a4, a5, a6, a7}
+
+**Predicates:**
+- P: a2, a3, a6, a7
+- Q: a0, a1, a5, a6, a7
+- R: (a0, a1), (a0, a4), (a0, a5), (a0, a7), (a1, a1), (a1, a2), (a3, a0), (a3, a1), (a3, a6), (a4, a0), (a4, a1), (a4, a5), (a4, a6), (a5, a3), (a6, a2), (a7, a6), (a7, a7)
+- S: (a0, a0), (a0, a2), (a0, a4), (a2, a1), (a2, a3), (a2, a6), (a3, a1), (a3, a2), (a3, a3), (a3, a6), (a4, a4), (a5, a0), (a5, a1), (a5, a2), (a5, a4), (a5, a6), (a6, a7), (a7, a0), (a7, a1), (a7, a3), (a7, a6)
+
+**Target T(x):**
+- T is TRUE for: {a0, a2, a3, a4, a5, a6, a7}
+- T is FALSE for: {a1}
+
+### World: yes_7
+Domain: {a0, a1, a2, a3, a4, a5, a6, a7, a8}
+
+**Predicates:**
+- P: a0, a1, a3, a4, a5, a6, a7, a8
+- Q: a0, a3, a5, a6, a7
+- R: (a0, a2), (a0, a5), (a0, a7), (a1, a3), (a2, a6), (a3, a1), (a3, a2), (a3, a4), (a3, a7), (a4, a1), (a4, a2), (a4, a3), (a4, a5), (a5, a1), (a5, a2), (a5, a3), (a5, a4), (a6, a0), (a6, a1), (a6, a2), (a6, a5), (a7, a3), (a7, a4), (a7, a5), (a7, a7), (a7, a8), (a8, a0), (a8, a5)
+- S: (a0, a0), (a0, a2), (a0, a3), (a1, a2), (a1, a3), (a1, a5), (a1, a8), (a2, a1), (a2, a3), (a2, a4), (a2, a5), (a2, a6), (a2, a8), (a4, a0), (a4, a5), (a5, a6), (a6, a4), (a6, a7), (a6, a8), (a7, a0), (a7, a1), (a7, a3), (a8, a1), (a8, a5), (a8, a6), (a8, a8)
+
+**Target T(x):**
+- T is TRUE for: {a0, a1, a2, a4, a5, a6, a7, a8}
+- T is FALSE for: {a3}
+
+
+## NO Worlds (formula fails here):
+
+### World: no_0
+Domain: {a0, a1, a2, a3, a4, a5, a6}
+
+**Predicates:**
+- P: a0, a3, a4, a5
+- Q: a0, a2, a4
+- R: (a0, a2), (a0, a3), (a0, a5), (a1, a1), (a1, a6), (a2, a3), (a3, a0), (a3, a6), (a5, a0), (a6, a0), (a6, a6)
+- S: (a0, a4), (a1, a1), (a1, a6), (a2, a1), (a3, a4), (a4, a5), (a4, a6), (a5, a1), (a5, a4), (a6, a4), (a6, a5), (a6, a6)
+
+**Target T(x):**
+- T is TRUE for: {a1, a2, a4, a5, a6}
+- T is FALSE for: {a0, a3}
+
+### World: no_1
+Domain: {a0, a1, a2, a3, a4, a5, a6}
+
+**Predicates:**
+- P: a4, a5
+- Q: a1, a3, a4, a5
+- R: (a0, a2), (a0, a6), (a1, a1), (a1, a3), (a1, a6), (a2, a0), (a2, a5), (a3, a2), (a3, a4), (a4, a0), (a4, a2), (a4, a3), (a4, a4), (a4, a5), (a5, a2), (a5, a3), (a5, a6), (a6, a3)
+- S: (a0, a0), (a0, a4), (a1, a0), (a1, a3), (a1, a6), (a3, a1), (a5, a0), (a5, a3), (a6, a4), (a6, a5), (a6, a6)
+
+**Target T(x):**
+- T is TRUE for: {a0, a1, a3, a5, a6}
+- T is FALSE for: {a2, a4}

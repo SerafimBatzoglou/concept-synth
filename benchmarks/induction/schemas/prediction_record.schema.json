@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SerafimBatzoglou/concept-synth/benchmarks/induction/schemas/prediction_record.schema.json",
+  "title": "INDUCTION Prediction Record",
+  "type": "object",
+  "required": ["schemaVersion", "instanceId", "task", "scenario", "model"],
+  "properties": {
+    "schemaVersion": {
+      "const": "induction_prediction_record_v1"
+    },
+    "instanceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task": {
+      "enum": ["FullObs", "CI", "EC"]
+    },
+    "scenario": {
+      "enum": ["AD", "C", "E"]
+    },
+    "model": {
+      "type": "string",
+      "minLength": 1
+    },
+    "success": {
+      "type": ["boolean", "null"]
+    },
+    "timestamp": {
+      "type": ["string", "null"]
+    },
+    "sentTimestamp": {
+      "type": ["string", "null"]
+    },
+    "rawResponse": {
+      "type": ["string", "null"]
+    },
+    "response": {
+      "type": ["string", "null"]
+    },
+    "thinking": {
+      "type": ["string", "null"]
+    },
+    "extractedFormula": {
+      "type": ["string", "null"]
+    },
+    "extractedDescription": {
+      "type": ["string", "null"]
+    },
+    "parseError": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}
