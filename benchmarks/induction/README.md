@@ -125,6 +125,22 @@ Local output directories created during reproduction:
 - `generated_tables/`
   LaTeX and CSV tables generated locally; not committed.
 
+<!-- BEGIN CHALLENGE64 ROUND1 -->
+## Challenge64 Round-1 Results
+
+The additive Challenge64 release contains normalized **pre-symbolic Round-1** formulas for configurations with more than 40 evaluable responses. It preserves the public prediction and eval-cache schemas while redacting raw model responses and reasoning traces.
+
+- `data/induction_fullobs_challenge64_v1.yaml.gz`
+- `predictions/induction_challenge64_round1_predictions_v1.jsonl.gz`
+- `eval/induction_challenge64_round1_eval_cache_v1.jsonl`
+- `eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl`
+- `docs/challenge64_round1_results.md`
+- `docs/challenge64_round1_provenance.md`
+- `analysis/make_challenge64_round1_table.py`
+
+The fixed generated-holdout diagnostic is post-selection only and is not part of the benchmark task or solver input.
+<!-- END CHALLENGE64 ROUND1 -->
+
 ## Reproducing the Release
 
 All released benchmark data, predictions, prompts, cached outputs, scripts, and

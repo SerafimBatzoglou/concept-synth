@@ -1,0 +1,45 @@
+# Challenge64 Round-1 Release Provenance
+
+This release is an additive Challenge64 artifact. It does not alter the immutable INDUCTION v1.0 benchmark data, predictions, or frozen evaluation cache.
+
+## Selection Policy
+
+For each model configuration and task, the source registry fixes a component order. The release selects the earliest parser-evaluable direct Round-1 response from that order. A later component is considered only when earlier components have no evaluable direct response. The selector never examines train validity, mismatch count, AST size, symbolic candidates, or holdout outcomes.
+
+## Privacy and Scope
+
+Released prediction records contain normalized formulas and exact verifier outputs only. Raw responses, reasoning traces, API job identifiers, credentials, timestamps, internal candidate identifiers, and local filesystem paths are excluded. Every retained result is pre-symbolic Round 1.
+
+## Included Configurations
+
+| Model | Source class | Round-1 protocol |
+|---|---|---|
+| Claude Opus 4.5 | Released v1.0 ledger | released v1.0 Round-1 result |
+| Claude Opus 4.6 | Released v1.0 ledger | released v1.0 Round-1 result |
+| DeepSeek Reasoner | Released v1.0 ledger | released v1.0 Round-1 result |
+| Gemini 3 Pro Preview | Released v1.0 ledger | released v1.0 Round-1 result |
+| Gemini 3.1 Pro | Released v1.0 ledger | released v1.0 Round-1 result |
+| GPT-4o | Released v1.0 ledger | released v1.0 Round-1 result |
+| GPT-5.2 | Released v1.0 ledger | released v1.0 Round-1 result |
+| GPT-5.4 | Released v1.0 ledger | released v1.0 Round-1 result |
+| Grok 4 | Released v1.0 ledger | released v1.0 Round-1 result |
+| Grok 4.1 Fast | Released v1.0 ledger | released v1.0 Round-1 result |
+| Hermes 4 | Released v1.0 ledger | released v1.0 Round-1 result |
+| Qwen 3.5 | Released v1.0 ledger | released v1.0 Round-1 result |
+| DeepSeek V4 Pro | Current pipeline Round-1 ledger | single-formula pipeline Round 1, maximum thinking |
+| Gemini 3.5 Flash | Current pipeline Round-1 ledger | 3-formula pipeline Round 1, high thinking |
+| Grok 4.3 | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
+| Kimi K2.6 | Current pipeline Round-1 ledger | 3-formula pipeline Round 1, thinking enabled |
+| Kimi K2.7 Code | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
+| Kimi K3 | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
+| Claude Opus 4.8 | Current pipeline Round-1 ledger | Round 1, xhigh thinking |
+| Claude Sonnet 5 | Current pipeline Round-1 ledger | Round 1, high thinking |
+| Qwen 3.7 Max | Current pipeline Round-1 ledger | Round 1, serial provider calls |
+| GPT-5.6 Sol | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |
+| GPT-5.6 Terra | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |
+| GPT-5.6 Luna | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |
+| Grok 4.5 | Current pipeline Round-1 ledger | single-formula Round 1, high thinking |
+| Fable 5 | Current pipeline Round-1 ledger | Round 1, medium thinking with low-effort empty-response retry |
+| Muse Spark 1.1 | Current pipeline Round-1 ledger | Round 1, xhigh primary with low/high non-evaluable recovery |
+
+The generated-holdout sidecar is documented in the companion holdout eval cache. It contains no gold formula and was generated from the task generator after the Challenge64 set was fixed.

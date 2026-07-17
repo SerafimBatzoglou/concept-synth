@@ -1,0 +1,146 @@
+schema_version: induction_challenge64_round1_public_registry_v1
+selection_policy:
+  direct_source: direct Round-1 LLM output only
+  component_order: earlier registry component has precedence
+  within_component_order: chronological response order
+  retry_policy: later components are used only when earlier components lack an evaluable
+    direct response
+  forbidden_sources:
+  - symbolic repair
+  - symbolic simplification
+models:
+- id: claude-opus-4.5
+  display_name: Claude Opus 4.5
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: claude-opus-4.6
+  display_name: Claude Opus 4.6
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: deepseek-reasoner
+  display_name: DeepSeek Reasoner
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: gemini-3-pro-preview
+  display_name: Gemini 3 Pro Preview
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: gemini-3.1-pro-preview
+  display_name: Gemini 3.1 Pro
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: gpt-4o
+  display_name: GPT-4o
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: gpt-5.2
+  display_name: GPT-5.2
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: gpt-5.4
+  display_name: GPT-5.4
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: grok-4
+  display_name: Grok 4
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: grok-4.1-fast
+  display_name: Grok 4.1 Fast
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: hermes-4
+  display_name: Hermes 4
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: qwen-3.5
+  display_name: Qwen 3.5
+  source_type: public_release
+  protocol: released v1.0 Round-1 result
+  source_release: induction-v1.0
+- id: deepseek-v4-pro
+  display_name: DeepSeek V4 Pro
+  source_type: pipeline_store
+  protocol: single-formula pipeline Round 1, maximum thinking
+  source_release: current pipeline Round-1 ledger
+- id: gemini-3.5-flash
+  display_name: Gemini 3.5 Flash
+  source_type: pipeline_store
+  protocol: 3-formula pipeline Round 1, high thinking
+  source_release: current pipeline Round-1 ledger
+- id: grok-4.3
+  display_name: Grok 4.3
+  source_type: pipeline_store
+  protocol: single-formula pipeline Round 1, high thinking
+  source_release: current pipeline Round-1 ledger
+- id: kimi-k2.6
+  display_name: Kimi K2.6
+  source_type: pipeline_store
+  protocol: 3-formula pipeline Round 1, thinking enabled
+  source_release: current pipeline Round-1 ledger
+- id: kimi-k2.7-code
+  display_name: Kimi K2.7 Code
+  source_type: pipeline_store
+  protocol: single-formula pipeline Round 1, high thinking
+  source_release: current pipeline Round-1 ledger
+- id: kimi-k3
+  display_name: Kimi K3
+  source_type: pipeline_store
+  protocol: single-formula pipeline Round 1, high thinking
+  source_release: current pipeline Round-1 ledger
+- id: claude-opus-4.8
+  display_name: Claude Opus 4.8
+  source_type: pipeline_store
+  protocol: Round 1, xhigh thinking
+  source_release: current pipeline Round-1 ledger
+- id: claude-sonnet-5
+  display_name: Claude Sonnet 5
+  source_type: pipeline_store
+  protocol: Round 1, high thinking
+  source_release: current pipeline Round-1 ledger
+- id: qwen-3.7-max
+  display_name: Qwen 3.7 Max
+  source_type: pipeline_store
+  protocol: Round 1, serial provider calls
+  source_release: current pipeline Round-1 ledger
+- id: gpt-5.6-sol-xhigh
+  display_name: GPT-5.6 Sol
+  source_type: pipeline_store
+  protocol: single-formula Round 1, xhigh thinking
+  source_release: current pipeline Round-1 ledger
+- id: gpt-5.6-terra-xhigh
+  display_name: GPT-5.6 Terra
+  source_type: pipeline_store
+  protocol: single-formula Round 1, xhigh thinking
+  source_release: current pipeline Round-1 ledger
+- id: gpt-5.6-luna-xhigh
+  display_name: GPT-5.6 Luna
+  source_type: pipeline_store
+  protocol: single-formula Round 1, xhigh thinking
+  source_release: current pipeline Round-1 ledger
+- id: grok-4.5-high
+  display_name: Grok 4.5
+  source_type: pipeline_store
+  protocol: single-formula Round 1, high thinking
+  source_release: current pipeline Round-1 ledger
+- id: claude-fable-5-medium-low
+  display_name: Fable 5
+  source_type: pipeline_store
+  protocol: Round 1, medium thinking with low-effort empty-response retry
+  source_release: current pipeline Round-1 ledger
+- id: muse-spark-1.1
+  display_name: Muse Spark 1.1
+  source_type: pipeline_store
+  protocol: Round 1, xhigh primary with low/high non-evaluable recovery
+  source_release: current pipeline Round-1 ledger

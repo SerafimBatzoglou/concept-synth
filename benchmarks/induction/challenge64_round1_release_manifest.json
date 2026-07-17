@@ -1,0 +1,94 @@
+{
+  "artifacts": [
+    {
+      "path": "benchmarks/induction/data/induction_fullobs_challenge64_v1.yaml.gz",
+      "sha256": "989dd42298203c934f355fe7e850dcab74d1febd89743b869c5b3cc5a948dc8b",
+      "sizeBytes": 70845
+    },
+    {
+      "path": "benchmarks/induction/predictions/induction_challenge64_round1_predictions_v1.jsonl.gz",
+      "sha256": "616ec53a3b9cfcae81ea2c13fb21312804948feb00d6119aa9a95a5273ea4e5d",
+      "sizeBytes": 50520
+    },
+    {
+      "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v1.jsonl",
+      "sha256": "310cfcca632de2b4d4d8cb1e8c3ad15ce935fe83c05718e09d480c4178866954",
+      "sizeBytes": 2143693
+    },
+    {
+      "path": "benchmarks/induction/eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl",
+      "sha256": "8b898e275b758323294f25dacd90409570cb9841c57e71dbc45e0dc0d4d64463",
+      "sizeBytes": 1784466
+    },
+    {
+      "path": "benchmarks/induction/docs/challenge64_round1_model_registry.yaml",
+      "sha256": "45efb7409d0d2f2feb9f31c94f39dff4169f9d4c12702fbb4542d6beb2893c80",
+      "sizeBytes": 5014
+    },
+    {
+      "path": "benchmarks/induction/docs/challenge64_round1_results.md",
+      "sha256": "9f1b5919b21f6871c9e3e3f4b443de23a1b6a012a0235dad1d16bec0abf4156c",
+      "sizeBytes": 2638
+    },
+    {
+      "path": "benchmarks/induction/docs/challenge64_round1_provenance.md",
+      "sha256": "89a8982391672887e65e2448010c9904e098d5a8a2ce083c0130df234ab7464e",
+      "sizeBytes": 3456
+    },
+    {
+      "path": "benchmarks/induction/analysis/make_challenge64_round1_table.py",
+      "sha256": "edf0f88bb6e3250cb7bb652d9f940a0c21b073e5d1a940a952846609d6572619",
+      "sizeBytes": 5546
+    }
+  ],
+  "counts": {
+    "holdoutEvalRows": 1728,
+    "predictionRows": 1728,
+    "trainEvalRows": 1728
+  },
+  "denominator": 64,
+  "excludedModels": [],
+  "holdout": {
+    "sidecarSchema": "silc_fol_generated_iid_holdout_sidecar_v1",
+    "sidecarTasksWithWorlds": 63,
+    "usage": "post-selection reporting only",
+    "worldsPerTaskRequested": 5
+  },
+  "includedModels": [
+    "claude-opus-4.5",
+    "claude-opus-4.6",
+    "deepseek-reasoner",
+    "gemini-3-pro-preview",
+    "gemini-3.1-pro-preview",
+    "gpt-4o",
+    "gpt-5.2",
+    "gpt-5.4",
+    "grok-4",
+    "grok-4.1-fast",
+    "hermes-4",
+    "qwen-3.5",
+    "deepseek-v4-pro",
+    "gemini-3.5-flash",
+    "grok-4.3",
+    "kimi-k2.6",
+    "kimi-k2.7-code",
+    "kimi-k3",
+    "claude-opus-4.8",
+    "claude-sonnet-5",
+    "qwen-3.7-max",
+    "gpt-5.6-sol-xhigh",
+    "gpt-5.6-terra-xhigh",
+    "gpt-5.6-luna-xhigh",
+    "grok-4.5-high",
+    "claude-fable-5-medium-low",
+    "muse-spark-1.1"
+  ],
+  "minimumEvaluableResponsesExclusive": 40,
+  "releaseDate": "2026-07-16",
+  "releaseTag": "induction-challenge64-round1-v1",
+  "scenario": "AD",
+  "schemaVersion": "induction_challenge64_round1_release_manifest_v1",
+  "sourceBenchmark": "ad_benchmark_v1_challenge64",
+  "stage": "direct Round-1 LLM output before symbolic processing",
+  "task": "FullObs"
+}
