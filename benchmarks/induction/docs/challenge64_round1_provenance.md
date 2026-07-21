@@ -28,6 +28,7 @@ Released prediction records contain normalized formulas and exact verifier outpu
 | Qwen 3.5 | Released v1.0 ledger | released v1.0 Round-1 result |
 | DeepSeek V4 Pro | Current pipeline Round-1 ledger | single-formula pipeline Round 1, maximum thinking |
 | Gemini 3.5 Flash | Current pipeline Round-1 ledger | 3-formula pipeline Round 1, high thinking |
+| Gemini 3.6 Flash | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
 | Grok 4.3 | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
 | Kimi K2.6 | Current pipeline Round-1 ledger | 3-formula pipeline Round 1, thinking enabled |
 | Kimi K2.7 Code | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |

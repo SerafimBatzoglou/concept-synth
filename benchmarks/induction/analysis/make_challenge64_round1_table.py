@@ -56,8 +56,8 @@ def render(
     for row in iter_jsonl(holdout_path):
         holdout_by_model.setdefault(str(row["model_id"]), []).append(row)
 
-    rendered: list[tuple[int, str]] = []
-    for order, model in enumerate(models):
+    rendered: list[tuple[int, int, str, str]] = []
+    for model in models:
         model_id = str(model["id"])
         rows = by_model.get(model_id, [])
         if len(rows) != denominator:
@@ -88,7 +88,9 @@ def render(
         )
         rendered.append(
             (
-                order,
+                -valid,
+                -evaluable,
+                str(model["display_name"]),
                 "| {name} | {evaluable}/{n} | {valid}/{n} ({correct}) | {holdout} | {complexity} |".format(
                     name=model["display_name"],
                     evaluable=evaluable,
@@ -101,16 +103,17 @@ def render(
             )
         )
 
-    rendered.sort(key=lambda item: item[0])
+    rendered.sort()
     lines = [
-        "# INDUCTION Challenge64: Round-1 Pre-Symbolic Results",
+        "# INDUCTION Challenge64 Leaderboard: Round 1 (Pre-Symbolic)",
         "",
         "Each configuration contributes one direct Round-1 formula per task. The release contains no "
-        "symbolic repair or simplification outputs.",
+        "symbolic repair or simplification outputs. Rows are ranked by train-set Correct, then Evaluable "
+        "coverage, then model name.",
         "",
         "| Model | Evaluable | Correct | Holdout Correct | Formula Complexity (AST mean/median) |",
         "|---|---:|---:|---:|---:|",
-        *(line for _, line in rendered),
+        *(line for _, _, _, line in rendered),
         "",
         "Evaluable: parser-valid formula under the exact FullObs evaluator. Correct: train-world exact-match "
         "validity, with the fixed 64-task denominator. Holdout Correct: conditional exact-match validity among "

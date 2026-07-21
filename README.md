@@ -37,9 +37,14 @@ benchmark instances. It intentionally does not include model-running clients;
 users should call models through their own infrastructure and evaluate the
 resulting prediction JSONL files with the public CLI.
 
-Current INDUCTION artifacts contain 775 benchmark instances and 11,413
+The core INDUCTION v1.0 artifacts contain 775 benchmark instances and 11,413
 released prediction/eval rows across 15 model identifiers, including Gemini
 3.5 Flash.
+
+**Challenge64 leaderboard:** the additive, pre-symbolic Round-1 comparison is
+available at [INDUCTION Challenge64 Leaderboard](benchmarks/induction/docs/challenge64_round1_results.md).
+It includes normalized prediction records and frozen train and generated-holdout
+evaluation caches for each released configuration.
 
 Task-family-specific code lives in subpackages such as
 `concept_synth.abduction` and `concept_synth.induction`.

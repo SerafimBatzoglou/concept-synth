@@ -36,6 +36,14 @@ It also contains 11,413 released model prediction rows and 11,413 matching
 eval-cache rows across 15 model identifiers, including full 775-instance
 coverage for Gemini 3.5 Flash.
 
+## Challenge64 Leaderboard
+
+[**View the Challenge64 Round-1 pre-symbolic leaderboard**](docs/challenge64_round1_results.md).
+It compares one direct Round-1 formula per task across the released
+configurations, with links to the normalized predictions and frozen train and
+generated-holdout evaluation caches. Symbolic repair and simplification are
+excluded from this leaderboard.
+
 ## Tasks
 
 ### FullObs
@@ -139,6 +147,7 @@ The additive Challenge64 release contains normalized **pre-symbolic Round-1** fo
 - `analysis/make_challenge64_round1_table.py`
 
 The fixed generated-holdout diagnostic is post-selection only and is not part of the benchmark task or solver input.
+The canonical rendered table is [the Challenge64 leaderboard](docs/challenge64_round1_results.md).
 <!-- END CHALLENGE64 ROUND1 -->
 
 ## Reproducing the Release

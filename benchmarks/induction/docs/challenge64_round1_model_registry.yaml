@@ -79,6 +79,11 @@ models:
   source_type: pipeline_store
   protocol: 3-formula pipeline Round 1, high thinking
   source_release: current pipeline Round-1 ledger
+- id: gemini-3.6-flash
+  display_name: Gemini 3.6 Flash
+  source_type: pipeline_store
+  protocol: single-formula pipeline Round 1, high thinking
+  source_release: current pipeline Round-1 ledger
 - id: grok-4.3
   display_name: Grok 4.3
   source_type: pipeline_store
