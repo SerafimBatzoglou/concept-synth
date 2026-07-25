@@ -34,6 +34,7 @@ Released prediction records contain normalized formulas and exact verifier outpu
 | Kimi K2.7 Code | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
 | Kimi K3 | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
 | Claude Opus 4.8 | Current pipeline Round-1 ledger | Round 1, xhigh thinking |
+| Claude Opus 5 | Current pipeline Round-1 ledger | Round 1 direct effort cascade, xhigh with high/medium/low fallback, 128K maximum output tokens |
 | Claude Sonnet 5 | Current pipeline Round-1 ledger | Round 1, high thinking |
 | Qwen 3.7 Max | Current pipeline Round-1 ledger | Round 1, serial provider calls |
 | GPT-5.6 Sol | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |

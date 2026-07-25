@@ -69,7 +69,8 @@ def render(
         asts = [
             row.get("prediction", {}).get("ast_size")
             for row in rows
-            if row.get("parse_ok") and isinstance(row.get("prediction", {}).get("ast_size"), int)
+            if row.get("valid")
+            and isinstance(row.get("prediction", {}).get("ast_size"), int)
         ]
         holdout_rows = [
             row
@@ -108,17 +109,17 @@ def render(
         "# INDUCTION Challenge64 Leaderboard: Round 1 (Pre-Symbolic)",
         "",
         "Each configuration contributes one direct Round-1 formula per task. The release contains no "
-        "symbolic repair or simplification outputs. Rows are ranked by train-set Correct, then Evaluable "
-        "coverage, then model name.",
+        "symbolic repair or simplification outputs. Rows are ranked by train-set Correct, then "
+        "Evaluable coverage, then model name.",
         "",
-        "| Model | Evaluable | Correct | Holdout Correct | Formula Complexity (AST mean/median) |",
+        "| Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |",
         "|---|---:|---:|---:|---:|",
         *(line for _, _, _, line in rendered),
         "",
         "Evaluable: parser-valid formula under the exact FullObs evaluator. Correct: train-world exact-match "
         "validity, with the fixed 64-task denominator. Holdout Correct: conditional exact-match validity among "
-        "train-correct formulas with generated holdout worlds available. Formula complexity summarizes all "
-        "evaluable direct formulas.",
+        "train-correct formulas with generated holdout worlds available. Formula complexity summarizes "
+        "train-correct direct formulas.",
         "",
         "The fixed holdout sidecar contains five generated worlds where generation succeeded (63/64 tasks); "
         "it is only a post-selection reporting diagnostic. It was not used for model prompting, candidate "

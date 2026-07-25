@@ -146,8 +146,9 @@ The additive Challenge64 release contains normalized **pre-symbolic Round-1** fo
 - `docs/challenge64_round1_provenance.md`
 - `analysis/make_challenge64_round1_table.py`
 
-The fixed generated-holdout diagnostic is post-selection only and is not part of the benchmark task or solver input.
 The canonical rendered table is [the Challenge64 leaderboard](docs/challenge64_round1_results.md).
+
+The fixed generated-holdout diagnostic is post-selection only and is not part of the benchmark task or solver input.
 <!-- END CHALLENGE64 ROUND1 -->
 
 ## Reproducing the Release

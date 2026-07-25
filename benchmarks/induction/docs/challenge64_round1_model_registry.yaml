@@ -109,6 +109,12 @@ models:
   source_type: pipeline_store
   protocol: Round 1, xhigh thinking
   source_release: current pipeline Round-1 ledger
+- id: claude-opus-5
+  display_name: Claude Opus 5
+  source_type: pipeline_store
+  protocol: Round 1 direct effort cascade, xhigh with high/medium/low fallback, 128K
+    maximum output tokens
+  source_release: current pipeline Round-1 ledger
 - id: claude-sonnet-5
   display_name: Claude Sonnet 5
   source_type: pipeline_store
