@@ -22,6 +22,7 @@ Each configuration contributes one direct Round-1 formula per task. The release 
 | Gemini 3.6 Flash | 64/64 | 5/64 (7.8%) | 75.0% (3/4) | 16.6 / 16.0 |
 | Kimi K2.7 Code | 64/64 | 5/64 (7.8%) | 75.0% (3/4) | 36.0 / 15.0 |
 | Claude Opus 4.8 | 64/64 | 4/64 (6.2%) | 100.0% (3/3) | 15.2 / 15.5 |
+| DeepSeek V4 Flash | 64/64 | 3/64 (4.7%) | 50.0% (1/2) | 22.3 / 18.0 |
 | Gemini 3 Pro Preview | 64/64 | 3/64 (4.7%) | 33.3% (1/3) | 31.0 / 23.0 |
 | Kimi K2.6 | 62/64 | 3/64 (4.7%) | 100.0% (3/3) | 15.3 / 15.0 |
 | Claude Sonnet 5 | 47/64 | 3/64 (4.7%) | 100.0% (2/2) | 14.3 / 14.0 |

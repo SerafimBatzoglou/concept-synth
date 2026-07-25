@@ -74,6 +74,11 @@ models:
   source_type: pipeline_store
   protocol: single-formula pipeline Round 1, maximum thinking
   source_release: current pipeline Round-1 ledger
+- id: deepseek-v4-flash
+  display_name: DeepSeek V4 Flash
+  source_type: pipeline_store
+  protocol: single-formula pipeline Round 1, maximum thinking, max output 384K, 16-worker serial dispatch
+  source_release: current pipeline Round-1 ledger
 - id: gemini-3.5-flash
   display_name: Gemini 3.5 Flash
   source_type: pipeline_store

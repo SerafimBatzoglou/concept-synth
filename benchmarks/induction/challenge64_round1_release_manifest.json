@@ -7,33 +7,33 @@
     },
     {
       "path": "benchmarks/induction/predictions/induction_challenge64_round1_predictions_v1.jsonl.gz",
-      "sha256": "f396be7f8d16d9f08ac9e33ec149823612e5fa52fc7ad65915cbc9c61a1307a6",
-      "sizeBytes": 52510
+      "sha256": "9fbd450defd76a07fc64de9ff5ad4fd8c8c724b8dacc992345fe7da3c5a0d4d9",
+      "sizeBytes": 53889
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v1.jsonl",
-      "sha256": "03f027a5284e466ac4a467f0c7eea4aca09ce69dc944ec0c0c3d463f1e1cee2a",
-      "sizeBytes": 2306469
+      "sha256": "1cf4af2851c5e0a950e6488305703f1554245e11fa0a9916da3ae6be90c41422",
+      "sizeBytes": 2390524
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl",
-      "sha256": "cde1572291010e1c1367a0e3c8807dda747ebda97fffd9dba738743652d2a2ad",
-      "sizeBytes": 1906904
+      "sha256": "752951be4ec9ea1eb60896fb29067a865be102e3fd717e18b759533767da085c",
+      "sizeBytes": 1970209
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry.yaml",
-      "sha256": "8dad8cd45bc2ed4fd69643ee7a3fe249b012ae4169eee3270c32f3489e6536d4",
-      "sizeBytes": 5450
+      "sha256": "4859af8355d9d5b9362c9bf1ddff636d69585edc7c2667464705494e0ecc668c",
+      "sizeBytes": 5694
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_results.md",
-      "sha256": "f75f3d76c0ad952fcf7587ec055e25a325e8ca168d3ebd0360d853ec77e29d09",
-      "sizeBytes": 2869
+      "sha256": "8ac3a66298e67df5657a7a1bb5ca8e2a2d0e7daa31544fd0b438c39c7f6daa33",
+      "sizeBytes": 2941
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_provenance.md",
-      "sha256": "0cb50f4cf1aad4c9772d5f4aa511f9cea365e6b33745128a038c95925c20b65b",
-      "sizeBytes": 3709
+      "sha256": "e023b8c2e7442aa132495af75600846378ab5ec87483fc224e42dce625d41da0",
+      "sizeBytes": 3861
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge64_round1_table.py",
@@ -42,9 +42,9 @@
     }
   ],
   "counts": {
-    "holdoutEvalRows": 1856,
-    "predictionRows": 1856,
-    "trainEvalRows": 1856
+    "holdoutEvalRows": 1920,
+    "predictionRows": 1920,
+    "trainEvalRows": 1920
   },
   "denominator": 64,
   "excludedModels": [],
@@ -68,6 +68,7 @@
     "hermes-4",
     "qwen-3.5",
     "deepseek-v4-pro",
+    "deepseek-v4-flash",
     "gemini-3.5-flash",
     "gemini-3.6-flash",
     "grok-4.3",
