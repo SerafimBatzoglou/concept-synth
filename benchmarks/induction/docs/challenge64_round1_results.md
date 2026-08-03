@@ -5,6 +5,7 @@ Each configuration contributes one direct Round-1 formula per task. The release 
 | Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |
 |---|---:|---:|---:|---:|
 | GPT-5.6 Sol | 63/64 | 37/64 (57.8%) | 52.8% (19/36) | 143.0 / 18.0 |
+| Qwen 3.8 Max | 63/64 | 27/64 (42.2%) | 53.8% (14/26) | 82.5 / 18.0 |
 | Fable 5 | 59/64 | 26/64 (40.6%) | 60.0% (15/25) | 49.7 / 18.0 |
 | GPT-5.6 Terra | 62/64 | 24/64 (37.5%) | 69.6% (16/23) | 68.8 / 18.0 |
 | Claude Opus 5 | 62/64 | 21/64 (32.8%) | 85.0% (17/20) | 19.2 / 16.0 |

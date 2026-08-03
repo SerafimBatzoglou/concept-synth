@@ -38,6 +38,7 @@ Released prediction records contain normalized formulas and exact verifier outpu
 | Claude Opus 5 | Current pipeline Round-1 ledger | Round 1 direct effort cascade, xhigh with high/medium/low fallback, 128K maximum output tokens |
 | Claude Sonnet 5 | Current pipeline Round-1 ledger | Round 1, high thinking |
 | Qwen 3.7 Max | Current pipeline Round-1 ledger | Round 1, serial provider calls |
+| Qwen 3.8 Max | Current pipeline Round-1 ledger | single-formula Round 1, maximum thinking, 64K maximum output tokens |
 | GPT-5.6 Sol | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |
 | GPT-5.6 Terra | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |
 | GPT-5.6 Luna | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |
