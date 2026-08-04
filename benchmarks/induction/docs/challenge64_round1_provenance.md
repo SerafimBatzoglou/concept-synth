@@ -27,7 +27,7 @@ Released prediction records contain normalized formulas and exact verifier outpu
 | Hermes 4 | Released v1.0 ledger | released v1.0 Round-1 result |
 | Qwen 3.5 | Released v1.0 ledger | released v1.0 Round-1 result |
 | DeepSeek V4 Pro | Current pipeline Round-1 ledger | single-formula pipeline Round 1, maximum thinking |
-| DeepSeek V4 Flash | Current pipeline Round-1 ledger | single-formula pipeline Round 1, maximum thinking, max output 384K, 16-worker serial dispatch |
+| DeepSeek v4 Flash | Current pipeline Round-1 ledger | single-formula pipeline Round 1, maximum thinking, max output 384K, 32-worker serial dispatch |
 | Gemini 3.5 Flash | Current pipeline Round-1 ledger | 3-formula pipeline Round 1, high thinking |
 | Gemini 3.6 Flash | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
 | Grok 4.3 | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
