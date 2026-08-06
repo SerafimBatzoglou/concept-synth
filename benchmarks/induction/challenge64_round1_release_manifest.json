@@ -22,12 +22,12 @@
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry.yaml",
-      "sha256": "652d71fff1fadda9046f948843e7ee5f305493db41f9e2f8a26a771560e68b45",
+      "sha256": "9bbd22fceddc346399af8c137de9a96bd115a94f2e8b5f2eabc08c2e78d14c63",
       "sizeBytes": 6150
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_results.md",
-      "sha256": "dbcad6c98fddd1abc53122f40b35475bf1958d23554ca4c35df99dbc9fcb7c22",
+      "sha256": "99235228315e10e7274cba817245ee63d4f3c0a1450c4e6baeb5ced315de9d5b",
       "sizeBytes": 3104
     },
     {
@@ -90,7 +90,7 @@
   ],
   "minimumEvaluableResponsesExclusive": 40,
   "releaseDate": "2026-08-06",
-  "releaseTag": "induction-challenge64-round1-v1.5",
+  "releaseTag": "induction-challenge64-round1-v1.6",
   "scenario": "AD",
   "schemaVersion": "induction_challenge64_round1_release_manifest_v1",
   "sourceBenchmark": "ad_benchmark_v1_challenge64",
