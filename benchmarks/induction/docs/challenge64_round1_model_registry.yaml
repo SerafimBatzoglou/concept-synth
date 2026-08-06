@@ -77,7 +77,8 @@ models:
 - id: deepseek-v4-flash
   display_name: DeepSeek v4 Flash
   source_type: pipeline_store
-  protocol: single-formula pipeline Round 1, maximum thinking, max output 384K, 32-worker serial dispatch
+  protocol: single-formula pipeline Round 1, maximum thinking, max output 384K, 32-worker
+    serial dispatch
   highlight: true
   source_release: current pipeline Round-1 ledger
 - id: gemini-3.5-flash
@@ -165,4 +166,10 @@ models:
   display_name: Muse Spark 1.1
   source_type: pipeline_store
   protocol: Round 1, xhigh primary with low/high non-evaluable recovery
+  source_release: current pipeline Round-1 ledger
+- id: muse-spark-1.2
+  display_name: Muse Spark 1.2
+  source_type: pipeline_store
+  protocol: Round 1, xhigh thinking, 131K maximum output tokens, with non-evaluable
+    retry
   source_release: current pipeline Round-1 ledger

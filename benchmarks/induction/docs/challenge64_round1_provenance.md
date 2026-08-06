@@ -45,5 +45,6 @@ Released prediction records contain normalized formulas and exact verifier outpu
 | Grok 4.5 | Current pipeline Round-1 ledger | single-formula Round 1, high thinking |
 | Fable 5 | Current pipeline Round-1 ledger | Round 1, medium thinking with low-effort empty-response retry |
 | Muse Spark 1.1 | Current pipeline Round-1 ledger | Round 1, xhigh primary with low/high non-evaluable recovery |
+| Muse Spark 1.2 | Current pipeline Round-1 ledger | Round 1, xhigh thinking, 131K maximum output tokens, with non-evaluable retry |
 
 The generated-holdout sidecar is documented in the companion holdout eval cache. It contains no gold formula and was generated from the task generator after the Challenge64 set was fixed.
