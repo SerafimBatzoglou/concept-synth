@@ -27,9 +27,11 @@ Released prediction records contain normalized formulas and exact verifier outpu
 | Hermes 4 | Released v1.0 ledger | released v1.0 Round-1 result |
 | Qwen 3.5 | Released v1.0 ledger | released v1.0 Round-1 result |
 | DeepSeek V4 Pro | Current pipeline Round-1 ledger | single-formula pipeline Round 1, maximum thinking |
+| DeepSeek V4 Pro 0813 | Current pipeline Round-1 ledger | single-formula Round 1, maximum thinking, 384K maximum output tokens, strict initial-to-residual cascade |
 | DeepSeek v4 Flash | Current pipeline Round-1 ledger | single-formula pipeline Round 1, maximum thinking, max output 384K, 32-worker serial dispatch |
 | Gemini 3.5 Flash | Current pipeline Round-1 ledger | 3-formula pipeline Round 1, high thinking |
 | Gemini 3.6 Flash | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
+| Gemini 3.7 Flash | Current pipeline Round-1 ledger | multi-formula response-set Round 1, high thinking, 65K maximum output tokens; response evaluable if any formula parses and correct if any formula is train-valid |
 | Grok 4.3 | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
 | Kimi K2.6 | Current pipeline Round-1 ledger | 3-formula pipeline Round 1, thinking enabled |
 | Kimi K2.7 Code | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
@@ -43,7 +45,8 @@ Released prediction records contain normalized formulas and exact verifier outpu
 | GPT-5.6 Terra | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |
 | GPT-5.6 Luna | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |
 | Grok 4.5 | Current pipeline Round-1 ledger | single-formula Round 1, high thinking |
-| Fable 5 | Current pipeline Round-1 ledger | Round 1, medium thinking with low-effort empty-response retry |
+| Grok 4.6 | Current pipeline Round-1 ledger | single-formula Round 1, maximum requested thinking mapped to provider high, 64K maximum output tokens, 32-worker serial dispatch |
+| Fable 5 | Current pipeline Round-1 ledger | Round 1, medium thinking with low-effort non-evaluable recovery, including the Challenge100 residual2 pass |
 | Muse Spark 1.1 | Current pipeline Round-1 ledger | Round 1, xhigh primary with low/high non-evaluable recovery |
 | Muse Spark 1.2 | Current pipeline Round-1 ledger | Round 1, xhigh thinking, 131K maximum output tokens, with non-evaluable retry |
 

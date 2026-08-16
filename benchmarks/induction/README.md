@@ -281,3 +281,18 @@ pytest -q
 - The public generator is intended for creating new schema-compatible
   instances; it does not reproduce the internal calibrated downselection that
   produced the released benchmark set.
+
+<!-- BEGIN CHALLENGE100 ROUND1 -->
+## Challenge100 Round-1 results
+
+[**View the combined Challenge100 and Challenge64 leaderboards**](docs/leaderboard.md). Challenge100 is the ordered union of the frozen 64-task Challenge64 benchmark and the disjoint 36-task challenging release. The Challenge64 projection remains additive and includes models without New36 coverage.
+
+Public artifacts:
+
+- `data/induction_fullobs_benchmarked36_v1.yaml.gz`
+- `data/induction_fullobs_challenge100_v1.yaml.gz`
+- `docs/challenge100_round1_model_registry.yaml`
+- `docs/leaderboard.md`
+- `analysis/make_challenge100_leaderboard.py`
+- `challenge100_round1_release_manifest.json`
+<!-- END CHALLENGE100 ROUND1 -->

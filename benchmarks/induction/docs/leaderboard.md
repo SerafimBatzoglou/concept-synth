@@ -1,6 +1,34 @@
-# INDUCTION Challenge64 Leaderboard: Round 1 (Pre-Symbolic)
+# INDUCTION Challenge Leaderboards
 
-Each configuration contributes one direct Round-1 formula per task. The release contains no symbolic repair or simplification outputs. Rows are ranked by train-set Correct, then Evaluable coverage, then model name.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. The Challenge100 table includes models with results on New36; the Challenge64 table remains additive and therefore includes additional models.
+
+Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
+
+## Challenge100
+
+Rows are ranked by Challenge100 Correct, then Evaluable coverage, then model name.
+
+| Model | Evaluable | Correct | Challenge64 Correct | New36 Correct |
+|---|---:|---:|---:|---:|
+| GPT-5.6 Sol | 99/100 | 43/100 (43.0%) | 37/64 (57.8%) | 6/36 (16.7%) |
+| Fable 5 | 96/100 | 31/100 (31.0%) | 27/64 (42.2%) | 4/36 (11.1%) |
+| GPT-5.6 Terra | 98/100 | 25/100 (25.0%) | 24/64 (37.5%) | 1/36 (2.8%) |
+| **Grok 4.6** | **98/100** | **25/100 (25.0%)** | **23/64 (35.9%)** | **2/36 (5.6%)** |
+| Claude Opus 5 | 97/100 | 24/100 (24.0%) | 21/64 (32.8%) | 3/36 (8.3%) |
+| Muse Spark 1.1 | 79/100 | 21/100 (21.0%) | 21/64 (32.8%) | 0/36 (0.0%) |
+| GPT-5.6 Luna | 97/100 | 16/100 (16.0%) | 15/64 (23.4%) | 1/36 (2.8%) |
+| **DeepSeek V4 Pro 0813** | **98/100** | **15/100 (15.0%)** | **15/64 (23.4%)** | **0/36 (0.0%)** |
+| **Gemini 3.7 Flash** | **100/100** | **11/100 (11.0%)** | **11/64 (17.2%)** | **0/36 (0.0%)** |
+| Grok 4.5 | 100/100 | 11/100 (11.0%) | 11/64 (17.2%) | 0/36 (0.0%) |
+| Muse Spark 1.2 | 92/100 | 11/100 (11.0%) | 11/64 (17.2%) | 0/36 (0.0%) |
+| Gemini 3.5 Flash | 98/100 | 7/100 (7.0%) | 7/64 (10.9%) | 0/36 (0.0%) |
+| DeepSeek V4 Flash | 97/100 | 6/100 (6.0%) | 6/64 (9.4%) | 0/36 (0.0%) |
+| DeepSeek V4 Pro | 94/100 | 6/100 (6.0%) | 6/64 (9.4%) | 0/36 (0.0%) |
+| Gemini 3.6 Flash | 93/100 | 5/100 (5.0%) | 5/64 (7.8%) | 0/36 (0.0%) |
+
+## Challenge64 projection
+
+Rows are ranked by Challenge64 train-set Correct, then Evaluable coverage, then model name. Holdout is a post-selection diagnostic and is never used for prompting or selection.
 
 | Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |
 |---|---:|---:|---:|---:|
@@ -40,6 +68,4 @@ Each configuration contributes one direct Round-1 formula per task. The release 
 | Qwen 3.7 Max | 59/64 | 0/64 (0.0%) | N/A | N/A |
 | Qwen 3.5 | 43/64 | 0/64 (0.0%) | N/A | N/A |
 
-Evaluable: parser-valid formula under the exact FullObs evaluator. Correct: train-world exact-match validity, with the fixed 64-task denominator. Holdout Correct: conditional exact-match validity among train-correct formulas with generated holdout worlds available. Formula complexity summarizes train-correct direct formulas.
-
-The fixed holdout sidecar contains five generated worlds where generation succeeded (63/64 tasks); it is only a post-selection reporting diagnostic. It was not used for model prompting, candidate selection, or symbolic search.
+Formula complexity reports AST mean/median over train-correct direct formulas.

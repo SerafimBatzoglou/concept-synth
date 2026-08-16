@@ -81,3 +81,9 @@ concept-synth-induction-generate \
 
 pytest -q
 ```
+
+<!-- BEGIN INDUCTION CHALLENGE LEADERBOARDS -->
+## INDUCTION challenge leaderboards
+
+[View the combined Challenge100 and Challenge64 leaderboards](benchmarks/induction/docs/leaderboard.md). Challenge100 is the maintained 100-task benchmark; Challenge64 remains an additive projection with extra model coverage.
+<!-- END INDUCTION CHALLENGE LEADERBOARDS -->

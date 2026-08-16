@@ -1,0 +1,64 @@
+{
+  "artifacts": [
+    {
+      "path": "benchmarks/induction/data/induction_fullobs_challenge64_v1.yaml.gz",
+      "sha256": "989dd42298203c934f355fe7e850dcab74d1febd89743b869c5b3cc5a948dc8b",
+      "sizeBytes": 70845
+    },
+    {
+      "path": "benchmarks/induction/data/induction_fullobs_benchmarked36_v1.yaml.gz",
+      "sha256": "18cb16400d20224be0f620aece28f83cae46ad0e0998cabeea21767fbf5716d4",
+      "sizeBytes": 49834
+    },
+    {
+      "path": "benchmarks/induction/data/induction_fullobs_challenge100_v1.yaml.gz",
+      "sha256": "b81d23a39ff0c57bffc2ba0343a699897a6c2d873e5138a8c7b14e36184078cd",
+      "sizeBytes": 119795
+    },
+    {
+      "path": "benchmarks/induction/docs/challenge100_round1_model_registry.yaml",
+      "sha256": "5c87957ab0069617bacb88a60afa5c5d79800d5324a2d0b2a32c29cef86dc4a8",
+      "sizeBytes": 4800
+    },
+    {
+      "path": "benchmarks/induction/docs/challenge64_round1_model_registry.yaml",
+      "sha256": "bd16291dbb10f7a7c65aac9aed45161659b49966d38968b7700f20586ac8c5ba",
+      "sizeBytes": 7087
+    },
+    {
+      "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v1.jsonl",
+      "sha256": "7de0c8966d398f74fae647aab7e3dfb3f3d842bf0bfbc8dc7f0b54e77517fe3f",
+      "sizeBytes": 2890167
+    },
+    {
+      "path": "benchmarks/induction/eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl",
+      "sha256": "f5b286d2c6f2e26eefbdaf8470e2564ad09312acc96ce8f2303b0ac85368ff28",
+      "sizeBytes": 2353916
+    },
+    {
+      "path": "benchmarks/induction/docs/leaderboard.md",
+      "sha256": "9731157d0020a63159cd9496305b2cab64be4bae05f7cfc3cd9b7ddc7ec5f072",
+      "sizeBytes": 4784
+    },
+    {
+      "path": "benchmarks/induction/docs/challenge100_round1_provenance.md",
+      "sha256": "3df4476de8049a0ca1e9cec0a7af5978d2805e6c7ca438eddd936fa4f046d2c3",
+      "sizeBytes": 689
+    },
+    {
+      "path": "benchmarks/induction/analysis/make_challenge100_leaderboard.py",
+      "sha256": "378bc18de20a444be3cbe054beb966cd194af3f0cb2529d6935172b2b31d3ebf",
+      "sizeBytes": 6987
+    }
+  ],
+  "counts": {
+    "benchmarked36Tasks": 36,
+    "challenge100Models": 15,
+    "challenge100Tasks": 100,
+    "challenge64Tasks": 64
+  },
+  "generatedOn": "2026-08-16",
+  "license": "MIT",
+  "releaseTag": "induction-challenge100-round1-v1.0",
+  "schemaVersion": "induction_challenge100_round1_release_manifest_v1"
+}
