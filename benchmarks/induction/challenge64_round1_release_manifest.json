@@ -7,33 +7,33 @@
     },
     {
       "path": "benchmarks/induction/predictions/induction_challenge64_round1_predictions_v1.jsonl.gz",
-      "sha256": "4fd39c827b12b992cc0d5d20eda8ca6ea0b00aed08f75692a5d64b6af030bbba",
-      "sizeBytes": 73402
+      "sha256": "2504ebbb0dd45c69b4b577df68efbad67bcb862d7057b4f96b2343f252a0fc90",
+      "sizeBytes": 73667
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v1.jsonl",
-      "sha256": "7de0c8966d398f74fae647aab7e3dfb3f3d842bf0bfbc8dc7f0b54e77517fe3f",
-      "sizeBytes": 2890167
+      "sha256": "67b2a4285e90aa52b47182cce52de1a8470f3d5da7e23101b0c0a9cb1ae5ef79",
+      "sizeBytes": 2893797
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl",
-      "sha256": "f5b286d2c6f2e26eefbdaf8470e2564ad09312acc96ce8f2303b0ac85368ff28",
-      "sizeBytes": 2353916
+      "sha256": "5f4b0ac89d7e77547b2ee3aca03100f5393cebb04f73cbec28f23546d67dace7",
+      "sizeBytes": 2354738
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry.yaml",
-      "sha256": "1ab4a51233d852be885ccc8a125a680893adffb447909f43c13c4b002c1dc455",
-      "sizeBytes": 7033
+      "sha256": "5e50b16f653a9bb7ad2434ce052ad3ddc50ad6781fca7155c75011df8eb9739e",
+      "sizeBytes": 7077
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_results.md",
-      "sha256": "75d2fb958e2f76edeb73b158a816ba7aee48305f07bb97ac7ce23bdc7055329b",
+      "sha256": "81d216920d86c74732f8348e3e0d7d65fb9baf0e36d9f31ccf688c4997076f3c",
       "sizeBytes": 3304
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_provenance.md",
-      "sha256": "1180d27289a60ca683cd50e723a02cf61ae30cb224271e874cb3b5aa5b7ab1ae",
-      "sizeBytes": 4722
+      "sha256": "957caa46759649f7031b592ee55a488ee3b7995472572e0412a3085bb4fc952d",
+      "sizeBytes": 4762
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge64_round1_table.py",

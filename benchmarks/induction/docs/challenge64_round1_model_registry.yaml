@@ -184,7 +184,8 @@ models:
 - id: muse-spark-1.1
   display_name: Muse Spark 1.1
   source_type: pipeline_store
-  protocol: Round 1, xhigh primary with low/high non-evaluable recovery
+  protocol: Round 1, xhigh primary with low/high recovery and a final minimal-effort
+    Challenge100 residual pass
   source_release: current pipeline Round-1 ledger
 - id: muse-spark-1.2
   display_name: Muse Spark 1.2

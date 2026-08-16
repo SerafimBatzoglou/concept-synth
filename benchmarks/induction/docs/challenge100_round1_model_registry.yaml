@@ -110,19 +110,20 @@ models:
     correct: 24
 - id: muse-spark-1.1
   display_name: Muse Spark 1.1
-  protocol: xhigh-to-max-to-high-to-medium-to-low direct effort cascade
+  protocol: xhigh-to-max-to-high-to-medium-to-low direct effort cascade followed by
+    a minimal-effort Challenge100 residual pass
   challenge64:
     registry_id: muse-spark-1.1
-    evaluable: 53
+    evaluable: 56
     correct: 21
   benchmarked36:
-    evaluable: 26
+    evaluable: 30
     correct: 0
     correct_formula_ast_sizes: []
     holdout_evaluable: 0
     holdout_correct: 0
   challenge100:
-    evaluable: 79
+    evaluable: 86
     correct: 21
 - id: gpt-5.6-luna-xhigh
   display_name: GPT-5.6 Luna
