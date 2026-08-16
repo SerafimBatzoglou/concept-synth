@@ -14,6 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 BENCH_ROOT = REPO_ROOT / "benchmarks" / "induction"
 C64_DATA = BENCH_ROOT / "data" / "induction_fullobs_challenge64_v1.yaml.gz"
 NEW36_DATA = BENCH_ROOT / "data" / "induction_fullobs_benchmarked36_v1.yaml.gz"
+NEW36_HOLDOUT = BENCH_ROOT / "data" / "induction_fullobs_benchmarked36_generated_iid_holdout_v1.jsonl"
 C100_DATA = BENCH_ROOT / "data" / "induction_fullobs_challenge100_v1.yaml.gz"
 C100_REGISTRY = BENCH_ROOT / "docs" / "challenge100_round1_model_registry.yaml"
 C64_REGISTRY = BENCH_ROOT / "docs" / "challenge64_round1_model_registry.yaml"
@@ -52,6 +53,18 @@ def test_challenge100_is_the_ordered_disjoint_union() -> None:
     assert not set(c64_ids) & set(new36_ids)
 
 
+def test_new36_holdout_sidecar_matches_the_benchmark() -> None:
+    new36 = load_yaml_gz(NEW36_DATA)
+    records = [
+        json.loads(line)
+        for line in NEW36_HOLDOUT.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    assert [record["task_id"] for record in records] == [row["instanceId"] for row in new36]
+    assert sum(bool(record["worlds"]) for record in records) == 29
+    assert sum(len(record["worlds"]) for record in records) == 136
+
+
 def test_challenge100_registry_is_arithmetically_consistent() -> None:
     registry = yaml.safe_load(C100_REGISTRY.read_text(encoding="utf-8"))
     models = registry["models"]
@@ -63,6 +76,8 @@ def test_challenge100_registry_is_arithmetically_consistent() -> None:
         c100 = model["challenge100"]
         assert 0 <= c64["correct"] <= c64["evaluable"] <= 64
         assert 0 <= new36["correct"] <= new36["evaluable"] <= 36
+        assert len(new36["correct_formula_ast_sizes"]) == new36["correct"]
+        assert 0 <= new36["holdout_correct"] <= new36["holdout_evaluable"] <= new36["correct"]
         assert c100["evaluable"] == c64["evaluable"] + new36["evaluable"]
         assert c100["correct"] == c64["correct"] + new36["correct"]
 
@@ -88,6 +103,7 @@ def test_challenge100_manifest_hashes_and_counts() -> None:
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     assert manifest["schemaVersion"] == "induction_challenge100_round1_release_manifest_v1"
     assert manifest["counts"] == {
+        "benchmarked36HoldoutTasksWithWorlds": 29,
         "benchmarked36Tasks": 36,
         "challenge100Models": 15,
         "challenge100Tasks": 100,

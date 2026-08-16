@@ -79,7 +79,6 @@ models:
   source_type: pipeline_store
   protocol: single-formula Round 1, maximum thinking, 384K maximum output tokens,
     strict initial-to-residual cascade
-  highlight: true
   source_release: current pipeline Round-1 ledger
 - id: deepseek-v4-flash
   display_name: DeepSeek v4 Flash
@@ -103,7 +102,6 @@ models:
   protocol: multi-formula response-set Round 1, high thinking, 65K maximum output
     tokens; response evaluable if any formula parses and correct if any formula is
     train-valid
-  highlight: true
   source_release: current pipeline Round-1 ledger
 - id: grok-4.3
   display_name: Grok 4.3
@@ -176,7 +174,6 @@ models:
   source_type: pipeline_store
   protocol: single-formula Round 1, maximum requested thinking mapped to provider
     high, 64K maximum output tokens, 32-worker serial dispatch
-  highlight: true
   source_release: current pipeline Round-1 ledger
 - id: claude-fable-5-medium-low
   display_name: Fable 5

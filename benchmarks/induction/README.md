@@ -291,6 +291,7 @@ Public artifacts:
 
 - `data/induction_fullobs_benchmarked36_v1.yaml.gz`
 - `data/induction_fullobs_challenge100_v1.yaml.gz`
+- `data/induction_fullobs_benchmarked36_generated_iid_holdout_v1.jsonl`
 - `docs/challenge100_round1_model_registry.yaml`
 - `docs/leaderboard.md`
 - `analysis/make_challenge100_leaderboard.py`

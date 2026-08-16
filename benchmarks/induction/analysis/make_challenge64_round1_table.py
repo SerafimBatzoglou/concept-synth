@@ -39,11 +39,6 @@ def pct(num: int, den: int) -> str:
     return "N/A" if not den else f"{100.0 * num / den:.1f}%"
 
 
-def markdown_cell(value: str, *, highlight: bool) -> str:
-    """Return a table cell, optionally emphasizing the complete row value."""
-    return f"**{value}**" if highlight else value
-
-
 def render(
     *,
     dataset_path: Path,
@@ -64,7 +59,6 @@ def render(
     rendered: list[tuple[int, int, str, str]] = []
     for model in models:
         model_id = str(model["id"])
-        highlight = bool(model.get("highlight", False))
         rows = by_model.get(model_id, [])
         if len(rows) != denominator:
             raise ValueError(
@@ -99,14 +93,11 @@ def render(
                 -evaluable,
                 str(model["display_name"]),
                 "| {name} | {evaluable} | {valid} | {holdout} | {complexity} |".format(
-                    name=markdown_cell(str(model["display_name"]), highlight=highlight),
-                    evaluable=markdown_cell(f"{evaluable}/{denominator}", highlight=highlight),
-                    valid=markdown_cell(
-                        f"{valid}/{denominator} ({pct(valid, denominator)})",
-                        highlight=highlight,
-                    ),
-                    holdout=markdown_cell(holdout, highlight=highlight),
-                    complexity=markdown_cell(complexity, highlight=highlight),
+                    name=str(model["display_name"]),
+                    evaluable=f"{evaluable}/{denominator}",
+                    valid=f"{valid}/{denominator} ({pct(valid, denominator)})",
+                    holdout=holdout,
+                    complexity=complexity,
                 ),
             )
         )

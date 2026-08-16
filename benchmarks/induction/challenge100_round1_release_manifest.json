@@ -16,14 +16,19 @@
       "sizeBytes": 119795
     },
     {
+      "path": "benchmarks/induction/data/induction_fullobs_benchmarked36_generated_iid_holdout_v1.jsonl",
+      "sha256": "398d898a00be09a2ce228f234b909432e080311528d43a6b172eaa39709ee270",
+      "sizeBytes": 104494
+    },
+    {
       "path": "benchmarks/induction/docs/challenge100_round1_model_registry.yaml",
-      "sha256": "5c87957ab0069617bacb88a60afa5c5d79800d5324a2d0b2a32c29cef86dc4a8",
-      "sizeBytes": 4800
+      "sha256": "a117bb2c9e69fa876422fa092ce841147711bc1384faf3c3fa42842aa7f585df",
+      "sizeBytes": 6627
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry.yaml",
-      "sha256": "bd16291dbb10f7a7c65aac9aed45161659b49966d38968b7700f20586ac8c5ba",
-      "sizeBytes": 7087
+      "sha256": "1ab4a51233d852be885ccc8a125a680893adffb447909f43c13c4b002c1dc455",
+      "sizeBytes": 7033
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v1.jsonl",
@@ -37,21 +42,22 @@
     },
     {
       "path": "benchmarks/induction/docs/leaderboard.md",
-      "sha256": "9731157d0020a63159cd9496305b2cab64be4bae05f7cfc3cd9b7ddc7ec5f072",
-      "sizeBytes": 4784
+      "sha256": "822677a878600c210c2762073125ebf3bd9e873509ca7dc0365463e6be2c45c0",
+      "sizeBytes": 4972
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_provenance.md",
-      "sha256": "3df4476de8049a0ca1e9cec0a7af5978d2805e6c7ca438eddd936fa4f046d2c3",
-      "sizeBytes": 689
+      "sha256": "14d8a81300beccce03e89040cb38f62115962cd61c749d580f01aac01e0c898f",
+      "sizeBytes": 841
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge100_leaderboard.py",
-      "sha256": "378bc18de20a444be3cbe054beb966cd194af3f0cb2529d6935172b2b31d3ebf",
-      "sizeBytes": 6987
+      "sha256": "e26a7bea4930c8a93eb1096ad55d75ed14c277915b28cdd3eb3decce8738b6e6",
+      "sizeBytes": 8915
     }
   ],
   "counts": {
+    "benchmarked36HoldoutTasksWithWorlds": 29,
     "benchmarked36Tasks": 36,
     "challenge100Models": 15,
     "challenge100Tasks": 100,

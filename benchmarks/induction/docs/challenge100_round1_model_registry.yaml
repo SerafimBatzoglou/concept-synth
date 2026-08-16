@@ -14,11 +14,21 @@ models:
   display_name: GPT-5.6 Sol
   protocol: Challenge64 xhigh; New36 max with high-effort non-evaluable recovery
   challenge64:
+    registry_id: gpt-5.6-sol-xhigh
     evaluable: 63
     correct: 37
   benchmarked36:
     evaluable: 36
     correct: 6
+    correct_formula_ast_sizes:
+    - 11
+    - 11
+    - 11
+    - 16
+    - 16
+    - 21
+    holdout_evaluable: 3
+    holdout_correct: 3
   challenge100:
     evaluable: 99
     correct: 43
@@ -27,11 +37,19 @@ models:
   protocol: medium-to-low direct cascade with Challenge100 low-effort non-evaluable
     recovery
   challenge64:
+    registry_id: claude-fable-5-medium-low
     evaluable: 63
     correct: 27
   benchmarked36:
     evaluable: 33
     correct: 4
+    correct_formula_ast_sizes:
+    - 16
+    - 16
+    - 20
+    - 21
+    holdout_evaluable: 4
+    holdout_correct: 4
   challenge100:
     evaluable: 96
     correct: 31
@@ -39,11 +57,16 @@ models:
   display_name: GPT-5.6 Terra
   protocol: Challenge64 xhigh; New36 max with high-effort non-evaluable recovery
   challenge64:
+    registry_id: gpt-5.6-terra-xhigh
     evaluable: 62
     correct: 24
   benchmarked36:
     evaluable: 36
     correct: 1
+    correct_formula_ast_sizes:
+    - 16
+    holdout_evaluable: 1
+    holdout_correct: 1
   challenge100:
     evaluable: 98
     correct: 25
@@ -51,13 +74,18 @@ models:
   display_name: Grok 4.6
   protocol: maximum requested thinking mapped to provider high, 64K maximum output
     tokens
-  highlight: true
   challenge64:
+    registry_id: grok-4.6-high
     evaluable: 62
     correct: 23
   benchmarked36:
     evaluable: 36
     correct: 2
+    correct_formula_ast_sizes:
+    - 16
+    - 20
+    holdout_evaluable: 2
+    holdout_correct: 2
   challenge100:
     evaluable: 98
     correct: 25
@@ -65,11 +93,18 @@ models:
   display_name: Claude Opus 5
   protocol: xhigh-to-medium-to-low direct effort cascade, 128K maximum output tokens
   challenge64:
+    registry_id: claude-opus-5
     evaluable: 62
     correct: 21
   benchmarked36:
     evaluable: 35
     correct: 3
+    correct_formula_ast_sizes:
+    - 16
+    - 16
+    - 16
+    holdout_evaluable: 3
+    holdout_correct: 3
   challenge100:
     evaluable: 97
     correct: 24
@@ -77,11 +112,15 @@ models:
   display_name: Muse Spark 1.1
   protocol: xhigh-to-max-to-high-to-medium-to-low direct effort cascade
   challenge64:
+    registry_id: muse-spark-1.1
     evaluable: 53
     correct: 21
   benchmarked36:
     evaluable: 26
     correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
   challenge100:
     evaluable: 79
     correct: 21
@@ -89,11 +128,16 @@ models:
   display_name: GPT-5.6 Luna
   protocol: Challenge64 xhigh; New36 max with high-effort non-evaluable recovery
   challenge64:
+    registry_id: gpt-5.6-luna-xhigh
     evaluable: 61
     correct: 15
   benchmarked36:
     evaluable: 36
     correct: 1
+    correct_formula_ast_sizes:
+    - 11
+    holdout_evaluable: 0
+    holdout_correct: 0
   challenge100:
     evaluable: 97
     correct: 16
@@ -101,26 +145,32 @@ models:
   display_name: DeepSeek V4 Pro 0813
   protocol: maximum thinking, 384K maximum output tokens; Challenge64 strict residual
     cascade
-  highlight: true
   challenge64:
+    registry_id: deepseek-v4-pro-0813
     evaluable: 64
     correct: 15
   benchmarked36:
     evaluable: 34
     correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
   challenge100:
     evaluable: 98
     correct: 15
 - id: gemini-3.7-flash
   display_name: Gemini 3.7 Flash
   protocol: high thinking, 65K maximum output tokens, response-set evaluation
-  highlight: true
   challenge64:
+    registry_id: gemini-3.7-flash
     evaluable: 64
     correct: 11
   benchmarked36:
     evaluable: 36
     correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
   challenge100:
     evaluable: 100
     correct: 11
@@ -128,11 +178,15 @@ models:
   display_name: Grok 4.5
   protocol: high-to-medium-to-low direct effort cascade, 64K maximum output tokens
   challenge64:
+    registry_id: grok-4.5-high
     evaluable: 64
     correct: 11
   benchmarked36:
     evaluable: 36
     correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
   challenge100:
     evaluable: 100
     correct: 11
@@ -141,11 +195,15 @@ models:
   protocol: xhigh-to-max-to-high-to-medium direct effort cascade, 131K maximum output
     tokens
   challenge64:
+    registry_id: muse-spark-1.2
     evaluable: 59
     correct: 11
   benchmarked36:
     evaluable: 33
     correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
   challenge100:
     evaluable: 92
     correct: 11
@@ -153,11 +211,15 @@ models:
   display_name: Gemini 3.5 Flash
   protocol: high thinking direct Round 1
   challenge64:
+    registry_id: gemini-3.5-flash
     evaluable: 63
     correct: 7
   benchmarked36:
     evaluable: 35
     correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
   challenge100:
     evaluable: 98
     correct: 7
@@ -165,11 +227,15 @@ models:
   display_name: DeepSeek V4 Pro
   protocol: maximum thinking, 384K maximum output tokens on New36
   challenge64:
+    registry_id: deepseek-v4-pro
     evaluable: 63
     correct: 6
   benchmarked36:
     evaluable: 31
     correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
   challenge100:
     evaluable: 94
     correct: 6
@@ -177,11 +243,15 @@ models:
   display_name: DeepSeek V4 Flash
   protocol: maximum thinking, 384K maximum output tokens
   challenge64:
+    registry_id: deepseek-v4-flash
     evaluable: 62
     correct: 6
   benchmarked36:
     evaluable: 35
     correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
   challenge100:
     evaluable: 97
     correct: 6
@@ -189,11 +259,15 @@ models:
   display_name: Gemini 3.6 Flash
   protocol: high-to-medium-to-low direct effort cascade, 65K maximum output tokens
   challenge64:
+    registry_id: gemini-3.6-flash
     evaluable: 64
     correct: 5
   benchmarked36:
     evaluable: 29
     correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
   challenge100:
     evaluable: 93
     correct: 5

@@ -25,25 +25,60 @@ def pct(num: int, den: int) -> str:
     return "N/A" if not den else f"{100.0 * num / den:.1f}%"
 
 
-def cell(value: str, highlight: bool) -> str:
-    return f"**{value}**" if highlight else value
+def render_challenge100(
+    *, registry: dict[str, Any], eval_path: Path, holdout_path: Path
+) -> list[str]:
+    by_model: dict[str, list[dict[str, Any]]] = {}
+    for row in iter_jsonl(eval_path):
+        by_model.setdefault(str(row["model_id"]), []).append(row)
+    holdout_by_model: dict[str, list[dict[str, Any]]] = {}
+    for row in iter_jsonl(holdout_path):
+        holdout_by_model.setdefault(str(row["model_id"]), []).append(row)
 
-
-def render_challenge100(registry: dict[str, Any]) -> list[str]:
     rows: list[tuple[int, int, str, str]] = []
     for model in registry["models"]:
         c64 = model["challenge64"]
         new36 = model["benchmarked36"]
         c100 = model["challenge100"]
-        highlight = bool(model.get("highlight"))
+        c64_model_id = str(c64["registry_id"])
+        c64_rows = by_model.get(c64_model_id, [])
+        if len(c64_rows) != 64:
+            raise ValueError(
+                f"{c64_model_id}: expected 64 Challenge64 rows, found {len(c64_rows)}"
+            )
+        asts = [
+            row.get("prediction", {}).get("ast_size")
+            for row in c64_rows
+            if row.get("valid")
+            and isinstance(row.get("prediction", {}).get("ast_size"), int)
+        ]
+        asts.extend(int(value) for value in new36.get("correct_formula_ast_sizes") or [])
+        if len(asts) != int(c100["correct"]):
+            raise ValueError(
+                f'{model["id"]}: expected {c100["correct"]} train-correct AST sizes, found {len(asts)}'
+            )
+        holdout_rows = [
+            row
+            for row in holdout_by_model.get(c64_model_id, [])
+            if (row.get("metadata") or {}).get("eligible_train_valid")
+            and (row.get("metadata") or {}).get("holdout_available")
+        ]
+        holdout_correct = sum(bool(row.get("valid")) for row in holdout_rows)
+        holdout_correct += int(new36.get("holdout_correct") or 0)
+        holdout_evaluable = len(holdout_rows) + int(new36.get("holdout_evaluable") or 0)
+        holdout = (
+            f"{pct(holdout_correct, holdout_evaluable)} ({holdout_correct}/{holdout_evaluable})"
+            if holdout_evaluable else "N/A"
+        )
+        complexity = f"{mean(asts):.1f} / {median(asts):.1f}" if asts else "N/A"
         rendered = (
-            "| {name} | {evaluable} | {correct} | {c64} | {new36} |"
+            "| {name} | {evaluable} | {correct} | {holdout} | {complexity} |"
         ).format(
-            name=cell(str(model["display_name"]), highlight),
-            evaluable=cell(f'{c100["evaluable"]}/100', highlight),
-            correct=cell(f'{c100["correct"]}/100 ({pct(c100["correct"], 100)})', highlight),
-            c64=cell(f'{c64["correct"]}/64 ({pct(c64["correct"], 64)})', highlight),
-            new36=cell(f'{new36["correct"]}/36 ({pct(new36["correct"], 36)})', highlight),
+            name=str(model["display_name"]),
+            evaluable=f'{c100["evaluable"]}/100',
+            correct=f'{c100["correct"]}/100 ({pct(c100["correct"], 100)})',
+            holdout=holdout,
+            complexity=complexity,
         )
         rows.append((-int(c100["correct"]), -int(c100["evaluable"]), str(model["display_name"]), rendered))
     rows.sort()
@@ -84,13 +119,12 @@ def render_challenge64(
             if holdout_rows else "N/A"
         )
         complexity = f"{mean(asts):.1f} / {median(asts):.1f}" if asts else "N/A"
-        highlight = bool(model.get("highlight"))
         line = "| {name} | {evaluable} | {correct} | {holdout} | {complexity} |".format(
-            name=cell(str(model["display_name"]), highlight),
-            evaluable=cell(f"{evaluable}/64", highlight),
-            correct=cell(f"{correct}/64 ({pct(correct, 64)})", highlight),
-            holdout=cell(holdout, highlight),
-            complexity=cell(complexity, highlight),
+            name=str(model["display_name"]),
+            evaluable=f"{evaluable}/64",
+            correct=f"{correct}/64 ({pct(correct, 64)})",
+            holdout=holdout,
+            complexity=complexity,
         )
         rendered.append((-correct, -evaluable, str(model["display_name"]), line))
     rendered.sort()
@@ -121,9 +155,17 @@ def render(
         "",
         "Rows are ranked by Challenge100 Correct, then Evaluable coverage, then model name.",
         "",
-        "| Model | Evaluable | Correct | Challenge64 Correct | New36 Correct |",
+        "| Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |",
         "|---|---:|---:|---:|---:|",
-        *render_challenge100(c100),
+        *render_challenge100(
+            registry=c100,
+            eval_path=challenge64_eval_path,
+            holdout_path=challenge64_holdout_path,
+        ),
+        "",
+        "Challenge100 formula complexity covers all train-correct direct formulas across its 100 tasks. "
+        "Its generated-IID holdout diagnostic combines the frozen Challenge64 and New36 sidecars and reports only "
+        "train-correct responses whose task has generated holdout worlds.",
         "",
         "## Challenge64 projection",
         "",
