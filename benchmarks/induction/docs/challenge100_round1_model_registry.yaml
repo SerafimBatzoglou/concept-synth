@@ -159,6 +159,23 @@ models:
   challenge100:
     evaluable: 98
     correct: 15
+- id: ox-alpha
+  display_name: Ox Alpha
+  protocol: OpenRouter direct-only high/low parser-evaluable residual cascade, 131K
+    maximum output tokens
+  challenge64:
+    registry_id: ox-alpha
+    evaluable: 54
+    correct: 12
+  benchmarked36:
+    evaluable: 33
+    correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
+  challenge100:
+    evaluable: 87
+    correct: 12
 - id: gemini-3.7-flash
   display_name: Gemini 3.7 Flash
   protocol: high thinking, 65K maximum output tokens, response-set evaluation
