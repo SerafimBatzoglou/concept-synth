@@ -32,6 +32,34 @@ models:
   challenge100:
     evaluable: 99
     correct: 43
+- id: claude-fable-5-1
+  display_name: Fable 5.1
+  protocol: high-to-medium-to-low-to-low direct parser-evaluable residual cascade,
+    128K maximum output tokens
+  challenge64:
+    registry_id: claude-fable-5-1
+    evaluable: 47
+    correct: 22
+  benchmarked36:
+    evaluable: 19
+    correct: 11
+    correct_formula_ast_sizes:
+    - 22
+    - 16
+    - 16
+    - 16
+    - 16
+    - 16
+    - 21
+    - 21
+    - 21
+    - 22
+    - 23
+    holdout_evaluable: 11
+    holdout_correct: 11
+  challenge100:
+    evaluable: 66
+    correct: 33
 - id: claude-fable-5-medium-low
   display_name: Fable 5
   protocol: medium-to-low direct cascade with Challenge100 low-effort non-evaluable

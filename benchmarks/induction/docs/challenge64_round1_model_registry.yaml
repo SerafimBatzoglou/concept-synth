@@ -181,6 +181,12 @@ models:
   protocol: Round 1, medium thinking with low-effort non-evaluable recovery, including
     the Challenge100 residual2 pass
   source_release: current pipeline Round-1 ledger
+- id: claude-fable-5-1
+  display_name: Fable 5.1
+  source_type: pipeline_store
+  protocol: Direct-only Round 1, high-to-medium-to-low-to-low parser-evaluable residual
+    cascade, 128K maximum output tokens
+  source_release: current pipeline Round-1 ledger
 - id: muse-spark-1.1
   display_name: Muse Spark 1.1
   source_type: pipeline_store

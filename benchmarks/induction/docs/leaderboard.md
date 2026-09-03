@@ -11,6 +11,7 @@ Rows are ranked by Challenge100 Correct, then Evaluable coverage, then model nam
 | Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |
 |---|---:|---:|---:|---:|
 | GPT-5.6 Sol | 99/100 | 43/100 (43.0%) | 56.4% (22/39) | 125.0 / 18.0 |
+| Fable 5.1 | 66/100 | 33/100 (33.0%) | 93.8% (30/32) | 18.1 / 16.0 |
 | Fable 5 | 96/100 | 31/100 (31.0%) | 63.3% (19/30) | 46.1 / 18.0 |
 | GPT-5.6 Terra | 98/100 | 25/100 (25.0%) | 70.8% (17/24) | 66.6 / 18.0 |
 | Grok 4.6 | 98/100 | 25/100 (25.0%) | 70.8% (17/24) | 72.2 / 17.0 |
@@ -40,6 +41,7 @@ Rows are ranked by Challenge64 train-set Correct, then Evaluable coverage, then 
 | Qwen 3.8 Max | 63/64 | 27/64 (42.2%) | 53.8% (14/26) | 82.5 / 18.0 |
 | GPT-5.6 Terra | 62/64 | 24/64 (37.5%) | 69.6% (16/23) | 68.8 / 18.0 |
 | Grok 4.6 | 62/64 | 23/64 (35.9%) | 68.2% (15/22) | 76.9 / 17.0 |
+| Fable 5.1 | 47/64 | 22/64 (34.4%) | 90.5% (19/21) | 17.6 / 16.0 |
 | Claude Opus 5 | 62/64 | 21/64 (32.8%) | 85.0% (17/20) | 19.2 / 16.0 |
 | Muse Spark 1.1 | 56/64 | 21/64 (32.8%) | 70.0% (14/20) | 49.8 / 17.0 |
 | DeepSeek V4 Pro 0813 | 64/64 | 15/64 (23.4%) | 35.7% (5/14) | 130.9 / 77.0 |

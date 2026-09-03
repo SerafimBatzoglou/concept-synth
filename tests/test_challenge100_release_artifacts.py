@@ -68,7 +68,7 @@ def test_new36_holdout_sidecar_matches_the_benchmark() -> None:
 def test_challenge100_registry_is_arithmetically_consistent() -> None:
     registry = yaml.safe_load(C100_REGISTRY.read_text(encoding="utf-8"))
     models = registry["models"]
-    assert len(models) == 16
+    assert len(models) == 17
     assert len({model["id"] for model in models}) == len(models)
     for model in models:
         c64 = model["challenge64"]
@@ -105,7 +105,7 @@ def test_challenge100_manifest_hashes_and_counts() -> None:
     assert manifest["counts"] == {
         "benchmarked36HoldoutTasksWithWorlds": 29,
         "benchmarked36Tasks": 36,
-        "challenge100Models": 16,
+        "challenge100Models": 17,
         "challenge100Tasks": 100,
         "challenge64Tasks": 64,
     }
