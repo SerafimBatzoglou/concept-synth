@@ -49,6 +49,7 @@ Released prediction records contain normalized formulas and exact verifier outpu
 | Fable 5 | Current pipeline Round-1 ledger | Round 1, medium thinking with low-effort non-evaluable recovery, including the Challenge100 residual2 pass |
 | Fable 5.1 | Current pipeline Round-1 ledger | Direct-only Round 1, high-to-medium-to-low-to-low parser-evaluable residual cascade, 128K maximum output tokens |
 | Muse Spark 1.1 | Current pipeline Round-1 ledger | Round 1, xhigh primary with low/high recovery and a final minimal-effort Challenge100 residual pass |
+| Muse Spark 1.3 | Current pipeline Round-1 ledger | Direct-only Round 1, xhigh-to-high-to-medium-to-low-to-high-to-medium-to-low-to-low parser-evaluable residual cascade with contributor handoff and contributor residual passes, 131K maximum output tokens |
 | Ox Alpha | Current pipeline Round-1 ledger | Direct-only Round 1 through OpenRouter, initial high effort followed by parser-evaluable high/low residual recovery, 131K maximum output tokens |
 | Muse Spark 1.2 | Current pipeline Round-1 ledger | Round 1, xhigh thinking, 131K maximum output tokens, with non-evaluable retry |
 

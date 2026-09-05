@@ -193,6 +193,13 @@ models:
   protocol: Round 1, xhigh primary with low/high recovery and a final minimal-effort
     Challenge100 residual pass
   source_release: current pipeline Round-1 ledger
+- id: muse-spark-1.3
+  display_name: Muse Spark 1.3
+  source_type: pipeline_store
+  protocol: Direct-only Round 1, xhigh-to-high-to-medium-to-low-to-high-to-medium-to-low-to-low
+    parser-evaluable residual cascade with contributor handoff and contributor residual
+    passes, 131K maximum output tokens
+  source_release: current pipeline Round-1 ledger
 - id: ox-alpha
   display_name: Ox Alpha
   source_type: pipeline_store

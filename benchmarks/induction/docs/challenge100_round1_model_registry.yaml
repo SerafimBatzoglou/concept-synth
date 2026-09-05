@@ -136,6 +136,24 @@ models:
   challenge100:
     evaluable: 97
     correct: 24
+- id: muse-spark-1.3
+  display_name: Muse Spark 1.3
+  protocol: xhigh-to-high-to-medium-to-low-to-high-to-medium-to-low-to-low direct
+    parser-evaluable residual cascade with contributor handoff and contributor residual
+    passes, 131K maximum output tokens
+  challenge64:
+    registry_id: muse-spark-1.3
+    evaluable: 59
+    correct: 23
+  benchmarked36:
+    evaluable: 34
+    correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
+  challenge100:
+    evaluable: 93
+    correct: 23
 - id: muse-spark-1.1
   display_name: Muse Spark 1.1
   protocol: xhigh-to-max-to-high-to-medium-to-low direct effort cascade followed by
