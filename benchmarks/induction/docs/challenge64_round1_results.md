@@ -4,7 +4,7 @@ Each configuration contributes one direct Round-1 formula per task. The release 
 
 | Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |
 |---|---:|---:|---:|---:|
-| GPT-6 Astra | 60/64 | 60/64 (93.8%) | 91.5% (54/59) | 18.2 / 18.0 |
+| GPT-6 Astra | 63/64 | 63/64 (98.4%) | 88.7% (55/62) | 20.6 / 18.0 |
 | GPT-5.6 Sol | 63/64 | 37/64 (57.8%) | 52.8% (19/36) | 143.0 / 18.0 |
 | Fable 5 | 63/64 | 27/64 (42.2%) | 57.7% (15/26) | 50.3 / 18.0 |
 | Qwen 3.8 Max | 63/64 | 27/64 (42.2%) | 53.8% (14/26) | 82.5 / 18.0 |
@@ -23,6 +23,7 @@ Each configuration contributes one direct Round-1 formula per task. The release 
 | Grok 4.5 | 64/64 | 11/64 (17.2%) | 80.0% (8/10) | 20.1 / 15.0 |
 | Muse Spark 1.2 | 59/64 | 11/64 (17.2%) | 70.0% (7/10) | 29.1 / 17.0 |
 | GPT-5.2 | 64/64 | 9/64 (14.1%) | 25.0% (2/8) | 85.1 / 95.0 |
+| Gemini 3.8 Flash | 64/64 | 9/64 (14.1%) | 100.0% (8/8) | 15.6 / 16.0 |
 | Kimi K3 | 64/64 | 7/64 (10.9%) | 71.4% (5/7) | 22.9 / 17.0 |
 | Gemini 3.5 Flash | 63/64 | 7/64 (10.9%) | 85.7% (6/7) | 16.6 / 15.0 |
 | Grok 4.1 Fast | 64/64 | 6/64 (9.4%) | 100.0% (5/5) | 14.8 / 14.5 |

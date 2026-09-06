@@ -103,6 +103,12 @@ models:
     tokens; response evaluable if any formula parses and correct if any formula is
     train-valid
   source_release: current pipeline Round-1 ledger
+- id: gemini-3.8-flash
+  display_name: Gemini 3.8 Flash
+  source_type: pipeline_store
+  protocol: Direct-only Round 1, high-to-high-to-medium-to-low parser-evaluable residual
+    cascade, 64K maximum output tokens
+  source_release: current pipeline Round-1 ledger
 - id: grok-4.3
   display_name: Grok 4.3
   source_type: pipeline_store
@@ -152,9 +158,8 @@ models:
 - id: gpt-6-astra
   display_name: GPT-6 Astra
   source_type: pipeline_store
-  protocol: Interim direct-only Round 1, xhigh coverage with high-effort recovery
-    of the fixed random-10 non-evaluable residual, 128K maximum output tokens; remaining
-    residual batches pending
+  protocol: Final direct-only Round 1, xhigh coverage with high-effort parser-non-evaluable
+    recovery, 128K maximum output tokens
   source_release: current pipeline Round-1 ledger
 - id: gpt-5.6-sol-xhigh
   display_name: GPT-5.6 Sol

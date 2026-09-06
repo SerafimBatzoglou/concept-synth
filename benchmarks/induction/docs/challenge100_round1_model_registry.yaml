@@ -12,16 +12,15 @@ selection_policy:
 models:
 - id: gpt-6-astra
   display_name: GPT-6 Astra
-  protocol: interim direct-only xhigh coverage with high-effort recovery of the fixed
-    random-10 non-evaluable residual, 128K maximum output tokens; remaining residual
-    batches pending
+  protocol: final direct-only xhigh coverage with high-effort parser-non-evaluable
+    recovery, 128K maximum output tokens
   challenge64:
     registry_id: gpt-6-astra
-    evaluable: 60
-    correct: 60
+    evaluable: 63
+    correct: 63
   benchmarked36:
-    evaluable: 28
-    correct: 28
+    evaluable: 31
+    correct: 31
     correct_formula_ast_sizes:
     - 11
     - 12
@@ -30,6 +29,7 @@ models:
     - 11
     - 12
     - 16
+    - 272
     - 16
     - 26
     - 16
@@ -48,14 +48,16 @@ models:
     - 15
     - 15
     - 15
+    - 18
+    - 22
     - 23
     - 23
     - 23
-    holdout_evaluable: 22
-    holdout_correct: 22
+    holdout_evaluable: 24
+    holdout_correct: 24
   challenge100:
-    evaluable: 88
-    correct: 88
+    evaluable: 94
+    correct: 94
 - id: gpt-5.6-sol-xhigh
   display_name: GPT-5.6 Sol
   protocol: Challenge64 xhigh; New36 max with high-effort non-evaluable recovery
@@ -284,6 +286,23 @@ models:
   challenge100:
     evaluable: 100
     correct: 11
+- id: gemini-3.8-flash
+  display_name: Gemini 3.8 Flash
+  protocol: high-to-high-to-medium-to-low direct parser-evaluable residual cascade,
+    64K maximum output tokens
+  challenge64:
+    registry_id: gemini-3.8-flash
+    evaluable: 64
+    correct: 9
+  benchmarked36:
+    evaluable: 36
+    correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
+  challenge100:
+    evaluable: 100
+    correct: 9
 - id: grok-4.5-high
   display_name: Grok 4.5
   protocol: high-to-medium-to-low direct effort cascade, 64K maximum output tokens

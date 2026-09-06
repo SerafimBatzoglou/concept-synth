@@ -32,6 +32,7 @@ Released prediction records contain normalized formulas and exact verifier outpu
 | Gemini 3.5 Flash | Current pipeline Round-1 ledger | 3-formula pipeline Round 1, high thinking |
 | Gemini 3.6 Flash | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
 | Gemini 3.7 Flash | Current pipeline Round-1 ledger | multi-formula response-set Round 1, high thinking, 65K maximum output tokens; response evaluable if any formula parses and correct if any formula is train-valid |
+| Gemini 3.8 Flash | Current pipeline Round-1 ledger | Direct-only Round 1, high-to-high-to-medium-to-low parser-evaluable residual cascade, 64K maximum output tokens |
 | Grok 4.3 | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
 | Kimi K2.6 | Current pipeline Round-1 ledger | 3-formula pipeline Round 1, thinking enabled |
 | Kimi K2.7 Code | Current pipeline Round-1 ledger | single-formula pipeline Round 1, high thinking |
@@ -41,7 +42,7 @@ Released prediction records contain normalized formulas and exact verifier outpu
 | Claude Sonnet 5 | Current pipeline Round-1 ledger | Round 1, high thinking |
 | Qwen 3.7 Max | Current pipeline Round-1 ledger | Round 1, serial provider calls |
 | Qwen 3.8 Max | Current pipeline Round-1 ledger | single-formula Round 1, maximum thinking, 64K maximum output tokens |
-| GPT-6 Astra | Current pipeline Round-1 ledger | Interim direct-only Round 1, xhigh coverage with high-effort recovery of the fixed random-10 non-evaluable residual, 128K maximum output tokens; remaining residual batches pending |
+| GPT-6 Astra | Current pipeline Round-1 ledger | Final direct-only Round 1, xhigh coverage with high-effort parser-non-evaluable recovery, 128K maximum output tokens |
 | GPT-5.6 Sol | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |
 | GPT-5.6 Terra | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |
 | GPT-5.6 Luna | Current pipeline Round-1 ledger | single-formula Round 1, xhigh thinking |
