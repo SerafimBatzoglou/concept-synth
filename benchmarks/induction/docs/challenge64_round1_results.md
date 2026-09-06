@@ -4,6 +4,7 @@ Each configuration contributes one direct Round-1 formula per task. The release 
 
 | Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |
 |---|---:|---:|---:|---:|
+| GPT-6 Astra | 60/64 | 60/64 (93.8%) | 91.5% (54/59) | 18.2 / 18.0 |
 | GPT-5.6 Sol | 63/64 | 37/64 (57.8%) | 52.8% (19/36) | 143.0 / 18.0 |
 | Fable 5 | 63/64 | 27/64 (42.2%) | 57.7% (15/26) | 50.3 / 18.0 |
 | Qwen 3.8 Max | 63/64 | 27/64 (42.2%) | 53.8% (14/26) | 82.5 / 18.0 |

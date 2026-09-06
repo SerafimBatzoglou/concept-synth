@@ -10,6 +10,52 @@ selection_policy:
   multi_formula_policy: a response is evaluable if any submitted formula parses and
     correct if any submitted formula is train-valid
 models:
+- id: gpt-6-astra
+  display_name: GPT-6 Astra
+  protocol: interim direct-only xhigh coverage with high-effort recovery of the fixed
+    random-10 non-evaluable residual, 128K maximum output tokens; remaining residual
+    batches pending
+  challenge64:
+    registry_id: gpt-6-astra
+    evaluable: 60
+    correct: 60
+  benchmarked36:
+    evaluable: 28
+    correct: 28
+    correct_formula_ast_sizes:
+    - 11
+    - 12
+    - 11
+    - 11
+    - 11
+    - 12
+    - 16
+    - 16
+    - 26
+    - 16
+    - 16
+    - 16
+    - 16
+    - 16
+    - 15
+    - 15
+    - 15
+    - 15
+    - 19
+    - 20
+    - 29
+    - 15
+    - 15
+    - 15
+    - 15
+    - 23
+    - 23
+    - 23
+    holdout_evaluable: 22
+    holdout_correct: 22
+  challenge100:
+    evaluable: 88
+    correct: 88
 - id: gpt-5.6-sol-xhigh
   display_name: GPT-5.6 Sol
   protocol: Challenge64 xhigh; New36 max with high-effort non-evaluable recovery

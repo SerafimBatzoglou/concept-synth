@@ -149,6 +149,13 @@ models:
   source_type: pipeline_store
   protocol: single-formula Round 1, maximum thinking, 64K maximum output tokens
   source_release: current pipeline Round-1 ledger
+- id: gpt-6-astra
+  display_name: GPT-6 Astra
+  source_type: pipeline_store
+  protocol: Interim direct-only Round 1, xhigh coverage with high-effort recovery
+    of the fixed random-10 non-evaluable residual, 128K maximum output tokens; remaining
+    residual batches pending
+  source_release: current pipeline Round-1 ledger
 - id: gpt-5.6-sol-xhigh
   display_name: GPT-5.6 Sol
   source_type: pipeline_store

@@ -10,6 +10,7 @@ Rows are ranked by Challenge100 Correct, then Evaluable coverage, then model nam
 
 | Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |
 |---|---:|---:|---:|---:|
+| GPT-6 Astra | 88/100 | 88/100 (88.0%) | 93.8% (76/81) | 17.6 / 16.0 |
 | GPT-5.6 Sol | 99/100 | 43/100 (43.0%) | 56.4% (22/39) | 125.0 / 18.0 |
 | Fable 5.1 | 66/100 | 33/100 (33.0%) | 93.8% (30/32) | 18.1 / 16.0 |
 | Fable 5 | 96/100 | 31/100 (31.0%) | 63.3% (19/30) | 46.1 / 18.0 |
@@ -37,6 +38,7 @@ Rows are ranked by Challenge64 train-set Correct, then Evaluable coverage, then 
 
 | Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |
 |---|---:|---:|---:|---:|
+| GPT-6 Astra | 60/64 | 60/64 (93.8%) | 91.5% (54/59) | 18.2 / 18.0 |
 | GPT-5.6 Sol | 63/64 | 37/64 (57.8%) | 52.8% (19/36) | 143.0 / 18.0 |
 | Fable 5 | 63/64 | 27/64 (42.2%) | 57.7% (15/26) | 50.3 / 18.0 |
 | Qwen 3.8 Max | 63/64 | 27/64 (42.2%) | 53.8% (14/26) | 82.5 / 18.0 |
