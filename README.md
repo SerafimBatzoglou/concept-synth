@@ -1,23 +1,27 @@
 # Concept Synth
 
-Public benchmark releases for Concept Synth / Concept Synthesis.
+Public benchmarks for concept synthesis in first-order logic, with datasets,
+model predictions, evaluation tools, and reproducible results.
 
-Contact: serafim.batzoglou@gmail.com
+<!-- BEGIN INDUCTION CHALLENGE LEADERBOARDS -->
+## INDUCTION Challenge100
 
-This repository is a public benchmark collection across Concept Synth task
-families.
+[**Challenge100 dataset (YAML, gzip)**](benchmarks/induction/data/induction_fullobs_challenge100_v1.yaml.gz)
+· [**Leaderboards**](benchmarks/induction/docs/leaderboard.md)
+· [Benchmark details](benchmarks/induction/docs/challenge100_round1_provenance.md)
 
-Current public releases:
+Challenge100 is the maintained 100-task benchmark, combining the frozen
+Challenge64 set with 36 additional challenging problems. The leaderboards report
+Challenge100 results and the Challenge64 projection.
+<!-- END INDUCTION CHALLENGE LEADERBOARDS -->
 
-- [`benchmarks/abduction/`](benchmarks/abduction/)
-- [`benchmarks/induction/`](benchmarks/induction/)
+Explore the full releases: [ABD](benchmarks/abduction/) · [INDUCTION](benchmarks/induction/).
 
 <img src="benchmarks/abduction/assets/abd-logo.svg" alt="ABD logo" width="180">
 
 ## ABD
 
-Paper: [arXiv:2602.18843](https://arxiv.org/abs/2602.18843)
-Summary: [gist.science paper summary](https://gist.science/paper/2602.18843)
+[Paper](https://arxiv.org/abs/2602.18843) · [Paper summary](https://gist.science/paper/2602.18843)
 
 The ABD release ships canonical benchmark instances, matched holdout worlds,
 released model predictions, a frozen evaluation cache, prompt examples, and a
@@ -26,7 +30,7 @@ CLI, checker, and parser support.
 
 ## INDUCTION
 
-Paper: `INDUCTION: Finite-Structure Concept Synthesis in First-Order Logic`
+Paper: *INDUCTION: Finite-Structure Concept Synthesis in First-Order Logic*
 (ICML 2026, spotlight)
 
 The INDUCTION release ships canonical FullObs, CI, and EC benchmark instances,
@@ -41,16 +45,13 @@ The core INDUCTION v1.0 artifacts contain 775 benchmark instances and 11,413
 released prediction/eval rows across 15 model identifiers, including Gemini
 3.5 Flash.
 
-**Challenge64 leaderboard:** the additive, pre-symbolic Round-1 comparison is
-available at [INDUCTION Challenge64 Leaderboard](benchmarks/induction/docs/challenge64_round1_results.md).
-It includes normalized prediction records and frozen train and generated-holdout
-evaluation caches for each released configuration.
+See the [INDUCTION release documentation](benchmarks/induction/) for datasets,
+normalized predictions, and frozen train and generated-holdout evaluation caches.
+
+## Getting started
 
 Task-family-specific code lives in subpackages such as
 `concept_synth.abduction` and `concept_synth.induction`.
-
-All benchmark data, prompts, cached outputs, scripts, and code in this
-repository are released under the MIT License unless noted otherwise.
 
 Install from the repository root:
 
@@ -82,8 +83,9 @@ concept-synth-induction-generate \
 pytest -q
 ```
 
-<!-- BEGIN INDUCTION CHALLENGE LEADERBOARDS -->
-## INDUCTION challenge leaderboards
+## License and contact
 
-[View the combined Challenge100 and Challenge64 leaderboards](benchmarks/induction/docs/leaderboard.md). Challenge100 is the maintained 100-task benchmark; Challenge64 remains an additive projection with extra model coverage.
-<!-- END INDUCTION CHALLENGE LEADERBOARDS -->
+All benchmark data, prompts, cached outputs, scripts, and code in this
+repository are released under the [MIT License](LICENSE) unless noted otherwise.
+
+Contact: [serafim.batzoglou@gmail.com](mailto:serafim.batzoglou@gmail.com)
