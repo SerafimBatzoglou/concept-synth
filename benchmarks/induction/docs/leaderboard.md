@@ -1,6 +1,6 @@
 # INDUCTION Challenge Leaderboards
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. The Challenge100 table includes models with results on New36; the Challenge64 table remains additive and therefore includes additional models.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 20 Challenge100 models appear in the Challenge64 table, alongside 20 additional models with Challenge64 results. Each table is ranked independently by correct answers on its own task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -63,7 +63,7 @@ Rows are ranked by Challenge64 train-set Correct, then Evaluable coverage, then 
 | Gemini 3.5 Flash | 63/64 | 7/64 (10.9%) | 85.7% (6/7) | 16.6 / 15.0 |
 | Grok 4.1 Fast | 64/64 | 6/64 (9.4%) | 100.0% (5/5) | 14.8 / 14.5 |
 | DeepSeek V4 Pro | 63/64 | 6/64 (9.4%) | 66.7% (4/6) | 31.5 / 16.0 |
-| DeepSeek v4 Flash | 62/64 | 6/64 (9.4%) | 20.0% (1/5) | 77.8 / 48.0 |
+| DeepSeek V4 Flash | 62/64 | 6/64 (9.4%) | 20.0% (1/5) | 77.8 / 48.0 |
 | Claude Opus 4.6 | 64/64 | 5/64 (7.8%) | 100.0% (4/4) | 14.8 / 15.0 |
 | Gemini 3.6 Flash | 64/64 | 5/64 (7.8%) | 75.0% (3/4) | 16.6 / 16.0 |
 | Kimi K2.7 Code | 64/64 | 5/64 (7.8%) | 75.0% (3/4) | 36.0 / 15.0 |

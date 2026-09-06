@@ -2,12 +2,14 @@ from __future__ import annotations
 
 import gzip
 import hashlib
+import importlib.util
 import json
 import subprocess
 import sys
 from pathlib import Path
 
 import yaml
+import pytest
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -68,7 +70,7 @@ def test_new36_holdout_sidecar_matches_the_benchmark() -> None:
 def test_challenge100_registry_is_arithmetically_consistent() -> None:
     registry = yaml.safe_load(C100_REGISTRY.read_text(encoding="utf-8"))
     models = registry["models"]
-    assert len(models) == 17
+    assert len(models) == 20
     assert len({model["id"] for model in models}) == len(models)
     for model in models:
         c64 = model["challenge64"]
@@ -105,7 +107,7 @@ def test_challenge100_manifest_hashes_and_counts() -> None:
     assert manifest["counts"] == {
         "benchmarked36HoldoutTasksWithWorlds": 29,
         "benchmarked36Tasks": 36,
-        "challenge100Models": 17,
+        "challenge100Models": 20,
         "challenge100Tasks": 100,
         "challenge64Tasks": 64,
     }
@@ -114,3 +116,32 @@ def test_challenge100_manifest_hashes_and_counts() -> None:
         assert path.exists(), artifact["path"]
         assert path.stat().st_size == artifact["sizeBytes"]
         assert sha256(path) == artifact["sha256"]
+
+
+@pytest.mark.parametrize("error", ["missing model", "wrong counts", "wrong name"])
+def test_leaderboard_rejects_inconsistent_challenge64_projection(tmp_path: Path, error: str) -> None:
+    spec = importlib.util.spec_from_file_location("challenge100_table", TABLE_SCRIPT)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    c100 = yaml.safe_load(C100_REGISTRY.read_text(encoding="utf-8"))
+    c64 = yaml.safe_load(C64_REGISTRY.read_text(encoding="utf-8"))
+    target = c100["models"][0]["challenge64"]["registry_id"]
+    if error == "missing model":
+        c64["models"] = [model for model in c64["models"] if model["id"] != target]
+        message = "missing from Challenge64 registry"
+    elif error == "wrong counts":
+        c100["models"][0]["challenge64"]["evaluable"] -= 1
+        message = "projection counts disagree"
+    else:
+        c100["models"][0]["display_name"] += " inconsistent"
+        message = "inconsistent display name"
+    c100_path, c64_path = tmp_path / "c100.yaml", tmp_path / "c64.yaml"
+    c100_path.write_text(yaml.safe_dump(c100), encoding="utf-8")
+    c64_path.write_text(yaml.safe_dump(c64), encoding="utf-8")
+    with pytest.raises(ValueError, match=message):
+        module.render(
+            challenge100_registry_path=c100_path,
+            challenge64_registry_path=c64_path,
+            challenge64_eval_path=C64_EVAL,
+            challenge64_holdout_path=C64_HOLDOUT,
+        )

@@ -140,12 +140,38 @@ def render(
 ) -> str:
     c100 = yaml.safe_load(challenge100_registry_path.read_text(encoding="utf-8"))
     c64 = yaml.safe_load(challenge64_registry_path.read_text(encoding="utf-8"))
+    c64_models = {str(model["id"]): model for model in c64["models"]}
+    if len(c64_models) != len(c64["models"]):
+        raise ValueError("Duplicate Challenge64 model IDs")
+    projection_ids = [str(model["challenge64"]["registry_id"]) for model in c100["models"]]
+    if len(set(projection_ids)) != len(projection_ids):
+        raise ValueError("Duplicate Challenge100 projection IDs")
+    evals: dict[str, list[dict[str, Any]]] = {}
+    for row in iter_jsonl(challenge64_eval_path):
+        evals.setdefault(str(row["model_id"]), []).append(row)
+    for model in c100["models"]:
+        projection = model["challenge64"]
+        model_id = str(projection["registry_id"])
+        if model_id not in c64_models:
+            raise ValueError(f"{model_id}: missing from Challenge64 registry")
+        if model["display_name"] != c64_models[model_id]["display_name"]:
+            raise ValueError(f"{model_id}: inconsistent display name across leaderboards")
+        rows = evals.get(model_id, [])
+        if len(rows) != 64:
+            raise ValueError(f"{model_id}: expected 64 Challenge64 rows, found {len(rows)}")
+        actual = {
+            "evaluable": sum(bool(row.get("parse_ok")) for row in rows),
+            "correct": sum(bool(row.get("valid")) for row in rows),
+        }
+        if any(actual[key] != int(projection[key]) for key in actual):
+            raise ValueError(f"{model_id}: Challenge64 projection counts disagree with evaluation cache")
     lines = [
         "# INDUCTION Challenge Leaderboards",
         "",
         "Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. "
-        "The Challenge100 table includes models with results on New36; the Challenge64 table remains additive and "
-        "therefore includes additional models.",
+        f"All {len(c100['models'])} Challenge100 models appear in the Challenge64 table, alongside "
+        f"{len(c64['models']) - len(c100['models'])} additional models with Challenge64 results. "
+        "Each table is ranked independently by correct answers on its own task set, so model order differs.",
         "",
         "Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. "
         "A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula "
