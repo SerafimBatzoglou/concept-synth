@@ -224,3 +224,9 @@ models:
   protocol: Round 1, xhigh thinking, 131K maximum output tokens, with non-evaluable
     retry
   source_release: current pipeline Round-1 ledger
+- id: deepseek-v4.1-flash
+  display_name: DeepSeek V4.1 Flash
+  source_type: pipeline_store
+  protocol: direct-only Round 1, maximum thinking, 384K maximum output tokens, 50
+    parallel workers, zero retries
+  source_release: current pipeline Round-1 ledger

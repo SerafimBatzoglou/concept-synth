@@ -1,6 +1,6 @@
 # INDUCTION Challenge Leaderboards
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 20 Challenge100 models appear in the Challenge64 table, alongside 20 additional models with Challenge64 results. Each table is ranked independently by correct answers on its own task set, so model order differs.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 21 Challenge100 models appear in the Challenge64 table, alongside 20 additional models with Challenge64 results. Each table is ranked independently by correct answers on its own task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -24,6 +24,7 @@ Rows are ranked by Challenge100 Correct, then Evaluable coverage, then model nam
 | Ox Alpha | 87/100 | 12/100 (12.0%) | 72.7% (8/11) | 25.5 / 16.0 |
 | Gemini 3.7 Flash | 100/100 | 11/100 (11.0%) | 90.0% (9/10) | 16.4 / 15.0 |
 | Grok 4.5 | 100/100 | 11/100 (11.0%) | 80.0% (8/10) | 20.1 / 15.0 |
+| DeepSeek V4.1 Flash | 97/100 | 11/100 (11.0%) | 30.0% (3/10) | 92.7 / 37.0 |
 | Muse Spark 1.2 | 92/100 | 11/100 (11.0%) | 70.0% (7/10) | 29.1 / 17.0 |
 | Gemini 3.8 Flash | 100/100 | 9/100 (9.0%) | 100.0% (8/8) | 15.6 / 16.0 |
 | Gemini 3.5 Flash | 98/100 | 7/100 (7.0%) | 85.7% (6/7) | 16.6 / 15.0 |
@@ -56,6 +57,7 @@ Rows are ranked by Challenge64 train-set Correct, then Evaluable coverage, then 
 | Ox Alpha | 54/64 | 12/64 (18.8%) | 72.7% (8/11) | 25.5 / 16.0 |
 | Gemini 3.7 Flash | 64/64 | 11/64 (17.2%) | 90.0% (9/10) | 16.4 / 15.0 |
 | Grok 4.5 | 64/64 | 11/64 (17.2%) | 80.0% (8/10) | 20.1 / 15.0 |
+| DeepSeek V4.1 Flash | 63/64 | 11/64 (17.2%) | 30.0% (3/10) | 92.7 / 37.0 |
 | Muse Spark 1.2 | 59/64 | 11/64 (17.2%) | 70.0% (7/10) | 29.1 / 17.0 |
 | GPT-5.2 | 64/64 | 9/64 (14.1%) | 25.0% (2/8) | 85.1 / 95.0 |
 | Gemini 3.8 Flash | 64/64 | 9/64 (14.1%) | 100.0% (8/8) | 15.6 / 16.0 |

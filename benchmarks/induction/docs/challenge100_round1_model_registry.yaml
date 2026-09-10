@@ -400,3 +400,20 @@ models:
   challenge100:
     evaluable: 93
     correct: 5
+- id: deepseek-v4.1-flash
+  display_name: DeepSeek V4.1 Flash
+  protocol: direct-only Round 1, maximum thinking, 384K maximum output tokens, 50
+    parallel workers, zero retries
+  challenge64:
+    registry_id: deepseek-v4.1-flash
+    evaluable: 63
+    correct: 11
+  benchmarked36:
+    evaluable: 34
+    correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
+  challenge100:
+    evaluable: 97
+    correct: 11

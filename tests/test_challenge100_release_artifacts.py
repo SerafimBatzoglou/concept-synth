@@ -70,7 +70,7 @@ def test_new36_holdout_sidecar_matches_the_benchmark() -> None:
 def test_challenge100_registry_is_arithmetically_consistent() -> None:
     registry = yaml.safe_load(C100_REGISTRY.read_text(encoding="utf-8"))
     models = registry["models"]
-    assert len(models) == 20
+    assert len(models) == 21
     assert len({model["id"] for model in models}) == len(models)
     for model in models:
         c64 = model["challenge64"]
@@ -107,13 +107,52 @@ def test_challenge100_manifest_hashes_and_counts() -> None:
     assert manifest["counts"] == {
         "benchmarked36HoldoutTasksWithWorlds": 29,
         "benchmarked36Tasks": 36,
-        "challenge100Models": 20,
+        "challenge100Models": 21,
         "challenge100Tasks": 100,
         "challenge64Tasks": 64,
     }
     for artifact in manifest["artifacts"]:
         path = REPO_ROOT / artifact["path"]
         assert path.exists(), artifact["path"]
+        assert path.stat().st_size == artifact["sizeBytes"]
+        assert sha256(path) == artifact["sha256"]
+
+
+def test_deepseek_v41_flash_verified_results_and_projection() -> None:
+    report = json.loads((BENCH_ROOT / "eval/deepseek_v4_1_flash_challenge100_round1_report.json").read_text())
+    assert report["model"] == "deepseek-v4.1-flash"
+    assert len(report["tasks"]) == 100
+    assert len({row["task_id"] for row in report["tasks"]}) == 100
+    assert report["overall"]["evaluable"] == 97
+    assert report["overall"]["correct"] == 11
+    assert report["overall"]["holdout"]["available"] == 10
+    assert report["overall"]["holdout"]["correct"] == 3
+    assert report["frontiers"] == {"post_round1": 100, "symbolic_candidates": 0}
+    assert report["settings"]["thinking_effort"] == "max"
+    assert report["settings"]["max_output_tokens"] == 384000
+    assert report["settings"]["workers"] == 50
+    assert report["generation_calls"]["started_once"] == 100
+    assert report["generation_calls"]["retries"] == 0
+    assert report["provider_terminal"]["output_cap"] == 2
+    assert report["provider_terminal"]["provider_errors"] == 1
+    rows = [json.loads(line) for line in C64_EVAL.read_text().splitlines()]
+    projected = [row for row in rows if row["model_id"] == "deepseek-v4.1-flash"]
+    assert len(projected) == 64
+    assert sum(row["parse_ok"] for row in projected) == 63
+    assert sum(row["valid"] for row in projected) == 11
+    serialized = json.dumps(report)
+    for private_value in ["/Users/", "pipeline.sqlite", "reasoningTrace", "provider_call_meta", "responseId", "candidate_id"]:
+        assert private_value not in serialized
+
+
+def test_challenge64_manifest_includes_new_projection() -> None:
+    manifest = json.loads((BENCH_ROOT / "challenge64_round1_release_manifest.json").read_text())
+    registry = yaml.safe_load(C64_REGISTRY.read_text())
+    assert set(manifest["includedModels"]) == {model["id"] for model in registry["models"]}
+    assert "deepseek-v4.1-flash" in manifest["includedModels"]
+    assert all(count == 64 * len(registry["models"]) for count in manifest["counts"].values())
+    for artifact in manifest["artifacts"]:
+        path = REPO_ROOT / artifact["path"]
         assert path.stat().st_size == artifact["sizeBytes"]
         assert sha256(path) == artifact["sha256"]
 
