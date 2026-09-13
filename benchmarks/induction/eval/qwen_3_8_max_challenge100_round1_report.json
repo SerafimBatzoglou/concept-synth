@@ -1,0 +1,2936 @@
+{
+  "by_category_or_slice": {
+    "binary_guard_incoming_lift_qd2": {
+      "correct": 0,
+      "correct_among_evaluable": 0.0,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 5,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "evaluable_incorrect": 5
+      },
+      "strict_accuracy": 0.0,
+      "total": 5
+    },
+    "compact_ef_lift_qd2": {
+      "correct": 0,
+      "correct_among_evaluable": 0.0,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 4,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "evaluable_incorrect": 4
+      },
+      "strict_accuracy": 0.0,
+      "total": 4
+    },
+    "compact_response_qd3": {
+      "correct": 0,
+      "correct_among_evaluable": 0.0,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 3,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "evaluable_incorrect": 3
+      },
+      "strict_accuracy": 0.0,
+      "total": 3
+    },
+    "dual_role_cross_lift_qd2": {
+      "correct": 0,
+      "correct_among_evaluable": 0.0,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 3,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "evaluable_incorrect": 3,
+        "output_cap": 1
+      },
+      "strict_accuracy": 0.0,
+      "total": 4
+    },
+    "extreme_context": {
+      "correct": 5,
+      "correct_among_evaluable": 0.35714285714285715,
+      "correct_formula_ast": {
+        "count": 5,
+        "max": 17,
+        "mean": 15.8,
+        "median": 16,
+        "min": 14,
+        "sum": 79
+      },
+      "evaluable": 14,
+      "holdout": {
+        "available": 5,
+        "correct": 5
+      },
+      "status_counts": {
+        "correct": 5,
+        "evaluable_incorrect": 9,
+        "output_cap": 1
+      },
+      "strict_accuracy": 0.3333333333333333,
+      "total": 15
+    },
+    "extreme_logic": {
+      "correct": 4,
+      "correct_among_evaluable": 0.25,
+      "correct_formula_ast": {
+        "count": 4,
+        "max": 132,
+        "mean": 67.75,
+        "median": 61.5,
+        "min": 16,
+        "sum": 271
+      },
+      "evaluable": 16,
+      "holdout": {
+        "available": 4,
+        "correct": 2
+      },
+      "status_counts": {
+        "correct": 4,
+        "evaluable_incorrect": 12
+      },
+      "strict_accuracy": 0.25,
+      "total": 16
+    },
+    "filtered_dual_role_lift_qd2": {
+      "correct": 0,
+      "correct_among_evaluable": 0.0,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 3,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "evaluable_incorrect": 3,
+        "output_cap": 1
+      },
+      "strict_accuracy": 0.0,
+      "total": 4
+    },
+    "filtered_ef_lift_qd2": {
+      "correct": 0,
+      "correct_among_evaluable": 0.0,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 1,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "evaluable_incorrect": 1,
+        "output_cap": 2,
+        "parse_invalid": 1
+      },
+      "strict_accuracy": 0.0,
+      "total": 4
+    },
+    "guardless_cross_scope_lift_qd2": {
+      "correct": 0,
+      "correct_among_evaluable": null,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 0,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "output_cap": 2,
+        "parse_invalid": 1
+      },
+      "strict_accuracy": 0.0,
+      "total": 3
+    },
+    "guardless_same_relation_scope_lift_qd2": {
+      "correct": 0,
+      "correct_among_evaluable": 0.0,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 1,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "evaluable_incorrect": 1,
+        "output_cap": 1,
+        "parse_invalid": 1
+      },
+      "strict_accuracy": 0.0,
+      "total": 3
+    },
+    "hard": {
+      "correct": 18,
+      "correct_among_evaluable": 0.5625,
+      "correct_formula_ast": {
+        "count": 18,
+        "max": 473,
+        "mean": 104.27777777777777,
+        "median": 29.5,
+        "min": 12,
+        "sum": 1877
+      },
+      "evaluable": 32,
+      "holdout": {
+        "available": 17,
+        "correct": 7
+      },
+      "status_counts": {
+        "correct": 18,
+        "evaluable_incorrect": 14
+      },
+      "strict_accuracy": 0.5625,
+      "total": 32
+    },
+    "medium": {
+      "correct": 0,
+      "correct_among_evaluable": 0.0,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 1,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "evaluable_incorrect": 1
+      },
+      "strict_accuracy": 0.0,
+      "total": 1
+    },
+    "nested_containment_qd3": {
+      "correct": 0,
+      "correct_among_evaluable": null,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 0,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "output_cap": 2,
+        "parse_invalid": 1
+      },
+      "strict_accuracy": 0.0,
+      "total": 3
+    },
+    "universal_nested_response_qd3": {
+      "correct": 0,
+      "correct_among_evaluable": null,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 0,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "output_cap": 2,
+        "parse_invalid": 1
+      },
+      "strict_accuracy": 0.0,
+      "total": 3
+    }
+  },
+  "by_subset": {
+    "challenge64": {
+      "correct": 27,
+      "correct_among_evaluable": 0.42857142857142855,
+      "correct_formula_ast": {
+        "count": 27,
+        "max": 473,
+        "mean": 82.48148148148148,
+        "median": 18,
+        "min": 12,
+        "sum": 2227
+      },
+      "evaluable": 63,
+      "holdout": {
+        "available": 26,
+        "correct": 14
+      },
+      "status_counts": {
+        "correct": 27,
+        "evaluable_incorrect": 36,
+        "output_cap": 1
+      },
+      "strict_accuracy": 0.421875,
+      "total": 64
+    },
+    "new36": {
+      "correct": 0,
+      "correct_among_evaluable": 0.0,
+      "correct_formula_ast": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "sum": 0
+      },
+      "evaluable": 20,
+      "holdout": {
+        "available": 0,
+        "correct": 0
+      },
+      "status_counts": {
+        "evaluable_incorrect": 20,
+        "output_cap": 11,
+        "parse_invalid": 5
+      },
+      "strict_accuracy": 0.0,
+      "total": 36
+    }
+  },
+  "display_name": "Qwen 3.8 Max",
+  "generation_calls": {
+    "accepted_with_response": 133,
+    "attempted": 228,
+    "audit_correction": "Historical report labeled all166 attempts as accepted;87 were HTTP429 rejected. They are reported as attempted, not successful accepted generations here.",
+    "automatic_retries": 0,
+    "count_scope": "Frozen public Challenge64 Round1 requests plus listed new physical runs; unrelated retries and later rounds excluded",
+    "http_rejected": 95
+  },
+  "model": "qwen-3.8-max",
+  "non_evaluable_task_ids": [
+    "extreme_context_002",
+    "fullobs_v2_guardless_cross_scope_lift_qd2_001",
+    "fullobs_v2_guardless_cross_scope_lift_qd2_003",
+    "fullobs_v2_guardless_cross_scope_lift_qd2_010",
+    "fullobs_v2_guardless_same_relation_scope_lift_qd2_002",
+    "fullobs_v2_guardless_same_relation_scope_lift_qd2_003",
+    "fullobs_v2_dual_role_cross_lift_qd2_009",
+    "fullobs_v2_filtered_ef_lift_qd2_005",
+    "fullobs_v2_filtered_ef_lift_qd2_006",
+    "fullobs_v2_filtered_ef_lift_qd2_009",
+    "fullobs_v2_filtered_dual_role_lift_qd2_002",
+    "fullobs_v2_nested_containment_qd3_003",
+    "fullobs_v2_nested_containment_qd3_006",
+    "fullobs_v2_nested_containment_qd3_007",
+    "fullobs_v2_universal_nested_response_qd3_002",
+    "fullobs_v2_universal_nested_response_qd3_005",
+    "fullobs_v2_universal_nested_response_qd3_008"
+  ],
+  "overall": {
+    "correct": 27,
+    "correct_among_evaluable": 0.3253012048192771,
+    "correct_formula_ast": {
+      "count": 27,
+      "max": 473,
+      "mean": 82.48148148148148,
+      "median": 18,
+      "min": 12,
+      "sum": 2227
+    },
+    "evaluable": 83,
+    "holdout": {
+      "available": 26,
+      "correct": 14
+    },
+    "status_counts": {
+      "correct": 27,
+      "evaluable_incorrect": 56,
+      "output_cap": 12,
+      "parse_invalid": 5
+    },
+    "strict_accuracy": 0.27,
+    "total": 100
+  },
+  "physical_passes": [
+    {
+      "accepted_with_response": 64,
+      "attempted": 64,
+      "correct": 27,
+      "effort_requested": "max",
+      "empty_or_incomplete": 1,
+      "evaluable": 63,
+      "http_rejected": 0,
+      "model": "qwen3.8-max-preview",
+      "normal_or_completed": 64,
+      "run": "qwen38max_challenge64_smoke5_max_v1:frozen_public_round1_projection",
+      "thinking_budget_sent": 262144,
+      "token_usage": {
+        "note": "Included in frozen historical aggregate below"
+      }
+    },
+    {
+      "accepted_with_response": 15,
+      "attempted": 36,
+      "effort_requested": "max",
+      "evaluation": {
+        "correct": 0,
+        "correct_among_evaluable": 0.0,
+        "empty_output_cap_incomplete": 0,
+        "evaluable": 15,
+        "evaluable_incorrect": 15,
+        "parse_invalid": 0,
+        "provider_errors": 21,
+        "total": 36,
+        "usable_non_empty": 15
+      },
+      "http_rejected": 21,
+      "http_status_counts": {
+        "429": 21
+      },
+      "model": "qwen3.8-max-preview",
+      "run": "challenge100_qwen38max_round1_max65k_new36_serial8_v1",
+      "thinking_budget_sent": 262144,
+      "token_usage": {
+        "completion_tokens": {
+          "count": 15,
+          "max": 147909,
+          "mean": 135500.46666666667,
+          "median": 134935,
+          "min": 119924,
+          "sum": 2032507
+        },
+        "prompt_tokens": {
+          "count": 15,
+          "max": 7564,
+          "mean": 6973.533333333334,
+          "median": 7010,
+          "min": 6094,
+          "sum": 104603
+        },
+        "reasoning_tokens": {
+          "count": 15,
+          "max": 147846,
+          "mean": 135393.2,
+          "median": 134856,
+          "min": 119742,
+          "sum": 2030898
+        },
+        "total_tokens": {
+          "count": 15,
+          "max": 155439,
+          "mean": 142474,
+          "median": 141790,
+          "min": 126455,
+          "sum": 2137110
+        }
+      }
+    },
+    {
+      "accepted_with_response": 0,
+      "attempted": 22,
+      "effort_requested": "medium",
+      "evaluation": {
+        "correct": 0,
+        "correct_among_evaluable": null,
+        "empty_output_cap_incomplete": 0,
+        "evaluable": 0,
+        "evaluable_incorrect": 0,
+        "parse_invalid": 0,
+        "provider_errors": 22,
+        "total": 22,
+        "usable_non_empty": 0
+      },
+      "http_rejected": 22,
+      "http_status_counts": {
+        "429": 22
+      },
+      "model": "qwen3.8-max-preview",
+      "run": "challenge100_qwen38max_round1_medium65k_residual1_serial8_v1",
+      "thinking_budget_sent": 262144,
+      "token_usage": {
+        "completion_tokens": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        },
+        "prompt_tokens": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        },
+        "reasoning_tokens": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        },
+        "successful_responses": 0,
+        "total_tokens": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        }
+      }
+    },
+    {
+      "accepted_with_response": 0,
+      "attempted": 22,
+      "effort_requested": "low",
+      "evaluation": {
+        "correct": 0,
+        "correct_among_evaluable": null,
+        "empty_output_cap_incomplete": 0,
+        "evaluable": 0,
+        "evaluable_incorrect": 0,
+        "parse_invalid": 0,
+        "provider_errors": 22,
+        "total": 22,
+        "usable_non_empty": 0
+      },
+      "http_rejected": 22,
+      "http_status_counts": {
+        "429": 22
+      },
+      "model": "qwen3.8-max-preview",
+      "run": "challenge100_qwen38max_round1_low65k_residual2_serial8_v1",
+      "thinking_budget_sent": 262144,
+      "token_usage": {
+        "completion": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        },
+        "prompt": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        },
+        "reasoning": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        },
+        "successful_response_count": 0,
+        "total": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        }
+      }
+    },
+    {
+      "accepted_with_response": 0,
+      "attempted": 22,
+      "effort_requested": "low",
+      "evaluation": {
+        "correct": 0,
+        "correct_among_evaluable": null,
+        "empty_output_cap_incomplete": 0,
+        "evaluable": 0,
+        "evaluable_incorrect": 0,
+        "parse_invalid": 0,
+        "provider_errors": 22,
+        "total": 22,
+        "usable_non_empty": 0
+      },
+      "http_rejected": 22,
+      "http_status_counts": {
+        "429": 22
+      },
+      "model": "qwen3.8-max-preview",
+      "run": "challenge100_qwen38max_round1_low65k_residual3_serial8_v1",
+      "thinking_budget_sent": 262144,
+      "token_usage": {
+        "completion": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        },
+        "prompt": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        },
+        "reasoning": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        },
+        "successful_response_count": 0,
+        "total": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        }
+      }
+    },
+    {
+      "accepted_with_response": 0,
+      "attempted": 8,
+      "effort_requested": "low",
+      "evaluation": "authentication rejected; no generated responses",
+      "http_rejected": 8,
+      "http_status_counts": {
+        "401": 8
+      },
+      "model": "qwen3.8-max-preview",
+      "not_submitted": 14,
+      "run": "challenge100_qwen38max_round1_low65k_residual4_serial8_v1",
+      "thinking_budget_sent": 262144
+    },
+    {
+      "accepted_with_response": 22,
+      "attempted": 22,
+      "effort_requested": "low",
+      "evaluation": {
+        "correct": 0,
+        "correct_among_evaluable": 0.0,
+        "correct_ast": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "evaluable": 2,
+        "evaluable_fraction": 0.09090909090909091,
+        "holdout": {
+          "available": 0,
+          "correct": 0
+        },
+        "status_counts": {
+          "evaluable_incorrect": 2,
+          "output_cap": 13,
+          "parse_invalid": 7
+        },
+        "strict_accuracy": 0.0,
+        "token_usage": {
+          "input": {
+            "count": 22,
+            "mean": 7081.363636363636,
+            "median": 6962.0,
+            "sum": 155790
+          },
+          "output": {
+            "count": 22,
+            "mean": 54015.40909090909,
+            "median": 69635.0,
+            "sum": 1188339
+          },
+          "reasoning": {
+            "count": 22,
+            "mean": 4096,
+            "median": 4096.0,
+            "sum": 90112
+          },
+          "total": {
+            "count": 22,
+            "mean": 61096.77272727273,
+            "median": 76262.5,
+            "sum": 1344129
+          }
+        },
+        "total": 22
+      },
+      "http_rejected": 0,
+      "model": "qwen3.8-max-0902",
+      "provider_terminal": {
+        "empty": 0,
+        "nonempty": 22,
+        "normal_finish": 9,
+        "output_cap": 13
+      },
+      "reasoning_effort_sent": "low",
+      "run": "challenge100_qwen38max0902_round1_low65k_residual4_dulo_serial8_v1",
+      "thinking_budget_applied": 4096,
+      "token_usage": {
+        "input": {
+          "count": 22,
+          "mean": 7081.363636363636,
+          "median": 6962.0,
+          "sum": 155790
+        },
+        "output": {
+          "count": 22,
+          "mean": 54015.40909090909,
+          "median": 69635.0,
+          "sum": 1188339
+        },
+        "reasoning": {
+          "count": 22,
+          "mean": 4096,
+          "median": 4096.0,
+          "sum": 90112
+        },
+        "total": {
+          "count": 22,
+          "mean": 61096.77272727273,
+          "median": 76262.5,
+          "sum": 1344129
+        }
+      }
+    },
+    {
+      "accepted_with_response": 13,
+      "attempted": 13,
+      "effort_requested": "low",
+      "evaluation": {
+        "correct": 0,
+        "correct_among_evaluable": 0.0,
+        "correct_ast": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "evaluable": 1,
+        "evaluable_fraction": 0.07692307692307693,
+        "holdout": {
+          "available": 0,
+          "correct": 0
+        },
+        "status_counts": {
+          "evaluable_incorrect": 1,
+          "output_cap": 9,
+          "parse_invalid": 3
+        },
+        "strict_accuracy": 0.0,
+        "token_usage": {
+          "input": {
+            "count": 13,
+            "mean": 7078,
+            "median": 7124,
+            "sum": 92014
+          },
+          "output": {
+            "count": 13,
+            "mean": 59486.46153846154,
+            "median": 69635,
+            "sum": 773324
+          },
+          "reasoning": {
+            "count": 13,
+            "mean": 4096,
+            "median": 4096,
+            "sum": 53248
+          },
+          "total": {
+            "count": 13,
+            "mean": 66564.46153846153,
+            "median": 76505,
+            "sum": 865338
+          }
+        },
+        "total": 13
+      },
+      "http_rejected": 0,
+      "model": "qwen3.8-max-0902",
+      "provider_terminal": {
+        "empty": 0,
+        "nonempty": 13,
+        "normal_finish": 4,
+        "output_cap": 9
+      },
+      "reasoning_effort_sent": "low",
+      "run": "challenge100_qwen38max0902_round1_low65k_capped13_residual5_dulo_serial8_v1",
+      "thinking_budget_applied": 4096,
+      "token_usage": {
+        "input": {
+          "count": 13,
+          "mean": 7078,
+          "median": 7124,
+          "sum": 92014
+        },
+        "output": {
+          "count": 13,
+          "mean": 59486.46153846154,
+          "median": 69635,
+          "sum": 773324
+        },
+        "reasoning": {
+          "count": 13,
+          "mean": 4096,
+          "median": 4096,
+          "sum": 53248
+        },
+        "total": {
+          "count": 13,
+          "mean": 66564.46153846153,
+          "median": 76505,
+          "sum": 865338
+        }
+      }
+    },
+    {
+      "accepted_with_response": 19,
+      "attempted": 19,
+      "effort_requested": "low",
+      "evaluation": {
+        "correct": 0,
+        "correct_among_evaluable": 0.0,
+        "correct_ast": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "evaluable": 2,
+        "evaluable_fraction": 0.10526315789473684,
+        "holdout": {
+          "available": 0,
+          "correct": 0
+        },
+        "status_counts": {
+          "evaluable_incorrect": 2,
+          "output_cap": 12,
+          "parse_invalid": 5
+        },
+        "strict_accuracy": 0.0,
+        "token_usage": {
+          "input": {
+            "count": 19,
+            "mean": 7056.526315789473,
+            "median": 6934,
+            "sum": 134074
+          },
+          "output": {
+            "count": 19,
+            "mean": 55183.57894736842,
+            "median": 69635,
+            "sum": 1048488
+          },
+          "reasoning": {
+            "count": 19,
+            "mean": 4096,
+            "median": 4096,
+            "sum": 77824
+          },
+          "total": {
+            "count": 19,
+            "mean": 62240.10526315789,
+            "median": 76393,
+            "sum": 1182562
+          }
+        },
+        "total": 19
+      },
+      "http_rejected": 0,
+      "model": "qwen3.8-max-0902",
+      "provider_terminal": {
+        "empty": 0,
+        "nonempty": 19,
+        "normal_finish": 7,
+        "output_cap": 12
+      },
+      "reasoning_effort_sent": "low",
+      "run": "challenge100_qwen38max0902_round1_low65k_final_residual6_dulo_serial8_v1",
+      "thinking_budget_applied": 4096,
+      "token_usage": {
+        "input": {
+          "count": 19,
+          "mean": 7056.526315789473,
+          "median": 6934,
+          "sum": 134074
+        },
+        "output": {
+          "count": 19,
+          "mean": 55183.57894736842,
+          "median": 69635,
+          "sum": 1048488
+        },
+        "reasoning": {
+          "count": 19,
+          "mean": 4096,
+          "median": 4096,
+          "sum": 77824
+        },
+        "total": {
+          "count": 19,
+          "mean": 62240.10526315789,
+          "median": 76393,
+          "sum": 1182562
+        }
+      }
+    }
+  ],
+  "protocol": "Direct Round-1 cascade: frozen Qwen 3.8 Max Preview Challenge64 plus New36 and residuals; three released qwen3.8-max-0902 low-effort passes (22,13,19 tasks), 65,536 output tokens, eight workers; parser-evaluability-only response selection",
+  "provenance_notes": [
+    "Historical Preview calls retained their original maximum thinking_budget payload even when metadata requested medium or low.",
+    "Released0902 calls send explicit low (4096 reasoning tokens), retaining65536 maximum output tokens.",
+    "Frozen public Challenge64 is single-formula Round1; newer responses use any-direct-formula response semantics.",
+    "Output-cap responses count incorrect/non-evaluable regardless of nonempty truncated text.",
+    "No score-based response selection, symbolic repair, or later-round candidates."
+  ],
+  "provider": "qwencloud",
+  "schema_version": "qwen38max_challenge100_verified_final_cascade_v1",
+  "selected_component_counts": {
+    "challenge100_qwen38max0902_round1_low65k_capped13_residual5_dulo_serial8_v1": 1,
+    "challenge100_qwen38max0902_round1_low65k_final_residual6_dulo_serial8_v1": 2,
+    "challenge100_qwen38max0902_round1_low65k_residual4_dulo_serial8_v1": 2,
+    "non_evaluable": 17,
+    "qwen_pass1": 78
+  },
+  "selection_policy": "earliest parser-evaluable response component; no correctness/AST/holdout selection",
+  "tasks": [
+    {
+      "ast_size": 27,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (and (R x y) (not (Q y)) (not (R y x)))) (or (Q x) (not (exists z (and (R x z) (Q z))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_024"
+    },
+    {
+      "ast_size": 23,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (or (and (P y) (S y x)) (and (Q y) (or (S x y) (S y x))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_018"
+    },
+    {
+      "ast_size": 24,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (not (= x y)) (S y y) (or (P x) (Q y) (R x x))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_003"
+    },
+    {
+      "ast_size": 36,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (exists y (and (R x y) (S y x) (not (P y)))) (and (P x) (forall y (or (not (R x y)) (P y))) (forall y (or (not (S x y)) (P y)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_011"
+    },
+    {
+      "ast_size": 55,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (and (S x y) (P y))) (exists z (and (S x z) (Q z) (not (R z x)))) (exists w (and (R x w) (Q w))) (or (not (Q x)) (not (exists y (and (S y x) (P y)))) (not (exists z (and (R x z) (P z))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_005"
+    },
+    {
+      "ast_size": 27,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (R y y) (or (P y) (Q y)) (or (R x x) (S x x) (R y x))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_023"
+    },
+    {
+      "ast_size": 29,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (and (R y x) (P y))) (exists z (and (S x z) (not (Q z)))) (or (not (and (P x) (Q x))) (R x x)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_010"
+    },
+    {
+      "ast_size": 119,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (P x) (Q x)) (and (P x) (not (Q x)) (exists y (and (Q y) (or (and (R x y) (S y x)) (and (S x y) (R y x)))))) (and (not (P x)) (Q x) (exists y (and (P y) (or (and (R x y) (S y x)) (and (S x y) (R y x)))))) (and (not (P x)) (not (Q x)) (or (and (not (exists y (R y x))) (not (exists y (S y x))) (exists y (R x y)) (exists y (S x y))) (exists y (and (or (P y) (Q y)) (or (and (R x y) (S y x)) (and (S x y) (R y x))))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_006"
+    },
+    {
+      "ast_size": 242,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (P x) (Q x)) (and (Q x) (not (P x)) (forall y (or (not (S x y)) (or (P y) (Q y)))) (exists y (and (R x y) (Q y) (not (P y)) (not (S x y)) (or (not (= y x)) (forall z (or (not (S x z)) (and (P z) (not (Q z))))) (exists z (and (R x z) (not (P z)) (not (Q z)))))))) (and (P x) (not (Q x)) (not (S x x)) (exists y (and (S x y) (Q y) (not (P y)))) (or (forall y (or (not (S x y)) (or (P y) (Q y)))) (exists y (and (R x y) (not (P y)) (not (Q y)))) (exists y (and (S x y) (not (P y)) (not (Q y))))) (exists y (and (R x y) (Q y) (not (P y)) (not (S x y)) (forall z (or (not (S y z)) (or (P z) (Q z)))) (or (not (R y y)) (R x x))))) (and (not (P x)) (not (Q x)) (not (R x x)) (exists y (and (R x y) (not (P y)) (not (Q y)))) (exists y (and (R x y) (Q y) (not (P y)))) (or (not (exists y (S x y))) (exists y (and (S x y) (Q y) (not (P y)))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_016"
+    },
+    {
+      "ast_size": 33,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (exists y (and (R y x) (S y x) (P y) (Q y))) (and (exists y (and (R y x) (Q y))) (exists y (and (S x y) (P y)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_009"
+    },
+    {
+      "ast_size": 184,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (not (Q x)) (and (Q x) (and (exists y (and (R y x) (Q y))) (and (exists z (and (S x z) (Q z))) (and (exists w (and (S x w) (not (Q w)))) (and (exists u (and (S x u) (not (P u)))) (and (exists v (and (R x v) (P v))) (and (not (S x x)) (or (and (not (exists v5 (and (S v5 x) (Q v5)))) (exists v6 (and (R x v6) (not (P v6))))) (or (and (exists v7 (and (S v7 x) (Q v7))) (exists v8 (and (Q v8) (and (not (= v8 x)) (and (S x v8) (and (S v8 x) (and (exists v9 (and (R v8 v9) (not (P v9)))) (or (and (not (P v8)) (or (not (P x)) (not (R x x)))) (and (P v8) (P x)))))))))) (and (exists v10 (and (S v10 x) (Q v10))) (and (exists v11 (and (S x v11) (and (Q v11) (not (P v11))))) (and (forall v12 (or (not (R v12 x)) (or (not (Q v12)) (P v12)))) (forall v13 (or (not (S v13 x)) (or (not (Q v13)) (P v13)))))))))))))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_022"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "challenge64",
+      "task_id": "extreme_context_002"
+    },
+    {
+      "ast_size": 62,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (and (R x y) (P y) (not (Q y)))) (or (and (Q x) (or (not (P x)) (not (R x x)) (not (exists y (and (S x y) (P y) (not (Q y))))))) (and (not (Q x)) (P x) (R x x) (exists y (and (S x y) (P y) (not (Q y)))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_085"
+    },
+    {
+      "ast_size": 716,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (and (R y x) (and (P y) (not (Q y))))) (and (exists z (and (R x z) (P z))) (or (and (not (exists w (and (S w x) (and (P w) (not (Q w)))))) (and (exists u (and (R x u) (and (P u) (not (Q u))))) (or (and (and (P x) (not (Q x))) (and (exists v (and (R x v) (and (not (P v)) (not (Q v))))) (not (exists v5 (and (R x v5) (and (P v5) (Q v5))))))) (or (and (and (P x) (Q x)) (and (exists v6 (and (R x v6) (and (not (P v6)) (not (Q v6))))) (and (not (exists v7 (and (R v7 x) (and (P v7) (Q v7))))) (and (not (exists v8 (and (S v8 x) (P v8)))) (exists v9 (and (R x v9) (and (S x v9) (and (P v9) (not (Q v9)))))))))) (or (and (and (P x) (Q x)) (and (not (exists v10 (and (R x v10) (and (not (P v10)) (not (Q v10)))))) (or (exists v11 (and (S v11 x) (P v11))) (and (not (exists v12 (and (S v12 x) (P v12)))) (exists v13 (and (R v13 x) (and (not (P v13)) (not (Q v13))))))))) (or (and (and (not (P x)) (Q x)) (and (not (exists v14 (and (R x v14) (and (not (P v14)) (not (Q v14)))))) (and (exists v15 (and (R x v15) (and (S x v15) (and (P v15) (not (Q v15)))))) (not (exists v16 (and (S v16 x) (P v16))))))) (and (and (not (P x)) (not (Q x))) (and (not (exists v17 (and (R x v17) (and (not (P v17)) (not (Q v17)))))) (and (exists v18 (and (R x v18) (and (S x v18) (and (P v18) (not (Q v18)))))) (not (exists v19 (and (R v19 x) (and (P v19) (Q v19)))))))))))))) (and (exists v20 (and (S v20 x) (and (P v20) (not (Q v20))))) (or (and (not (exists v21 (and (S x v21) (P v21)))) (and (and (P x) (not (Q x))) (and (not (exists v22 (and (R x v22) (and (P v22) (not (Q v22)))))) (and (exists v23 (and (R x v23) (and (not (P v23)) (not (Q v23))))) (and (not (exists v24 (and (R v24 x) (and (P v24) (Q v24))))) (exists v25 (and (R v25 x) (and (not (P v25)) (not (Q v25)))))))))) (and (exists v26 (and (S x v26) (P v26))) (or (and (and (not (P x)) (Q x)) (and (exists v27 (and (R x v27) (and (not (P v27)) (not (Q v27))))) (not (exists v28 (and (R x v28) (and (P v28) (not (Q v28)))))))) (and (not (exists v29 (and (R x v29) (and (not (P v29)) (not (Q v29)))))) (or (and (P x) (Q x)) (or (and (and (P x) (not (Q x))) (and (exists v30 (and (R v30 x) (and (P v30) (Q v30)))) (and (exists v31 (and (R x v31) (and (P v31) (Q v31)))) (not (exists v32 (and (R x v32) (and (S x v32) (and (P v32) (not (Q v32)))))))))) (or (and (and (not (P x)) (Q x)) (or (and (not (exists v33 (and (R x v33) (and (P v33) (not (Q v33)))))) (and (not (exists v34 (and (R v34 x) (and (P v34) (Q v34))))) (exists v35 (and (R v35 x) (and (not (P v35)) (not (Q v35))))))) (or (and (exists v36 (and (R x v36) (and (P v36) (not (Q v36))))) (exists v37 (and (R x v37) (and (S x v37) (and (P v37) (not (Q v37))))))) (or (and (exists v38 (and (R x v38) (and (P v38) (not (Q v38))))) (and (exists v39 (and (R v39 x) (and (P v39) (Q v39)))) (and (not (exists v40 (and (R x v40) (and (P v40) (Q v40))))) (not (exists v41 (and (R x v41) (and (S x v41) (and (P v41) (not (Q v41)))))))))) (and (exists v42 (and (R x v42) (and (P v42) (not (Q v42))))) (and (exists v43 (and (R v43 x) (and (P v43) (Q v43)))) (and (exists v44 (and (R x v44) (and (P v44) (Q v44)))) (exists v45 (and (R v45 x) (and (not (P v45)) (not (Q v45)))))))))))) (and (and (not (P x)) (not (Q x))) (and (exists v46 (and (R v46 x) (and (P v46) (Q v46)))) (not (exists v47 (and (R x v47) (and (P v47) (not (Q v47)))))))))))))))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_081"
+    },
+    {
+      "ast_size": 106,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (and (R y x) (Q y))) (exists z (and (S z x) (Q z))) (or (and (or (R x x) (S x x)) (or (and (P x) (not (Q x))) (and (Q x) (not (P x))) (and (P x) (Q x) (exists w (and (R x w) (S w x))) (exists y (and (S x y) (R y x)))))) (and (not (P x)) (exists w (and (R x w) (S w x))) (exists y (and (S x y) (R y x))) (exists y (exists z (and (R x y) (R x z) (not (= y z))))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_063"
+    },
+    {
+      "ast_size": 153,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (P x) (not (Q x)) (or (R x x) (S x x))) (exists y (and (R y x) (P y) (Q y) (or (and (R y y) (not (S y y))) (and (S y y) (not (R y y)))) (exists z (and (S y z) (not (P z)) (not (Q z)))))) (exists y (and (R y x) (P y) (not (R y y)) (not (S y y)) (exists z (and (S y z) (P z) (Q z))) (exists w (and (R y w) (not (and (P w) (Q w))))) (or (Q y) (exists w (and (R y w) (P w) (Q w)))))) (and (P x) (Q x) (exists y (and (R y x) (P y) (not (Q y)) (S y y))) (exists z (and (R x z) (not (P z)) (Q z)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_032"
+    },
+    {
+      "ast_size": 106,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (Q x) (exists y (and (R x y) (P y))) (forall z (or (not (R x z)) (P z)))) (exists y (and (R x y) (P y) (not (S y y)) (or (and (Q y) (forall z (or (not (S z y)) (Q z)))) (and (forall z (or (not (R z y)) (Q z))) (exists w (and (R y w) (not (Q w)))) (exists w (and (S y w) (not (P w)))))))) (exists y (and (R x y) (P y) (not (Q y)) (forall z (or (not (S y z)) (P z))) (not (R y y)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_079"
+    },
+    {
+      "ast_size": 36,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (not (R y x)) (exists z (and (or (R y z) (S y z)) (P z))) (exists z (and (or (R y z) (S y z)) (Q z)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_023"
+    },
+    {
+      "ast_size": 25,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (and (S x y) (P y))) (forall y (or (not (R x y)) (P y) (Q y) (R y x))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_017"
+    },
+    {
+      "ast_size": 22,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(and (exists y (S x y)) (forall z (or (not (R x z)) (exists w (and (S z w) (R w x))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_046"
+    },
+    {
+      "ast_size": 129,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (exists w (and (not (P w)) (not (Q w)))) (exists y (and (R y x) (S y y) (forall z (or (not (R y z)) (P z) (Q z)))))) (and (exists w (and (not (P w)) (not (Q w)))) (exists y (and (R y x) (not (Q y)) (not (exists z (S y z)))))) (and (not (exists w (S w w))) (exists y (and (R y x) (S x y)))) (and (forall w (or (P w) (Q w))) (or (and (P x) (exists y (and (R y x) (S x y))) (exists z (and (R x z) (not (P z))))) (and (not (P x)) (Q x) (exists y (and (R y x) (Q y))) (exists z (R x z))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_023"
+    },
+    {
+      "ast_size": 301,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (P x) (Q x)) (and (not (Q x)) (and (or (and (exists y (and (R x y) (not (Q y)))) (and (exists z (and (S x z) (and (P z) (Q z)))) (and (not (S x x)) (exists w (and (S x w) (and (P w) (not (Q w)))))))) (and (P x) (and (or (and (exists u (and (R x u) (and (P u) (Q u)))) (and (not (exists v (and (R x v) (not (Q v))))) (and (not (exists v5 (and (S x v5) (and (P v5) (Q v5))))) (and (exists v6 (and (S x v6) (Q v6))) (not (R x x)))))) (and (exists v7 (and (S x v7) (and (P v7) (Q v7)))) (and (not (exists v8 (and (R x v8) (not (Q v8))))) (exists v9 (and (R x v9) (and (P v9) (and (Q v9) (S v9 v9)))))))) (and (not (P x)) (and (not (exists v10 (and (R x v10) (not (Q v10))))) (and (not (exists v11 (and (R x v11) (and (P v11) (Q v11))))) (and (not (exists v12 (and (S x v12) (and (P v12) (Q v12))))) (exists v13 (and (S x v13) (and (Q v13) (not (exists v14 (and (R v13 v14) (Q v14)))))))))))))) (and (Q x) (and (not (P x)) (or (and (not (exists v15 (R x v15))) (exists v16 (and (S x v16) (and (P v16) (Q v16))))) (and (exists v17 (and (R x v17) (not (Q v17)))) (or (and (exists v18 (and (S x v18) (and (P v18) (Q v18)))) (or (not (exists v19 (and (R x v19) (and (P v19) (Q v19))))) (R x x))) (and (not (exists v20 (and (S x v20) (and (P v20) (Q v20))))) (and (exists v21 (and (R x v21) (and (P v21) (Q v21)))) (exists v22 (and (S x v22) (not (Q v22))))))))))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_088"
+    },
+    {
+      "ast_size": 16,
+      "category_or_slice": "extreme_logic",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(forall y (or (not (S x y)) (exists z (and (S y z) (R z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_014"
+    },
+    {
+      "ast_size": 44,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (not (exists y (R x y))) (and (Q x) (not (P x)) (not (exists y (S x y)))) (forall y (or (not (R x y)) (P y) (S y x) (forall z (or (not (R y z)) (Q z))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_009"
+    },
+    {
+      "ast_size": 105,
+      "category_or_slice": "extreme_logic",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(or (P x) (or (Q x) (and (forall y (or (not (R x y)) (or (P y) (or (Q y) (or (R y x) (S y x)))))) (and (exists z (and (R x z) (and (not (= x z)) (and (not (P z)) (not (Q z)))))) (or (and (forall w (or (not (S x w)) (or (P w) (Q w)))) (exists u (and (R x u) (or (P u) (Q u))))) (exists v (and (R x v) (and (not (= x v)) (and (not (P v)) (and (not (Q v)) (and (S v x) (exists v5 (and (S v v5) (or (P v5) (Q v5)))))))))))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_007"
+    },
+    {
+      "ast_size": 15,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(forall y (or (not (S x y)) (exists z (and (R y z) (Q z)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_019"
+    },
+    {
+      "ast_size": 132,
+      "category_or_slice": "extreme_logic",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(or (not (P x)) (not (exists y (R x y))) (and (or (Q x) (S x x)) (exists y (and (Q y) (not (P y)) (R x y) (S y x) (not (R y x))))) (and (not (Q x)) (R x x) (or (exists y (and (Q y) (not (P y)) (S x y) (R y x) (not (S y x)))) (and (exists y (and (Q y) (not (P y)) (R x y))) (exists z (and (not (P z)) (S x z) (not (exists w (R z w)))))))) (and (Q x) (forall y (or (not (R x y)) (P y))) (not (exists y (and (R x y) (Q y)))) (exists y (and (S x y) (not (P y))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_008"
+    },
+    {
+      "ast_size": 33,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (or (exists y (and (R x y) (S x y))) (exists z (and (R z x) (S z x)))) (exists w (and (S x w) (or (not (P w)) (not (Q w))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_015"
+    },
+    {
+      "ast_size": 18,
+      "category_or_slice": "extreme_logic",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (P z) (Q z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_022"
+    },
+    {
+      "ast_size": 17,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (S x y) (not (P y)) (not (Q y))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_011"
+    },
+    {
+      "ast_size": 17,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(exists y (exists z (and (R x y) (S y z) (or (P z) (Q z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 4
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_004"
+    },
+    {
+      "ast_size": 17,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(exists y (exists z (and (S x y) (S y z) (P z) (Q z))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_003"
+    },
+    {
+      "ast_size": 15,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(exists y (exists z (and (R x y) (R y z) (not (P z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_013"
+    },
+    {
+      "ast_size": 14,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(exists y (exists z (and (S x y) (R y z) (P z))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_021"
+    },
+    {
+      "ast_size": 16,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (S x z) (S y z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_026"
+    },
+    {
+      "ast_size": 54,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(or (P x) (Q x) (exists y (and (or (and (R x y) (S y x)) (and (S x y) (R y x))) (not (Q y)) (R y y) (not (exists z (and (S y z) (Q z)))) (or (P y) (not (exists w (and (R y w) (Q w))))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_027"
+    },
+    {
+      "ast_size": 159,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (or (and (R y y) (P y) (or (and (S y y) (Q y)) (and (not (S y y)) (not (Q y))))) (and (exists z (R z y)) (forall z (or (not (R z y)) (Q z))) (or (S y y) (not (Q y)))) (and (exists z (R z y)) (forall z (or (not (R z y)) (not (Q z)))) (P y) (Q y)) (and (Q y) (not (P y)) (forall z (or (not (R y z)) (not (Q z)))) (not (S y y)) (exists z (and (R z y) (Q z))) (exists z (and (S y z) (not (P z)) (not (Q z)))) (exists z (and (R y z) (not (P z)) (not (Q z))))) (and (not (P y)) (not (Q y)) (exists z (S y z)) (forall z (or (not (S y z)) (Q z)))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_086"
+    },
+    {
+      "ast_size": 26,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(or (P x) (Q x) (exists y (and (R x y) (S y x) (forall z (or (not (S y z)) (= z x))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_036"
+    },
+    {
+      "ast_size": 15,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (Q z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_073"
+    },
+    {
+      "ast_size": 15,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(exists y (exists z (and (R x y) (R y z) (not (P z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_044"
+    },
+    {
+      "ast_size": 14,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(exists y (exists z (and (R x y) (S y z) (P z))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_060"
+    },
+    {
+      "ast_size": 12,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (R y z))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": true,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_070"
+    },
+    {
+      "ast_size": 67,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (or (and (not (Q y)) (or (P y) (R y y))) (and (Q y) (or (and (P y) (R y y)) (and (exists z (and (R y z) (not (= y z)))) (or (R y y) (and (P y) (not (exists w (and (R w y) (P w))))) (and (not (P y)) (exists w (and (R w y) (P w)))))))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 4
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_029"
+    },
+    {
+      "ast_size": 33,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(or (P x) (Q x) (exists y (and (Q y) (R x y) (or (P y) (R y y)) (or (S x y) (and (S y x) (not (P y)))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_019"
+    },
+    {
+      "ast_size": 74,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(or (not (Q x)) (and (exists y (and (S x y) (P y))) (exists y (and (S x y) (not (P y)))) (or (P x) (exists y (and (R x y) (P y)))) (or (not (exists z (S z x))) (exists y (and (S x y) (P y) (not (Q y)))) (and (forall z (or (not (S x z)) (Q z))) (exists w (and (R x w) (not (Q w))))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_024"
+    },
+    {
+      "ast_size": 53,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(or (P x) (exists y (and (R x y) (S x y) (or (and (Q x) (R x x) (not (S x x))) (and (not (Q x)) (not (R x x)) (P y)) (and (not (Q x)) (R x x) (S x x) (not (= x y)))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_008"
+    },
+    {
+      "ast_size": 18,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (or (P z) (Q z))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_003"
+    },
+    {
+      "ast_size": 67,
+      "category_or_slice": "medium",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (not (P x)) (exists y (and (not (P y)) (not (Q y)) (or (and (S x y) (not (S y y)) (exists z (R y z)) (forall w (or (not (R y w)) (P w) (Q w)))) (and (R x y) (forall z (not (R y z))) (forall w (or (not (S x w)) (P w))) (not (R x x)))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "medium_023"
+    },
+    {
+      "ast_size": 16,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (R y z) (not (Q z))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_009"
+    },
+    {
+      "ast_size": 473,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(or (and (P x) (not (Q x)) (exists y (and (R x y) (Q y))) (exists y (R y x)) (exists y (and (R y x) (P y))) (forall y (or (not (R x y)) (P y))) (or (not (R x x)) (not (exists y (and (R y x) (Q y)))) (forall y (or (not (S x y)) (P y))) (S x x))) (and (P x) (not (Q x)) (exists y (and (R x y) (Q y))) (exists y (R y x)) (exists y (and (R y x) (P y))) (forall y (or (not (S x y)) (P y))) (exists y (and (S x y) (forall z (or (not (S x z)) (= z y)))))) (and (not (P x)) (Q x) (exists y (and (R x y) (P y))) (exists y (R y x)) (forall y (or (not (R x y)) (P y)))) (and (not (P x)) (Q x) (exists y (and (R x y) (P y))) (exists y (R y x)) (forall y (or (not (S x y)) (P y))) (exists y (and (R x y) (not (P y)))) (R x x) (not (exists y (and (R y x) (P y))))) (and (P x) (Q x) (S x x) (exists y (R x y)) (not (R x x))) (and (P x) (Q x) (not (exists y (R x y))) (exists y (R y x)) (exists y (and (S x y) (not (P y))))) (and (not (P x)) (not (Q x)) (forall y (or (not (S x y)) (P y))) (exists y (and (R x y) (not (P y)))) (exists y (R y x)) (exists y (S y x)) (exists y (and (R x y) (Q y)))) (and (P x) (not (Q x)) (exists y (and (S x y) (Q y))) (exists y (R y x)) (exists y (S y x)) (exists y (and (R y x) (P y))) (or (forall y (or (not (R x y)) (P y))) (forall y (or (not (S x y)) (P y)))) (not (R x x))) (and (P x) (not (Q x)) (exists y (and (R x y) (Q y))) (exists y (and (S y x) (P y) (Q y))) (exists y (and (S x y) (not (P y)))) (exists y (and (R y x) (Q y))) (not (R x x)) (not (exists y (and (R x y) (P y) (Q y))))) (and (P x) (not (Q x)) (exists y (and (S x y) (Q y))) (exists y (and (S y x) (P y) (Q y))) (S x x)))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_038"
+    },
+    {
+      "ast_size": 19,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (or (S x y) (S y x)) (or (P y) (Q y))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_024"
+    },
+    {
+      "ast_size": 16,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(forall y (or (not (S x y)) (exists z (and (R y z) (R z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_018"
+    },
+    {
+      "ast_size": 22,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (and (R y x) (P y))) (or (not (exists y (and (R x y) (Q y)))) (R x x)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_014"
+    },
+    {
+      "ast_size": 20,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (Q y) (or (not (P y)) (S x y) (S y x))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_logic_025"
+    },
+    {
+      "ast_size": 27,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (Q x) (exists y (and (R x y) (not (P y))))) (and (not (Q x)) (not (exists y (and (R x y) (not (P y)))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "extreme_context_017"
+    },
+    {
+      "ast_size": 348,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (exists y (and (R y y) (S y y) (not (P y)) (not (Q y)))) (exists y (and (S x y) (R y y) (S y y))) (not (and (P x) (Q x))) (or (S x x) (not (exists y (R y x))) (forall y (or (not (R x y)) (Q y))))) (and (exists y (and (R y y) (S y y) (Q y) (not (P y)))) (exists z (not (exists w (R w z)))) (forall y (or (not (R x y)) (Q y)))) (and (exists y (and (R y y) (S y y))) (forall y (or (not (and (R y y) (S y y))) (and (P y) (not (Q y))))) (P x) (Q x)) (and (exists y (and (R y y) (S y y))) (forall y (or (not (and (R y y) (S y y))) (and (Q y) (not (P y))))) (exists y (and (S x y) (S y y) (Q y)))) (and (exists y (and (R y y) (S y y) (P y) (not (Q y)))) (exists y (and (R y y) (S y y) (Q y) (not (P y)))) (forall y (or (not (and (R y y) (S y y))) (not (and (P y) (Q y))))) (exists y (and (S x y) (R y y) (S y y))) (or (forall y (or (not (S x y)) (P y))) (and (R x x) (Q x)) (and (S x x) (not (R x x))))) (and (not (exists y (and (R y y) (S y y)))) (not (Q x)) (exists y (and (S x y) (S y y) (not (P y)) (not (Q y))))) (and (exists y (and (R y y) (S y y))) (forall y (or (not (and (R y y) (S y y))) (and (P y) (Q y)))) (forall z (or (not (S z x)) (P z))) (exists y (and (S x y) (forall w (or (not (S y w)) (Q w)))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_005"
+    },
+    {
+      "ast_size": 369,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(and (exists y (and (R y x) (Q y))) (or (and (Q x) (P x) (exists y (and (S x y) (P y))) (exists y (and (R y x) (S x y))) (or (R x x) (S x x))) (and (Q x) (P x) (not (exists y (and (S x y) (P y)))) (exists y (and (R y x) (S x y))) (or (R x x) (S x x)) (exists y (and (R x y) (S y x)))) (and (Q x) (not (P x)) (exists y (and (S x y) (P y))) (exists y (and (R y x) (S x y))) (or (R x x) (S x x)) (or (not (exists y (and (R x y) (P y)))) (not (exists y (and (R x y) (S y x)))) (R x x))) (and (Q x) (not (P x)) (not (exists y (and (S x y) (P y)))) (exists y (and (R x y) (S y x))) (or (R x x) (S x x))) (and (Q x) (exists y (and (R x y) (Q y))) (not (exists y (S x y))) (not (exists y (S y x)))) (and (not (Q x)) (P x) (exists y (and (S x y) (P y))) (exists y (and (R x y) (Q y))) (or (R x x) (S x x))) (and (not (Q x)) (not (P x)) (exists y (and (R y x) (S x y))) (not (exists y (and (S x y) (P y)))) (or (R x x) (S x x))) (and (not (Q x)) (not (P x)) (exists y (and (R y x) (S x y))) (exists y (and (S x y) (P y))) (exists y (and (R x y) (Q y))) (R x x)) (and (not (Q x)) (not (P x)) (exists y (and (R y x) (S x y))) (exists y (and (S x y) (P y))) (exists y (and (S x y) (Q y))) (not (exists y (and (R x y) (Q y)))) (not (or (R x x) (S x x))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_012"
+    },
+    {
+      "ast_size": 118,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (exists y (exists z (and (S x y) (S x z) (not (= y z))))) (exists y (and (Q y) (or (R x y) (S x y)))) (exists y (and (P y) (or (R y x) (S y x)))) (or (not (P x)) (and (forall y (or (not (S x y)) (P y))) (exists y (and (R x y) (not (and (P y) (Q y)))))))) (and (not (P x)) (forall y (or (not (S x y)) (Q y))) (exists y (and (S x y) (P y))) (exists y (and (R x y) (not (and (P y) (Q y))))) (exists y (and (P y) (or (R y x) (S y x))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_033"
+    },
+    {
+      "ast_size": 238,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(or (and (exists y (and (Q y) (not (P y)) (R y y) (S y y))) (Q x) (not (exists z (and (R z x) (P z) (not (Q z)))))) (and (or (exists y (and (Q y) (not (P y)) (S y y) (not (R y y)))) (and (forall y (or (not (Q y)) (P y))) (forall w (exists z (R w z))))) (P x) (not (Q x)) (forall z (or (not (R z x)) (or (not (Q z)) (P z))))) (and (forall y (or (P y) (Q y))) (P x) (forall z (or (not (R z x)) (not (Q z)))) (or (Q x) (R x x))) (and (forall y (not (S y y))) (exists z (and (R z x) (P z) (not (Q z))))) (and (and (forall y (or (not (Q y)) (P y))) (exists y (forall z (not (R y z))))) (P x) (exists z (and (R z x) (P z) (not (Q z))))) (and (and (exists y (and (Q y) (not (P y)) (R y y))) (exists y (and (P y) (not (Q y)) (forall z (or (not (R y z)) (P z))))) (not (exists y (and (Q y) (not (P y)) (R y y) (S y y))))) (not (Q x)) (exists z (and (R x z) (P z) (Q z)))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_035"
+    },
+    {
+      "ast_size": 136,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (exists y (exists z (and (R x y) (R x z) (not (= y z)) (Q y) (not (Q z))))) (and (not (exists y (and (R x y) (not (Q y))))) (exists y (exists z (and (R x y) (R x z) (not (= y z)) (Q y) (Q z)))) (or (exists y (and (S y x) (not (P y)) (not (Q y)))) (and (R x x) (not (S x x))))) (and (not (exists y (and (R x y) (Q y)))) (exists y (and (R x y) (not (P y)) (not (Q y)))) (exists y (and (R x y) (P y))) (exists y (and (S x y) (Q y))) (exists y (and (S x y) (not (P y)) (not (Q y))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_049"
+    },
+    {
+      "ast_size": 240,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (exists y (and (Q y) (not (P y)) (or (and (R x y) (S y y) (not (R y y))) (and (S x y) (R y y) (not (S y y)) (exists z (and (R y z) (not (Q z))))) (and (R x y) (forall z (and (or (not (R z y)) (S y z)) (or (not (S y z)) (R z y)))))))) (exists y (and (P y) (R y y) (S y y) (or (and (not (Q y)) (or (R x y) (and (P x) (S x y)))) (and (Q y) (R x y) (forall z (or (not (R z y)) (S y z))))))) (and (exists w (and (P w) (or (R w x) (S w x)))) (or (and (P x) (or (and (Q x) (R x x) (exists y (and (R x y) (P y) (not (Q y)) (R y y)))) (and (not (Q x)) (not (R x x)) (exists y (and (S x y) (P y) (not (Q y))))) (and (not (Q x)) (R x x) (not (exists y (and (S x y) (P y))))))) (and (not (P x)) (exists y (and (S x y) (P y) (not (Q y)))) (exists z (and (R x z) (not (P z)) (not (Q z)) (not (= z x)) (not (R z z)) (not (S z z))))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_051"
+    },
+    {
+      "ast_size": 136,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (and (exists z (exists w (and (S z y) (and (S w y) (not (= z w)))))) (and (forall u (or (not (S u y)) (exists v (S u v)))) (or (and (forall v5 (or (not (S v5 y)) (and (not (P v5)) (not (Q v5))))) (exists v6 (and (S v6 y) (R y v6)))) (and (forall v7 (or (not (S v7 y)) (or (P v7) (Q v7)))) (or (and (Q y) (and (exists v8 (and (S v8 y) (and (R y v8) (Q v8)))) (or (not (and (forall v9 (or (not (S v9 y)) (Q v9))) (P y))) (and (R y y) (not (S y y)))))) (and (not (Q y)) (and (forall v10 (or (not (S v10 y)) (P v10))) (exists v11 (and (S v11 y) (R y v11))))))))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_053"
+    },
+    {
+      "ast_size": 68,
+      "category_or_slice": "hard",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (and (R y x) (Q y))) (or (and (Q x) (not (P x))) (and (not (Q x)) (not (S x x)) (or (P x) (forall y (or (not (R x y)) (not (P y)))))) (and (P x) (Q x) (or (R x x) (exists y (and (R y x) (not (Q y)))) (exists y (and (R x y) (not (Q y))))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_067"
+    },
+    {
+      "ast_size": 362,
+      "category_or_slice": "hard",
+      "correct": true,
+      "evaluable": true,
+      "formula": "(or (and (exists y (and (R x y) (P y))) (exists y (and (S x y) (P y))) (not (exists y (and (S x y) (Q y)))) (not (exists y (and (S x y) (not (P y)) (not (Q y)) (R y x)))) (or (not (exists y (and (R x y) (not (P y)) (not (Q y))))) (exists y (and (S x y) (not (P y)) (not (Q y))))) (or (Q x) (exists y (and (S x y) (not (R y x)))))) (and (exists y (and (R x y) (P y))) (exists y (and (S x y) (Q y))) (not (exists y (and (S x y) (P y)))) (not (exists y (and (S x y) (Q y) (R y x))))) (and (exists y (and (R x y) (Q y))) (exists y (and (S x y) (P y))) (exists y (and (S x y) (Q y))) (not (exists y (and (R x y) (P y)))) (not (exists y (and (S x y) (Q y) (R y x))))) (and (P x) (Q x) (S x x) (exists y (and (S x y) (not (P y)) (not (Q y))))) (and (P x) (Q x) (not (S x x)) (not (R x x)) (not (exists y (and (S x y) (not (P y)) (not (Q y)))))) (and (P x) (exists y (and (S x y) (P y))) (exists y (and (S x y) (Q y))) (not (exists y (and (R x y) (Q y)))) (not (R x x)) (or (S x x) (and (not (exists y (and (R x y) (not (P y)) (not (Q y))))) (exists y (and (S x y) (not (P y)) (not (Q y))))))) (and (P x) (R x x) (exists y (and (S x y) (not (P y)) (not (Q y)))) (exists y (and (S x y) (Q y)))) (and (Q x) (S x x) (exists y (and (R x y) (P y))) (not (exists y (and (R x y) (Q y))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "correct",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "challenge64",
+      "task_id": "hard_097"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "guardless_cross_scope_lift_qd2",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_cross_scope_lift_qd2_001"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "guardless_cross_scope_lift_qd2",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_cross_scope_lift_qd2_003"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "guardless_cross_scope_lift_qd2",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "parse_invalid",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_cross_scope_lift_qd2_010"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "guardless_same_relation_scope_lift_qd2",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "parse_invalid",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_same_relation_scope_lift_qd2_002"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "guardless_same_relation_scope_lift_qd2",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_same_relation_scope_lift_qd2_003"
+    },
+    {
+      "ast_size": 10,
+      "category_or_slice": "guardless_same_relation_scope_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (not (R y x))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max-0902",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "challenge100_qwen38max0902_round1_low65k_residual4_dulo_serial8_v1",
+      "selected_ledger_component": "challenge100_qwen38max0902_round1_low65k_residual4_dulo_serial8_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_same_relation_scope_lift_qd2_008"
+    },
+    {
+      "ast_size": 29,
+      "category_or_slice": "dual_role_cross_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (S y x) (or (R y x) (and (or (not (P x)) (not (P y))) (or (not (Q x)) (not (Q y)))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_dual_role_cross_lift_qd2_001"
+    },
+    {
+      "ast_size": 28,
+      "category_or_slice": "dual_role_cross_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (R y x) (or (R x y) (S y x) (forall z (or (not (S y z)) (R z x))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_dual_role_cross_lift_qd2_003"
+    },
+    {
+      "ast_size": 9,
+      "category_or_slice": "dual_role_cross_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (S y x)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_dual_role_cross_lift_qd2_007"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "dual_role_cross_lift_qd2",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_dual_role_cross_lift_qd2_009"
+    },
+    {
+      "ast_size": 45,
+      "category_or_slice": "binary_guard_incoming_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (R y x)) (or (exists y (S x y)) (and (P x) (not (Q x)) (forall y (or (not (R y x)) (not (Q y)))))) (or (P x) (exists y (and (S x y) (not (and (P y) (Q y)))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_003"
+    },
+    {
+      "ast_size": 76,
+      "category_or_slice": "binary_guard_incoming_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (forall y (not (P y))) (exists y (exists z (and (S x y) (S x z) (not (= y z)))))) (exists y (and (S x y) (P y) (exists z (S y z)) (or (not (Q y)) (P x)))) (and (exists y (S x y)) (forall z (or (not (S x z)) (not (Q z)))) (exists w (and (R x w) (Q w) (exists z (S w z))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_007"
+    },
+    {
+      "ast_size": 71,
+      "category_or_slice": "binary_guard_incoming_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (S x x) (or (and (not (P x)) (not (Q x))) (and (or (not (P x)) (exists y (and (not (= x y)) (or (R x y) (R y x) (S x y) (S y x)) (Q y)))) (or (not (Q x)) (exists y (and (not (= x y)) (or (R x y) (R y x) (S x y) (S y x)) (P y)))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_008"
+    },
+    {
+      "ast_size": 25,
+      "category_or_slice": "binary_guard_incoming_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (S x x) (exists y (or (and (R x y) (or (R y x) (S y x))) (and (S x y) (R y x)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_009"
+    },
+    {
+      "ast_size": 15,
+      "category_or_slice": "binary_guard_incoming_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (S y x) (exists z (S z y)) (not (Q y))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_010"
+    },
+    {
+      "ast_size": 8,
+      "category_or_slice": "filtered_ef_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (Q y)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max-0902",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "challenge100_qwen38max0902_round1_low65k_capped13_residual5_dulo_serial8_v1",
+      "selected_ledger_component": "challenge100_qwen38max0902_round1_low65k_capped13_residual5_dulo_serial8_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_ef_lift_qd2_002"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "filtered_ef_lift_qd2",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_ef_lift_qd2_005"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "filtered_ef_lift_qd2",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_ef_lift_qd2_006"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "filtered_ef_lift_qd2",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "parse_invalid",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_ef_lift_qd2_009"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "filtered_dual_role_lift_qd2",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_002"
+    },
+    {
+      "ast_size": 9,
+      "category_or_slice": "filtered_dual_role_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (R y x)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max-0902",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "challenge100_qwen38max0902_round1_low65k_final_residual6_dulo_serial8_v1",
+      "selected_ledger_component": "challenge100_qwen38max0902_round1_low65k_final_residual6_dulo_serial8_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_003"
+    },
+    {
+      "ast_size": 9,
+      "category_or_slice": "filtered_dual_role_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (S x y)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max-0902",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "challenge100_qwen38max0902_round1_low65k_residual4_dulo_serial8_v1",
+      "selected_ledger_component": "challenge100_qwen38max0902_round1_low65k_residual4_dulo_serial8_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_006"
+    },
+    {
+      "ast_size": 9,
+      "category_or_slice": "filtered_dual_role_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (R y x)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max-0902",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "challenge100_qwen38max0902_round1_low65k_final_residual6_dulo_serial8_v1",
+      "selected_ledger_component": "challenge100_qwen38max0902_round1_low65k_final_residual6_dulo_serial8_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_009"
+    },
+    {
+      "ast_size": 12,
+      "category_or_slice": "compact_ef_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R y x) (or (S y x) (P x))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_ef_lift_qd2_001"
+    },
+    {
+      "ast_size": 41,
+      "category_or_slice": "compact_ef_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (not (Q x)) (exists y (and (S x y) (Q y)))) (and (P x) (exists y (and (S x y) (not (Q y))))) (and (not (P x)) (Q x) (exists y (and (R x y) (P y)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_ef_lift_qd2_004"
+    },
+    {
+      "ast_size": 45,
+      "category_or_slice": "compact_ef_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (S y x)) (or (forall y (not (Q y))) (not (P x)) (Q x)) (or (exists y (and (R y x) (Q y))) (exists y (and (R x y) (Q y))) (exists y (and (S x y) (Q y)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_ef_lift_qd2_009"
+    },
+    {
+      "ast_size": 18,
+      "category_or_slice": "compact_ef_lift_qd2",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (exists z (and (S y z) (and (Q z) (not (P z)))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_ef_lift_qd2_010"
+    },
+    {
+      "ast_size": 79,
+      "category_or_slice": "compact_response_qd3",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(or (and (exists y (S x y)) (not (exists y (R x y)))) (and (R x x) (not (P x))) (exists y (and (R y x) (Q y) (or (exists z (S x z)) (P x)))) (and (P x) (exists y (and (R y x) (P y)))) (and (Q x) (exists y (and (S y x) (P y)))) (and (not (exists y (S x y))) (exists y (R y x)) (not (Q x))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_response_qd3_007"
+    },
+    {
+      "ast_size": 32,
+      "category_or_slice": "compact_response_qd3",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(and (exists y (S y x)) (or (S x x) (exists y (and (S y x) (not (exists z (S z y))))) (not (exists y (and (R y x) (Q y))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_response_qd3_008"
+    },
+    {
+      "ast_size": 18,
+      "category_or_slice": "compact_response_qd3",
+      "correct": false,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (forall z (or (not (S y z)) (or (P z) (Q z))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": "qwen3.8-max",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "qwen_pass1",
+      "selected_ledger_component": "challenge100_qwen38max_round1_max_medium_low_low65k_residual3_combined_v1",
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_response_qd3_009"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "nested_containment_qd3",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_nested_containment_qd3_003"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "nested_containment_qd3",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_nested_containment_qd3_006"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "nested_containment_qd3",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "parse_invalid",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_nested_containment_qd3_007"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "universal_nested_response_qd3",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_universal_nested_response_qd3_002"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "universal_nested_response_qd3",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "parse_invalid",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_universal_nested_response_qd3_005"
+    },
+    {
+      "ast_size": null,
+      "category_or_slice": "universal_nested_response_qd3",
+      "correct": false,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "physical_model": null,
+      "result_status": "output_cap",
+      "selected_component": null,
+      "selected_ledger_component": null,
+      "subset": "new36",
+      "task_id": "fullobs_v2_universal_nested_response_qd3_008"
+    }
+  ],
+  "token_usage": {
+    "available_token_totals": {
+      "input": 828382,
+      "output": 11770992,
+      "reasoning": 8967583,
+      "total": 12599374
+    },
+    "historical_aggregate": {
+      "completion": {
+        "count": 78,
+        "max": 151565,
+        "mean": 112318.47435897436,
+        "median": 127713.5,
+        "min": 21630,
+        "sum": 8760841
+      },
+      "prompt": {
+        "count": 78,
+        "max": 9355,
+        "mean": 5724.410256410257,
+        "median": 5301.5,
+        "min": 3824,
+        "sum": 446504
+      },
+      "reasoning": {
+        "count": 78,
+        "max": 151396,
+        "mean": 112133.32051282052,
+        "median": 127417.0,
+        "min": 21584,
+        "sum": 8746399
+      },
+      "total": {
+        "count": 78,
+        "max": 155857,
+        "mean": 118042.88461538461,
+        "median": 133149.0,
+        "min": 26204,
+        "sum": 9207345
+      }
+    },
+    "note": "Token totals cover responses with reported usage; completion includes provider-reported reasoning where applicable. Rejected calls are not assigned invented token counts."
+  },
+  "verification": {
+    "frozen_challenge64_projection_unchanged": true,
+    "post_round1_frontiers": 100,
+    "reused_historical_scores": true,
+    "source_tasks": 100,
+    "symbolic_candidates": 0
+  },
+  "verified": true
+}

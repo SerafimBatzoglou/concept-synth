@@ -1,6 +1,6 @@
 # INDUCTION Challenge Leaderboards
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 21 Challenge100 models appear in the Challenge64 table, alongside 20 additional models with Challenge64 results. Each table is ranked independently by correct answers on its own task set, so model order differs.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 22 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by correct answers on its own task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -14,6 +14,7 @@ Rows are ranked by Challenge100 Correct, then Evaluable coverage, then model nam
 | GPT-5.6 Sol | 99/100 | 43/100 (43.0%) | 56.4% (22/39) | 125.0 / 18.0 |
 | Fable 5.1 | 66/100 | 33/100 (33.0%) | 93.8% (30/32) | 18.1 / 16.0 |
 | Fable 5 | 96/100 | 31/100 (31.0%) | 63.3% (19/30) | 46.1 / 18.0 |
+| Qwen 3.8 Max | 83/100 | 27/100 (27.0%) | 53.8% (14/26) | 82.5 / 18.0 |
 | GPT-5.6 Terra | 98/100 | 25/100 (25.0%) | 70.8% (17/24) | 66.6 / 18.0 |
 | Grok 4.6 | 98/100 | 25/100 (25.0%) | 70.8% (17/24) | 72.2 / 17.0 |
 | Claude Opus 5 | 97/100 | 24/100 (24.0%) | 87.0% (20/23) | 18.8 / 16.0 |

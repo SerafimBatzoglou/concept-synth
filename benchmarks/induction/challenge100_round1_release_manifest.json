@@ -22,8 +22,8 @@
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_model_registry.yaml",
-      "sha256": "fafdd08bee53cce8847bf2c7df17c24689a3a6d711f9b685800f657f057257f0",
-      "sizeBytes": 9736
+      "sha256": "d98254723d598631b7b7f4203895523080eb4872f35c9cb1739e0e9165e9eebc",
+      "sizeBytes": 10310
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry.yaml",
@@ -42,13 +42,13 @@
     },
     {
       "path": "benchmarks/induction/docs/leaderboard.md",
-      "sha256": "18b789e7c411d52f984797b632f83692e2d03724ef2a0701c843091370f5975e",
-      "sizeBytes": 5911
+      "sha256": "be6e30ab3107ba8ae609bd6b2ef2ab05c5927ac8ea7ea688cf360c455a5428ac",
+      "sizeBytes": 5984
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_provenance.md",
-      "sha256": "14d8a81300beccce03e89040cb38f62115962cd61c749d580f01aac01e0c898f",
-      "sizeBytes": 841
+      "sha256": "2600bdd50d803025a8e2bd4222a67d91ed6ef99ded18281ea97933d25c54a7f0",
+      "sizeBytes": 1195
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge100_leaderboard.py",
@@ -59,16 +59,26 @@
       "path": "benchmarks/induction/eval/deepseek_v4_1_flash_challenge100_round1_report.json",
       "sha256": "1de6c9ceed4c9992a8f69add243daa2ec5b08855293b5b4194b8868358f2a6be",
       "sizeBytes": 124040
+    },
+    {
+      "path": "benchmarks/induction/eval/qwen_3_8_max_challenge100_round1_report.json",
+      "sha256": "7d48dd434658b3e7be2587772a7bc55e14027d4e86f9f31373ff1192bd67e3c5",
+      "sizeBytes": 109611
+    },
+    {
+      "path": "benchmarks/induction/docs/qwen_3_8_max_challenge100.md",
+      "sha256": "1f9ab2f4baaf84f47b87508b24f44baa4e504ea4572680f3d0527f493feb48d5",
+      "sizeBytes": 1804
     }
   ],
   "counts": {
     "benchmarked36HoldoutTasksWithWorlds": 29,
     "benchmarked36Tasks": 36,
-    "challenge100Models": 21,
+    "challenge100Models": 22,
     "challenge100Tasks": 100,
     "challenge64Tasks": 64
   },
-  "generatedOn": "2026-09-10",
+  "generatedOn": "2026-09-13",
   "license": "MIT",
   "releaseTag": "induction-challenge100-round1-v1.0",
   "schemaVersion": "induction_challenge100_round1_release_manifest_v1"

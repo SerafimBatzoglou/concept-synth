@@ -70,7 +70,7 @@ def test_new36_holdout_sidecar_matches_the_benchmark() -> None:
 def test_challenge100_registry_is_arithmetically_consistent() -> None:
     registry = yaml.safe_load(C100_REGISTRY.read_text(encoding="utf-8"))
     models = registry["models"]
-    assert len(models) == 21
+    assert len(models) == 22
     assert len({model["id"] for model in models}) == len(models)
     for model in models:
         c64 = model["challenge64"]
@@ -107,7 +107,7 @@ def test_challenge100_manifest_hashes_and_counts() -> None:
     assert manifest["counts"] == {
         "benchmarked36HoldoutTasksWithWorlds": 29,
         "benchmarked36Tasks": 36,
-        "challenge100Models": 21,
+        "challenge100Models": 22,
         "challenge100Tasks": 100,
         "challenge64Tasks": 64,
     }
@@ -155,6 +155,30 @@ def test_challenge64_manifest_includes_new_projection() -> None:
         path = REPO_ROOT / artifact["path"]
         assert path.stat().st_size == artifact["sizeBytes"]
         assert sha256(path) == artifact["sha256"]
+
+
+def test_qwen_final_cascade_counts_provenance_and_unchanged_projection() -> None:
+    report = json.loads((BENCH_ROOT / "eval/qwen_3_8_max_challenge100_round1_report.json").read_text())
+    assert len(report["tasks"]) == len({t["task_id"] for t in report["tasks"]}) == 100
+    assert (report["overall"]["evaluable"], report["overall"]["correct"]) == (83, 27)
+    assert len(report["non_evaluable_task_ids"]) == 17
+    assert report["verification"]["symbolic_candidates"] == 0
+    calls = report["generation_calls"]
+    assert (calls["attempted"], calls["accepted_with_response"], calls["http_rejected"]) == (228, 133, 95)
+    assert calls["automatic_retries"] == 0
+    for key in ["attempted", "accepted_with_response", "http_rejected"]:
+        assert sum(p[key] for p in report["physical_passes"]) == calls[key]
+    assert [p["attempted"] for p in report["physical_passes"][-3:]] == [22, 13, 19]
+    assert all(p["reasoning_effort_sent"] == "low" for p in report["physical_passes"][-3:])
+    assert report["by_subset"]["new36"]["evaluable"] == 20
+    assert report["overall"]["holdout"] == {"available": 26, "correct": 14}
+    rows = {r["instance_id"]: r for r in map(json.loads, C64_EVAL.read_text().splitlines()) if r["model_id"] == "qwen-3.8-max"}
+    for t in report["tasks"][:64]:
+        assert t["evaluable"] == bool(rows[t["task_id"]]["parse_ok"])
+        assert t["correct"] == bool(rows[t["task_id"]]["valid"])
+    serialized = json.dumps(report)
+    for forbidden in ["/Users/", "pipeline.sqlite", "reasoningTrace", "provider_call_meta", "responseId", "candidate_id", "QWEN_API_KEY"]:
+        assert forbidden not in serialized
 
 
 @pytest.mark.parametrize("error", ["missing model", "wrong counts", "wrong name"])

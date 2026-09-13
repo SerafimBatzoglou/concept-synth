@@ -417,3 +417,22 @@ models:
   challenge100:
     evaluable: 97
     correct: 11
+- id: qwen-3.8-max
+  display_name: Qwen 3.8 Max
+  protocol: 'Direct Round-1 cascade: frozen Qwen 3.8 Max Preview Challenge64 plus
+    New36 and residuals; three released qwen3.8-max-0902 low-effort passes (22,13,19
+    tasks), 65,536 output tokens, eight workers; parser-evaluability-only response
+    selection'
+  challenge64:
+    registry_id: qwen-3.8-max
+    evaluable: 63
+    correct: 27
+  benchmarked36:
+    evaluable: 20
+    correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
+  challenge100:
+    evaluable: 83
+    correct: 27
