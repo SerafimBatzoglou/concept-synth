@@ -58,6 +58,6 @@ Released prediction records contain normalized formulas and exact verifier outpu
 
 The generated-holdout sidecar is documented in the companion holdout eval cache. It contains no gold formula and was generated from the task generator after the Challenge64 set was fixed.
 
-## Grok 4.7 interim update
+## Grok 4.7 completed update
 
-The verified xhigh/high/medium snapshot is documented in [the Grok audit](grok_4_7_challenge100.md). The pending two-task final medium pass is excluded. Standard-parser and strict original-syntax metrics are both disclosed.
+The verified five-physical-pass campaign is documented in [the Grok audit](grok_4_7_challenge100.md). All 144 calls, including two connection-error originals and the authorized resubmission, are included. Standard-parser and strict original-syntax metrics are both disclosed.

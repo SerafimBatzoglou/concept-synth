@@ -437,15 +437,15 @@ models:
     evaluable: 83
     correct: 27
 - id: grok-4.7
-  display_name: Grok 4.7 (interim)
-  protocol: Interim verified direct Round-1 xhigh/high/medium residual cascade (100/31/9
-    tasks); no explicit output-token cap, temperature 0.6, up to 20 workers, zero
-    automatic retries or symbolic work. Final two-task medium pass pending and excluded
-    from this snapshot.
+  display_name: Grok 4.7
+  protocol: Verified direct Round-1 xhigh/high/medium/medium/medium campaign (100/31/9/2/2
+    tasks); the last two requests are an explicitly authorized resubmission after
+    connection interruptions. No explicit output-token cap, temperature 0.6, up to
+    20 workers, zero automatic retries or symbolic work.
   challenge64:
     registry_id: grok-4.7
-    evaluable: 62
-    correct: 21
+    evaluable: 64
+    correct: 22
   benchmarked36:
     evaluable: 36
     correct: 2
@@ -455,5 +455,5 @@ models:
     holdout_evaluable: 2
     holdout_correct: 2
   challenge100:
-    evaluable: 98
-    correct: 23
+    evaluable: 100
+    correct: 24

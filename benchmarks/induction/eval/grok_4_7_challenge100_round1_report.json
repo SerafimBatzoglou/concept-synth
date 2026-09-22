@@ -1,28 +1,28 @@
 {
   "all_physical_response_token_usage": {
     "input": {
-      "count": 99,
-      "mean": 7166.515151515152,
-      "median": 7428,
-      "sum": 709485
+      "count": 101,
+      "mean": 7131.207920792079,
+      "median": 7404,
+      "sum": 720252
     },
     "output": {
-      "count": 99,
-      "mean": 80.65656565656566,
+      "count": 101,
+      "mean": 80.25742574257426,
       "median": 51,
-      "sum": 7985
+      "sum": 8106
     },
     "reasoning": {
-      "count": 99,
-      "mean": 180623.57575757575,
-      "median": 187200,
-      "sum": 17881734
+      "count": 101,
+      "mean": 178810.65346534652,
+      "median": 186356,
+      "sum": 18059876
     },
     "total": {
-      "count": 99,
-      "mean": 187870.74747474748,
-      "median": 195512,
-      "sum": 18599204
+      "count": 101,
+      "mean": 186022.1188118812,
+      "median": 195229,
+      "sum": 18788234
     }
   },
   "by_category_or_slice": {
@@ -550,55 +550,54 @@
       "total": 3
     },
     "hard": {
-      "correct": 13,
-      "correct_among_evaluable": 0.43333333333333335,
+      "correct": 14,
+      "correct_among_evaluable": 0.4375,
       "correct_formula_ast": {
-        "count": 13,
-        "mean": 84.6923076923077,
-        "median": 39,
-        "sum": 1101
+        "count": 14,
+        "mean": 80.28571428571429,
+        "median": 31.0,
+        "sum": 1124
       },
-      "evaluable": 30,
-      "evaluable_fraction": 0.9375,
+      "evaluable": 32,
+      "evaluable_fraction": 1.0,
       "holdout": {
-        "available": 12,
+        "available": 13,
         "correct": 5,
-        "correct_among_available": 0.4166666666666667,
-        "train_correct": 13
+        "correct_among_available": 0.38461538461538464,
+        "train_correct": 14
       },
       "parser_normalized_responses": 2,
       "status_counts": {
-        "correct": 13,
-        "evaluable_incorrect": 17,
-        "provider_error": 2
+        "correct": 14,
+        "evaluable_incorrect": 18
       },
-      "strict_accuracy": 0.40625,
-      "strict_as_submitted_correct": 11,
-      "strict_as_submitted_evaluable": 28,
+      "strict_accuracy": 0.4375,
+      "strict_as_submitted_correct": 12,
+      "strict_as_submitted_evaluable": 30,
       "token_usage": {
         "input": {
-          "count": 30,
-          "mean": 5407.666666666667,
+          "count": 32,
+          "mean": 5406.15625,
           "median": 5367.5,
-          "sum": 162230
+          "sum": 172997
         },
         "output": {
-          "count": 30,
-          "mean": 112.43333333333334,
+          "count": 32,
+          "mean": 109.1875,
           "median": 52.5,
-          "sum": 3373
+          "sum": 3494
         },
         "reasoning": {
-          "count": 30,
-          "mean": 173004.2,
-          "median": 180302.5,
-          "sum": 5190126
+          "count": 32,
+          "mean": 167758.375,
+          "median": 176143.0,
+          "sum": 5368268
         },
         "total": {
-          "count": 30,
-          "mean": 178524.3,
-          "median": 185881.0,
-          "sum": 5355729
+          "count": 32,
+          "mean": 173273.71875,
+          "median": 181576.0,
+          "sum": 5544759
         }
       },
       "total": 32
@@ -762,55 +761,54 @@
   },
   "by_subset": {
     "challenge64": {
-      "correct": 21,
-      "correct_among_evaluable": 0.3387096774193548,
+      "correct": 22,
+      "correct_among_evaluable": 0.34375,
       "correct_formula_ast": {
-        "count": 21,
-        "mean": 64.80952380952381,
-        "median": 17,
-        "sum": 1361
+        "count": 22,
+        "mean": 62.90909090909091,
+        "median": 17.5,
+        "sum": 1384
       },
-      "evaluable": 62,
-      "evaluable_fraction": 0.96875,
+      "evaluable": 64,
+      "evaluable_fraction": 1.0,
       "holdout": {
-        "available": 20,
+        "available": 21,
         "correct": 12,
-        "correct_among_available": 0.6,
-        "train_correct": 21
+        "correct_among_available": 0.5714285714285714,
+        "train_correct": 22
       },
       "parser_normalized_responses": 2,
       "status_counts": {
-        "correct": 21,
-        "evaluable_incorrect": 41,
-        "provider_error": 2
+        "correct": 22,
+        "evaluable_incorrect": 42
       },
-      "strict_accuracy": 0.328125,
-      "strict_as_submitted_correct": 19,
-      "strict_as_submitted_evaluable": 60,
+      "strict_accuracy": 0.34375,
+      "strict_as_submitted_correct": 20,
+      "strict_as_submitted_evaluable": 62,
       "token_usage": {
         "input": {
-          "count": 62,
-          "mean": 6593.306451612903,
-          "median": 5869.0,
-          "sum": 408785
+          "count": 64,
+          "mean": 6555.5,
+          "median": 5729.0,
+          "sum": 419552
         },
         "output": {
-          "count": 62,
-          "mean": 96.7258064516129,
+          "count": 64,
+          "mean": 95.59375,
           "median": 52.5,
-          "sum": 5997
+          "sum": 6118
         },
         "reasoning": {
-          "count": 62,
-          "mean": 173511.11290322582,
-          "median": 178910.5,
-          "sum": 10757689
+          "count": 64,
+          "mean": 170872.359375,
+          "median": 178114.5,
+          "sum": 10935831
         },
         "total": {
-          "count": 62,
-          "mean": 180201.14516129033,
-          "median": 186199.5,
-          "sum": 11172471
+          "count": 64,
+          "mean": 177523.453125,
+          "median": 185059.0,
+          "sum": 11361501
         }
       },
       "total": 64
@@ -1128,94 +1126,260 @@
       },
       "report_sha256": "091727de468d3067276911d41882712c9fedcdefd283fae77da24b02d7fda798",
       "residual_size": 2
+    },
+    {
+      "component": "pass4_medium",
+      "generation_calls": {
+        "acceptance_unknown": 0,
+        "accepted_http_200": 2,
+        "note": "HTTP 200 establishes acceptance even when the stream later fails; snapshots are excluded.",
+        "provider_completed": 0,
+        "retries": 0,
+        "started_once": 2,
+        "terminal_records": 2
+      },
+      "overall": {
+        "correct": 0,
+        "correct_among_evaluable": null,
+        "correct_formula_ast": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "sum": 0
+        },
+        "evaluable": 0,
+        "evaluable_fraction": 0.0,
+        "holdout": {
+          "available": 0,
+          "correct": 0,
+          "correct_among_available": null,
+          "generated_worlds_evaluated": 0,
+          "train_correct": 0
+        },
+        "parser_normalized_responses": 0,
+        "status_counts": {
+          "provider_error": 2
+        },
+        "strict_accuracy": 0.0,
+        "strict_as_submitted_correct": 0,
+        "strict_as_submitted_evaluable": 0,
+        "token_usage": {
+          "input": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "sum": 0
+          },
+          "output": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "sum": 0
+          },
+          "reasoning": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "sum": 0
+          },
+          "total": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "sum": 0
+          }
+        },
+        "total": 2
+      },
+      "provider_terminal": {
+        "empty": 2,
+        "nonempty": 0,
+        "output_cap": 0,
+        "provider_errors": 2,
+        "timeouts": 0
+      },
+      "report_sha256": "22f11beb3a7bb7fb492ad76b87630c2aaeae89f3b2af38a105f6ef7a0c16d119",
+      "residual_size": 2
+    },
+    {
+      "component": "pass5_medium_resubmission",
+      "generation_calls": {
+        "acceptance_unknown": 0,
+        "accepted_http_200": 2,
+        "note": "HTTP 200 establishes acceptance even when the stream later fails; snapshots are excluded.",
+        "provider_completed": 2,
+        "retries": 0,
+        "started_once": 2,
+        "terminal_records": 2
+      },
+      "overall": {
+        "correct": 1,
+        "correct_among_evaluable": 0.5,
+        "correct_formula_ast": {
+          "count": 1,
+          "max": 23,
+          "mean": 23,
+          "median": 23,
+          "min": 23,
+          "sum": 23
+        },
+        "evaluable": 2,
+        "evaluable_fraction": 1.0,
+        "holdout": {
+          "available": 1,
+          "correct": 0,
+          "correct_among_available": 0.0,
+          "generated_worlds_evaluated": 5,
+          "train_correct": 1
+        },
+        "parser_normalized_responses": 0,
+        "status_counts": {
+          "correct": 1,
+          "evaluable_incorrect": 1
+        },
+        "strict_accuracy": 0.5,
+        "strict_as_submitted_correct": 1,
+        "strict_as_submitted_evaluable": 2,
+        "token_usage": {
+          "input": {
+            "count": 2,
+            "max": 5420,
+            "mean": 5383.5,
+            "median": 5383.5,
+            "min": 5347,
+            "sum": 10767
+          },
+          "output": {
+            "count": 2,
+            "max": 75,
+            "mean": 60.5,
+            "median": 60.5,
+            "min": 46,
+            "sum": 121
+          },
+          "reasoning": {
+            "count": 2,
+            "max": 143230,
+            "mean": 89071,
+            "median": 89071.0,
+            "min": 34912,
+            "sum": 178142
+          },
+          "total": {
+            "count": 2,
+            "max": 148696,
+            "mean": 94515,
+            "median": 94515.0,
+            "min": 40334,
+            "sum": 189030
+          }
+        },
+        "total": 2
+      },
+      "provider_terminal": {
+        "empty": 0,
+        "nonempty": 2,
+        "output_cap": 0,
+        "provider_errors": 0,
+        "timeouts": 0
+      },
+      "report_sha256": "b7588b43d55efc1211fb4e589e0e96b44f1a655dfe4c31f966845acb26062e7f",
+      "residual_size": 0
     }
   ],
-  "excluded_pending_pass": {
-    "accepted_requests": "not yet verified",
-    "effort": "medium",
-    "started_requests": 2,
-    "task_ids": [
-      "hard_036",
-      "hard_051"
-    ]
-  },
   "frontiers": {
     "post_round1": 100,
     "symbolic_candidates": 0
   },
   "generation_calls": {
     "acceptance_unknown": 0,
-    "accepted_http_200": 140,
+    "accepted_http_200": 144,
     "retries": 0,
-    "started_once": 140,
-    "terminal_records": 140
+    "started_once": 144,
+    "terminal_records": 144
   },
   "model": "grok-4.7",
-  "non_evaluable_task_ids": [
-    "hard_036",
-    "hard_051"
-  ],
+  "non_evaluable_task_ids": [],
   "overall": {
-    "correct": 23,
-    "correct_among_evaluable": 0.23469387755102042,
+    "correct": 24,
+    "correct_among_evaluable": 0.24,
     "correct_formula_ast": {
-      "count": 23,
-      "mean": 60.56521739130435,
-      "median": 17,
-      "sum": 1393
+      "count": 24,
+      "mean": 59,
+      "median": 17.0,
+      "sum": 1416
     },
-    "evaluable": 98,
-    "evaluable_fraction": 0.98,
+    "evaluable": 100,
+    "evaluable_fraction": 1.0,
     "holdout": {
-      "available": 22,
+      "available": 23,
       "correct": 14,
-      "correct_among_available": 0.6363636363636364,
-      "train_correct": 23
+      "correct_among_available": 0.6086956521739131,
+      "train_correct": 24
     },
     "parser_normalized_responses": 2,
     "status_counts": {
-      "correct": 23,
-      "evaluable_incorrect": 75,
-      "provider_error": 2
+      "correct": 24,
+      "evaluable_incorrect": 76
     },
-    "strict_accuracy": 0.23,
-    "strict_as_submitted_correct": 21,
-    "strict_as_submitted_evaluable": 96,
+    "strict_accuracy": 0.24,
+    "strict_as_submitted_correct": 22,
+    "strict_as_submitted_evaluable": 98,
     "token_usage": {
       "input": {
-        "count": 98,
-        "mean": 7151.908163265306,
-        "median": 7416.0,
-        "sum": 700887
+        "count": 100,
+        "mean": 7116.54,
+        "median": 7290.5,
+        "sum": 711654
       },
       "output": {
-        "count": 98,
-        "mean": 81.4795918367347,
+        "count": 100,
+        "mean": 81.06,
         "median": 51.5,
-        "sum": 7985
+        "sum": 8106
       },
       "reasoning": {
-        "count": 98,
-        "mean": 180009.25510204083,
-        "median": 186778.0,
-        "sum": 17640907
+        "count": 100,
+        "mean": 178190.49,
+        "median": 185925.5,
+        "sum": 17819049
       },
       "total": {
-        "count": 98,
-        "mean": 187242.64285714287,
-        "median": 195370.5,
-        "sum": 18349779
+        "count": 100,
+        "mean": 185388.09,
+        "median": 194692.5,
+        "sum": 18538809
       }
     },
     "total": 100
   },
-  "protocol": "Interim verified direct Round-1 xhigh/high/medium residual cascade (100/31/9 tasks); no explicit output-token cap, temperature 0.6, up to 20 workers, zero automatic retries or symbolic work. Final two-task medium pass pending and excluded from this snapshot.",
+  "protocol": "Verified direct Round-1 xhigh/high/medium/medium/medium campaign (100/31/9/2/2 tasks); the last two requests are an explicitly authorized resubmission after connection interruptions. No explicit output-token cap, temperature 0.6, up to 20 workers, zero automatic retries or symbolic work.",
   "provider": "xai",
-  "publication_status": "interim_three_verified_passes",
+  "publication_status": "final_five_verified_physical_passes",
+  "resubmission_audit": {
+    "all_physical_attempts_included": true,
+    "authorized_additional_requests": 2,
+    "automatic_retries": 0,
+    "original_outcome": "two HTTP-200 streams ended in ConnectionError without usable output",
+    "original_tasks": [
+      "hard_036",
+      "hard_051"
+    ]
+  },
   "schema_version": "induction_challenge100_verified_model_report_v1",
   "selected_component_counts": {
     "pass1_xhigh": {
-      "selected": 71,
+      "selected": 69,
       "selected_evaluable": 69
     },
     "pass2_high": {
@@ -1225,6 +1389,14 @@
     "pass3_medium": {
       "selected": 7,
       "selected_evaluable": 7
+    },
+    "pass4_medium": {
+      "selected": 0,
+      "selected_evaluable": 0
+    },
+    "pass5_medium_resubmission": {
+      "selected": 2,
+      "selected_evaluable": 2
     }
   },
   "selection_policy": "First parser-evaluable response in component order; earliest response if none evaluable. Never select by correctness, AST, mismatch or holdout.",
@@ -2455,36 +2627,37 @@
       "usable_non_empty": true
     },
     {
-      "candidate_count": 0,
+      "candidate_count": 1,
       "category_or_slice": "hard",
-      "correct": false,
-      "correct_ast": null,
-      "evaluable": false,
-      "formula": null,
+      "correct": true,
+      "correct_ast": 23,
+      "evaluable": true,
+      "formula": "(or (P x) (Q x) (exists y (and (not (P y)) (not (Q y)) (R y y) (S y x))))",
       "holdout": {
-        "available": false,
-        "correct": null,
-        "eligible": false,
-        "generated_worlds": 0
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
       },
+      "original_submitted_formula": "(or (P x) (Q x) (exists y (and (not (P y)) (not (Q y)) (R y y) (S y x))))",
       "output_cap": false,
       "parser_normalizations": [],
-      "provider_error": true,
-      "provider_status": "error",
-      "result_status": "provider_error",
-      "selected_component": "pass1_xhigh",
-      "strict_as_submitted_correct": false,
-      "strict_as_submitted_evaluable": false,
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass5_medium_resubmission",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
       "subset": "challenge64",
       "task_id": "hard_036",
       "timeout": false,
       "tokens": {
-        "input": null,
-        "output": null,
-        "reasoning": null,
-        "total": null
+        "input": 5347,
+        "output": 75,
+        "reasoning": 34912,
+        "total": 40334
       },
-      "usable_non_empty": false
+      "usable_non_empty": true
     },
     {
       "candidate_count": 1,
@@ -3213,36 +3386,37 @@
       "usable_non_empty": true
     },
     {
-      "candidate_count": 0,
+      "candidate_count": 1,
       "category_or_slice": "hard",
       "correct": false,
       "correct_ast": null,
-      "evaluable": false,
-      "formula": null,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (Q y) (not (R y y))))",
       "holdout": {
         "available": false,
         "correct": null,
         "eligible": false,
         "generated_worlds": 0
       },
+      "original_submitted_formula": "(exists y (and (R x y) (Q y) (not (R y y))))",
       "output_cap": false,
       "parser_normalizations": [],
-      "provider_error": true,
-      "provider_status": "error",
-      "result_status": "provider_error",
-      "selected_component": "pass1_xhigh",
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass5_medium_resubmission",
       "strict_as_submitted_correct": false,
-      "strict_as_submitted_evaluable": false,
+      "strict_as_submitted_evaluable": true,
       "subset": "challenge64",
       "task_id": "hard_051",
       "timeout": false,
       "tokens": {
-        "input": null,
-        "output": null,
-        "reasoning": null,
-        "total": null
+        "input": 5420,
+        "output": 46,
+        "reasoning": 143230,
+        "total": 148696
       },
-      "usable_non_empty": false
+      "usable_non_empty": true
     },
     {
       "candidate_count": 1,

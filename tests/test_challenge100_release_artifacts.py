@@ -118,26 +118,27 @@ def test_challenge100_manifest_hashes_and_counts() -> None:
         assert sha256(path) == artifact["sha256"]
 
 
-def test_grok47_interim_snapshot_and_projection() -> None:
+def test_grok47_final_campaign_and_projection() -> None:
     report = json.loads((BENCH_ROOT / "eval/grok_4_7_challenge100_round1_report.json").read_text())
-    assert report["publication_status"] == "interim_three_verified_passes"
+    assert report["publication_status"] == "final_five_verified_physical_passes"
     assert len(report["tasks"]) == len({t["task_id"] for t in report["tasks"]}) == 100
-    assert (report["overall"]["evaluable"], report["overall"]["correct"]) == (98, 23)
-    assert (report["overall"]["strict_as_submitted_evaluable"], report["overall"]["strict_as_submitted_correct"]) == (96, 21)
+    assert (report["overall"]["evaluable"], report["overall"]["correct"]) == (100, 24)
+    assert (report["overall"]["strict_as_submitted_evaluable"], report["overall"]["strict_as_submitted_correct"]) == (98, 22)
     assert report["frontiers"] == {"post_round1": 100, "symbolic_candidates": 0}
-    assert report["non_evaluable_task_ids"] == ["hard_036", "hard_051"]
-    assert report["excluded_pending_pass"]["started_requests"] == 2
-    assert len(report["components"]) == 3
-    assert [p["generation_calls"]["started_once"] for p in report["components"]] == [100, 31, 9]
-    assert report["generation_calls"]["started_once"] == report["generation_calls"]["accepted_http_200"] == 140
+    assert report["non_evaluable_task_ids"] == []
+    assert report["resubmission_audit"]["authorized_additional_requests"] == 2
+    assert report["resubmission_audit"]["all_physical_attempts_included"] is True
+    assert len(report["components"]) == 5
+    assert [p["generation_calls"]["started_once"] for p in report["components"]] == [100, 31, 9, 2, 2]
+    assert report["generation_calls"]["started_once"] == report["generation_calls"]["accepted_http_200"] == 144
     assert report["generation_calls"]["retries"] == 0
-    assert report["overall"]["holdout"]["available"] == 22
+    assert report["overall"]["holdout"]["available"] == 23
     assert report["overall"]["holdout"]["correct"] == 14
-    assert sum(v["selected_evaluable"] for v in report["selected_component_counts"].values()) == 98
+    assert sum(v["selected_evaluable"] for v in report["selected_component_counts"].values()) == 100
     rows = {r["instance_id"]:r for r in map(json.loads, C64_EVAL.read_text().splitlines()) if r["model_id"] == "grok-4.7"}
     assert len(rows) == 64
-    assert sum(r["parse_ok"] for r in rows.values()) == 62
-    assert sum(r["valid"] for r in rows.values()) == 21
+    assert sum(r["parse_ok"] for r in rows.values()) == 64
+    assert sum(r["valid"] for r in rows.values()) == 22
     for t in report["tasks"][:64]:
         assert t["evaluable"] == rows[t["task_id"]]["parse_ok"]
         assert t["correct"] == rows[t["task_id"]]["valid"]

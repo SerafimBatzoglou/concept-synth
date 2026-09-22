@@ -22,33 +22,33 @@
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_model_registry.yaml",
-      "sha256": "efa1a3987a96dcb3994d26cadcdf73ac5b38442c81e6df42fb573c32918f9968",
-      "sizeBytes": 10915
+      "sha256": "b3f1405da4ed14a65f78a4b20e4e2403af1a388e27d3cbf230caed7d30f29502",
+      "sizeBytes": 10936
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry.yaml",
-      "sha256": "2e15eb6a7d4cdb1279abe72deba13bebfcfaf1890b4d1844065044c2adbee309",
-      "sizeBytes": 9182
+      "sha256": "598d36167860714531260b877cc8fe2719b49d92563785e27e5b91b5d3df3d88",
+      "sizeBytes": 9212
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v1.jsonl",
-      "sha256": "d10944232f129bb8a3e0794a1ff3dff425d37bce1cf9b8cdc65fb4ed12fc9db5",
-      "sizeBytes": 3596553
+      "sha256": "67e898ca475d845280d6b3ee361b84d005078324af481b5ca3ee52ca3e0a5cf3",
+      "sizeBytes": 3598649
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl",
-      "sha256": "70cb9a53fd247ae414b4b5c142d2b89a366476775f5208d8d317d259ab343186",
-      "sizeBytes": 2875408
+      "sha256": "efbdc908e2990e14645c7174a58c6f340d7002e6a56f4f7729994910963e2bd8",
+      "sizeBytes": 2875518
     },
     {
       "path": "benchmarks/induction/docs/leaderboard.md",
-      "sha256": "a3e9296c2b200abeab6088fff0a9ce526b1a9b011ea15855255435f08907371b",
-      "sizeBytes": 6140
+      "sha256": "c7df4de798bf9f2c4b0ba9fe4a2ead11fcdf99b620088e7e2b9c861ef0b705a4",
+      "sizeBytes": 6121
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_provenance.md",
-      "sha256": "3c3b87da4d0bd4c499e670ec72bfc48e1718e5fe705c5eb9e2738e4877feb8cd",
-      "sizeBytes": 1448
+      "sha256": "a20976faccb6dbbbe434006b687063ba0f34809b2622a154eccff07adbc038b0",
+      "sizeBytes": 1502
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge100_leaderboard.py",
@@ -72,13 +72,13 @@
     },
     {
       "path": "benchmarks/induction/eval/grok_4_7_challenge100_round1_report.json",
-      "sha256": "9a4817fbe035c8173e71bfe53a1356e3725c905eb02141d1abe991df2a035f9c",
-      "sizeBytes": 143420
+      "sha256": "5bf82c2077b422334f0ab1b37782a80c61f62e5f88d9f55ec9240a64122b6594",
+      "sizeBytes": 148297
     },
     {
       "path": "benchmarks/induction/docs/grok_4_7_challenge100.md",
-      "sha256": "57ed24136c94acf658b9738b02914741f0d62782cbc91d6744fad267a1a509c0",
-      "sizeBytes": 2988
+      "sha256": "c08255df21166c5e4ab9ae989ac1972fa04b9cf2b2fd99d3303cf244a426d2ea",
+      "sizeBytes": 3115
     }
   ],
   "counts": {
