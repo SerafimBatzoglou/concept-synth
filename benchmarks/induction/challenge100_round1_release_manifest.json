@@ -22,33 +22,33 @@
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_model_registry.yaml",
-      "sha256": "d98254723d598631b7b7f4203895523080eb4872f35c9cb1739e0e9165e9eebc",
-      "sizeBytes": 10310
+      "sha256": "efa1a3987a96dcb3994d26cadcdf73ac5b38442c81e6df42fb573c32918f9968",
+      "sizeBytes": 10915
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry.yaml",
-      "sha256": "f1915640b977d5f0a43aaca4876783255c0d2f386ee9a1f12dbd0e90ddac9f1d",
-      "sizeBytes": 8751
+      "sha256": "2e15eb6a7d4cdb1279abe72deba13bebfcfaf1890b4d1844065044c2adbee309",
+      "sizeBytes": 9182
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v1.jsonl",
-      "sha256": "a8404378b2d19c33646c27fb1de184473a4c6ef8c629d8dceee349342e94049c",
-      "sizeBytes": 3488695
+      "sha256": "d10944232f129bb8a3e0794a1ff3dff425d37bce1cf9b8cdc65fb4ed12fc9db5",
+      "sizeBytes": 3596553
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl",
-      "sha256": "221cee16510cd63912c968b43deb19bdc84b6fcf44856ad57d94d8550e496b50",
-      "sizeBytes": 2801026
+      "sha256": "70cb9a53fd247ae414b4b5c142d2b89a366476775f5208d8d317d259ab343186",
+      "sizeBytes": 2875408
     },
     {
       "path": "benchmarks/induction/docs/leaderboard.md",
-      "sha256": "be6e30ab3107ba8ae609bd6b2ef2ab05c5927ac8ea7ea688cf360c455a5428ac",
-      "sizeBytes": 5984
+      "sha256": "a3e9296c2b200abeab6088fff0a9ce526b1a9b011ea15855255435f08907371b",
+      "sizeBytes": 6140
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_provenance.md",
-      "sha256": "2600bdd50d803025a8e2bd4222a67d91ed6ef99ded18281ea97933d25c54a7f0",
-      "sizeBytes": 1195
+      "sha256": "3c3b87da4d0bd4c499e670ec72bfc48e1718e5fe705c5eb9e2738e4877feb8cd",
+      "sizeBytes": 1448
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge100_leaderboard.py",
@@ -69,16 +69,26 @@
       "path": "benchmarks/induction/docs/qwen_3_8_max_challenge100.md",
       "sha256": "1f9ab2f4baaf84f47b87508b24f44baa4e504ea4572680f3d0527f493feb48d5",
       "sizeBytes": 1804
+    },
+    {
+      "path": "benchmarks/induction/eval/grok_4_7_challenge100_round1_report.json",
+      "sha256": "9a4817fbe035c8173e71bfe53a1356e3725c905eb02141d1abe991df2a035f9c",
+      "sizeBytes": 143420
+    },
+    {
+      "path": "benchmarks/induction/docs/grok_4_7_challenge100.md",
+      "sha256": "57ed24136c94acf658b9738b02914741f0d62782cbc91d6744fad267a1a509c0",
+      "sizeBytes": 2988
     }
   ],
   "counts": {
     "benchmarked36HoldoutTasksWithWorlds": 29,
     "benchmarked36Tasks": 36,
-    "challenge100Models": 22,
+    "challenge100Models": 23,
     "challenge100Tasks": 100,
     "challenge64Tasks": 64
   },
-  "generatedOn": "2026-09-13",
+  "generatedOn": "2026-09-22",
   "license": "MIT",
   "releaseTag": "induction-challenge100-round1-v1.0",
   "schemaVersion": "induction_challenge100_round1_release_manifest_v1"

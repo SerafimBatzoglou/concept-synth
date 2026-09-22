@@ -230,3 +230,11 @@ models:
   protocol: direct-only Round 1, maximum thinking, 384K maximum output tokens, 50
     parallel workers, zero retries
   source_release: current pipeline Round-1 ledger
+- id: grok-4.7
+  display_name: Grok 4.7 (interim)
+  source_type: pipeline_store
+  protocol: Interim verified direct Round-1 xhigh/high/medium residual cascade (100/31/9
+    tasks); no explicit output-token cap, temperature 0.6, up to 20 workers, zero
+    automatic retries or symbolic work. Final two-task medium pass pending and excluded
+    from this snapshot.
+  source_release: verified three-pass interim direct Round-1 ledger

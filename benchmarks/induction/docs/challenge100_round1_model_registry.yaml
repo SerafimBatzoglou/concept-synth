@@ -436,3 +436,24 @@ models:
   challenge100:
     evaluable: 83
     correct: 27
+- id: grok-4.7
+  display_name: Grok 4.7 (interim)
+  protocol: Interim verified direct Round-1 xhigh/high/medium residual cascade (100/31/9
+    tasks); no explicit output-token cap, temperature 0.6, up to 20 workers, zero
+    automatic retries or symbolic work. Final two-task medium pass pending and excluded
+    from this snapshot.
+  challenge64:
+    registry_id: grok-4.7
+    evaluable: 62
+    correct: 21
+  benchmarked36:
+    evaluable: 36
+    correct: 2
+    correct_formula_ast_sizes:
+    - 16
+    - 16
+    holdout_evaluable: 2
+    holdout_correct: 2
+  challenge100:
+    evaluable: 98
+    correct: 23

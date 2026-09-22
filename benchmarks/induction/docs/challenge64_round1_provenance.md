@@ -57,3 +57,7 @@ Released prediction records contain normalized formulas and exact verifier outpu
 | DeepSeek V4.1 Flash | Current pipeline Round-1 ledger | direct-only Round 1, maximum thinking, 384K maximum output tokens, 50 parallel workers, zero retries |
 
 The generated-holdout sidecar is documented in the companion holdout eval cache. It contains no gold formula and was generated from the task generator after the Challenge64 set was fixed.
+
+## Grok 4.7 interim update
+
+The verified xhigh/high/medium snapshot is documented in [the Grok audit](grok_4_7_challenge100.md). The pending two-task final medium pass is excluded. Standard-parser and strict original-syntax metrics are both disclosed.

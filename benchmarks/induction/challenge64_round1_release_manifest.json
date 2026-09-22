@@ -7,44 +7,54 @@
     },
     {
       "path": "benchmarks/induction/predictions/induction_challenge64_round1_predictions_v1.jsonl.gz",
-      "sha256": "3bbb909a44b2c45e8edc66350473be6b5e624bbe034f57eea111128815dbec6a",
-      "sizeBytes": 93219
+      "sha256": "59101d2cccddc1e4cd1844ab0c0e29f663e97ca31e6a9409c312adb7a12e5131",
+      "sizeBytes": 96130
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v1.jsonl",
-      "sha256": "a8404378b2d19c33646c27fb1de184473a4c6ef8c629d8dceee349342e94049c",
-      "sizeBytes": 3488695
+      "sha256": "d10944232f129bb8a3e0794a1ff3dff425d37bce1cf9b8cdc65fb4ed12fc9db5",
+      "sizeBytes": 3596553
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl",
-      "sha256": "221cee16510cd63912c968b43deb19bdc84b6fcf44856ad57d94d8550e496b50",
-      "sizeBytes": 2801026
+      "sha256": "70cb9a53fd247ae414b4b5c142d2b89a366476775f5208d8d317d259ab343186",
+      "sizeBytes": 2875408
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry.yaml",
-      "sha256": "f1915640b977d5f0a43aaca4876783255c0d2f386ee9a1f12dbd0e90ddac9f1d",
-      "sizeBytes": 8751
+      "sha256": "2e15eb6a7d4cdb1279abe72deba13bebfcfaf1890b4d1844065044c2adbee309",
+      "sizeBytes": 9182
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_results.md",
-      "sha256": "52598826a5671f5c60ef9aba8f083e0a0485e0d4dadc3a45d44530fe88e7efb1",
-      "sizeBytes": 3731
+      "sha256": "2a3f352c60a83f206eaa1942bbf417612aba8ac22e993d3d1811dc6af249d68f",
+      "sizeBytes": 3808
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_provenance.md",
-      "sha256": "1ba4449f32fa867be6f441321012764d152b8b4bef0ce6d2f0dee67a1ec3e395",
-      "sizeBytes": 5874
+      "sha256": "22be1fab8fd2af8538c0694a14cfc81a3e8a0f20d861661f988577d18b5bb805",
+      "sizeBytes": 6127
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge64_round1_table.py",
       "sha256": "139ff053fcae61a6b2e970aa11f152eb9b3a1d72f8692d5d7810cb50aa1fab7b",
       "sizeBytes": 5690
+    },
+    {
+      "path": "benchmarks/induction/eval/grok_4_7_challenge100_round1_report.json",
+      "sha256": "9a4817fbe035c8173e71bfe53a1356e3725c905eb02141d1abe991df2a035f9c",
+      "sizeBytes": 143420
+    },
+    {
+      "path": "benchmarks/induction/docs/grok_4_7_challenge100.md",
+      "sha256": "57ed24136c94acf658b9738b02914741f0d62782cbc91d6744fad267a1a509c0",
+      "sizeBytes": 2988
     }
   ],
   "counts": {
-    "holdoutEvalRows": 2624,
-    "predictionRows": 2624,
-    "trainEvalRows": 2624
+    "holdoutEvalRows": 2688,
+    "predictionRows": 2688,
+    "trainEvalRows": 2688
   },
   "denominator": 64,
   "excludedModels": [],
@@ -95,10 +105,11 @@
     "muse-spark-1.3",
     "ox-alpha",
     "muse-spark-1.2",
-    "deepseek-v4.1-flash"
+    "deepseek-v4.1-flash",
+    "grok-4.7"
   ],
   "minimumEvaluableResponsesExclusive": 40,
-  "releaseDate": "2026-09-10",
+  "releaseDate": "2026-09-22",
   "releaseTag": "induction-challenge64-round1-v1.7",
   "scenario": "AD",
   "schemaVersion": "induction_challenge64_round1_release_manifest_v1",

@@ -7,3 +7,7 @@ Residual components are selected solely by parser-evaluable priority in the decl
 ## Qwen 3.8 Max update
 
 The final mixed Preview/released0902 cascade is documented in [the Qwen audit](qwen_3_8_max_challenge100.md), including the historical effort-payload discrepancy and corrected attempted-versus-accepted request accounting. Its Challenge64 projection remains unchanged; five additional New36 responses are evaluable but incorrect.
+
+## Grok 4.7 interim update
+
+The verified xhigh/high/medium snapshot is documented in [the Grok audit](grok_4_7_challenge100.md). The pending two-task final medium pass is excluded. Standard-parser and strict original-syntax metrics are both disclosed.
