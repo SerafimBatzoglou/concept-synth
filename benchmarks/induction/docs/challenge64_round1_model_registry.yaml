@@ -246,3 +246,11 @@ models:
     thinking/output budget, output-300k-2026-03-24 beta, temperature omitted, zero
     client retries, tools or symbolic work.
   source_release: verified completed four-pass direct Round-1 ledger
+- id: gpt-6-sol
+  display_name: GPT-6 Sol
+  source_type: pipeline_store
+  protocol: Verified direct Round-1 max/xhigh residual cascade (100/50 tasks); OpenAI
+    Responses Batch API, standard/default reasoning mode, 128000 max_output_tokens
+    shared reasoning/output budget, temperature omitted, zero client retries, tools
+    or symbolic work. High/medium skipped on empty residual.
+  source_release: verified completed two-pass direct Round-1 ledger

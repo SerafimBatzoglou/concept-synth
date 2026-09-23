@@ -65,3 +65,7 @@ The verified five-physical-pass campaign is documented in [the Grok audit](grok_
 ## Claude Opus 5.5 completed update
 
 The verified max/xhigh/high/medium campaign is documented in [the Opus 5.5 audit](claude_opus_5_5_challenge100.md). All 244 requests across four batches are included. Stored scores were copied without rescoring; strict original syntax and standard-parser results are both disclosed.
+
+## GPT-6 Sol completed update
+
+The verified max/xhigh campaign is documented in [the Sol audit](gpt6_sol_challenge100.md). High and medium were skipped on empty residual. All 150 terminal request records across two batches are included, with unknown dispatch, acceptance and token usage explicitly retained. Stored scores were copied without rescoring.

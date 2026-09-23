@@ -7,33 +7,33 @@
     },
     {
       "path": "benchmarks/induction/predictions/induction_challenge64_round1_predictions_v1.jsonl.gz",
-      "sha256": "9cd79b9175258bfb8c511072f4c98d89fe0209e101e7909f150f31b716239e6f",
-      "sizeBytes": 98110
+      "sha256": "e8836e3735dc2f53911263c4001760b3e0915b681586cf5d42a049d11247aa54",
+      "sizeBytes": 102655
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v1.jsonl",
-      "sha256": "fead930ea893709564b3acd2b21648529c575b6ce9f15470d985361e2def9160",
-      "sizeBytes": 3702749
+      "sha256": "cf16a4297e7858024b7d33f6a848b5a9e530d0620ab34c847af64a5ca08dd615",
+      "sizeBytes": 3821120
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl",
-      "sha256": "583e89286964c536b675cc6e47cac986e885700ea685842a7ec3c1c4efe8e5e8",
-      "sizeBytes": 2945483
+      "sha256": "54e652151dead8e631ce73abed1e85ba314f3632f67eb4d9fc6f277f8c1864a0",
+      "sizeBytes": 3028581
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry.yaml",
-      "sha256": "eca27c63a7ea200acee01b2db4395e7fa15192e21c9ad5968e80a4d799235281",
-      "sizeBytes": 9664
+      "sha256": "1451f2d71b6a5cc5cee6e7019c81ad7b79058c05dfc2a1fbc558520d91816134",
+      "sizeBytes": 10118
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_results.md",
-      "sha256": "e9c0e7097d7c0ce7e94a195fb1de37f4f2600d377d7ea9cf0dc4cfc35e3ee818",
-      "sizeBytes": 3872
+      "sha256": "8ac08d04c5de4ee03faaf57649618b8608a1629eef0bcbde5a34152eaf352633",
+      "sizeBytes": 3940
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_provenance.md",
-      "sha256": "4d263ffb26754549ca35275ee027d892bdeebfd73c5030ad07878cca39a79743",
-      "sizeBytes": 6502
+      "sha256": "92f2eb36d1d30fb8c52d8384946adf0955df80689e7317f86e5ba6fcfc30f572",
+      "sizeBytes": 6856
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge64_round1_table.py",
@@ -59,12 +59,22 @@
       "path": "benchmarks/induction/docs/claude_opus_5_5_challenge100.md",
       "sha256": "b33ee40aa33362dae0495efa8e36fde0ae2492a02bcdad9ea1b0c9a58c754c87",
       "sizeBytes": 3645
+    },
+    {
+      "path": "benchmarks/induction/eval/gpt6_sol_challenge100_round1_report.json",
+      "sha256": "cf6b4ca5385e4375668699a4e1e2ff946d41baf6c413853bd04e01b863df371d",
+      "sizeBytes": 155325
+    },
+    {
+      "path": "benchmarks/induction/docs/gpt6_sol_challenge100.md",
+      "sha256": "e05ee81c52aedbf29775714f23558a59ab486b4c93e67a7a6be072ba8bde34ff",
+      "sizeBytes": 3692
     }
   ],
   "counts": {
-    "holdoutEvalRows": 2752,
-    "predictionRows": 2752,
-    "trainEvalRows": 2752
+    "holdoutEvalRows": 2816,
+    "predictionRows": 2816,
+    "trainEvalRows": 2816
   },
   "denominator": 64,
   "excludedModels": [],
@@ -117,7 +127,8 @@
     "muse-spark-1.2",
     "deepseek-v4.1-flash",
     "grok-4.7",
-    "claude-opus-5-5"
+    "claude-opus-5-5",
+    "gpt-6-sol"
   ],
   "minimumEvaluableResponsesExclusive": 40,
   "releaseDate": "2026-09-23",
