@@ -238,3 +238,11 @@ models:
     connection interruptions. No explicit output-token cap, temperature 0.6, up to
     20 workers, zero automatic retries or symbolic work.
   source_release: verified completed five-physical-pass direct Round-1 ledger
+- id: claude-opus-5-5
+  display_name: Claude Opus 5.5
+  source_type: pipeline_store
+  protocol: Verified direct Round-1 max/xhigh/high/medium residual cascade (100/64/49/31
+    tasks); Anthropic Message Batches, adaptive thinking, 300000 max_tokens shared
+    thinking/output budget, output-300k-2026-03-24 beta, temperature omitted, zero
+    client retries, tools or symbolic work.
+  source_release: verified completed four-pass direct Round-1 ledger

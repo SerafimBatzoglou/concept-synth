@@ -61,3 +61,7 @@ The generated-holdout sidecar is documented in the companion holdout eval cache.
 ## Grok 4.7 completed update
 
 The verified five-physical-pass campaign is documented in [the Grok audit](grok_4_7_challenge100.md). All 144 calls, including two connection-error originals and the authorized resubmission, are included. Standard-parser and strict original-syntax metrics are both disclosed.
+
+## Claude Opus 5.5 completed update
+
+The verified max/xhigh/high/medium campaign is documented in [the Opus 5.5 audit](claude_opus_5_5_challenge100.md). All 244 requests across four batches are included. Stored scores were copied without rescoring; strict original syntax and standard-parser results are both disclosed.

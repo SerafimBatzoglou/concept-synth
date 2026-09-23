@@ -1,0 +1,4695 @@
+{
+  "acceptance_note": "Confirmed execution from provider-succeeded batch results, not individual HTTP statuses.",
+  "all_physical_response_token_usage": {
+    "input": {
+      "count": 244,
+      "mean": 6708.852459016393,
+      "median": 6995.0,
+      "sum": 1636960
+    },
+    "output": {
+      "count": 244,
+      "mean": 207470.45081967214,
+      "median": 223220.0,
+      "sum": 50622790
+    },
+    "reasoning": {
+      "count": 0,
+      "mean": null,
+      "median": null,
+      "sum": 0
+    },
+    "total": {
+      "count": 244,
+      "mean": 214179.30327868852,
+      "median": 229748.0,
+      "sum": 52259750
+    }
+  },
+  "by_category_or_slice": {
+    "binary_guard_incoming_lift_qd2": {
+      "correct": 5,
+      "correct_among_evaluable": 1.0,
+      "correct_formula_ast": {
+        "count": 5,
+        "mean": 16,
+        "median": 16,
+        "sum": 80
+      },
+      "evaluable": 5,
+      "evaluable_fraction": 1.0,
+      "holdout": {
+        "available": 5,
+        "correct": 5,
+        "correct_among_available": 1.0,
+        "train_correct": 5
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 5
+      },
+      "strict_accuracy": 1.0,
+      "strict_as_submitted_correct": 5,
+      "strict_as_submitted_evaluable": 5,
+      "token_usage": {
+        "input": {
+          "count": 5,
+          "mean": 7196.6,
+          "median": 7210,
+          "sum": 35983
+        },
+        "output": {
+          "count": 5,
+          "mean": 138592.8,
+          "median": 165715,
+          "sum": 692964
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 5,
+          "mean": 145789.4,
+          "median": 172503,
+          "sum": 728947
+        }
+      },
+      "total": 5
+    },
+    "compact_ef_lift_qd2": {
+      "correct": 3,
+      "correct_among_evaluable": 1.0,
+      "correct_formula_ast": {
+        "count": 3,
+        "mean": 15,
+        "median": 15,
+        "sum": 45
+      },
+      "evaluable": 3,
+      "evaluable_fraction": 0.75,
+      "holdout": {
+        "available": 3,
+        "correct": 3,
+        "correct_among_available": 1.0,
+        "train_correct": 3
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 3,
+        "output_cap": 1
+      },
+      "strict_accuracy": 0.75,
+      "strict_as_submitted_correct": 3,
+      "strict_as_submitted_evaluable": 3,
+      "token_usage": {
+        "input": {
+          "count": 4,
+          "mean": 8042.75,
+          "median": 8083.0,
+          "sum": 32171
+        },
+        "output": {
+          "count": 4,
+          "mean": 259477.75,
+          "median": 275684.0,
+          "sum": 1037911
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 4,
+          "mean": 267520.5,
+          "median": 283650.0,
+          "sum": 1070082
+        }
+      },
+      "total": 4
+    },
+    "compact_response_qd3": {
+      "correct": 0,
+      "correct_among_evaluable": 0.0,
+      "correct_formula_ast": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "sum": 0
+      },
+      "evaluable": 2,
+      "evaluable_fraction": 0.6666666666666666,
+      "holdout": {
+        "available": 0,
+        "correct": 0,
+        "correct_among_available": null,
+        "train_correct": 0
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "evaluable_incorrect": 2,
+        "provider_error": 1
+      },
+      "strict_accuracy": 0.0,
+      "strict_as_submitted_correct": 0,
+      "strict_as_submitted_evaluable": 2,
+      "token_usage": {
+        "input": {
+          "count": 3,
+          "mean": 8040.333333333333,
+          "median": 7967,
+          "sum": 24121
+        },
+        "output": {
+          "count": 3,
+          "mean": 225099.66666666666,
+          "median": 237360,
+          "sum": 675299
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 3,
+          "mean": 233140,
+          "median": 245303,
+          "sum": 699420
+        }
+      },
+      "total": 3
+    },
+    "dual_role_cross_lift_qd2": {
+      "correct": 0,
+      "correct_among_evaluable": 0.0,
+      "correct_formula_ast": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "sum": 0
+      },
+      "evaluable": 3,
+      "evaluable_fraction": 0.75,
+      "holdout": {
+        "available": 0,
+        "correct": 0,
+        "correct_among_available": null,
+        "train_correct": 0
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "evaluable_incorrect": 3,
+        "output_cap": 1
+      },
+      "strict_accuracy": 0.0,
+      "strict_as_submitted_correct": 0,
+      "strict_as_submitted_evaluable": 3,
+      "token_usage": {
+        "input": {
+          "count": 4,
+          "mean": 7558,
+          "median": 7542.5,
+          "sum": 30232
+        },
+        "output": {
+          "count": 4,
+          "mean": 223387.75,
+          "median": 224134.0,
+          "sum": 893551
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 4,
+          "mean": 230945.75,
+          "median": 231791.0,
+          "sum": 923783
+        }
+      },
+      "total": 4
+    },
+    "extreme_context": {
+      "correct": 12,
+      "correct_among_evaluable": 0.8571428571428571,
+      "correct_formula_ast": {
+        "count": 12,
+        "mean": 16.5,
+        "median": 16.5,
+        "sum": 198
+      },
+      "evaluable": 14,
+      "evaluable_fraction": 0.9333333333333333,
+      "holdout": {
+        "available": 12,
+        "correct": 12,
+        "correct_among_available": 1.0,
+        "train_correct": 12
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 12,
+        "evaluable_incorrect": 2,
+        "output_cap": 1
+      },
+      "strict_accuracy": 0.8,
+      "strict_as_submitted_correct": 12,
+      "strict_as_submitted_evaluable": 14,
+      "token_usage": {
+        "input": {
+          "count": 15,
+          "mean": 8814.333333333334,
+          "median": 8696,
+          "sum": 132215
+        },
+        "output": {
+          "count": 15,
+          "mean": 153326.73333333334,
+          "median": 164850,
+          "sum": 2299901
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 15,
+          "mean": 162141.06666666668,
+          "median": 173343,
+          "sum": 2432116
+        }
+      },
+      "total": 15
+    },
+    "extreme_logic": {
+      "correct": 7,
+      "correct_among_evaluable": 0.5833333333333334,
+      "correct_formula_ast": {
+        "count": 7,
+        "mean": 21,
+        "median": 18,
+        "sum": 147
+      },
+      "evaluable": 12,
+      "evaluable_fraction": 0.75,
+      "holdout": {
+        "available": 7,
+        "correct": 6,
+        "correct_among_available": 0.8571428571428571,
+        "train_correct": 7
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 7,
+        "evaluable_incorrect": 5,
+        "output_cap": 1,
+        "provider_error": 3
+      },
+      "strict_accuracy": 0.4375,
+      "strict_as_submitted_correct": 7,
+      "strict_as_submitted_evaluable": 12,
+      "token_usage": {
+        "input": {
+          "count": 16,
+          "mean": 5963.3125,
+          "median": 6036.5,
+          "sum": 95413
+        },
+        "output": {
+          "count": 16,
+          "mean": 191561.0625,
+          "median": 200769.5,
+          "sum": 3064977
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 16,
+          "mean": 197524.375,
+          "median": 206791.0,
+          "sum": 3160390
+        }
+      },
+      "total": 16
+    },
+    "filtered_dual_role_lift_qd2": {
+      "correct": 1,
+      "correct_among_evaluable": 0.25,
+      "correct_formula_ast": {
+        "count": 1,
+        "mean": 20,
+        "median": 20,
+        "sum": 20
+      },
+      "evaluable": 4,
+      "evaluable_fraction": 1.0,
+      "holdout": {
+        "available": 0,
+        "correct": 0,
+        "correct_among_available": null,
+        "train_correct": 1
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 1,
+        "evaluable_incorrect": 3
+      },
+      "strict_accuracy": 0.25,
+      "strict_as_submitted_correct": 1,
+      "strict_as_submitted_evaluable": 4,
+      "token_usage": {
+        "input": {
+          "count": 4,
+          "mean": 8222.75,
+          "median": 8203.0,
+          "sum": 32891
+        },
+        "output": {
+          "count": 4,
+          "mean": 244419.5,
+          "median": 252488.5,
+          "sum": 977678
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 4,
+          "mean": 252642.25,
+          "median": 260601.0,
+          "sum": 1010569
+        }
+      },
+      "total": 4
+    },
+    "filtered_ef_lift_qd2": {
+      "correct": 1,
+      "correct_among_evaluable": 0.25,
+      "correct_formula_ast": {
+        "count": 1,
+        "mean": 15,
+        "median": 15,
+        "sum": 15
+      },
+      "evaluable": 4,
+      "evaluable_fraction": 1.0,
+      "holdout": {
+        "available": 1,
+        "correct": 1,
+        "correct_among_available": 1.0,
+        "train_correct": 1
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 1,
+        "evaluable_incorrect": 3
+      },
+      "strict_accuracy": 0.25,
+      "strict_as_submitted_correct": 1,
+      "strict_as_submitted_evaluable": 4,
+      "token_usage": {
+        "input": {
+          "count": 4,
+          "mean": 8251,
+          "median": 8270.0,
+          "sum": 33004
+        },
+        "output": {
+          "count": 4,
+          "mean": 232156.5,
+          "median": 249958.5,
+          "sum": 928626
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 4,
+          "mean": 240407.5,
+          "median": 258228.5,
+          "sum": 961630
+        }
+      },
+      "total": 4
+    },
+    "guardless_cross_scope_lift_qd2": {
+      "correct": 3,
+      "correct_among_evaluable": 1.0,
+      "correct_formula_ast": {
+        "count": 3,
+        "mean": 13.333333333333334,
+        "median": 11,
+        "sum": 40
+      },
+      "evaluable": 3,
+      "evaluable_fraction": 1.0,
+      "holdout": {
+        "available": 1,
+        "correct": 1,
+        "correct_among_available": 1.0,
+        "train_correct": 3
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 3
+      },
+      "strict_accuracy": 1.0,
+      "strict_as_submitted_correct": 3,
+      "strict_as_submitted_evaluable": 3,
+      "token_usage": {
+        "input": {
+          "count": 3,
+          "mean": 7396,
+          "median": 7591,
+          "sum": 22188
+        },
+        "output": {
+          "count": 3,
+          "mean": 166864,
+          "median": 172204,
+          "sum": 500592
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 3,
+          "mean": 174260,
+          "median": 179806,
+          "sum": 522780
+        }
+      },
+      "total": 3
+    },
+    "guardless_same_relation_scope_lift_qd2": {
+      "correct": 2,
+      "correct_among_evaluable": 0.6666666666666666,
+      "correct_formula_ast": {
+        "count": 2,
+        "mean": 11,
+        "median": 11.0,
+        "sum": 22
+      },
+      "evaluable": 3,
+      "evaluable_fraction": 1.0,
+      "holdout": {
+        "available": 1,
+        "correct": 1,
+        "correct_among_available": 1.0,
+        "train_correct": 2
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 2,
+        "evaluable_incorrect": 1
+      },
+      "strict_accuracy": 0.6666666666666666,
+      "strict_as_submitted_correct": 2,
+      "strict_as_submitted_evaluable": 3,
+      "token_usage": {
+        "input": {
+          "count": 3,
+          "mean": 7470,
+          "median": 7474,
+          "sum": 22410
+        },
+        "output": {
+          "count": 3,
+          "mean": 233084,
+          "median": 229411,
+          "sum": 699252
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 3,
+          "mean": 240554,
+          "median": 237055,
+          "sum": 721662
+        }
+      },
+      "total": 3
+    },
+    "hard": {
+      "correct": 26,
+      "correct_among_evaluable": 0.8125,
+      "correct_formula_ast": {
+        "count": 26,
+        "mean": 32.15384615384615,
+        "median": 18.0,
+        "sum": 836
+      },
+      "evaluable": 32,
+      "evaluable_fraction": 1.0,
+      "holdout": {
+        "available": 25,
+        "correct": 16,
+        "correct_among_available": 0.64,
+        "train_correct": 26
+      },
+      "parser_normalized_responses": 1,
+      "status_counts": {
+        "correct": 26,
+        "evaluable_incorrect": 6
+      },
+      "strict_accuracy": 0.8125,
+      "strict_as_submitted_correct": 25,
+      "strict_as_submitted_evaluable": 31,
+      "token_usage": {
+        "input": {
+          "count": 32,
+          "mean": 4896.4375,
+          "median": 4858.0,
+          "sum": 156686
+        },
+        "output": {
+          "count": 32,
+          "mean": 151561.75,
+          "median": 160938.0,
+          "sum": 4849976
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 32,
+          "mean": 156458.1875,
+          "median": 165943.5,
+          "sum": 5006662
+        }
+      },
+      "total": 32
+    },
+    "medium": {
+      "correct": 1,
+      "correct_among_evaluable": 1.0,
+      "correct_formula_ast": {
+        "count": 1,
+        "mean": 16,
+        "median": 16,
+        "sum": 16
+      },
+      "evaluable": 1,
+      "evaluable_fraction": 1.0,
+      "holdout": {
+        "available": 1,
+        "correct": 1,
+        "correct_among_available": 1.0,
+        "train_correct": 1
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 1
+      },
+      "strict_accuracy": 1.0,
+      "strict_as_submitted_correct": 1,
+      "strict_as_submitted_evaluable": 1,
+      "token_usage": {
+        "input": {
+          "count": 1,
+          "mean": 4458,
+          "median": 4458,
+          "sum": 4458
+        },
+        "output": {
+          "count": 1,
+          "mean": 84624,
+          "median": 84624,
+          "sum": 84624
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 1,
+          "mean": 89082,
+          "median": 89082,
+          "sum": 89082
+        }
+      },
+      "total": 1
+    },
+    "nested_containment_qd3": {
+      "correct": 3,
+      "correct_among_evaluable": 1.0,
+      "correct_formula_ast": {
+        "count": 3,
+        "mean": 22,
+        "median": 22,
+        "sum": 66
+      },
+      "evaluable": 3,
+      "evaluable_fraction": 1.0,
+      "holdout": {
+        "available": 3,
+        "correct": 3,
+        "correct_among_available": 1.0,
+        "train_correct": 3
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 3
+      },
+      "strict_accuracy": 1.0,
+      "strict_as_submitted_correct": 3,
+      "strict_as_submitted_evaluable": 3,
+      "token_usage": {
+        "input": {
+          "count": 3,
+          "mean": 7711.333333333333,
+          "median": 7698,
+          "sum": 23134
+        },
+        "output": {
+          "count": 3,
+          "mean": 178710.66666666666,
+          "median": 188026,
+          "sum": 536132
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 3,
+          "mean": 186422,
+          "median": 195724,
+          "sum": 559266
+        }
+      },
+      "total": 3
+    },
+    "universal_nested_response_qd3": {
+      "correct": 1,
+      "correct_among_evaluable": 0.5,
+      "correct_formula_ast": {
+        "count": 1,
+        "mean": 23,
+        "median": 23,
+        "sum": 23
+      },
+      "evaluable": 2,
+      "evaluable_fraction": 0.6666666666666666,
+      "holdout": {
+        "available": 1,
+        "correct": 1,
+        "correct_among_available": 1.0,
+        "train_correct": 1
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 1,
+        "evaluable_incorrect": 1,
+        "output_cap": 1
+      },
+      "strict_accuracy": 0.3333333333333333,
+      "strict_as_submitted_correct": 1,
+      "strict_as_submitted_evaluable": 2,
+      "token_usage": {
+        "input": {
+          "count": 3,
+          "mean": 7417.333333333333,
+          "median": 7462,
+          "sum": 22252
+        },
+        "output": {
+          "count": 3,
+          "mean": 269831.6666666667,
+          "median": 258655,
+          "sum": 809495
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 3,
+          "mean": 277249,
+          "median": 266186,
+          "sum": 831747
+        }
+      },
+      "total": 3
+    }
+  },
+  "by_subset": {
+    "challenge64": {
+      "correct": 46,
+      "correct_among_evaluable": 0.7796610169491526,
+      "correct_formula_ast": {
+        "count": 46,
+        "mean": 26.02173913043478,
+        "median": 18.0,
+        "sum": 1197
+      },
+      "evaluable": 59,
+      "evaluable_fraction": 0.921875,
+      "holdout": {
+        "available": 45,
+        "correct": 35,
+        "correct_among_available": 0.7777777777777778,
+        "train_correct": 46
+      },
+      "parser_normalized_responses": 1,
+      "status_counts": {
+        "correct": 46,
+        "evaluable_incorrect": 13,
+        "output_cap": 2,
+        "provider_error": 3
+      },
+      "strict_accuracy": 0.71875,
+      "strict_as_submitted_correct": 45,
+      "strict_as_submitted_evaluable": 58,
+      "token_usage": {
+        "input": {
+          "count": 64,
+          "mean": 6074.5625,
+          "median": 5219.5,
+          "sum": 388772
+        },
+        "output": {
+          "count": 64,
+          "mean": 160929.34375,
+          "median": 181566.0,
+          "sum": 10299478
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 64,
+          "mean": 167003.90625,
+          "median": 186769.0,
+          "sum": 10688250
+        }
+      },
+      "total": 64
+    },
+    "new36": {
+      "correct": 19,
+      "correct_among_evaluable": 0.59375,
+      "correct_formula_ast": {
+        "count": 19,
+        "mean": 16.36842105263158,
+        "median": 16,
+        "sum": 311
+      },
+      "evaluable": 32,
+      "evaluable_fraction": 0.8888888888888888,
+      "holdout": {
+        "available": 15,
+        "correct": 15,
+        "correct_among_available": 1.0,
+        "train_correct": 19
+      },
+      "parser_normalized_responses": 0,
+      "status_counts": {
+        "correct": 19,
+        "evaluable_incorrect": 13,
+        "output_cap": 3,
+        "provider_error": 1
+      },
+      "strict_accuracy": 0.5277777777777778,
+      "strict_as_submitted_correct": 19,
+      "strict_as_submitted_evaluable": 32,
+      "token_usage": {
+        "input": {
+          "count": 36,
+          "mean": 7732.944444444444,
+          "median": 7671.0,
+          "sum": 278386
+        },
+        "output": {
+          "count": 36,
+          "mean": 215319.44444444444,
+          "median": 228996.0,
+          "sum": 7751500
+        },
+        "reasoning": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "sum": 0
+        },
+        "total": {
+          "count": 36,
+          "mean": 223052.38888888888,
+          "median": 236679.0,
+          "sum": 8029886
+        }
+      },
+      "total": 36
+    }
+  },
+  "components": [
+    {
+      "component": "pass1_max",
+      "generation_calls": {
+        "acceptance_unknown": 0,
+        "accepted_confirmed": 100,
+        "attempted_confirmed": 100,
+        "attempted_unknown": 0,
+        "batch_submission_http_status": 200,
+        "batch_submissions": 1,
+        "note": "One Batch API submission containing N distinct requests. Individual HTTP statuses are not supplied by Anthropic batches; provider succeeded results confirm per-task execution. Status/retrieval/evaluation are not generation calls. Internal provider attempts are not exposed.",
+        "provider_completed": 100,
+        "retries": 0,
+        "submitted_requests": 100,
+        "terminal_records": 100
+      },
+      "overall": {
+        "correct": 36,
+        "correct_among_evaluable": 1.0,
+        "correct_formula_ast": {
+          "count": 36,
+          "max": 42,
+          "mean": 16.61111111111111,
+          "median": 16.0,
+          "min": 11,
+          "sum": 598
+        },
+        "evaluable": 36,
+        "evaluable_fraction": 0.36,
+        "holdout": {
+          "available": 32,
+          "correct": 31,
+          "correct_among_available": 0.96875,
+          "generated_worlds_evaluated": 155,
+          "train_correct": 36
+        },
+        "parser_normalized_responses": 0,
+        "status_counts": {
+          "correct": 36,
+          "output_cap": 33,
+          "provider_error": 31
+        },
+        "strict_accuracy": 0.36,
+        "strict_as_submitted_correct": 36,
+        "strict_as_submitted_evaluable": 36,
+        "token_usage": {
+          "input": {
+            "count": 100,
+            "max": 9713,
+            "mean": 6671.58,
+            "median": 6891.5,
+            "min": 4458,
+            "sum": 667158
+          },
+          "output": {
+            "count": 100,
+            "max": 300000,
+            "mean": 189073.1,
+            "median": 168778.5,
+            "min": 5825,
+            "sum": 18907310
+          },
+          "reasoning": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "sum": 0
+          },
+          "total": {
+            "count": 100,
+            "max": 309713,
+            "mean": 195744.68,
+            "median": 174278.5,
+            "min": 11048,
+            "sum": 19574468
+          }
+        },
+        "total": 100
+      },
+      "provider_terminal": {
+        "empty": 64,
+        "nonempty": 36,
+        "output_cap": 33,
+        "provider_errors": 31,
+        "refusals": 31,
+        "stop_reasons": {
+          "end_turn": 36,
+          "max_tokens": 33,
+          "refusal": 31
+        },
+        "timeouts": 0
+      },
+      "report_sha256": "fb23d9f55654b4b240c8a91432300b92f6923ec7a4abca8983bae47c03d46460",
+      "residual_size": 64
+    },
+    {
+      "component": "pass2_xhigh",
+      "generation_calls": {
+        "acceptance_unknown": 0,
+        "accepted_confirmed": 64,
+        "attempted_confirmed": 64,
+        "attempted_unknown": 0,
+        "batch_submission_http_status": 200,
+        "batch_submissions": 1,
+        "note": "One Batch API submission containing N distinct requests. Individual HTTP statuses are not supplied by Anthropic batches; provider succeeded results confirm per-task execution. Status/retrieval/evaluation are not generation calls. Internal provider attempts are not exposed.",
+        "provider_completed": 64,
+        "retries": 0,
+        "submitted_requests": 64,
+        "terminal_records": 64
+      },
+      "overall": {
+        "correct": 15,
+        "correct_among_evaluable": 1.0,
+        "correct_formula_ast": {
+          "count": 15,
+          "max": 45,
+          "mean": 21.733333333333334,
+          "median": 18,
+          "min": 15,
+          "sum": 326
+        },
+        "evaluable": 15,
+        "evaluable_fraction": 0.234375,
+        "holdout": {
+          "available": 15,
+          "correct": 12,
+          "correct_among_available": 0.8,
+          "generated_worlds_evaluated": 73,
+          "train_correct": 15
+        },
+        "parser_normalized_responses": 0,
+        "status_counts": {
+          "correct": 15,
+          "output_cap": 31,
+          "provider_error": 18
+        },
+        "strict_accuracy": 0.234375,
+        "strict_as_submitted_correct": 15,
+        "strict_as_submitted_evaluable": 15,
+        "token_usage": {
+          "input": {
+            "count": 64,
+            "max": 9713,
+            "mean": 6690.375,
+            "median": 6624.5,
+            "min": 4458,
+            "sum": 428184
+          },
+          "output": {
+            "count": 64,
+            "max": 300000,
+            "mean": 222419.125,
+            "median": 287458.5,
+            "min": 38471,
+            "sum": 14234824
+          },
+          "reasoning": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "sum": 0
+          },
+          "total": {
+            "count": 64,
+            "max": 309713,
+            "mean": 229109.5,
+            "median": 292916.0,
+            "min": 43309,
+            "sum": 14663008
+          }
+        },
+        "total": 64
+      },
+      "provider_terminal": {
+        "empty": 49,
+        "nonempty": 15,
+        "output_cap": 31,
+        "provider_errors": 18,
+        "refusals": 18,
+        "stop_reasons": {
+          "end_turn": 15,
+          "max_tokens": 31,
+          "refusal": 18
+        },
+        "timeouts": 0
+      },
+      "report_sha256": "442a698f8976012790a7702dfadb6d049ef3348aff5e1774671f12a3408d597d",
+      "residual_size": 49
+    },
+    {
+      "component": "pass3_high",
+      "generation_calls": {
+        "acceptance_unknown": 0,
+        "accepted_confirmed": 49,
+        "attempted_confirmed": 49,
+        "attempted_unknown": 0,
+        "batch_submission_http_status": 200,
+        "batch_submissions": 1,
+        "note": "One Batch API submission containing N distinct requests. Individual HTTP statuses are not supplied by Anthropic batches; provider succeeded results confirm per-task execution. Status/retrieval/evaluation are not generation calls. Internal provider attempts are not exposed.",
+        "provider_completed": 49,
+        "retries": 0,
+        "submitted_requests": 49,
+        "terminal_records": 49
+      },
+      "overall": {
+        "correct": 10,
+        "correct_among_evaluable": 0.5555555555555556,
+        "correct_formula_ast": {
+          "count": 10,
+          "max": 120,
+          "mean": 52.2,
+          "median": 31.5,
+          "min": 15,
+          "sum": 522
+        },
+        "evaluable": 18,
+        "evaluable_fraction": 0.3673469387755102,
+        "holdout": {
+          "available": 10,
+          "correct": 5,
+          "correct_among_available": 0.5,
+          "generated_worlds_evaluated": 50,
+          "train_correct": 10
+        },
+        "parser_normalized_responses": 1,
+        "status_counts": {
+          "correct": 10,
+          "evaluable_incorrect": 8,
+          "output_cap": 23,
+          "provider_error": 8
+        },
+        "strict_accuracy": 0.20408163265306123,
+        "strict_as_submitted_correct": 9,
+        "strict_as_submitted_evaluable": 17,
+        "token_usage": {
+          "input": {
+            "count": 49,
+            "max": 9713,
+            "mean": 6795.530612244898,
+            "median": 7292,
+            "min": 4752,
+            "sum": 332981
+          },
+          "output": {
+            "count": 49,
+            "max": 300000,
+            "mean": 241945.44897959183,
+            "median": 296651,
+            "min": 43039,
+            "sum": 11855327
+          },
+          "reasoning": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "sum": 0
+          },
+          "total": {
+            "count": 49,
+            "max": 309713,
+            "mean": 248740.97959183675,
+            "median": 303478,
+            "min": 51115,
+            "sum": 12188308
+          }
+        },
+        "total": 49
+      },
+      "provider_terminal": {
+        "empty": 31,
+        "nonempty": 18,
+        "output_cap": 23,
+        "provider_errors": 8,
+        "refusals": 8,
+        "stop_reasons": {
+          "end_turn": 18,
+          "max_tokens": 23,
+          "refusal": 8
+        },
+        "timeouts": 0
+      },
+      "report_sha256": "037b1f966547995abcbe469319707bac418f5006b079fcb7e74398167b99a94d",
+      "residual_size": 31
+    },
+    {
+      "component": "pass4_medium",
+      "generation_calls": {
+        "acceptance_unknown": 0,
+        "accepted_confirmed": 31,
+        "attempted_confirmed": 31,
+        "attempted_unknown": 0,
+        "batch_submission_http_status": 200,
+        "batch_submissions": 1,
+        "note": "One Batch API submission containing N distinct requests. Individual HTTP statuses are not supplied by Anthropic batches; provider succeeded results confirm per-task execution. Status/retrieval/evaluation are not generation calls. Internal provider attempts are not exposed.",
+        "provider_completed": 31,
+        "retries": 0,
+        "submitted_requests": 31,
+        "terminal_records": 31
+      },
+      "overall": {
+        "correct": 4,
+        "correct_among_evaluable": 0.18181818181818182,
+        "correct_formula_ast": {
+          "count": 4,
+          "max": 18,
+          "mean": 15.5,
+          "median": 16.5,
+          "min": 11,
+          "sum": 62
+        },
+        "evaluable": 22,
+        "evaluable_fraction": 0.7096774193548387,
+        "holdout": {
+          "available": 3,
+          "correct": 2,
+          "correct_among_available": 0.6666666666666666,
+          "generated_worlds_evaluated": 15,
+          "train_correct": 4
+        },
+        "parser_normalized_responses": 0,
+        "status_counts": {
+          "correct": 4,
+          "evaluable_incorrect": 18,
+          "provider_error": 9
+        },
+        "strict_accuracy": 0.12903225806451613,
+        "strict_as_submitted_correct": 4,
+        "strict_as_submitted_evaluable": 22,
+        "token_usage": {
+          "input": {
+            "count": 31,
+            "max": 9713,
+            "mean": 6730.225806451613,
+            "median": 6254,
+            "min": 4804,
+            "sum": 208637
+          },
+          "output": {
+            "count": 31,
+            "max": 293047,
+            "mean": 181462.2258064516,
+            "median": 192115,
+            "min": 85452,
+            "sum": 5625329
+          },
+          "reasoning": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "sum": 0
+          },
+          "total": {
+            "count": 31,
+            "max": 301014,
+            "mean": 188192.4516129032,
+            "median": 197670,
+            "min": 93663,
+            "sum": 5833966
+          }
+        },
+        "total": 31
+      },
+      "provider_terminal": {
+        "empty": 9,
+        "nonempty": 22,
+        "output_cap": 0,
+        "provider_errors": 9,
+        "refusals": 9,
+        "stop_reasons": {
+          "end_turn": 22,
+          "refusal": 9
+        },
+        "timeouts": 0
+      },
+      "report_sha256": "f164d2782371354f1e9bded46d8d79c5fd03082a2532f1c396db6ec53bdcbcfa",
+      "residual_size": 9
+    }
+  ],
+  "final_combined_report_sha256": "462829e35c71952ba3375aa168eed5e8f16311d1f468f458ce23cb35e984f674",
+  "frontiers": {
+    "post_round1": 100,
+    "symbolic_candidates": 0
+  },
+  "generation_calls": {
+    "acceptance_unknown": 0,
+    "accepted_confirmed": 244,
+    "attempted_confirmed": 244,
+    "attempted_unknown": 0,
+    "batch_submissions": 4,
+    "retries": 0,
+    "submitted_requests": 244,
+    "terminal_records": 244
+  },
+  "model": "claude-opus-5-5",
+  "non_evaluable_task_ids": [
+    "extreme_logic_024",
+    "extreme_logic_011",
+    "extreme_logic_015",
+    "extreme_context_024",
+    "extreme_logic_025",
+    "fullobs_v2_dual_role_cross_lift_qd2_007",
+    "fullobs_v2_compact_ef_lift_qd2_004",
+    "fullobs_v2_compact_response_qd3_009",
+    "fullobs_v2_universal_nested_response_qd3_008"
+  ],
+  "overall": {
+    "correct": 65,
+    "correct_among_evaluable": 0.7142857142857143,
+    "correct_formula_ast": {
+      "count": 65,
+      "mean": 23.2,
+      "median": 17,
+      "sum": 1508
+    },
+    "evaluable": 91,
+    "evaluable_fraction": 0.91,
+    "holdout": {
+      "available": 60,
+      "correct": 50,
+      "correct_among_available": 0.8333333333333334,
+      "train_correct": 65
+    },
+    "parser_normalized_responses": 1,
+    "status_counts": {
+      "correct": 65,
+      "evaluable_incorrect": 26,
+      "output_cap": 5,
+      "provider_error": 4
+    },
+    "strict_accuracy": 0.65,
+    "strict_as_submitted_correct": 64,
+    "strict_as_submitted_evaluable": 90,
+    "token_usage": {
+      "input": {
+        "count": 100,
+        "mean": 6671.58,
+        "median": 6891.5,
+        "sum": 667158
+      },
+      "output": {
+        "count": 100,
+        "mean": 180509.78,
+        "median": 200769.5,
+        "sum": 18050978
+      },
+      "reasoning": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "sum": 0
+      },
+      "total": {
+        "count": 100,
+        "mean": 187181.36,
+        "median": 206993.5,
+        "sum": 18718136
+      }
+    },
+    "total": 100
+  },
+  "protocol": "Verified direct Round-1 max/xhigh/high/medium residual cascade (100/64/49/31 tasks); Anthropic Message Batches, adaptive thinking, 300000 max_tokens shared thinking/output budget, output-300k-2026-03-24 beta, temperature omitted, zero client retries, tools or symbolic work.",
+  "provider": "anthropic",
+  "publication_status": "final_four_verified_physical_passes",
+  "refusal_note": "Refusals are ineligible and counted separately; generic provider_errors also includes refusals.",
+  "schema_version": "induction_challenge100_verified_model_report_v1",
+  "selected_component_counts": {
+    "pass1_max": {
+      "selected": 45,
+      "selected_evaluable": 36
+    },
+    "pass2_xhigh": {
+      "selected": 15,
+      "selected_evaluable": 15
+    },
+    "pass3_high": {
+      "selected": 18,
+      "selected_evaluable": 18
+    },
+    "pass4_medium": {
+      "selected": 22,
+      "selected_evaluable": 22
+    }
+  },
+  "selection_policy": "First parser-evaluable response in component order; earliest response if none evaluable. Never select by correctness, AST, mismatch or holdout.",
+  "settings": {
+    "anthropic_beta": "output-300k-2026-03-24",
+    "api": "Anthropic Message Batches",
+    "automatic_retries": 0,
+    "effort_sequence": [
+      "max",
+      "xhigh",
+      "high",
+      "medium"
+    ],
+    "max_rounds": 1,
+    "max_tokens": 300000,
+    "model": "claude-opus-5-5",
+    "n_candidates": 1,
+    "symbolic_candidates": 0,
+    "temperature": "omitted",
+    "thinking": {
+      "type": "adaptive"
+    },
+    "tools": []
+  },
+  "tasks": [
+    {
+      "candidate_count": 0,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "output_cap": true,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "output_cap",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": false,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_024",
+      "timeout": false,
+      "tokens": {
+        "input": 6064,
+        "output": 300000,
+        "reasoning": null,
+        "total": 306064
+      },
+      "usable_non_empty": false
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (S x y) (not (= x y))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (S x y) (not (= x y))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_018",
+      "timeout": false,
+      "tokens": {
+        "input": 6075,
+        "output": 226142,
+        "reasoning": null,
+        "total": 232217
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (S y y)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (S y y)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_003",
+      "timeout": false,
+      "tokens": {
+        "input": 6254,
+        "output": 251178,
+        "reasoning": null,
+        "total": 257432
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 0,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": true,
+      "provider_status": "completed",
+      "result_status": "provider_error",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": false,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_011",
+      "timeout": false,
+      "tokens": {
+        "input": 5975,
+        "output": 156377,
+        "reasoning": null,
+        "total": 162352
+      },
+      "usable_non_empty": false
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (not (R x y)) (not (R y x)) (not (Q y))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (not (R x y)) (not (R y x)) (not (Q y))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_005",
+      "timeout": false,
+      "tokens": {
+        "input": 6072,
+        "output": 297406,
+        "reasoning": null,
+        "total": 303478
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (Q y) (forall z (or (not (R z y)) (S x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (Q y) (forall z (or (not (R z y)) (S x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_023",
+      "timeout": false,
+      "tokens": {
+        "input": 8493,
+        "output": 164850,
+        "reasoning": null,
+        "total": 173343
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (forall z (or (not (S y z)) (and (Q z) (R z x))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (forall z (or (not (S y z)) (and (Q z) (R z x))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_010",
+      "timeout": false,
+      "tokens": {
+        "input": 8387,
+        "output": 247491,
+        "reasoning": null,
+        "total": 255878
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (Q y) (forall z (or (not (S y z)) (S x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (Q y) (forall z (or (not (S y z)) (S x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_006",
+      "timeout": false,
+      "tokens": {
+        "input": 6046,
+        "output": 38464,
+        "reasoning": null,
+        "total": 44510
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (Q y) (forall z (or (not (R y z)) (R x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (Q y) (forall z (or (not (R y z)) (R x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_016",
+      "timeout": false,
+      "tokens": {
+        "input": 9354,
+        "output": 297796,
+        "reasoning": null,
+        "total": 307150
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (Q y) (forall z (or (not (R y z)) (and (Q z) (R z x))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (Q y) (forall z (or (not (R y z)) (and (Q z) (R z x))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_009",
+      "timeout": false,
+      "tokens": {
+        "input": 8986,
+        "output": 284960,
+        "reasoning": null,
+        "total": 293946
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(exists y (and (not (Q y)) (forall z (or (not (S y z)) (S x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (not (Q y)) (forall z (or (not (S y z)) (S x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_022",
+      "timeout": false,
+      "tokens": {
+        "input": 8985,
+        "output": 54817,
+        "reasoning": null,
+        "total": 63802
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(exists y (and (not (Q y)) (forall z (or (not (R y z)) (R x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (not (Q y)) (forall z (or (not (R y z)) (R x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_002",
+      "timeout": false,
+      "tokens": {
+        "input": 8076,
+        "output": 43039,
+        "reasoning": null,
+        "total": 51115
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 93,
+      "evaluable": true,
+      "formula": "(or (and (not (P x)) (forall y (or (not (R x y)) (P y)))) (exists y (and (R x y) (P y) (or (and (not (Q y)) (R y y) (not (S y y)) (exists z (and (S y z) (not (Q z))))) (and (not (Q y)) (forall z (or (not (R z y)) (Q z)))) (and (exists z (S z y)) (forall z (or (not (S z y)) (and (P z) (Q z))))) (and (S y y) (forall z (or (not (R z y)) (not (P z)))))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(or (and (not (P x)) (forall y (or (not (R x y)) (P y)))) (exists y (and (R x y) (P y) (or (and (not (Q y)) (R y y) (not (S y y)) (exists z (and (S y z) (not (Q z))))) (and (not (Q y)) (forall z (or (not (R z y)) (Q z)))) (and (exists z (S z y)) (forall z (or (not (S z y)) (and (P z) (Q z))))) (and (S y y) (forall z (or (not (R z y)) (not (P z)))))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_085",
+      "timeout": false,
+      "tokens": {
+        "input": 4941,
+        "output": 201420,
+        "reasoning": null,
+        "total": 206361
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (Q y) (forall z (or (not (R y z)) (R z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (Q y) (forall z (or (not (R y z)) (R z x)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_081",
+      "timeout": false,
+      "tokens": {
+        "input": 5090,
+        "output": 71384,
+        "reasoning": null,
+        "total": 76474
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (R y x) (Q y)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (R y x) (Q y)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_063",
+      "timeout": false,
+      "tokens": {
+        "input": 5107,
+        "output": 218829,
+        "reasoning": null,
+        "total": 223936
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 45,
+      "evaluable": true,
+      "formula": "(exists y (and (R y x) (or (exists z (and (R z y) (or (S y z) (= z y)) (forall w (or (not (R z w)) (= w y))))) (and (S y y) (forall w (or (not (R y w)) (S w y)))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (R y x) (or (exists z (and (R z y) (or (S y z) (= z y)) (forall w (or (not (R z w)) (= w y))))) (and (S y y) (forall w (or (not (R y w)) (S w y)))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_032",
+      "timeout": false,
+      "tokens": {
+        "input": 5131,
+        "output": 299527,
+        "reasoning": null,
+        "total": 304658
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (Q y) (forall z (or (not (R y z)) (and (P z) (R x z))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (Q y) (forall z (or (not (R y z)) (and (P z) (R x z))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_079",
+      "timeout": false,
+      "tokens": {
+        "input": 4851,
+        "output": 171017,
+        "reasoning": null,
+        "total": 175868
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (Q y) (forall z (or (not (R y z)) (S x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (Q y) (forall z (or (not (R y z)) (S x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_023",
+      "timeout": false,
+      "tokens": {
+        "input": 5784,
+        "output": 275390,
+        "reasoning": null,
+        "total": 281174
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (P y) (Q y)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (P y) (Q y)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_017",
+      "timeout": false,
+      "tokens": {
+        "input": 5555,
+        "output": 192115,
+        "reasoning": null,
+        "total": 197670
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (R z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (R z x)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_046",
+      "timeout": false,
+      "tokens": {
+        "input": 4645,
+        "output": 91684,
+        "reasoning": null,
+        "total": 96329
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 88,
+      "evaluable": true,
+      "formula": "(exists y (and (R y x) (or (and (forall z (or (not (S y z)) (S z y))) (or (P y) (not (Q y)))) (and (not (Q y)) (forall z (or (not (R y z)) (not (R z z)))) (exists z (and (R y z) (not (Q z))))) (and (R y y) (or (Q y) (S y y)) (exists z (and (R y z) (S z z) (not (= z y)))) (forall z (or (not (R y z)) (P z) (Q z)))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (R y x) (or (and (forall z (or (not (S y z)) (S z y))) (or (P y) (not (Q y)))) (and (not (Q y)) (forall z (or (not (R y z)) (not (R z z)))) (exists z (and (R y z) (not (Q z))))) (and (R y y) (or (Q y) (S y y)) (exists z (and (R y z) (S z z) (not (= z y)))) (forall z (or (not (R y z)) (P z) (Q z)))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_023",
+      "timeout": false,
+      "tokens": {
+        "input": 4877,
+        "output": 267335,
+        "reasoning": null,
+        "total": 272212
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 120,
+      "evaluable": true,
+      "formula": "(or (and (P x) (Q x)) (exists y (and (S x y) (or (and (S y y) (and (Q y) (forall z (or (not (S y z)) (= z y))))) (or (and (S y y) (and (not (Q y)) (exists w (and (not (= w y)) (and (R y w) (and (R w y) (S w y))))))) (or (and (S y y) (and (Q y) (and (not (P y)) (forall u (or (not (R y u)) (P u)))))) (and (not (S y y)) (exists v (and (S y v) (and (S v y) (or (and (not (P y)) (and (not (Q y)) (and (P v) (Q v)))) (and (P y) (and (Q y) (and (not (P v)) (not (Q v))))))))))))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(or (and (P x) (Q x)) (exists y (and (S x y) (or (and (S y y) (Q y) (forall z (or (not (S y z)) (= z y)))) (and (S y y) (not (Q y)) (exists z (and (not (= z y)) (R y z) (R z y) (S z y)))) (and (S y y) (Q y) (not (P y)) (forall z (or (not (R y z)) (P z)))) (and (not (S y y)) (exists z (and (S y z) (S z y) (or (and (not (P y)) (not (Q y)) (P z) (Q z)) (and (P y) (Q y) (not (P z)) (not (Q z))))))))))))",
+      "output_cap": false,
+      "parser_normalizations": [
+        {
+          "method": "remove_trailing_close_paren:1"
+        }
+      ],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": false,
+      "subset": "challenge64",
+      "task_id": "hard_088",
+      "timeout": false,
+      "tokens": {
+        "input": 4752,
+        "output": 245217,
+        "reasoning": null,
+        "total": 249969
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(forall y (or (not (S x y)) (exists z (and (S y z) (R z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(forall y (or (not (S x y)) (exists z (and (S y z) (R z x)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_014",
+      "timeout": false,
+      "tokens": {
+        "input": 5873,
+        "output": 153324,
+        "reasoning": null,
+        "total": 159197
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (S z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (S z x)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_009",
+      "timeout": false,
+      "tokens": {
+        "input": 5691,
+        "output": 71134,
+        "reasoning": null,
+        "total": 76825
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (or (P y) (Q y)) (forall z (or (not (R y z)) (R x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (or (P y) (Q y)) (forall z (or (not (R y z)) (R x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_007",
+      "timeout": false,
+      "tokens": {
+        "input": 6112,
+        "output": 233706,
+        "reasoning": null,
+        "total": 239818
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (R y x) (S y y) (not (Q y))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (R y x) (S y y) (not (Q y))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_019",
+      "timeout": false,
+      "tokens": {
+        "input": 6016,
+        "output": 195334,
+        "reasoning": null,
+        "total": 201350
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": true,
+      "correct_ast": 43,
+      "evaluable": true,
+      "formula": "(or (not (P x)) (forall y (or (not (P y)) (= x y) (R x y))) (and (not (Q x)) (exists y (and (S x y) (S y x) (not (P y)) (or (R x y) (R y x))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(or (not (P x)) (forall y (or (not (P y)) (= x y) (R x y))) (and (not (Q x)) (exists y (and (S x y) (S y x) (not (P y)) (or (R x y) (R y x))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_008",
+      "timeout": false,
+      "tokens": {
+        "input": 6093,
+        "output": 220298,
+        "reasoning": null,
+        "total": 226391
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 0,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": true,
+      "provider_status": "completed",
+      "result_status": "provider_error",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": false,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_015",
+      "timeout": false,
+      "tokens": {
+        "input": 6046,
+        "output": 136507,
+        "reasoning": null,
+        "total": 142553
+      },
+      "usable_non_empty": false
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_logic",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (P z) (Q z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (P z) (Q z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_022",
+      "timeout": false,
+      "tokens": {
+        "input": 5730,
+        "output": 111397,
+        "reasoning": null,
+        "total": 117127
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (S x y) (not (P y)) (not (Q y))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (S x y) (not (P y)) (not (Q y))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_011",
+      "timeout": false,
+      "tokens": {
+        "input": 9713,
+        "output": 201904,
+        "reasoning": null,
+        "total": 211617
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 17,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (exists z (and (S y z) (or (P z) (Q z))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 4
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (exists z (and (S y z) (or (P z) (Q z))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_004",
+      "timeout": false,
+      "tokens": {
+        "input": 8483,
+        "output": 46751,
+        "reasoning": null,
+        "total": 55234
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 17,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (exists z (and (S y z) (P z) (Q z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (exists z (and (S y z) (P z) (Q z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_003",
+      "timeout": false,
+      "tokens": {
+        "input": 8769,
+        "output": 43327,
+        "reasoning": null,
+        "total": 52096
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 15,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (exists z (and (R y z) (not (P z))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (exists z (and (R y z) (not (P z))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_013",
+      "timeout": false,
+      "tokens": {
+        "input": 8199,
+        "output": 48397,
+        "reasoning": null,
+        "total": 56596
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 14,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (exists z (and (R y z) (P z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (exists z (and (R y z) (P z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_021",
+      "timeout": false,
+      "tokens": {
+        "input": 8471,
+        "output": 37178,
+        "reasoning": null,
+        "total": 45649
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (S x z) (S y z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(forall y (or (not (R x y)) (exists z (and (S x z) (S y z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_026",
+      "timeout": false,
+      "tokens": {
+        "input": 4945,
+        "output": 109558,
+        "reasoning": null,
+        "total": 114503
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 42,
+      "evaluable": true,
+      "formula": "(or (P x) (Q x) (forall y (and (or (not (R y x)) (and (P y) (Q y)) (and (not (P y)) (not (Q y)))) (or (not (S y x)) (R x y) (S x y) (Q y)))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(or (P x) (Q x) (forall y (and (or (not (R y x)) (and (P y) (Q y)) (and (not (P y)) (not (Q y)))) (or (not (S y x)) (R x y) (S x y) (Q y)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_027",
+      "timeout": false,
+      "tokens": {
+        "input": 4784,
+        "output": 201169,
+        "reasoning": null,
+        "total": 205953
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (exists z (and (R y z) (Q z) (not (P z))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (exists z (and (R y z) (Q z) (not (P z))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_086",
+      "timeout": false,
+      "tokens": {
+        "input": 4760,
+        "output": 35930,
+        "reasoning": null,
+        "total": 40690
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 23,
+      "evaluable": true,
+      "formula": "(or (P x) (Q x) (exists y (and (R x y) (R y x) (S y x) (not (Q y)))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(or (P x) (Q x) (exists y (and (R x y) (R y x) (S y x) (not (Q y)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_036",
+      "timeout": false,
+      "tokens": {
+        "input": 4838,
+        "output": 38471,
+        "reasoning": null,
+        "total": 43309
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 15,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (Q z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (Q z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_073",
+      "timeout": false,
+      "tokens": {
+        "input": 4742,
+        "output": 32531,
+        "reasoning": null,
+        "total": 37273
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 15,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (exists z (and (R y z) (not (P z))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (exists z (and (R y z) (not (P z))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_044",
+      "timeout": false,
+      "tokens": {
+        "input": 4683,
+        "output": 25421,
+        "reasoning": null,
+        "total": 30104
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 14,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (exists z (and (S y z) (P z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (exists z (and (S y z) (P z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_060",
+      "timeout": false,
+      "tokens": {
+        "input": 4766,
+        "output": 32554,
+        "reasoning": null,
+        "total": 37320
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 12,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (R y z))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": true,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(forall y (or (not (R x y)) (exists z (R y z))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_070",
+      "timeout": false,
+      "tokens": {
+        "input": 5223,
+        "output": 5825,
+        "reasoning": null,
+        "total": 11048
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (exists z (and (R y z) (or (P z) (not (Q z)))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 4
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (exists z (and (R y z) (or (P z) (not (Q z)))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_029",
+      "timeout": false,
+      "tokens": {
+        "input": 4694,
+        "output": 33868,
+        "reasoning": null,
+        "total": 38562
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 41,
+      "evaluable": true,
+      "formula": "(or (P x) (Q x) (exists y (and (S x y) (R y x) (R y y) (not (S y y)))) (and (forall y (not (R y x))) (exists y (and (R x y) (not (P y))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(or (P x) (Q x) (exists y (and (S x y) (R y x) (R y y) (not (S y y)))) (and (forall y (not (R y x))) (exists y (and (R x y) (not (P y))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_019",
+      "timeout": false,
+      "tokens": {
+        "input": 4873,
+        "output": 113500,
+        "reasoning": null,
+        "total": 118373
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(exists y (and (not (Q y)) (forall z (or (not (S y z)) (S x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (not (Q y)) (forall z (or (not (S y z)) (S x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_024",
+      "timeout": false,
+      "tokens": {
+        "input": 4739,
+        "output": 214083,
+        "reasoning": null,
+        "total": 218822
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 15,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (forall z (or (not (S y z)) (S x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (forall z (or (not (S y z)) (S x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_008",
+      "timeout": false,
+      "tokens": {
+        "input": 5160,
+        "output": 150859,
+        "reasoning": null,
+        "total": 156019
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (or (P z) (Q z))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(forall y (or (not (R x y)) (exists z (and (S y z) (or (P z) (Q z))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_003",
+      "timeout": false,
+      "tokens": {
+        "input": 4879,
+        "output": 18098,
+        "reasoning": null,
+        "total": 22977
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "medium",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(exists y (and (not (P y)) (forall z (or (not (S y z)) (S x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (not (P y)) (forall z (or (not (S y z)) (S x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "medium_023",
+      "timeout": false,
+      "tokens": {
+        "input": 4458,
+        "output": 84624,
+        "reasoning": null,
+        "total": 89082
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (exists z (and (R y z) (not (Q z))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(forall y (or (not (R x y)) (exists z (and (R y z) (not (Q z))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_009",
+      "timeout": false,
+      "tokens": {
+        "input": 4766,
+        "output": 24319,
+        "reasoning": null,
+        "total": 29085
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(and (not (R x x)) (exists y (S x y)) (forall y (or (not (S x y)) (S y x) (forall z (or (not (S y z)) (= z y))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(and (not (R x x)) (exists y (S x y)) (forall y (or (not (S x y)) (S y x) (forall z (or (not (S y z)) (= z y))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_038",
+      "timeout": false,
+      "tokens": {
+        "input": 4918,
+        "output": 260999,
+        "reasoning": null,
+        "total": 265917
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 0,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "output_cap": true,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "output_cap",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": false,
+      "subset": "challenge64",
+      "task_id": "extreme_context_024",
+      "timeout": false,
+      "tokens": {
+        "input": 8696,
+        "output": 300000,
+        "reasoning": null,
+        "total": 308696
+      },
+      "usable_non_empty": false
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(forall y (or (not (S x y)) (exists z (and (R y z) (R z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(forall y (or (not (S x y)) (exists z (and (R y z) (R z x)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_018",
+      "timeout": false,
+      "tokens": {
+        "input": 9575,
+        "output": 64761,
+        "reasoning": null,
+        "total": 74336
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": true,
+      "correct_ast": 15,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (forall z (or (not (S y z)) (R z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (forall z (or (not (S y z)) (R z x)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_014",
+      "timeout": false,
+      "tokens": {
+        "input": 9364,
+        "output": 264857,
+        "reasoning": null,
+        "total": 274221
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 0,
+      "category_or_slice": "extreme_logic",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": true,
+      "provider_status": "completed",
+      "result_status": "provider_error",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": false,
+      "subset": "challenge64",
+      "task_id": "extreme_logic_025",
+      "timeout": false,
+      "tokens": {
+        "input": 6027,
+        "output": 206205,
+        "reasoning": null,
+        "total": 212232
+      },
+      "usable_non_empty": false
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "extreme_context",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (R y x)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (R y x)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "extreme_context_017",
+      "timeout": false,
+      "tokens": {
+        "input": 8664,
+        "output": 199773,
+        "reasoning": null,
+        "total": 208437
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (Q y) (forall z (or (not (R y z)) (S x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (Q y) (forall z (or (not (R y z)) (S x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_005",
+      "timeout": false,
+      "tokens": {
+        "input": 5141,
+        "output": 241086,
+        "reasoning": null,
+        "total": 246227
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 15,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (forall z (or (not (S y z)) (R z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (forall z (or (not (S y z)) (R z x)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_012",
+      "timeout": false,
+      "tokens": {
+        "input": 4804,
+        "output": 212144,
+        "reasoning": null,
+        "total": 216948
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (S y x) (or (R x y) (S x y))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (S y x) (or (R x y) (S x y))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_033",
+      "timeout": false,
+      "tokens": {
+        "input": 5216,
+        "output": 145719,
+        "reasoning": null,
+        "total": 150935
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (forall z (or (not (S y z)) (and (P z) (R z x))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (forall z (or (not (S y z)) (and (P z) (R z x))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_035",
+      "timeout": false,
+      "tokens": {
+        "input": 4832,
+        "output": 211416,
+        "reasoning": null,
+        "total": 216248
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (or (P y) (Q y)) (forall z (or (not (S y z)) (R x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (or (P y) (Q y)) (forall z (or (not (S y z)) (R x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_049",
+      "timeout": false,
+      "tokens": {
+        "input": 4865,
+        "output": 238807,
+        "reasoning": null,
+        "total": 243672
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (not (R y x)) (not (S x y))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (not (R y x)) (not (S x y))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_051",
+      "timeout": false,
+      "tokens": {
+        "input": 4911,
+        "output": 139107,
+        "reasoning": null,
+        "total": 144018
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": true,
+      "correct_ast": 90,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (or (and (not (R y y)) (forall z (or (not (S y z)) (R y z))) (or (not (P y)) (exists z (S y z)))) (and (exists z (and (R y z) (S z y))) (exists z (and (S y z) (R z y))) (not (exists z (and (R z y) (S z y)))) (not (and (P y) (Q y)))) (and (P y) (Q y) (R y y) (not (exists z (and (R y z) (S z y))))))))",
+      "holdout": {
+        "available": true,
+        "correct": false,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (or (and (not (R y y)) (forall z (or (not (S y z)) (R y z))) (or (not (P y)) (exists z (S y z)))) (and (exists z (and (R y z) (S z y))) (exists z (and (S y z) (R z y))) (not (exists z (and (R z y) (S z y)))) (not (and (P y) (Q y)))) (and (P y) (Q y) (R y y) (not (exists z (and (R y z) (S z y))))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_053",
+      "timeout": false,
+      "tokens": {
+        "input": 4825,
+        "output": 246981,
+        "reasoning": null,
+        "total": 251806
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (S y x) (P y) (Q y)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (S y x) (P y) (Q y)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_067",
+      "timeout": false,
+      "tokens": {
+        "input": 5118,
+        "output": 278937,
+        "reasoning": null,
+        "total": 284055
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "hard",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (not (R y x))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(forall y (or (not (R x y)) (not (R y x))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "challenge64",
+      "task_id": "hard_097",
+      "timeout": false,
+      "tokens": {
+        "input": 4810,
+        "output": 272181,
+        "reasoning": null,
+        "total": 276991
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "guardless_cross_scope_lift_qd2",
+      "correct": true,
+      "correct_ast": 11,
+      "evaluable": true,
+      "formula": "(forall y (exists z (and (S x z) (R y z))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": true,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(forall y (exists z (and (S x z) (R y z))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_cross_scope_lift_qd2_001",
+      "timeout": false,
+      "tokens": {
+        "input": 7591,
+        "output": 257280,
+        "reasoning": null,
+        "total": 264871
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "guardless_cross_scope_lift_qd2",
+      "correct": true,
+      "correct_ast": 18,
+      "evaluable": true,
+      "formula": "(exists y (and (exists z (S z y)) (forall z (or (not (S z y)) (R x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (exists z (S z y)) (forall z (or (not (S z y)) (R x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_cross_scope_lift_qd2_003",
+      "timeout": false,
+      "tokens": {
+        "input": 6995,
+        "output": 71108,
+        "reasoning": null,
+        "total": 78103
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "guardless_cross_scope_lift_qd2",
+      "correct": true,
+      "correct_ast": 11,
+      "evaluable": true,
+      "formula": "(forall y (exists z (and (S z x) (R z y))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": true,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(forall y (exists z (and (S z x) (R z y))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_cross_scope_lift_qd2_010",
+      "timeout": false,
+      "tokens": {
+        "input": 7602,
+        "output": 172204,
+        "reasoning": null,
+        "total": 179806
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "guardless_same_relation_scope_lift_qd2",
+      "correct": true,
+      "correct_ast": 11,
+      "evaluable": true,
+      "formula": "(forall y (exists z (and (S y z) (S z x))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": true,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(forall y (exists z (and (S y z) (S z x))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_same_relation_scope_lift_qd2_002",
+      "timeout": false,
+      "tokens": {
+        "input": 7474,
+        "output": 283151,
+        "reasoning": null,
+        "total": 290625
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "guardless_same_relation_scope_lift_qd2",
+      "correct": true,
+      "correct_ast": 11,
+      "evaluable": true,
+      "formula": "(forall y (exists z (and (R y z) (R z x))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 2
+      },
+      "original_submitted_formula": "(forall y (exists z (and (R y z) (R z x))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_same_relation_scope_lift_qd2_003",
+      "timeout": false,
+      "tokens": {
+        "input": 7644,
+        "output": 229411,
+        "reasoning": null,
+        "total": 237055
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "guardless_same_relation_scope_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (exists z (and (S y z) (P z)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (exists z (and (S y z) (P z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_guardless_same_relation_scope_lift_qd2_008",
+      "timeout": false,
+      "tokens": {
+        "input": 7292,
+        "output": 186690,
+        "reasoning": null,
+        "total": 193982
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "dual_role_cross_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(forall y (or (not (R x y)) (S y x)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(forall y (or (not (R x y)) (S y x)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_dual_role_cross_lift_qd2_001",
+      "timeout": false,
+      "tokens": {
+        "input": 7592,
+        "output": 219687,
+        "reasoning": null,
+        "total": 227279
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "dual_role_cross_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (R y x) (S x y)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (R y x) (S x y)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_dual_role_cross_lift_qd2_003",
+      "timeout": false,
+      "tokens": {
+        "input": 7722,
+        "output": 228581,
+        "reasoning": null,
+        "total": 236303
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 0,
+      "category_or_slice": "dual_role_cross_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "output_cap": true,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "output_cap",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": false,
+      "subset": "new36",
+      "task_id": "fullobs_v2_dual_role_cross_lift_qd2_007",
+      "timeout": false,
+      "tokens": {
+        "input": 7425,
+        "output": 300000,
+        "reasoning": null,
+        "total": 307425
+      },
+      "usable_non_empty": false
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "dual_role_cross_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (R y x)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (R y x)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_dual_role_cross_lift_qd2_009",
+      "timeout": false,
+      "tokens": {
+        "input": 7493,
+        "output": 145283,
+        "reasoning": null,
+        "total": 152776
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "binary_guard_incoming_lift_qd2",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(exists y (and (R y x) (forall z (or (not (R z y)) (S x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (R y x) (forall z (or (not (R z y)) (S x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_003",
+      "timeout": false,
+      "tokens": {
+        "input": 7379,
+        "output": 100723,
+        "reasoning": null,
+        "total": 108102
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "binary_guard_incoming_lift_qd2",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (forall z (or (not (R z y)) (S x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (forall z (or (not (R z y)) (S x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_007",
+      "timeout": false,
+      "tokens": {
+        "input": 7210,
+        "output": 43725,
+        "reasoning": null,
+        "total": 50935
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "binary_guard_incoming_lift_qd2",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (forall z (or (not (R z y)) (S x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (forall z (or (not (R z y)) (S x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_008",
+      "timeout": false,
+      "tokens": {
+        "input": 7038,
+        "output": 200370,
+        "reasoning": null,
+        "total": 207408
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "binary_guard_incoming_lift_qd2",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (forall z (or (not (R z y)) (S z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (forall z (or (not (R z y)) (S z x)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_009",
+      "timeout": false,
+      "tokens": {
+        "input": 7568,
+        "output": 182431,
+        "reasoning": null,
+        "total": 189999
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "binary_guard_incoming_lift_qd2",
+      "correct": true,
+      "correct_ast": 16,
+      "evaluable": true,
+      "formula": "(exists y (and (S y x) (forall z (or (not (R z y)) (S z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (S y x) (forall z (or (not (R z y)) (S z x)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_010",
+      "timeout": false,
+      "tokens": {
+        "input": 6788,
+        "output": 165715,
+        "reasoning": null,
+        "total": 172503
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "filtered_ef_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (Q y) (exists z (R y z))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (Q y) (exists z (R y z))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_ef_lift_qd2_002",
+      "timeout": false,
+      "tokens": {
+        "input": 8049,
+        "output": 296651,
+        "reasoning": null,
+        "total": 304700
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "filtered_ef_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (R y x) (S y y)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (R y x) (S y y)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_ef_lift_qd2_005",
+      "timeout": false,
+      "tokens": {
+        "input": 8126,
+        "output": 264453,
+        "reasoning": null,
+        "total": 272579
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "filtered_ef_lift_qd2",
+      "correct": true,
+      "correct_ast": 15,
+      "evaluable": true,
+      "formula": "(exists y (forall z (or (not (S y z)) (and (R x z) (Q z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (forall z (or (not (S y z)) (and (R x z) (Q z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_ef_lift_qd2_006",
+      "timeout": false,
+      "tokens": {
+        "input": 8414,
+        "output": 235464,
+        "reasoning": null,
+        "total": 243878
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "filtered_ef_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (S y x) (P y)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (S y x) (P y)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_ef_lift_qd2_009",
+      "timeout": false,
+      "tokens": {
+        "input": 8415,
+        "output": 132058,
+        "reasoning": null,
+        "total": 140473
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "filtered_dual_role_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (R y x) (Q y) (not (exists z (and (S x z) (R y z))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (R y x) (Q y) (not (exists z (and (S x z) (R y z))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_002",
+      "timeout": false,
+      "tokens": {
+        "input": 8228,
+        "output": 230466,
+        "reasoning": null,
+        "total": 238694
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "filtered_dual_role_lift_qd2",
+      "correct": true,
+      "correct_ast": 20,
+      "evaluable": true,
+      "formula": "(exists y (forall z (or (not (S y z)) (and (R x z) (R z x) (not (Q z))))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": true,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (forall z (or (not (S y z)) (and (R x z) (R z x) (not (Q z))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_003",
+      "timeout": false,
+      "tokens": {
+        "input": 7997,
+        "output": 274511,
+        "reasoning": null,
+        "total": 282508
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "filtered_dual_role_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (R y x) (P y)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (R y x) (P y)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_006",
+      "timeout": false,
+      "tokens": {
+        "input": 8488,
+        "output": 198091,
+        "reasoning": null,
+        "total": 206579
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "filtered_dual_role_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (R y x)))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (R y x)))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_009",
+      "timeout": false,
+      "tokens": {
+        "input": 8178,
+        "output": 274610,
+        "reasoning": null,
+        "total": 282788
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "compact_ef_lift_qd2",
+      "correct": true,
+      "correct_ast": 15,
+      "evaluable": true,
+      "formula": "(exists y (and (Q y) (forall z (or (not (S z y)) (R z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (Q y) (forall z (or (not (S z y)) (R z x)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_ef_lift_qd2_001",
+      "timeout": false,
+      "tokens": {
+        "input": 8171,
+        "output": 264207,
+        "reasoning": null,
+        "total": 272378
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 0,
+      "category_or_slice": "compact_ef_lift_qd2",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "output_cap": true,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "output_cap",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": false,
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_ef_lift_qd2_004",
+      "timeout": false,
+      "tokens": {
+        "input": 7995,
+        "output": 300000,
+        "reasoning": null,
+        "total": 307995
+      },
+      "usable_non_empty": false
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "compact_ef_lift_qd2",
+      "correct": true,
+      "correct_ast": 15,
+      "evaluable": true,
+      "formula": "(exists y (and (P y) (forall z (or (not (R y z)) (S z x)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (P y) (forall z (or (not (R y z)) (S z x)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_ef_lift_qd2_009",
+      "timeout": false,
+      "tokens": {
+        "input": 8244,
+        "output": 186543,
+        "reasoning": null,
+        "total": 194787
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "compact_ef_lift_qd2",
+      "correct": true,
+      "correct_ast": 15,
+      "evaluable": true,
+      "formula": "(exists y (and (Q y) (forall z (or (not (S z y)) (R x z)))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (Q y) (forall z (or (not (S z y)) (R x z)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_ef_lift_qd2_010",
+      "timeout": false,
+      "tokens": {
+        "input": 7761,
+        "output": 287161,
+        "reasoning": null,
+        "total": 294922
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "compact_response_qd3",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (R y x))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (R y x))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_response_qd3_007",
+      "timeout": false,
+      "tokens": {
+        "input": 7943,
+        "output": 237360,
+        "reasoning": null,
+        "total": 245303
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "compact_response_qd3",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(exists y (and (S y x) (exists z (and (S y z) (R z y)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(exists y (and (S y x) (exists z (and (S y z) (R z y)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass4_medium",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_response_qd3_008",
+      "timeout": false,
+      "tokens": {
+        "input": 7967,
+        "output": 293047,
+        "reasoning": null,
+        "total": 301014
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 0,
+      "category_or_slice": "compact_response_qd3",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": true,
+      "provider_status": "completed",
+      "result_status": "provider_error",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": false,
+      "subset": "new36",
+      "task_id": "fullobs_v2_compact_response_qd3_009",
+      "timeout": false,
+      "tokens": {
+        "input": 8211,
+        "output": 144892,
+        "reasoning": null,
+        "total": 153103
+      },
+      "usable_non_empty": false
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "nested_containment_qd3",
+      "correct": true,
+      "correct_ast": 22,
+      "evaluable": true,
+      "formula": "(exists y (and (S x y) (exists z (and (R z y) (forall w (or (not (S z w)) (R x w)))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (S x y) (exists z (and (R z y) (forall w (or (not (S z w)) (R x w)))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_nested_containment_qd3_003",
+      "timeout": false,
+      "tokens": {
+        "input": 7598,
+        "output": 227615,
+        "reasoning": null,
+        "total": 235213
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "nested_containment_qd3",
+      "correct": true,
+      "correct_ast": 22,
+      "evaluable": true,
+      "formula": "(exists y (and (S y x) (exists z (and (R z y) (forall w (or (not (S z w)) (R x w)))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (S y x) (exists z (and (R z y) (forall w (or (not (S z w)) (R x w)))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_nested_containment_qd3_006",
+      "timeout": false,
+      "tokens": {
+        "input": 7698,
+        "output": 188026,
+        "reasoning": null,
+        "total": 195724
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "nested_containment_qd3",
+      "correct": true,
+      "correct_ast": 22,
+      "evaluable": true,
+      "formula": "(exists y (and (R x y) (exists z (and (S z y) (forall w (or (not (R w z)) (S x w)))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 5
+      },
+      "original_submitted_formula": "(exists y (and (R x y) (exists z (and (S z y) (forall w (or (not (R w z)) (S x w)))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_nested_containment_qd3_007",
+      "timeout": false,
+      "tokens": {
+        "input": 7838,
+        "output": 120491,
+        "reasoning": null,
+        "total": 128329
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "universal_nested_response_qd3",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": true,
+      "formula": "(forall y (or (not (S x y)) (and (exists z (R y z)) (exists z (R z y)))))",
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "original_submitted_formula": "(forall y (or (not (S x y)) (and (exists z (R y z)) (exists z (R z y)))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "evaluable_incorrect",
+      "selected_component": "pass3_high",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_universal_nested_response_qd3_002",
+      "timeout": false,
+      "tokens": {
+        "input": 7531,
+        "output": 258655,
+        "reasoning": null,
+        "total": 266186
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 1,
+      "category_or_slice": "universal_nested_response_qd3",
+      "correct": true,
+      "correct_ast": 23,
+      "evaluable": true,
+      "formula": "(forall y (or (not (S x y)) (exists z (and (R z y) (forall w (or (not (S z w)) (R w x)))))))",
+      "holdout": {
+        "available": true,
+        "correct": true,
+        "eligible": true,
+        "generated_worlds": 3
+      },
+      "original_submitted_formula": "(forall y (or (not (S x y)) (exists z (and (R z y) (forall w (or (not (S z w)) (R w x)))))))",
+      "output_cap": false,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "correct",
+      "selected_component": "pass2_xhigh",
+      "strict_as_submitted_correct": true,
+      "strict_as_submitted_evaluable": true,
+      "subset": "new36",
+      "task_id": "fullobs_v2_universal_nested_response_qd3_005",
+      "timeout": false,
+      "tokens": {
+        "input": 7462,
+        "output": 250840,
+        "reasoning": null,
+        "total": 258302
+      },
+      "usable_non_empty": true
+    },
+    {
+      "candidate_count": 0,
+      "category_or_slice": "universal_nested_response_qd3",
+      "correct": false,
+      "correct_ast": null,
+      "evaluable": false,
+      "formula": null,
+      "holdout": {
+        "available": false,
+        "correct": null,
+        "eligible": false,
+        "generated_worlds": 0
+      },
+      "output_cap": true,
+      "parser_normalizations": [],
+      "provider_error": false,
+      "provider_status": "completed",
+      "result_status": "output_cap",
+      "selected_component": "pass1_max",
+      "strict_as_submitted_correct": false,
+      "strict_as_submitted_evaluable": false,
+      "subset": "new36",
+      "task_id": "fullobs_v2_universal_nested_response_qd3_008",
+      "timeout": false,
+      "tokens": {
+        "input": 7259,
+        "output": 300000,
+        "reasoning": null,
+        "total": 307259
+      },
+      "usable_non_empty": false
+    }
+  ]
+}
