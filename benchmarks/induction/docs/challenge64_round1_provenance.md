@@ -69,3 +69,7 @@ The verified max/xhigh/high/medium campaign is documented in [the Opus 5.5 audit
 ## GPT-6 Sol completed update
 
 The verified max/xhigh campaign is documented in [the Sol audit](gpt6_sol_challenge100.md). High and medium were skipped on empty residual. All 150 terminal request records across two batches are included, with unknown dispatch, acceptance and token usage explicitly retained. Stored scores were copied without rescoring.
+
+## GPT-6 Luna provisional update
+
+The verified MAX+XHIGH snapshot is documented in [the Luna audit](gpt6_luna_challenge100.md). Results are provisional: HIGH is in flight for 14 non-evaluable tasks and MEDIUM is conditional. Scores and usage exclude both later passes. All 182 terminal MAX/XHIGH records are accounted for, retaining unknown dispatch, acceptance and usage. Stored scores were copied without rescoring.
