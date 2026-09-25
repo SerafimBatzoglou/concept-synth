@@ -20,6 +20,6 @@ The verified max/xhigh/high/medium campaign is documented in [the Opus 5.5 audit
 
 The verified max/xhigh campaign is documented in [the Sol audit](gpt6_sol_challenge100.md). High and medium were skipped on empty residual. All 150 terminal request records across two batches are included, with unknown dispatch, acceptance and token usage explicitly retained. Stored scores were copied without rescoring.
 
-## GPT-6 Luna provisional update
+## GPT-6 Luna final update
 
-The verified MAX+XHIGH snapshot is documented in [the Luna audit](gpt6_luna_challenge100.md). Results are provisional: HIGH is in flight for 14 non-evaluable tasks and MEDIUM is conditional. Scores and usage exclude both later passes. All 182 terminal MAX/XHIGH records are accounted for, retaining unknown dispatch, acceptance and usage. Stored scores were copied without rescoring.
+The verified four-pass MAX/XHIGH/HIGH/MEDIUM cascade replaces the provisional snapshot. See [the Luna audit](gpt6_luna_challenge100.md). All 201 terminal records across four batches are accounted for: 171 confirmed attempts plus 30 unknown, 169 confirmed acceptances plus 32 unknown, zero retries. Final scores are 18/100 (100 evaluable), 18/64 (64 evaluable) and 0/36 (36 evaluable). All physical token costs are separate from selected-response usage; missing usage remains unknown. Stored scores were copied without rescoring, and other model records are unchanged.

@@ -255,11 +255,12 @@ models:
     or symbolic work. High/medium skipped on empty residual.
   source_release: verified completed two-pass direct Round-1 ledger
 - id: gpt-6-luna
-  display_name: GPT-6 Luna (provisional)
+  display_name: GPT-6 Luna
   source_type: pipeline_store
-  protocol: Provisional direct Round-1 max/xhigh snapshot (100/82 tasks); OpenAI Responses
-    Batch API, standard/default reasoning mode, 128000 max_output_tokens shared reasoning/output
-    budget, temperature omitted, zero client retries, tools or symbolic work. HIGH
-    (14 tasks) is in flight; MEDIUM remains conditional. Snapshot excludes both later
-    passes.
-  source_release: verified provisional MAX+XHIGH snapshot; later passes excluded
+  protocol: Final direct Round-1 max/xhigh/high/medium cascade (100/82/14/5 tasks);
+    OpenAI Responses Batch API, standard/default reasoning mode, 128000 max_output_tokens
+    shared reasoning/output budget, temperature omitted, zero client retries, tools
+    or symbolic work. First parser-evaluable response in pass order; evaluable incorrect
+    responses excluded from residuals. All four passes terminal; empty residual; no
+    fifth pass.
+  source_release: verified final MAX+XHIGH+HIGH+MEDIUM cascade; empty residual

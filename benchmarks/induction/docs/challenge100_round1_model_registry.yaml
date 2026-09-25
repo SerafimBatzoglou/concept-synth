@@ -530,22 +530,23 @@ models:
     evaluable: 100
     correct: 57
 - id: gpt-6-luna
-  display_name: GPT-6 Luna (provisional)
-  protocol: Provisional direct Round-1 max/xhigh snapshot (100/82 tasks); OpenAI Responses
-    Batch API, standard/default reasoning mode, 128000 max_output_tokens shared reasoning/output
-    budget, temperature omitted, zero client retries, tools or symbolic work. HIGH
-    (14 tasks) is in flight; MEDIUM remains conditional. Snapshot excludes both later
-    passes.
+  display_name: GPT-6 Luna
+  protocol: Final direct Round-1 max/xhigh/high/medium cascade (100/82/14/5 tasks);
+    OpenAI Responses Batch API, standard/default reasoning mode, 128000 max_output_tokens
+    shared reasoning/output budget, temperature omitted, zero client retries, tools
+    or symbolic work. First parser-evaluable response in pass order; evaluable incorrect
+    responses excluded from residuals. All four passes terminal; empty residual; no
+    fifth pass.
   challenge64:
     registry_id: gpt-6-luna
-    evaluable: 56
+    evaluable: 64
     correct: 18
   benchmarked36:
-    evaluable: 30
+    evaluable: 36
     correct: 0
     correct_formula_ast_sizes: []
     holdout_evaluable: 0
     holdout_correct: 0
   challenge100:
-    evaluable: 86
+    evaluable: 100
     correct: 18
