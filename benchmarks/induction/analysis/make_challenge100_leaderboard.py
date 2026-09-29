@@ -35,7 +35,7 @@ def render_challenge100(
     for row in iter_jsonl(holdout_path):
         holdout_by_model.setdefault(str(row["model_id"]), []).append(row)
 
-    rows: list[tuple[int, int, str, str]] = []
+    rows: list[tuple[int, int, int, str, str]] = []
     for model in registry["models"]:
         c64 = model["challenge64"]
         new36 = model["benchmarked36"]
@@ -65,14 +65,10 @@ def render_challenge100(
         ]
         holdout_correct = sum(bool(row.get("valid")) for row in holdout_rows)
         holdout_correct += int(new36.get("holdout_correct") or 0)
-        holdout_evaluable = len(holdout_rows) + int(new36.get("holdout_evaluable") or 0)
-        holdout = (
-            f"{pct(holdout_correct, holdout_evaluable)} ({holdout_correct}/{holdout_evaluable})"
-            if holdout_evaluable else "N/A"
-        )
+        holdout = f"{pct(holdout_correct, 100)} ({holdout_correct}/100)"
         complexity = f"{mean(asts):.1f} / {median(asts):.1f}" if asts else "N/A"
         rendered = (
-            "| {name} | {evaluable} | {correct} | {holdout} | {complexity} |"
+            "| {name} | {holdout} | {correct} | {evaluable} | {complexity} |"
         ).format(
             name=str(model["display_name"]),
             evaluable=f'{c100["evaluable"]}/100',
@@ -80,9 +76,9 @@ def render_challenge100(
             holdout=holdout,
             complexity=complexity,
         )
-        rows.append((-int(c100["correct"]), -int(c100["evaluable"]), str(model["display_name"]), rendered))
+        rows.append((-holdout_correct, -int(c100["correct"]), -int(c100["evaluable"]), str(model["display_name"]), rendered))
     rows.sort()
-    return [row[3] for row in rows]
+    return [row[4] for row in rows]
 
 
 def render_challenge64(
@@ -95,7 +91,7 @@ def render_challenge64(
     for row in iter_jsonl(holdout_path):
         holdout_by_model.setdefault(str(row["model_id"]), []).append(row)
 
-    rendered: list[tuple[int, int, str, str]] = []
+    rendered: list[tuple[int, int, int, str, str]] = []
     for model in registry["models"]:
         model_id = str(model["id"])
         rows = by_model.get(model_id, [])
@@ -114,21 +110,18 @@ def render_challenge64(
             and (row.get("metadata") or {}).get("holdout_available")
         ]
         holdout_correct = sum(bool(row.get("valid")) for row in holdout_rows)
-        holdout = (
-            f"{pct(holdout_correct, len(holdout_rows))} ({holdout_correct}/{len(holdout_rows)})"
-            if holdout_rows else "N/A"
-        )
+        holdout = f"{pct(holdout_correct, 64)} ({holdout_correct}/64)"
         complexity = f"{mean(asts):.1f} / {median(asts):.1f}" if asts else "N/A"
-        line = "| {name} | {evaluable} | {correct} | {holdout} | {complexity} |".format(
+        line = "| {name} | {holdout} | {correct} | {evaluable} | {complexity} |".format(
             name=str(model["display_name"]),
             evaluable=f"{evaluable}/64",
             correct=f"{correct}/64 ({pct(correct, 64)})",
             holdout=holdout,
             complexity=complexity,
         )
-        rendered.append((-correct, -evaluable, str(model["display_name"]), line))
+        rendered.append((-holdout_correct, -correct, -evaluable, str(model["display_name"]), line))
     rendered.sort()
-    return [row[3] for row in rendered]
+    return [row[4] for row in rendered]
 
 
 def render(
@@ -171,17 +164,23 @@ def render(
         "Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. "
         f"All {len(c100['models'])} Challenge100 models appear in the Challenge64 table, alongside "
         f"{len(c64['models']) - len(c100['models'])} additional models with Challenge64 results. "
-        "Each table is ranked independently by correct answers on its own task set, so model order differs.",
+        "Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.",
         "",
         "Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. "
         "A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula "
         "is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.",
         "",
+        "Holdout Correct % is the number of train-correct formulas verified correct on all available generated holdout worlds, "
+        "divided by the total number of problems (100 or 64), not by the number of available holdout evaluations. "
+        "Tasks without verified holdout success contribute no credit, including tasks missing holdout worlds; "
+        "missing holdout outcomes remain unknown in the underlying records, not asserted failures. "
+        "This changes leaderboard reporting and ranking only, not model training, evaluation, or response selection.",
+        "",
         "## Challenge100",
         "",
-        "Rows are ranked by Challenge100 Correct, then Evaluable coverage, then model name.",
+        "Rows are ranked by Holdout Correct % (out of 100), then Train Correct, Evaluable coverage, and model name.",
         "",
-        "| Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |",
+        "| Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) |",
         "|---|---:|---:|---:|---:|",
         *render_challenge100(
             registry=c100,
@@ -190,15 +189,14 @@ def render(
         ),
         "",
         "Challenge100 formula complexity covers all train-correct direct formulas across its 100 tasks. "
-        "Its generated-IID holdout diagnostic combines the frozen Challenge64 and New36 sidecars and reports only "
-        "train-correct responses whose task has generated holdout worlds.",
+        "Holdout Correct % combines verified successes from the frozen Challenge64 and New36 sidecars, divided by all 100 problems.",
         "",
         "## Challenge64 projection",
         "",
-        "Rows are ranked by Challenge64 train-set Correct, then Evaluable coverage, then model name. "
+        "Rows are ranked by Holdout Correct % (out of 64), then Train Correct, Evaluable coverage, and model name. "
         "Holdout is a post-selection diagnostic and is never used for prompting or selection.",
         "",
-        "| Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |",
+        "| Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) |",
         "|---|---:|---:|---:|---:|",
         *render_challenge64(
             registry=c64,

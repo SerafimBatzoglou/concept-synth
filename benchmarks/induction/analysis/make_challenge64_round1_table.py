@@ -56,7 +56,7 @@ def render(
     for row in iter_jsonl(holdout_path):
         holdout_by_model.setdefault(str(row["model_id"]), []).append(row)
 
-    rendered: list[tuple[int, int, str, str]] = []
+    rendered: list[tuple[int, int, int, str, str]] = []
     for model in models:
         model_id = str(model["id"])
         rows = by_model.get(model_id, [])
@@ -79,20 +79,17 @@ def render(
             and (row.get("metadata") or {}).get("holdout_available")
         ]
         holdout_valid = sum(bool(row.get("valid")) for row in holdout_rows)
-        holdout = (
-            f"{pct(holdout_valid, len(holdout_rows))} ({holdout_valid}/{len(holdout_rows)})"
-            if holdout_rows
-            else "N/A"
-        )
+        holdout = f"{pct(holdout_valid, denominator)} ({holdout_valid}/{denominator})"
         complexity = (
             f"{mean(asts):.1f} / {median(asts):.1f}" if asts else "N/A"
         )
         rendered.append(
             (
+                -holdout_valid,
                 -valid,
                 -evaluable,
                 str(model["display_name"]),
-                "| {name} | {evaluable} | {valid} | {holdout} | {complexity} |".format(
+                "| {name} | {holdout} | {valid} | {evaluable} | {complexity} |".format(
                     name=str(model["display_name"]),
                     evaluable=f"{evaluable}/{denominator}",
                     valid=f"{valid}/{denominator} ({pct(valid, denominator)})",
@@ -107,17 +104,19 @@ def render(
         "# INDUCTION Challenge64 Leaderboard: Round 1 (Pre-Symbolic)",
         "",
         "Each configuration contributes one direct Round-1 formula per task. The release contains no "
-        "symbolic repair or simplification outputs. Rows are ranked by train-set Correct, then "
-        "Evaluable coverage, then model name.",
+        "symbolic repair or simplification outputs. Rows are ranked by Holdout Correct % over all problems, "
+        "then Train Correct, Evaluable coverage, and model name.",
         "",
-        "| Model | Evaluable | Correct | Holdout Correct<br>(among train-correct) | Formula Complexity<br>(AST mean/median) |",
+        "| Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) |",
         "|---|---:|---:|---:|---:|",
-        *(line for _, _, _, line in rendered),
+        *(line for _, _, _, _, line in rendered),
         "",
-        "Evaluable: parser-valid formula under the exact FullObs evaluator. Correct: train-world exact-match "
-        "validity, with the fixed 64-task denominator. Holdout Correct: conditional exact-match validity among "
-        "train-correct formulas with generated holdout worlds available. Formula complexity summarizes "
-        "train-correct direct formulas.",
+        "Holdout Correct %: train-correct formulas verified correct on all available generated holdout worlds, "
+        "divided by all 64 problems, not just available holdout evaluations. Tasks without verified holdout success "
+        "contribute no credit, including tasks missing holdout worlds; missing outcomes remain unknown in the "
+        "underlying records, not asserted failures. Train Correct: train-world exact-match validity out of 64. "
+        "Evaluable: parser-valid formula under the exact FullObs evaluator. Formula complexity summarizes "
+        "train-correct direct formulas. Only reporting and ranking change; no model training or evaluation changes.",
         "",
         "The fixed holdout sidecar contains five generated worlds where generation succeeded (63/64 tasks); "
         "it is only a post-selection reporting diagnostic. It was not used for model prompting, candidate "
