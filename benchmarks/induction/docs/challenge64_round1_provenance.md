@@ -77,3 +77,7 @@ The verified four-pass MAX/XHIGH/HIGH/MEDIUM cascade replaces the provisional sn
 ## Claude Sonnet 5.5 completed update
 
 The verified max/xhigh/high/medium campaign is documented in [the Sonnet 5.5 audit](claude_sonnet_5_5_challenge100.md). All 229 requests across four batches are included. Stored scores were copied without rescoring; strict original syntax and standard-parser results are both disclosed.
+
+## GPT-6.1 Sol final update
+
+The [verified GPT-6.1 Sol campaign](gpt6_1_sol_challenge100.md) adds 90 train-correct and 62 verified holdout-correct tasks out of 100. It used regular Responses API calls and bounded error retries, lowering MAX to XHIGH on the third additional error retry. All 206 physical attempts are accounted for, including 108 failed requests with unknown acceptance/usage/billing. Scores and holdouts were copied without rescoring; strict syntax and missing holdouts are reported separately.

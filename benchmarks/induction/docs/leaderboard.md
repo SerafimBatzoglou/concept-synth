@@ -1,6 +1,6 @@
 # INDUCTION Challenge Leaderboards
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 27 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 28 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -13,6 +13,7 @@ Rows are ranked by Holdout Correct % (out of 100), then Train Correct, Evaluable
 | Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) |
 |---|---:|---:|---:|---:|
 | GPT-6 Astra | 79.0% (79/100) | 94/100 (94.0%) | 94/100 | 22.0 / 16.0 |
+| GPT-6.1 Sol | 62.0% (62/100) | 90/100 (90.0%) | 98/100 | 61.9 / 18.0 |
 | Claude Opus 5.5 | 50.0% (50/100) | 65/100 (65.0%) | 91/100 | 23.2 / 17.0 |
 | Claude Sonnet 5.5 | 37.0% (37/100) | 44/100 (44.0%) | 100/100 | 19.0 / 17.0 |
 | GPT-6 Sol | 35.0% (35/100) | 57/100 (57.0%) | 100/100 | 73.4 / 18.0 |
@@ -49,6 +50,7 @@ Rows are ranked by Holdout Correct % (out of 64), then Train Correct, Evaluable 
 | Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) |
 |---|---:|---:|---:|---:|
 | GPT-6 Astra | 85.9% (55/64) | 63/64 (98.4%) | 63/64 | 20.6 / 18.0 |
+| GPT-6.1 Sol | 65.6% (42/64) | 61/64 (95.3%) | 63/64 | 45.7 / 18.0 |
 | Claude Opus 5.5 | 54.7% (35/64) | 46/64 (71.9%) | 59/64 | 26.0 / 18.0 |
 | Claude Sonnet 5.5 | 40.6% (26/64) | 32/64 (50.0%) | 64/64 | 19.6 / 18.0 |
 | GPT-6 Sol | 37.5% (24/64) | 42/64 (65.6%) | 64/64 | 93.0 / 18.0 |

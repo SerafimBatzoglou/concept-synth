@@ -581,3 +581,51 @@ models:
   challenge100:
     evaluable: 100
     correct: 44
+- id: gpt-6.1-sol
+  display_name: GPT-6.1 Sol
+  protocol: Verified direct Round-1 regular Responses API campaign; MAX original and
+    first two additional error retries, XHIGH third additional error retry; 128000
+    shared output tokens, 20 total workers, zero automatic SDK retries/tools/symbolic
+    work. First eligible parser-evaluable response in actual task launch order.
+  challenge64:
+    registry_id: gpt-6.1-sol
+    evaluable: 63
+    correct: 61
+  benchmarked36:
+    evaluable: 35
+    correct: 29
+    holdout_evaluable: 24
+    holdout_correct: 20
+    correct_formula_ast_sizes:
+    - 11
+    - 18
+    - 11
+    - 11
+    - 11
+    - 666
+    - 271
+    - 16
+    - 26
+    - 16
+    - 16
+    - 16
+    - 16
+    - 16
+    - 15
+    - 21
+    - 15
+    - 19
+    - 29
+    - 373
+    - 15
+    - 15
+    - 15
+    - 15
+    - 18
+    - 1043
+    - 23
+    - 23
+    - 23
+  challenge100:
+    evaluable: 98
+    correct: 90
