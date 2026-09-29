@@ -73,3 +73,7 @@ The verified max/xhigh campaign is documented in [the Sol audit](gpt6_sol_challe
 ## GPT-6 Luna final update
 
 The verified four-pass MAX/XHIGH/HIGH/MEDIUM cascade replaces the provisional snapshot. See [the Luna audit](gpt6_luna_challenge100.md). All 201 terminal records across four batches are accounted for: 171 confirmed attempts plus 30 unknown, 169 confirmed acceptances plus 32 unknown, zero retries. Final scores are 18/100 (100 evaluable), 18/64 (64 evaluable) and 0/36 (36 evaluable). All physical token costs are separate from selected-response usage; missing usage remains unknown. Stored scores were copied without rescoring, and other model records are unchanged.
+
+## Claude Sonnet 5.5 completed update
+
+The verified max/xhigh/high/medium campaign is documented in [the Sonnet 5.5 audit](claude_sonnet_5_5_challenge100.md). All 229 requests across four batches are included. Stored scores were copied without rescoring; strict original syntax and standard-parser results are both disclosed.

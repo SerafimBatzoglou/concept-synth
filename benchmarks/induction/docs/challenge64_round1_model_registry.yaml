@@ -264,3 +264,11 @@ models:
     responses excluded from residuals. All four passes terminal; empty residual; no
     fifth pass.
   source_release: verified final MAX+XHIGH+HIGH+MEDIUM cascade; empty residual
+- id: claude-sonnet-5-5
+  display_name: Claude Sonnet 5.5
+  source_type: pipeline_store
+  protocol: Verified direct Round-1 max/xhigh/high/medium residual cascade (100/69/57/3
+    tasks); Anthropic Message Batches, adaptive thinking, 300000 max_tokens shared
+    thinking/output budget, output-300k-2026-03-24 beta, temperature omitted, zero
+    client retries, tools or symbolic work.
+  source_release: verified completed four-pass direct Round-1 ledger

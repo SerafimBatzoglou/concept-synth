@@ -1,6 +1,6 @@
 # INDUCTION Challenge Leaderboards
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 26 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by correct answers on its own task set, so model order differs.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 27 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by correct answers on its own task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -13,6 +13,7 @@ Rows are ranked by Challenge100 Correct, then Evaluable coverage, then model nam
 | GPT-6 Astra | 94/100 | 94/100 (94.0%) | 91.9% (79/86) | 22.0 / 16.0 |
 | Claude Opus 5.5 | 91/100 | 65/100 (65.0%) | 83.3% (50/60) | 23.2 / 17.0 |
 | GPT-6 Sol | 100/100 | 57/100 (57.0%) | 66.0% (35/53) | 73.4 / 18.0 |
+| Claude Sonnet 5.5 | 100/100 | 44/100 (44.0%) | 88.1% (37/42) | 19.0 / 17.0 |
 | GPT-5.6 Sol | 99/100 | 43/100 (43.0%) | 56.4% (22/39) | 125.0 / 18.0 |
 | Fable 5.1 | 66/100 | 33/100 (33.0%) | 93.8% (30/32) | 18.1 / 16.0 |
 | Fable 5 | 96/100 | 31/100 (31.0%) | 63.3% (19/30) | 46.1 / 18.0 |
@@ -49,6 +50,7 @@ Rows are ranked by Challenge64 train-set Correct, then Evaluable coverage, then 
 | Claude Opus 5.5 | 59/64 | 46/64 (71.9%) | 77.8% (35/45) | 26.0 / 18.0 |
 | GPT-6 Sol | 64/64 | 42/64 (65.6%) | 58.5% (24/41) | 93.0 / 18.0 |
 | GPT-5.6 Sol | 63/64 | 37/64 (57.8%) | 52.8% (19/36) | 143.0 / 18.0 |
+| Claude Sonnet 5.5 | 64/64 | 32/64 (50.0%) | 83.9% (26/31) | 19.6 / 18.0 |
 | Fable 5 | 63/64 | 27/64 (42.2%) | 57.7% (15/26) | 50.3 / 18.0 |
 | Qwen 3.8 Max | 63/64 | 27/64 (42.2%) | 53.8% (14/26) | 82.5 / 18.0 |
 | GPT-5.6 Terra | 62/64 | 24/64 (37.5%) | 69.6% (16/23) | 68.8 / 18.0 |
