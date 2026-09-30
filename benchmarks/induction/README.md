@@ -294,6 +294,8 @@ Public artifacts:
 - `data/induction_fullobs_benchmarked36_generated_iid_holdout_v1.jsonl`
 - `docs/challenge100_round1_model_registry.yaml`
 - `docs/leaderboard.md`
+- `docs/challenge100_leaderboard.svg` (row-aligned leaderboard and output-token tables)
+- `eval/challenge100_output_token_usage.json` (known output across all attempts, including unsuccessful responses)
 - `analysis/make_challenge100_leaderboard.py`
 - `challenge100_round1_release_manifest.json`
 <!-- END CHALLENGE100 ROUND1 -->

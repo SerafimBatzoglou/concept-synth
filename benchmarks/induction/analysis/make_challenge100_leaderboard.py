@@ -5,12 +5,126 @@ from __future__ import annotations
 
 import argparse
 import gzip
+from html import escape
 import json
 from pathlib import Path
 from statistics import mean, median
 from typing import Any, Iterable
 
 import yaml
+
+
+TOKEN_USAGE_PATH = Path(__file__).resolve().parents[1] / 'eval/challenge100_output_token_usage.json'
+CAVEAT_MIN_RESPONSES = 30
+TABLE_GAP = 24  # Approximately three characters at the table's 14px font size.
+
+
+def load_token_usage(path: Path, registry: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    data = json.loads(path.read_text(encoding='utf-8'))
+    rows = data['models']
+    by_id = {row['model_id']: row for row in rows}
+    expected = {model['id'] for model in registry['models']}
+    if len(by_id) != len(rows) or set(by_id) != expected:
+        raise ValueError('Token usage must cover each Challenge100 model exactly once')
+    for row in rows:
+        if type(row['output_tokens']) is not int or row['output_tokens'] < 0:
+            raise ValueError('Output tokens must be a nonnegative integer')
+        missing = row['unreported_responses_lower_bound']
+        if missing is not None and (type(missing) is not int or missing < 0):
+            raise ValueError('Unreported response count must be nonnegative or unknown')
+    return by_id
+
+
+def token_caveat(usage: dict[str, Any]) -> str:
+    missing = usage['unreported_responses_lower_bound']
+    if missing is None or missing < CAVEAT_MIN_RESPONSES:
+        return ''
+    if usage.get('missing_scope') == 'challenge64':
+        return 'C64 unreported'
+    rejected = usage.get('rejected_without_usage', 0)
+    if rejected >= CAVEAT_MIN_RESPONSES:
+        return f'{rejected} rejected'
+    return f'{missing} unreported'
+
+
+def token_aligned_rows(
+    rows: list[str], registry: dict[str, Any], usage: dict[str, dict[str, Any]]
+) -> list[list[str]]:
+    by_name = {m['display_name']: usage[m['id']] for m in registry['models']}
+    if len(by_name) != len(registry['models']):
+        raise ValueError('Duplicate Challenge100 display names')
+    result = []
+    for row in rows:
+        cells = [cell.strip() for cell in row.strip('|').split('|')]
+        entry = by_name[cells[0]]
+        result.append(cells + [f"{entry['output_tokens'] / 1_000_000:.1f}", token_caveat(entry)])
+    return result
+
+
+def render_challenge100_svg(rows: list[list[str]]) -> str:
+    """Two separately bordered tables sharing exact header and row geometry.
+
+    GitHub strips layout CSS from Markdown HTML. An SVG keeps a true blank gap
+    between the tables and prevents independent row wrapping from misaligning
+    token usage. The Markdown document also includes a text-only fallback.
+    """
+    left_widths = [190, 168, 148, 94, 164]
+    right_widths = [124, 126]
+    left_width = sum(left_widths)
+    right_x = left_width + TABLE_GAP
+    width = right_x + sum(right_widths)
+    header_h, row_h = 56, 32
+    height = header_h + len(rows) * row_h + 2
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title description">',
+        '<title id="title">Challenge100 leaderboard and output token usage</title>',
+        '<desc id="description">Two separate row-aligned tables. Output tokens are in millions, include reasoning once and all known attempts, and exclude unreported usage. Caveats appear only for at least 30 unreported responses. An expandable text table accompanies this image.</desc>',
+        '<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px;fill:#1f2328}.header{font-weight:600;font-size:13px}.caveat{font-size:11px;fill:#59636e}.border{stroke:#d1d9e0;stroke-width:1;fill:none}.stripe{fill:#f6f8fa}.background{fill:#fff}</style>',
+    ]
+    headers = [
+        ['Model', 'Holdout Correct %\n(all problems)', 'Train Correct', 'Evaluable', 'Formula Complexity\n(AST mean/median)'],
+        ['Output tokens\n(millions)', 'Caveat'],
+    ]
+    for group_id, x, widths, cols, labels in [
+        ('leaderboard', 0, left_widths, range(5), headers[0]),
+        ('token-usage', right_x, right_widths, range(5, 7), headers[1]),
+    ]:
+        table_width = sum(widths)
+        parts.append(f'<g id="{group_id}" data-x="{x}" data-width="{table_width}">')
+        parts.append(f'<rect class="background" x="{x}" y="1" width="{table_width}" height="{height - 2}"/>')
+        for i in range(len(rows)):
+            if i % 2:
+                parts.append(f'<rect class="stripe" x="{x}" y="{header_h + i * row_h}" width="{table_width}" height="{row_h}"/>')
+        cursor = x
+        for w, label in zip(widths, labels):
+            lines = label.split('\n')
+            for j, line in enumerate(lines):
+                y = 33 if len(lines) == 1 else 24 + j * 18
+                parts.append(f'<text class="header" x="{cursor + w / 2:g}" y="{y}" text-anchor="middle">{escape(line)}</text>')
+            cursor += w
+        for i, row in enumerate(rows):
+            cursor = x
+            y = header_h + i * row_h + 21
+            parts.append(f'<g class="data-row" data-row="{i}">')
+            for w, col in zip(widths, cols):
+                is_left = col in [0, 6]
+                tx = cursor + 12 if is_left else cursor + w - 12
+                anchor = 'start' if is_left else 'end'
+                klass = 'caveat' if col == 6 else 'value'
+                parts.append(f'<text class="{klass}" x="{tx}" y="{y}" text-anchor="{anchor}">{escape(row[col])}</text>')
+                cursor += w
+            parts.append('</g>')
+        for i in range(len(rows)):
+            y = header_h + i * row_h
+            parts.append(f'<path class="border" d="M {x} {y} H {x + table_width}"/>')
+        cursor = x
+        for w in widths[:-1]:
+            cursor += w
+            parts.append(f'<path class="border" d="M {cursor} 1 V {height - 1}"/>')
+        parts.append(f'<rect class="border" x="{x + .5}" y="1" width="{table_width - 1}" height="{height - 2}"/>')
+        parts.append('</g>')
+    parts.append('</svg>')
+    return '\n'.join(parts) + '\n'
 
 
 def iter_jsonl(path: Path) -> Iterable[dict[str, Any]]:
@@ -130,6 +244,7 @@ def render(
     challenge64_registry_path: Path,
     challenge64_eval_path: Path,
     challenge64_holdout_path: Path,
+    token_usage_path: Path = TOKEN_USAGE_PATH,
 ) -> str:
     c100 = yaml.safe_load(challenge100_registry_path.read_text(encoding="utf-8"))
     c64 = yaml.safe_load(challenge64_registry_path.read_text(encoding="utf-8"))
@@ -158,6 +273,10 @@ def render(
         }
         if any(actual[key] != int(projection[key]) for key in actual):
             raise ValueError(f"{model_id}: Challenge64 projection counts disagree with evaluation cache")
+    usage = load_token_usage(token_usage_path, c100)
+    rows100 = render_challenge100(
+        registry=c100, eval_path=challenge64_eval_path, holdout_path=challenge64_holdout_path)
+    aligned_rows = token_aligned_rows(rows100, c100, usage)
     lines = [
         "# INDUCTION Challenge Leaderboards",
         "",
@@ -180,13 +299,21 @@ def render(
         "",
         "Rows are ranked by Holdout Correct % (out of 100), then Train Correct, Evaluable coverage, and model name.",
         "",
-        "| Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) |",
-        "|---|---:|---:|---:|---:|",
-        *render_challenge100(
-            registry=c100,
-            eval_path=challenge64_eval_path,
-            holdout_path=challenge64_holdout_path,
-        ),
+        "![Challenge100 leaderboard with a separate, row-aligned output-token table](challenge100_leaderboard.svg)",
+        "",
+        "Output tokens include reasoning once and all known attempts, including non-evaluable responses. "
+        "Unreported usage is excluded; these figures are lower bounds where usage is missing. "
+        "Caveats flag at least 30 unreported responses; “rejected” identifies calls rejected before a generated response. "
+        "[Token data](../eval/challenge100_output_token_usage.json).",
+        "",
+        "<details>",
+        "<summary>Text-only leaderboard and token usage</summary>",
+        "",
+        "| Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) | Output tokens (M) | Caveat |",
+        "|---|---:|---:|---:|---:|---:|---|",
+        *['| ' + ' | '.join(row) + ' |' for row in aligned_rows],
+        "",
+        "</details>",
         "",
         "Challenge100 formula complexity covers all train-correct direct formulas across its 100 tasks. "
         "Holdout Correct % combines verified successes from the frozen Challenge64 and New36 sidecars, divided by all 100 problems.",
@@ -217,18 +344,28 @@ def main() -> int:
     parser.add_argument("--challenge64-eval", type=Path, required=True)
     parser.add_argument("--challenge64-holdout", type=Path, required=True)
     parser.add_argument("--out", type=Path)
+    parser.add_argument("--token-usage", type=Path, default=TOKEN_USAGE_PATH)
+    parser.add_argument("--svg-out", type=Path, help="Defaults to challenge100_leaderboard.svg beside --out")
     args = parser.parse_args()
     text = render(
         challenge100_registry_path=args.challenge100_registry,
         challenge64_registry_path=args.challenge64_registry,
         challenge64_eval_path=args.challenge64_eval,
         challenge64_holdout_path=args.challenge64_holdout,
+        token_usage_path=args.token_usage,
     )
     if args.out:
         args.out.parent.mkdir(parents=True, exist_ok=True)
         args.out.write_text(text, encoding="utf-8")
     else:
         print(text)
+    svg_out = args.svg_out or (args.out.parent / 'challenge100_leaderboard.svg' if args.out else None)
+    if svg_out:
+        registry = yaml.safe_load(args.challenge100_registry.read_text(encoding='utf-8'))
+        usage = load_token_usage(args.token_usage, registry)
+        rows = render_challenge100(registry=registry, eval_path=args.challenge64_eval, holdout_path=args.challenge64_holdout)
+        svg_out.parent.mkdir(parents=True, exist_ok=True)
+        svg_out.write_text(render_challenge100_svg(token_aligned_rows(rows, registry, usage)), encoding='utf-8')
     return 0
 
 
