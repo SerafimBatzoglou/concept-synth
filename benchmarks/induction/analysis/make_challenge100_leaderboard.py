@@ -44,7 +44,8 @@ def token_aligned_rows(
     for row in rows:
         cells = [cell.strip() for cell in row.strip('|').split('|')]
         entry = by_name[cells[0]]
-        result.append(cells + [f"{entry['output_tokens'] / 1_000_000:.1f}"])
+        output = '—*' if entry.get('missing_scope') == 'challenge64' else f"{entry['output_tokens'] / 1_000_000:.1f}"
+        result.append(cells + [output])
     return result
 
 
@@ -65,7 +66,7 @@ def render_challenge100_svg(rows: list[list[str]]) -> str:
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title description">',
         '<title id="title">Challenge100 leaderboard and output token usage</title>',
-        '<desc id="description">Two separate row-aligned tables. Output tokens are in millions, include reasoning once and all known attempts, and exclude unreported usage. An expandable text table accompanies this image.</desc>',
+        '<desc id="description">Two separate row-aligned tables. Output tokens are in millions, include reasoning once and all known attempts, and exclude unreported usage. A dash with an asterisk means Challenge64 usage is missing. An expandable text table accompanies this image.</desc>',
         '<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px;fill:#1f2328}.header{font-weight:600;font-size:13px}.border{stroke:#d1d9e0;stroke-width:1;fill:none}.stripe{fill:#f6f8fa}.background{fill:#fff}</style>',
     ]
     headers = [
@@ -286,6 +287,8 @@ def render(
         "Rows are ranked by Holdout Correct % (out of 100), then Train Correct, Evaluable coverage, and model name.",
         "",
         "![Challenge100 leaderboard with a separate, row-aligned output-token table](challenge100_leaderboard.svg)",
+        "",
+        r"\* Challenge64 usage missing.",
         "",
         "Output tokens include reasoning once and all known attempts, including non-evaluable responses. "
         "Unreported usage is excluded; these figures are lower bounds where usage is missing. "

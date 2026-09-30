@@ -49,7 +49,7 @@ def test_output_totals_include_unsuccessful_attempts_and_reasoning_once():
 def test_separate_tables_have_identical_row_positions_and_no_repeated_model_names():
     rows = aligned_rows()
     assert len(rows) == 28
-    assert all(re.fullmatch(r'\d+\.\d', row[5]) for row in rows)
+    assert all(row[5] == '—*' or re.fullmatch(r'\d+\.\d', row[5]) for row in rows)
     assert rows[0][0] == 'GPT-6 Astra' and rows[0][5:] == ['2.0']
     svg = RENDER.render_challenge100_svg(rows)
     assert svg == (BENCH / 'docs/challenge100_leaderboard.svg').read_text()
@@ -75,6 +75,24 @@ def test_separate_tables_have_identical_row_positions_and_no_repeated_model_name
     assert all('| ' + ' | '.join(row) + ' |' in markdown for row in rows)
     assert 'caveat' not in svg.lower()
     assert 'caveat' not in markdown.lower()
+
+
+def test_missing_challenge64_usage_is_marked_without_removing_scores():
+    rows = aligned_rows()
+    marked = {row[0] for row in rows if row[5] == '—*'}
+    assert marked == {'GPT-5.6 Sol', 'GPT-5.6 Terra', 'GPT-5.6 Luna', 'DeepSeek V4 Pro'}
+    original = RENDER.render_challenge100(
+        registry=REGISTRY,
+        eval_path=BENCH / 'eval/induction_challenge64_round1_eval_cache_v1.jsonl',
+        holdout_path=BENCH / 'eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl')
+    assert [row[:5] for row in rows] == [
+        [cell.strip() for cell in row.strip('|').split('|')] for row in original]
+    usage = RENDER.load_token_usage(USAGE_PATH, REGISTRY)
+    for model in REGISTRY['models']:
+        row = next(r for r in rows if r[0] == model['display_name'])
+        if model['display_name'] not in marked:
+            assert row[5] == f"{usage[model['id']]['output_tokens'] / 1_000_000:.1f}"
+    assert r'\* Challenge64 usage missing.' in (BENCH / 'docs/leaderboard.md').read_text()
 
 
 @pytest.mark.parametrize('mutation', ['missing', 'duplicate', 'negative'])

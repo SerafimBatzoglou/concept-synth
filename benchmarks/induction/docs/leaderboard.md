@@ -12,6 +12,8 @@ Rows are ranked by Holdout Correct % (out of 100), then Train Correct, Evaluable
 
 ![Challenge100 leaderboard with a separate, row-aligned output-token table](challenge100_leaderboard.svg)
 
+\* Challenge64 usage missing.
+
 Output tokens include reasoning once and all known attempts, including non-evaluable responses. Unreported usage is excluded; these figures are lower bounds where usage is missing. [Token data](../eval/challenge100_output_token_usage.json).
 
 <details>
@@ -25,10 +27,10 @@ Output tokens include reasoning once and all known attempts, including non-evalu
 | Claude Sonnet 5.5 | 37.0% (37/100) | 44/100 (44.0%) | 100/100 | 19.0 / 17.0 | 56.0 |
 | GPT-6 Sol | 35.0% (35/100) | 57/100 (57.0%) | 100/100 | 73.4 / 18.0 | 4.7 |
 | Fable 5.1 | 30.0% (30/100) | 33/100 (33.0%) | 66/100 | 18.1 / 16.0 | 32.1 |
-| GPT-5.6 Sol | 22.0% (22/100) | 43/100 (43.0%) | 99/100 | 125.0 / 18.0 | 2.9 |
+| GPT-5.6 Sol | 22.0% (22/100) | 43/100 (43.0%) | 99/100 | 125.0 / 18.0 | —* |
 | Claude Opus 5 | 20.0% (20/100) | 24/100 (24.0%) | 97/100 | 18.8 / 16.0 | 27.1 |
 | Fable 5 | 19.0% (19/100) | 31/100 (31.0%) | 96/100 | 46.1 / 18.0 | 16.4 |
-| GPT-5.6 Terra | 17.0% (17/100) | 25/100 (25.0%) | 98/100 | 66.6 / 18.0 | 5.2 |
+| GPT-5.6 Terra | 17.0% (17/100) | 25/100 (25.0%) | 98/100 | 66.6 / 18.0 | —* |
 | Grok 4.6 | 17.0% (17/100) | 25/100 (25.0%) | 98/100 | 72.2 / 17.0 | 9.9 |
 | Muse Spark 1.3 | 15.0% (15/100) | 23/100 (23.0%) | 93/100 | 47.6 / 17.0 | 4.7 |
 | Qwen 3.8 Max | 14.0% (14/100) | 27/100 (27.0%) | 83/100 | 82.5 / 18.0 | 11.8 |
@@ -39,11 +41,11 @@ Output tokens include reasoning once and all known attempts, including non-evalu
 | Ox Alpha | 8.0% (8/100) | 12/100 (12.0%) | 87/100 | 25.5 / 16.0 | 25.3 |
 | Grok 4.5 | 8.0% (8/100) | 11/100 (11.0%) | 100/100 | 20.1 / 15.0 | 8.0 |
 | Gemini 3.8 Flash | 8.0% (8/100) | 9/100 (9.0%) | 100/100 | 15.6 / 16.0 | 4.1 |
-| GPT-5.6 Luna | 7.0% (7/100) | 16/100 (16.0%) | 97/100 | 102.8 / 18.0 | 5.6 |
+| GPT-5.6 Luna | 7.0% (7/100) | 16/100 (16.0%) | 97/100 | 102.8 / 18.0 | —* |
 | Muse Spark 1.2 | 7.0% (7/100) | 11/100 (11.0%) | 92/100 | 29.1 / 17.0 | 14.9 |
 | Gemini 3.5 Flash | 6.0% (6/100) | 7/100 (7.0%) | 98/100 | 16.6 / 15.0 | 6.8 |
 | DeepSeek V4 Pro 0813 | 5.0% (5/100) | 15/100 (15.0%) | 98/100 | 130.9 / 77.0 | 8.4 |
-| DeepSeek V4 Pro | 4.0% (4/100) | 6/100 (6.0%) | 94/100 | 31.5 / 16.0 | 5.1 |
+| DeepSeek V4 Pro | 4.0% (4/100) | 6/100 (6.0%) | 94/100 | 31.5 / 16.0 | —* |
 | DeepSeek V4.1 Flash | 3.0% (3/100) | 11/100 (11.0%) | 97/100 | 92.7 / 37.0 | 14.8 |
 | Gemini 3.6 Flash | 3.0% (3/100) | 5/100 (5.0%) | 93/100 | 16.6 / 16.0 | 7.4 |
 | DeepSeek V4 Flash | 1.0% (1/100) | 6/100 (6.0%) | 97/100 | 77.8 / 48.0 | 8.1 |
