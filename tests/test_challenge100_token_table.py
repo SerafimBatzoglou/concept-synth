@@ -26,19 +26,6 @@ def aligned_rows():
     return RENDER.token_aligned_rows(rows, REGISTRY, RENDER.load_token_usage(USAGE_PATH, REGISTRY))
 
 
-@pytest.mark.parametrize('missing,expected', [(None, ''), (0, ''), (8, ''), (29, ''), (30, '30 unreported'), (108, '108 unreported')])
-def test_material_uncertainty_threshold(missing, expected):
-    assert RENDER.token_caveat({'unreported_responses_lower_bound': missing}) == expected
-
-
-def test_caveats_describe_missing_output_not_known_records_or_missing_input():
-    usage = RENDER.load_token_usage(USAGE_PATH, REGISTRY)
-    for mid in ['gemini-3.5-flash', 'gemini-3.6-flash', 'gemini-3.7-flash', 'claude-opus-5', 'claude-fable-5-1', 'gpt-6-astra']:
-        assert RENDER.token_caveat(usage[mid]) == ''
-    assert RENDER.token_caveat(usage['gpt-5.6-sol-xhigh']) == 'C64 unreported'
-    assert RENDER.token_caveat(usage['qwen-3.8-max']) == '95 rejected'
-
-
 def test_output_totals_include_unsuccessful_attempts_and_reasoning_once():
     usage = RENDER.load_token_usage(USAGE_PATH, REGISTRY)
     for path in (BENCH / 'eval').glob('*challenge100_round1_report.json'):
@@ -63,7 +50,7 @@ def test_separate_tables_have_identical_row_positions_and_no_repeated_model_name
     rows = aligned_rows()
     assert len(rows) == 28
     assert all(re.fullmatch(r'\d+\.\d', row[5]) for row in rows)
-    assert rows[0][0] == 'GPT-6 Astra' and rows[0][5:] == ['2.0', '']
+    assert rows[0][0] == 'GPT-6 Astra' and rows[0][5:] == ['2.0']
     svg = RENDER.render_challenge100_svg(rows)
     assert svg == (BENCH / 'docs/challenge100_leaderboard.svg').read_text()
     root = ET.fromstring(svg)
@@ -76,17 +63,18 @@ def test_separate_tables_have_identical_row_positions_and_no_repeated_model_name
     for i, (lrow, rrow) in enumerate(zip(left_rows, right_rows)):
         ltext = lrow.findall('s:text', NS)
         rtext = rrow.findall('s:text', NS)
-        assert len(ltext) == 5 and len(rtext) == 2
+        assert len(ltext) == 5 and len(rtext) == 1
         assert {t.attrib['y'] for t in ltext + rtext} == {str(56 + i * 32 + 21)}
         assert ltext[0].text == rows[i][0]
         assert rtext[0].text == rows[i][5]
-        assert (rtext[1].text or '') == rows[i][6]
     names = {m['display_name'] for m in REGISTRY['models']}
     assert not names.intersection(t.text for t in right.iter('{http://www.w3.org/2000/svg}text'))
     markdown = (BENCH / 'docs/leaderboard.md').read_text()
     assert '](challenge100_leaderboard.svg)' in markdown
     assert '<details>\n<summary>Text-only leaderboard and token usage</summary>' in markdown
     assert all('| ' + ' | '.join(row) + ' |' in markdown for row in rows)
+    assert 'caveat' not in svg.lower()
+    assert 'caveat' not in markdown.lower()
 
 
 @pytest.mark.parametrize('mutation', ['missing', 'duplicate', 'negative'])

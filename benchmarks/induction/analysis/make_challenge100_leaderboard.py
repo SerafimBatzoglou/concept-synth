@@ -15,7 +15,6 @@ import yaml
 
 
 TOKEN_USAGE_PATH = Path(__file__).resolve().parents[1] / 'eval/challenge100_output_token_usage.json'
-CAVEAT_MIN_RESPONSES = 30
 TABLE_GAP = 24  # Approximately three characters at the table's 14px font size.
 
 
@@ -35,18 +34,6 @@ def load_token_usage(path: Path, registry: dict[str, Any]) -> dict[str, dict[str
     return by_id
 
 
-def token_caveat(usage: dict[str, Any]) -> str:
-    missing = usage['unreported_responses_lower_bound']
-    if missing is None or missing < CAVEAT_MIN_RESPONSES:
-        return ''
-    if usage.get('missing_scope') == 'challenge64':
-        return 'C64 unreported'
-    rejected = usage.get('rejected_without_usage', 0)
-    if rejected >= CAVEAT_MIN_RESPONSES:
-        return f'{rejected} rejected'
-    return f'{missing} unreported'
-
-
 def token_aligned_rows(
     rows: list[str], registry: dict[str, Any], usage: dict[str, dict[str, Any]]
 ) -> list[list[str]]:
@@ -57,7 +44,7 @@ def token_aligned_rows(
     for row in rows:
         cells = [cell.strip() for cell in row.strip('|').split('|')]
         entry = by_name[cells[0]]
-        result.append(cells + [f"{entry['output_tokens'] / 1_000_000:.1f}", token_caveat(entry)])
+        result.append(cells + [f"{entry['output_tokens'] / 1_000_000:.1f}"])
     return result
 
 
@@ -69,7 +56,7 @@ def render_challenge100_svg(rows: list[list[str]]) -> str:
     token usage. The Markdown document also includes a text-only fallback.
     """
     left_widths = [190, 168, 148, 94, 164]
-    right_widths = [124, 126]
+    right_widths = [124]
     left_width = sum(left_widths)
     right_x = left_width + TABLE_GAP
     width = right_x + sum(right_widths)
@@ -78,16 +65,16 @@ def render_challenge100_svg(rows: list[list[str]]) -> str:
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title description">',
         '<title id="title">Challenge100 leaderboard and output token usage</title>',
-        '<desc id="description">Two separate row-aligned tables. Output tokens are in millions, include reasoning once and all known attempts, and exclude unreported usage. Caveats appear only for at least 30 unreported responses. An expandable text table accompanies this image.</desc>',
-        '<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px;fill:#1f2328}.header{font-weight:600;font-size:13px}.caveat{font-size:11px;fill:#59636e}.border{stroke:#d1d9e0;stroke-width:1;fill:none}.stripe{fill:#f6f8fa}.background{fill:#fff}</style>',
+        '<desc id="description">Two separate row-aligned tables. Output tokens are in millions, include reasoning once and all known attempts, and exclude unreported usage. An expandable text table accompanies this image.</desc>',
+        '<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px;fill:#1f2328}.header{font-weight:600;font-size:13px}.border{stroke:#d1d9e0;stroke-width:1;fill:none}.stripe{fill:#f6f8fa}.background{fill:#fff}</style>',
     ]
     headers = [
         ['Model', 'Holdout Correct %\n(all problems)', 'Train Correct', 'Evaluable', 'Formula Complexity\n(AST mean/median)'],
-        ['Output tokens\n(millions)', 'Caveat'],
+        ['Output tokens\n(millions)'],
     ]
     for group_id, x, widths, cols, labels in [
         ('leaderboard', 0, left_widths, range(5), headers[0]),
-        ('token-usage', right_x, right_widths, range(5, 7), headers[1]),
+        ('token-usage', right_x, right_widths, range(5, 6), headers[1]),
     ]:
         table_width = sum(widths)
         parts.append(f'<g id="{group_id}" data-x="{x}" data-width="{table_width}">')
@@ -107,11 +94,10 @@ def render_challenge100_svg(rows: list[list[str]]) -> str:
             y = header_h + i * row_h + 21
             parts.append(f'<g class="data-row" data-row="{i}">')
             for w, col in zip(widths, cols):
-                is_left = col in [0, 6]
+                is_left = col == 0
                 tx = cursor + 12 if is_left else cursor + w - 12
                 anchor = 'start' if is_left else 'end'
-                klass = 'caveat' if col == 6 else 'value'
-                parts.append(f'<text class="{klass}" x="{tx}" y="{y}" text-anchor="{anchor}">{escape(row[col])}</text>')
+                parts.append(f'<text class="value" x="{tx}" y="{y}" text-anchor="{anchor}">{escape(row[col])}</text>')
                 cursor += w
             parts.append('</g>')
         for i in range(len(rows)):
@@ -303,14 +289,13 @@ def render(
         "",
         "Output tokens include reasoning once and all known attempts, including non-evaluable responses. "
         "Unreported usage is excluded; these figures are lower bounds where usage is missing. "
-        "Caveats flag at least 30 unreported responses; “rejected” identifies calls rejected before a generated response. "
         "[Token data](../eval/challenge100_output_token_usage.json).",
         "",
         "<details>",
         "<summary>Text-only leaderboard and token usage</summary>",
         "",
-        "| Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) | Output tokens (M) | Caveat |",
-        "|---|---:|---:|---:|---:|---:|---|",
+        "| Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) | Output tokens (M) |",
+        "|---|---:|---:|---:|---:|---:|",
         *['| ' + ' | '.join(row) + ' |' for row in aligned_rows],
         "",
         "</details>",

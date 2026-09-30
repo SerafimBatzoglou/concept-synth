@@ -3,7 +3,7 @@
   "as_of_date": "2026-09-29",
   "units": "output tokens including reasoning exactly once",
   "scope": "All known physical attempts contributing to the published Challenge100 campaign, including unsuccessful, capped, invalid, empty and refused responses. Not just selected answers.",
-  "uncertainty_policy": "Only output-usage gaps of at least 30 responses are shown in the compact table. Null means the historical dispatch gap cannot be quantified. Missing input usage is irrelevant to this output-only table. C64 missing counts are conservative lower bounds. Rejected requests are identified separately and never assigned invented usage.",
+  "uncertainty_policy": "The compact table displays known output totals only; uncertainty details are retained here. Null means the historical dispatch gap cannot be quantified. Missing input usage is irrelevant to this output-only table. C64 missing counts are conservative lower bounds. Rejected requests are identified separately and never assigned invented usage.",
   "deduplication": "Reused probes, snapshots and copied response records are counted once; distinct actual retries are included.",
   "source_accounting_sha256": "0070c5610e8ca0dde63cdd7acb25db580c454100c51feec89bec08617ea715b1",
   "models": [
