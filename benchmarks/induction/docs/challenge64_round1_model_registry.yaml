@@ -280,3 +280,10 @@ models:
     shared output tokens, 20 total workers, zero automatic SDK retries/tools/symbolic
     work. First eligible parser-evaluable response in actual task launch order.
   source_release: verified final regular-API retry-policy-v3 ledger
+- id: gemini-4-argon
+  display_name: Gemini 4 Argon
+  protocol: High initial pass plus one same-high non-evaluable failure retry; medium
+    residual16; conditional low fallback1. Original prompts, maximum provider-counted
+    token budget. First parser-evaluable by actual launch order; never correctness.
+  source_type: verified_stored_score_copy
+  source_release: gemini_argon_challenge100_20261013

@@ -1,11 +1,6 @@
 {
-  "schema_version": "challenge100_output_token_usage_v1",
-  "as_of_date": "2026-09-29",
-  "units": "output tokens including reasoning exactly once",
-  "scope": "All known physical attempts contributing to the published Challenge100 campaign, including unsuccessful, capped, invalid, empty and refused responses. Not just selected answers.",
-  "uncertainty_policy": "The compact table displays known output totals only; uncertainty details are retained here. Null means the historical dispatch gap cannot be quantified. Missing input usage is irrelevant to this output-only table. C64 missing counts are conservative lower bounds. Rejected requests are identified separately and never assigned invented usage.",
+  "as_of_date": "2026-10-13",
   "deduplication": "Reused probes, snapshots and copied response records are counted once; distinct actual retries are included.",
-  "source_accounting_sha256": "0070c5610e8ca0dde63cdd7acb25db580c454100c51feec89bec08617ea715b1",
   "models": [
     {
       "model_id": "gpt-6-astra",
@@ -13,10 +8,10 @@
       "unreported_responses_lower_bound": 29
     },
     {
+      "missing_scope": "challenge64",
       "model_id": "gpt-5.6-sol-xhigh",
       "output_tokens": 2886421,
-      "unreported_responses_lower_bound": 64,
-      "missing_scope": "challenge64"
+      "unreported_responses_lower_bound": 64
     },
     {
       "model_id": "claude-fable-5-1",
@@ -29,10 +24,10 @@
       "unreported_responses_lower_bound": null
     },
     {
+      "missing_scope": "challenge64",
       "model_id": "gpt-5.6-terra-xhigh",
       "output_tokens": 5233202,
-      "unreported_responses_lower_bound": 64,
-      "missing_scope": "challenge64"
+      "unreported_responses_lower_bound": 64
     },
     {
       "model_id": "grok-4.6-high",
@@ -55,10 +50,10 @@
       "unreported_responses_lower_bound": 96
     },
     {
+      "missing_scope": "challenge64",
       "model_id": "gpt-5.6-luna-xhigh",
       "output_tokens": 5614895,
-      "unreported_responses_lower_bound": 64,
-      "missing_scope": "challenge64"
+      "unreported_responses_lower_bound": 64
     },
     {
       "model_id": "deepseek-v4-pro-0813",
@@ -96,10 +91,10 @@
       "unreported_responses_lower_bound": 0
     },
     {
+      "missing_scope": "challenge64",
       "model_id": "deepseek-v4-pro",
       "output_tokens": 5095026,
-      "unreported_responses_lower_bound": 64,
-      "missing_scope": "challenge64"
+      "unreported_responses_lower_bound": 64
     },
     {
       "model_id": "deepseek-v4-flash",
@@ -119,8 +114,8 @@
     {
       "model_id": "qwen-3.8-max",
       "output_tokens": 11770992,
-      "unreported_responses_lower_bound": 96,
-      "rejected_without_usage": 95
+      "rejected_without_usage": 95,
+      "unreported_responses_lower_bound": 96
     },
     {
       "model_id": "grok-4.7",
@@ -151,6 +146,20 @@
       "model_id": "gpt-6.1-sol",
       "output_tokens": 4134385,
       "unreported_responses_lower_bound": 108
+    },
+    {
+      "model_id": "gemini-4-argon",
+      "output_tokens": 57789684,
+      "physical_attempts": 145,
+      "reasoning_included_once": true,
+      "separate_tool_use_tokens_excluded": 205381,
+      "source_accounting_sha256": "59bf7b1eb1b62cfcf6c384e9ec7187aa85811d403d61fc1d91f79791931eadb0",
+      "unreported_responses_lower_bound": 0
     }
-  ]
+  ],
+  "schema_version": "challenge100_output_token_usage_v1",
+  "scope": "All known physical attempts contributing to the published Challenge100 campaign, including unsuccessful, capped, invalid, empty and refused responses. Not just selected answers.",
+  "source_accounting_sha256": "0070c5610e8ca0dde63cdd7acb25db580c454100c51feec89bec08617ea715b1",
+  "uncertainty_policy": "The compact table displays known output totals only; uncertainty details are retained here. Null means the historical dispatch gap cannot be quantified. Missing input usage is irrelevant to this output-only table. C64 missing counts are conservative lower bounds. Rejected requests are identified separately and never assigned invented usage.",
+  "units": "output tokens including reasoning exactly once"
 }

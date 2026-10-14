@@ -33,6 +33,11 @@ def test_output_totals_include_unsuccessful_attempts_and_reasoning_once():
         mid = report['model']
         if mid == 'qwen-3.8-max':
             expected = report['token_usage']['available_token_totals']['output']
+        elif mid == 'gemini-4-argon':
+            stats = report['known_physical_usage']
+            expected = stats['output_tokens']
+            assert expected == stats['visible_output_tokens'] + stats['reasoning_tokens_within_output']
+            assert report['generation_calls']['terminal_evaluated'] == 145
         else:
             stats = (report.get('all_physical_response_token_usage') or
                      report.get('known_physical_usage') or report['overall']['token_usage'])
@@ -48,7 +53,7 @@ def test_output_totals_include_unsuccessful_attempts_and_reasoning_once():
 
 def test_separate_tables_have_identical_row_positions_and_no_repeated_model_names():
     rows = aligned_rows()
-    assert len(rows) == 28
+    assert len(rows) == 29
     assert all(row[5] == '—*' or re.fullmatch(r'\d+\.\d', row[5]) for row in rows)
     assert rows[0][0] == 'GPT-6 Astra' and rows[0][5:] == ['2.0']
     svg = RENDER.render_challenge100_svg(rows)
@@ -59,7 +64,7 @@ def test_separate_tables_have_identical_row_positions_and_no_repeated_model_name
     assert int(right.attrib['data-x']) - int(left.attrib['data-width']) == 24
     left_rows = left.findall("s:g[@class='data-row']", NS)
     right_rows = right.findall("s:g[@class='data-row']", NS)
-    assert len(left_rows) == len(right_rows) == 28
+    assert len(left_rows) == len(right_rows) == 29
     for i, (lrow, rrow) in enumerate(zip(left_rows, right_rows)):
         ltext = lrow.findall('s:text', NS)
         rtext = rrow.findall('s:text', NS)

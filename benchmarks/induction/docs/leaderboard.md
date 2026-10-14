@@ -1,6 +1,6 @@
 # INDUCTION Challenge Leaderboards
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 28 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 29 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -24,6 +24,7 @@ Output tokens include reasoning once and all known attempts, including non-evalu
 | GPT-6 Astra | 79.0% (79/100) | 94/100 (94.0%) | 94/100 | 22.0 / 16.0 | 2.0 |
 | GPT-6.1 Sol | 62.0% (62/100) | 90/100 (90.0%) | 98/100 | 61.9 / 18.0 | 4.1 |
 | Claude Opus 5.5 | 50.0% (50/100) | 65/100 (65.0%) | 91/100 | 23.2 / 17.0 | 50.6 |
+| Gemini 4 Argon | 37.0% (37/100) | 57/100 (57.0%) | 100/100 | 45.5 / 18.0 | 57.8 |
 | Claude Sonnet 5.5 | 37.0% (37/100) | 44/100 (44.0%) | 100/100 | 19.0 / 17.0 | 56.0 |
 | GPT-6 Sol | 35.0% (35/100) | 57/100 (57.0%) | 100/100 | 73.4 / 18.0 | 4.7 |
 | Fable 5.1 | 30.0% (30/100) | 33/100 (33.0%) | 66/100 | 18.1 / 16.0 | 32.1 |
@@ -65,6 +66,7 @@ Rows are ranked by Holdout Correct % (out of 64), then Train Correct, Evaluable 
 | Claude Opus 5.5 | 54.7% (35/64) | 46/64 (71.9%) | 59/64 | 26.0 / 18.0 |
 | Claude Sonnet 5.5 | 40.6% (26/64) | 32/64 (50.0%) | 64/64 | 19.6 / 18.0 |
 | GPT-6 Sol | 37.5% (24/64) | 42/64 (65.6%) | 64/64 | 93.0 / 18.0 |
+| Gemini 4 Argon | 37.5% (24/64) | 42/64 (65.6%) | 64/64 | 55.9 / 18.0 |
 | GPT-5.6 Sol | 29.7% (19/64) | 37/64 (57.8%) | 63/64 | 143.0 / 18.0 |
 | Fable 5.1 | 29.7% (19/64) | 22/64 (34.4%) | 47/64 | 17.6 / 16.0 |
 | Claude Opus 5 | 26.6% (17/64) | 21/64 (32.8%) | 62/64 | 19.2 / 16.0 |

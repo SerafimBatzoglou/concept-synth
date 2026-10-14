@@ -31,3 +31,7 @@ The verified max/xhigh/high/medium campaign is documented in [the Sonnet 5.5 aud
 ## GPT-6.1 Sol final update
 
 The [verified GPT-6.1 Sol campaign](gpt6_1_sol_challenge100.md) adds 90 train-correct and 62 verified holdout-correct tasks out of 100. It used regular Responses API calls and bounded error retries, lowering MAX to XHIGH on the third additional error retry. All 206 physical attempts are accounted for, including 108 failed requests with unknown acceptance/usage/billing. Scores and holdouts were copied without rescoring; strict syntax and missing holdouts are reported separately.
+
+## Gemini 4 Argon final update
+
+The [verified mixed-effort Argon campaign](gemini_4_argon_challenge100.md) adds 100 evaluable, 57 train-correct and 37 verified holdout-correct answers. The high pass and same-high failure retries were followed by medium residual16 and one conditional low fallback. Selection uses first evaluability in actual launch order, never correctness. All 145 physical requests and the separate, unpriced provider tool-use category are accounted for. Export copied stored scores; no answer was rescored.

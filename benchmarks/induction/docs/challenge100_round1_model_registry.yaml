@@ -629,3 +629,36 @@ models:
   challenge100:
     evaluable: 98
     correct: 90
+- id: gemini-4-argon
+  display_name: Gemini 4 Argon
+  protocol: High initial pass plus one same-high non-evaluable failure retry; medium
+    residual16; conditional low fallback1. Original prompts, maximum provider-counted
+    token budget. First parser-evaluable by actual launch order; never correctness.
+  challenge64:
+    registry_id: gemini-4-argon
+    evaluable: 64
+    correct: 42
+  benchmarked36:
+    evaluable: 36
+    correct: 15
+    correct_formula_ast_sizes:
+    - 11
+    - 11
+    - 11
+    - 16
+    - 16
+    - 16
+    - 16
+    - 15
+    - 15
+    - 15
+    - 15
+    - 22
+    - 22
+    - 23
+    - 23
+    holdout_evaluable: 13
+    holdout_correct: 13
+  challenge100:
+    evaluable: 100
+    correct: 57
