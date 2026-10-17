@@ -1,0 +1,54 @@
+{
+  "artifacts": {
+    "challenge100_holdouts_v2.jsonl": {
+      "bytes": 370085,
+      "sha256": "75e527f802cdb8428f539d6e779734da516f94b2d39d0fa715ea7b1c4171b904"
+    },
+    "challenge64_holdouts_v2.jsonl": {
+      "bytes": 225120,
+      "sha256": "2dd4285e9fb69efb5efb99dd25014834e3236f23b827d96d4554da3a0935ec9c"
+    },
+    "generation_trace.json": {
+      "bytes": 53053,
+      "sha256": "c30498302cacad7eff3444aad61366e67ed80e1bf812ccbfe651086ac31ea012"
+    },
+    "induction_fullobs_challenge100_v2.yaml.gz": {
+      "bytes": 119795,
+      "sha256": "b81d23a39ff0c57bffc2ba0343a699897a6c2d873e5138a8c7b14e36184078cd"
+    },
+    "induction_fullobs_challenge64_v2.yaml.gz": {
+      "bytes": 70845,
+      "sha256": "989dd42298203c934f355fe7e850dcab74d1febd89743b869c5b3cc5a948dc8b"
+    },
+    "policy.json": {
+      "bytes": 1934,
+      "sha256": "54a229c6143d8dca57ae697698c2066e574a2f36dfbce199ca1cf724f98fb42f"
+    },
+    "validation.json": {
+      "bytes": 180,
+      "sha256": "4369d285c4d5237b538f684962f32770405ab37e0945a1acd1e57ef6474f229e"
+    }
+  },
+  "challenge64_exact_projection": true,
+  "generator_sha256": "50ec0c1fbcc95bae6e0385fc37a87b4d337d6f74b273f56b2ca3167ff1ff71ff",
+  "holdouts_are_solver_inputs": false,
+  "reevaluation_started": false,
+  "sources": {
+    "challenge100_legacy_holdouts_v1.jsonl": "fa967a8ec5e9d2d9203869ab0f0d4b86e3a88a3b26ad229c8fbc8a058640b636",
+    "holdout_v2_policy.json": "54a229c6143d8dca57ae697698c2066e574a2f36dfbce199ca1cf724f98fb42f",
+    "induction_fullobs_challenge100_v1.yaml.gz": "b81d23a39ff0c57bffc2ba0343a699897a6c2d873e5138a8c7b14e36184078cd",
+    "induction_fullobs_challenge64_v1.yaml.gz": "989dd42298203c934f355fe7e850dcab74d1febd89743b869c5b3cc5a948dc8b"
+  },
+  "training_inputs_byte_identical": true,
+  "validation": {
+    "added": 51,
+    "all_gold_labels_exact": true,
+    "duplicate_holdouts": 0,
+    "model_api_calls": 0,
+    "preserved": 449,
+    "tasks": 100,
+    "training_overlap": 0,
+    "worlds": 500
+  },
+  "version": "challenge-holdouts-v2"
+}
