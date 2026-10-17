@@ -38,6 +38,10 @@ coverage for Gemini 3.5 Flash.
 
 ## Challenge64 Leaderboard
 
+The additive [holdout-complete Challenge100 / Challenge64 v2 bundle](docs/challenge_holdouts_v2.md)
+has exactly five holdout worlds per task (500 / 320 total). Solver prompts and
+all existing v1 artifacts remain unchanged. Existing score tables are not v2 scores.
+
 [**View the Challenge64 Round-1 pre-symbolic leaderboard**](docs/challenge64_round1_results.md).
 It compares one direct Round-1 formula per task across the released
 configurations, with links to the normalized predictions and frozen train and

@@ -13,6 +13,10 @@ model predictions, evaluation tools, and reproducible results.
 Challenge100 is the maintained 100-task benchmark, combining the frozen
 Challenge64 set with 36 additional challenging problems. The leaderboards report
 Challenge100 results and the Challenge64 projection.
+
+[**Holdout-complete v2 datasets**](benchmarks/induction/docs/challenge_holdouts_v2.md)
+provide exactly five holdout worlds for every problem, with unchanged solver
+inputs. Existing leaderboards remain v1 until separately versioned re-evaluation.
 <!-- END INDUCTION CHALLENGE LEADERBOARDS -->
 
 Explore the full releases: [ABD](benchmarks/abduction/) · [INDUCTION](benchmarks/induction/).
