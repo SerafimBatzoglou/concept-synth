@@ -57,8 +57,8 @@
     },
     {
       "path": "benchmarks/induction/docs/challenge_holdouts_v2.md",
-      "sha256": "1ebdce4b9cac7c8a81281af41673322ddc6e76aa2156699c547252185d567395",
-      "sizeBytes": 7066
+      "sha256": "cc35ace0f41b8eb0b6e9dfbf8b65331327ec977b4de2115b63f8b708e83a49ff",
+      "sizeBytes": 7320
     },
     {
       "path": "src/concept_synth/induction/complete_holdouts.py",

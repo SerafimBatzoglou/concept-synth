@@ -12,33 +12,33 @@
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl",
-      "sha256": "c3b19eb5f3b1a6da18033bcfc51eedd3e0c8f70cf1a546e05c1073433db93452",
-      "sizeBytes": 3506477
+      "sha256": "cceb2be648f7416f71199cf8de84370facfc91335a3b7b8e0e31d8b6498db21e",
+      "sizeBytes": 3604407
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_model_registry_holdout_v2.yaml",
-      "sha256": "1b1ba71a637c1e7de67a791e81ea0db476be197309c66a49073fce063fb27983",
-      "sizeBytes": 15660
+      "sha256": "c0a997146d733a3cff8c40cb6a8fd549b500614ebaccbbd14f7102aee83da51f",
+      "sizeBytes": 16305
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry_holdout_v2.yaml",
-      "sha256": "b1be232c4407e6adab04a732e0bf238df1a2c5d1ff8d2326f8dcca129b44359c",
-      "sizeBytes": 12144
+      "sha256": "04740fed673af230a75c704d30b1c47125c23a90b2b823dc4a19266c62285cb6",
+      "sizeBytes": 12605
     },
     {
       "path": "benchmarks/induction/docs/leaderboard.md",
-      "sha256": "67c3ab59e3b6c949e7ea26199ef633e0743655f31cffdf07481c28a0e9b246cf",
-      "sizeBytes": 8267
+      "sha256": "cd34d1d9f016bd5b282f078bc6ff034dd71e7645f3d4703978e1e651f174fd57",
+      "sizeBytes": 8444
     },
     {
       "path": "benchmarks/induction/docs/challenge100_leaderboard.svg",
-      "sha256": "5e26483885afa2c07025c154de9b5930babbc7b3793363b33f4ebd8c9df4d855",
-      "sizeBytes": 21026
+      "sha256": "4c30b2c05b91dd9563ce9261642b6bc8ee65933a1e73a0655768a96d95f0a9e8",
+      "sizeBytes": 21775
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_results.md",
-      "sha256": "e6fa62f820c705e6181228b366f2c9d6ff794193ae4dd84b31187babea37e175",
-      "sizeBytes": 4408
+      "sha256": "1b93f956df82e1ee48a20d16887698c570c28f41b47ec7d7d68e99de18005a8c",
+      "sizeBytes": 4490
     },
     {
       "path": "benchmarks/induction/docs/leaderboard_holdout_v1.md",
@@ -57,8 +57,8 @@
     },
     {
       "path": "benchmarks/induction/docs/challenge_holdouts_v2.md",
-      "sha256": "1ebdce4b9cac7c8a81281af41673322ddc6e76aa2156699c547252185d567395",
-      "sizeBytes": 7066
+      "sha256": "cc35ace0f41b8eb0b6e9dfbf8b65331327ec977b4de2115b63f8b708e83a49ff",
+      "sizeBytes": 7320
     },
     {
       "path": "benchmarks/induction/docs/holdout_v2_evaluation_verification.json",
@@ -67,13 +67,13 @@
     },
     {
       "path": "benchmarks/induction/analysis/make_holdout_v2_leaderboards.py",
-      "sha256": "87d53004dad2048fba760b6f43d53aa0a032be80d7284a5f2d6838ae31d2869f",
-      "sizeBytes": 1714
+      "sha256": "a2f6a2c7e8aa46806a359e9f3917b08040d95bd180b33d82748031a2f0f3ca37",
+      "sizeBytes": 1783
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge100_leaderboard.py",
-      "sha256": "1ec90ac2c6e577eb5cf17090bba041fdcf8dac0792c01258e262632d1cb3ea50",
-      "sizeBytes": 18781
+      "sha256": "1e2b42cd9925847c6f5da65bb72cc2562719ac17fcdb610086e2f58382712511",
+      "sizeBytes": 18769
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge64_round1_table.py",
@@ -82,13 +82,13 @@
     },
     {
       "path": "benchmarks/induction/scripts/refresh_holdout_v2_release.py",
-      "sha256": "1a957a465dc98731d36066cab5646f76228a5117cb6242e67cc938968fe8f232",
-      "sizeBytes": 3601
+      "sha256": "dcb193bead14ba48aca815f02475e088e574d1fdf5c9d643b5e24a274c40412a",
+      "sizeBytes": 4602
     },
     {
       "path": "tests/test_holdout_v2_results.py",
-      "sha256": "ae550fd86a76cd74544438896ab4406ed609b308990b28ea19b40a7184df0efb",
-      "sizeBytes": 5965
+      "sha256": "4eae02dda487e36cce30a932996305d9a61e57fbfe55cd45b675f1bf09571130",
+      "sizeBytes": 6126
     },
     {
       "path": "benchmarks/induction/data/challenge_holdouts_v2/manifest.json",
@@ -102,19 +102,70 @@
     },
     {
       "path": "benchmarks/induction/README.md",
-      "sha256": "dd6960c909941375d8b3da7eff158cf43c95d60ac2394e13c38dc8b759fd0a6e",
-      "sizeBytes": 11602
+      "sha256": "9370c65546d0c0dc50a9ac5323bd04c2976808daa1b52f3d338505fb1b9483ba",
+      "sizeBytes": 11822
+    },
+    {
+      "path": "benchmarks/induction/eval/deepseek_flash1017_challenge100_holdout_v2.json",
+      "sha256": "23f8dad88ff3fa66a409fdcbbd1725945f88ddaac142c0af68e8a2eb09cc5fb4",
+      "sizeBytes": 407017
+    },
+    {
+      "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v2.jsonl",
+      "sha256": "20577579c2fa4df87b2402be0437f38e5cfc7a129ee3146f5b5ff53f117f8da0",
+      "sizeBytes": 4369358
+    },
+    {
+      "path": "benchmarks/induction/eval/challenge100_output_token_usage_v2.json",
+      "sha256": "db0793b85dd94cc461d3b02fe063cf6235cacc692ceb6f87c827ef29b220b8c9",
+      "sizeBytes": 5363
+    },
+    {
+      "path": "benchmarks/induction/predictions/deepseek_flash1017_challenge100_predictions_v2.jsonl.gz",
+      "sha256": "37d4681a34b4bf62ea2bcbe497aece2cc9c48fa4589871243f9f1fc1099831b0",
+      "sizeBytes": 6865
+    },
+    {
+      "path": "benchmarks/induction/docs/deepseek_flash1017_results.md",
+      "sha256": "1ee635245030993466ad3ea6f430004d15defe73b82477501a537cba6b169a30",
+      "sizeBytes": 3554
+    },
+    {
+      "path": "tests/test_flash1017_results.py",
+      "sha256": "c74b3454bf96c6945beed874ec8ed576724fca622ddcd3d2a257d3d4e9a74a57",
+      "sizeBytes": 5185
+    },
+    {
+      "path": "tests/test_challenge100_token_table.py",
+      "sha256": "934a78d7636563a7c8a3eda5ea8f5064ce5f1bd4033e3fc15a44a9fb88128c7d",
+      "sizeBytes": 5893
     }
   ],
   "counts": {
-    "affectedModelTaskRows": 463,
+    "affectedModelTaskRows": 477,
     "affectedTasks": 14,
-    "eligibleHoldoutEvaluations": 133,
-    "newlyMeasurablePasses": 59,
-    "skippedIneligibleRows": 330,
+    "eligibleHoldoutEvaluations": 136,
+    "newlyMeasurablePasses": 60,
+    "skippedIneligibleRows": 341,
     "unchangedTasksNotRescored": 86
   },
-  "date": "2026-10-17",
+  "date": "2026-10-18",
+  "flash1017Supplement": {
+    "affectedRows": 14,
+    "eligibleHoldoutEvaluations": 3,
+    "initialV2TrainingRowsCopiedExactly": 3072,
+    "previous48ModelsPreserved": true,
+    "report": "benchmarks/induction/eval/deepseek_flash1017_challenge100_holdout_v2.json",
+    "skippedIneligibleRows": 11
+  },
+  "initialRelease": {
+    "affectedRows": 463,
+    "challenge100Configurations": 29,
+    "challenge64Configurations": 48,
+    "eligibleHoldoutEvaluations": 133,
+    "evidence": "benchmarks/induction/docs/holdout_v2_evaluation_verification.json",
+    "skippedIneligibleRows": 330
+  },
   "license": "MIT",
   "modelApiCalls": 0,
   "preservedV1SourceHashes": {
@@ -148,6 +199,6 @@
   },
   "publicationScorerCalls": 0,
   "schemaVersion": "induction_holdout_evaluation_release_manifest_v2",
-  "scope": "Completed configurations only; 48 Challenge64, 29 Challenge100. Flash-1017 unfinished and excluded.",
+  "scope": "Verified completed configurations: 49 Challenge64, 30 Challenge100, including final Flash-1017.",
   "version": "challenge-holdouts-v2"
 }

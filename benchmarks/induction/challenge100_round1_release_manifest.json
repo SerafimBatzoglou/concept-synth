@@ -42,8 +42,8 @@
     },
     {
       "path": "benchmarks/induction/docs/leaderboard.md",
-      "sha256": "67c3ab59e3b6c949e7ea26199ef633e0743655f31cffdf07481c28a0e9b246cf",
-      "sizeBytes": 8267
+      "sha256": "cd34d1d9f016bd5b282f078bc6ff034dd71e7645f3d4703978e1e651f174fd57",
+      "sizeBytes": 8444
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_provenance.md",
@@ -52,8 +52,8 @@
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge100_leaderboard.py",
-      "sha256": "1ec90ac2c6e577eb5cf17090bba041fdcf8dac0792c01258e262632d1cb3ea50",
-      "sizeBytes": 18781
+      "sha256": "1e2b42cd9925847c6f5da65bb72cc2562719ac17fcdb610086e2f58382712511",
+      "sizeBytes": 18769
     },
     {
       "path": "benchmarks/induction/eval/deepseek_v4_1_flash_challenge100_round1_report.json",
@@ -132,8 +132,8 @@
     },
     {
       "path": "benchmarks/induction/docs/challenge100_leaderboard.svg",
-      "sha256": "5e26483885afa2c07025c154de9b5930babbc7b3793363b33f4ebd8c9df4d855",
-      "sizeBytes": 21026
+      "sha256": "4c30b2c05b91dd9563ce9261642b6bc8ee65933a1e73a0655768a96d95f0a9e8",
+      "sizeBytes": 21775
     },
     {
       "path": "benchmarks/induction/eval/challenge100_output_token_usage.json",

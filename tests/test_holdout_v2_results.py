@@ -42,7 +42,9 @@ def test_c64_copy_only_projection_and_schema():
     new=rows(BENCH/'eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl')
     patch={(r['model_id'],r['task_id']):r for r in rows(BENCH/'eval/challenge_holdouts_v2_affected_results.jsonl') if r['subset']=='challenge64'}
     validator=jsonschema.Draft202012Validator(read(BENCH/'schemas/eval_cache_record.schema.json'))
-    assert len(old)==len(new)==3072
+    assert len(old)==3072 and len(new)==3136
+    # The first release's 48 models are unchanged; Flash-1017 is additive.
+    assert {r['model_id'] for r in new[3072:]}=={'deepseek-v4.1-flash-1017'}
     unchanged=0
     for before,after in zip(old,new):
         key=(before['model_id'],before['instance_id'])
@@ -64,7 +66,7 @@ def test_v2_totals_registry_and_preserved_training():
     old=yaml.safe_load((BENCH/'docs/challenge100_round1_model_registry.yaml').read_text())
     new=yaml.safe_load((BENCH/'docs/challenge100_round1_model_registry_holdout_v2.yaml').read_text())
     summary={m['model_id']:m for m in read(BENCH/'eval/challenge_holdouts_v2_model_summary.json')['models']}
-    assert len(summary)==48 and len(new['models'])==29
+    assert len(summary)==48 and len(new['models'])==30
     holds=rows(BENCH/'eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl')
     for before,after in zip(old['models'],new['models']):
         mid=before['id'];m=summary[mid]

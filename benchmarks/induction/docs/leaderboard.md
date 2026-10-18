@@ -2,7 +2,7 @@
 
 **Holdouts v2:** five worlds per task; only the 14 changed tasks re-evaluated. [Version details](challenge_holdouts_v2.md) · [v1 results](leaderboard_holdout_v1.md).
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 29 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 30 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -16,7 +16,7 @@ Rows are ranked by Holdout Correct % (out of 100), then Train Correct, Evaluable
 
 \* Challenge64 usage missing.
 
-Output tokens include reasoning once and all known attempts, including non-evaluable responses. Unreported usage is excluded; these figures are lower bounds where usage is missing. [Token data](../eval/challenge100_output_token_usage.json).
+Output tokens include reasoning once and all known attempts, including non-evaluable responses. Unreported usage is excluded; these figures are lower bounds where usage is missing. [Token data](../eval/challenge100_output_token_usage_v2.json).
 
 <details>
 <summary>Text-only leaderboard and token usage</summary>
@@ -41,6 +41,7 @@ Output tokens include reasoning once and all known attempts, including non-evalu
 | Muse Spark 1.1 | 15.0% (15/100) | 21/100 (21.0%) | 86/100 | 49.8 / 17.0 | 20.7 |
 | GPT-6 Luna | 13.0% (13/100) | 18/100 (18.0%) | 100/100 | 21.4 / 16.5 | 13.3 |
 | Gemini 3.7 Flash | 10.0% (10/100) | 11/100 (11.0%) | 100/100 | 16.4 / 15.0 | 5.6 |
+| DeepSeek 4.1 Flash-1017 | 9.0% (9/100) | 21/100 (21.0%) | 100/100 | 118.9 / 40.0 | 12.5 |
 | GPT-5.6 Luna | 9.0% (9/100) | 16/100 (16.0%) | 97/100 | 102.8 / 18.0 | —* |
 | Ox Alpha | 9.0% (9/100) | 12/100 (12.0%) | 87/100 | 25.5 / 16.0 | 25.3 |
 | Grok 4.5 | 9.0% (9/100) | 11/100 (11.0%) | 100/100 | 20.1 / 15.0 | 8.0 |
@@ -83,6 +84,7 @@ Rows are ranked by Holdout Correct % (out of 64), then Train Correct, Evaluable 
 | Grok 4 | 18.8% (12/64) | 13/64 (20.3%) | 59/64 | 17.7 / 16.0 |
 | GPT-5.4 | 15.6% (10/64) | 12/64 (18.8%) | 64/64 | 22.8 / 16.0 |
 | Gemini 3.7 Flash | 15.6% (10/64) | 11/64 (17.2%) | 64/64 | 16.4 / 15.0 |
+| DeepSeek 4.1 Flash-1017 | 14.1% (9/64) | 21/64 (32.8%) | 64/64 | 118.9 / 40.0 |
 | Ox Alpha | 14.1% (9/64) | 12/64 (18.8%) | 54/64 | 25.5 / 16.0 |
 | Grok 4.5 | 14.1% (9/64) | 11/64 (17.2%) | 64/64 | 20.1 / 15.0 |
 | Gemini 3.8 Flash | 14.1% (9/64) | 9/64 (14.1%) | 64/64 | 15.6 / 16.0 |
