@@ -13,7 +13,7 @@ BENCH = Path(__file__).resolve().parents[1] / 'benchmarks/induction'
 SPEC = importlib.util.spec_from_file_location('token_table_renderer', BENCH / 'analysis/make_challenge100_leaderboard.py')
 RENDER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(RENDER)
-REGISTRY = yaml.safe_load((BENCH / 'docs/challenge100_round1_model_registry.yaml').read_text())
+REGISTRY = yaml.safe_load((BENCH / 'docs/challenge100_round1_model_registry_holdout_v2.yaml').read_text())
 USAGE_PATH = BENCH / 'eval/challenge100_output_token_usage.json'
 NS = {'s': 'http://www.w3.org/2000/svg'}
 
@@ -22,7 +22,7 @@ def aligned_rows():
     rows = RENDER.render_challenge100(
         registry=REGISTRY,
         eval_path=BENCH / 'eval/induction_challenge64_round1_eval_cache_v1.jsonl',
-        holdout_path=BENCH / 'eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl')
+        holdout_path=BENCH / 'eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl')
     return RENDER.token_aligned_rows(rows, REGISTRY, RENDER.load_token_usage(USAGE_PATH, REGISTRY))
 
 
@@ -89,7 +89,7 @@ def test_missing_challenge64_usage_is_marked_without_removing_scores():
     original = RENDER.render_challenge100(
         registry=REGISTRY,
         eval_path=BENCH / 'eval/induction_challenge64_round1_eval_cache_v1.jsonl',
-        holdout_path=BENCH / 'eval/induction_challenge64_round1_holdout_eval_cache_v1.jsonl')
+        holdout_path=BENCH / 'eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl')
     assert [row[:5] for row in rows] == [
         [cell.strip() for cell in row.strip('|').split('|')] for row in original]
     usage = RENDER.load_token_usage(USAGE_PATH, REGISTRY)

@@ -235,6 +235,9 @@ def render(
 ) -> str:
     c100 = yaml.safe_load(challenge100_registry_path.read_text(encoding="utf-8"))
     c64 = yaml.safe_load(challenge64_registry_path.read_text(encoding="utf-8"))
+    holdout_v2 = c100.get('holdout_version') == 'challenge-holdouts-v2'
+    if holdout_v2 != (c64.get('holdout_version') == 'challenge-holdouts-v2'):
+        raise ValueError('Challenge100 and Challenge64 holdout versions disagree')
     c64_models = {str(model["id"]): model for model in c64["models"]}
     if len(c64_models) != len(c64["models"]):
         raise ValueError("Duplicate Challenge64 model IDs")
@@ -276,11 +279,16 @@ def render(
         "A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula "
         "is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.",
         "",
+        ("Holdout Correct % is the number of train-correct formulas verified correct on all five holdout worlds, "
+         "divided by all 100 or 64 problems. All tasks now have holdouts; unscored responses remain unknown, "
+         "not measured holdout failures, and receive no verified credit. Response selection, training scores, "
+         "formula complexity and token usage are unchanged."
+         if holdout_v2 else
         "Holdout Correct % is the number of train-correct formulas verified correct on all available generated holdout worlds, "
         "divided by the total number of problems (100 or 64), not by the number of available holdout evaluations. "
         "Tasks without verified holdout success contribute no credit, including tasks missing holdout worlds; "
         "missing holdout outcomes remain unknown in the underlying records, not asserted failures. "
-        "This changes leaderboard reporting and ranking only, not model training, evaluation, or response selection.",
+        "This changes leaderboard reporting and ranking only, not model training, evaluation, or response selection."),
         "",
         "## Challenge100",
         "",
@@ -322,6 +330,10 @@ def render(
         "Formula complexity reports AST mean/median over train-correct direct formulas.",
         "",
     ]
+    if holdout_v2:
+        lines[2:2] = [
+            "**Holdouts v2:** five worlds per task; only the 14 changed tasks re-evaluated. "
+            "[Version details](challenge_holdouts_v2.md) · [v1 results](leaderboard_holdout_v1.md).", ""]
     return "\n".join(lines)
 
 

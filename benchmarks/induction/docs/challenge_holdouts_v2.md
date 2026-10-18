@@ -97,9 +97,25 @@ the exact Challenge64 projection and prompt equality for all 100 problems.
 
 ## Evaluation migration
 
-This dataset release does **not** overwrite any existing scores, prediction
-records, leaderboards, or active campaign inputs. Those remain v1 results until
-a separately identified v2 re-evaluation is published.
+The [current leaderboards](leaderboard.md) use **holdouts v2**. Only the 14
+changed tasks were re-evaluated offline for the 48 completed model configurations
+(29 with Challenge100 coverage): 133 train-correct responses scored, 330 entries
+skipped under the existing eligibility rule. This adds 59 newly measurable
+holdout successes; no previous pass was lost. The other 86 tasks were not rescored.
+
+Original v1 predictions, scores, registries and active campaign inputs are
+unchanged. [Historical v1 tables](leaderboard_holdout_v1.md) remain available.
+The unfinished Flash-1017 campaign is excluded from this release.
+
+Versioned evidence:
+
+- [Affected-task evaluation rows](../eval/challenge_holdouts_v2_affected_results.jsonl)
+- [Per-model v1-to-v2 totals](../eval/challenge_holdouts_v2_model_summary.json)
+- [Stored-score verification](holdout_v2_evaluation_verification.json)
+- [Evaluation release manifest](../holdout_v2_evaluation_release_manifest.json)
+
+Regenerate the current tables without rescoring using
+`python benchmarks/induction/analysis/make_holdout_v2_leaderboards.py`.
 
 Saved model responses can be re-evaluated offline: keep the existing selected
 response/formula and parsing policy fixed, then score against the frozen v2

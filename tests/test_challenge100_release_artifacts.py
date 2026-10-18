@@ -98,7 +98,11 @@ def test_combined_leaderboard_is_reproducible(tmp_path: Path) -> None:
         ],
         check=True,
     )
-    assert regenerated.read_text(encoding="utf-8") == LEADERBOARD.read_text(encoding="utf-8")
+    # The unchanged v1 sources still reproduce the archived v1 scores.
+    historical = BENCH_ROOT / 'docs/leaderboard_holdout_v1.md'
+    assert regenerated.read_text(encoding="utf-8").replace(
+        '](challenge100_leaderboard.svg)', '](challenge100_leaderboard_holdout_v1.svg)'
+    ) == historical.read_text(encoding="utf-8")
 
 
 def test_challenge100_manifest_hashes_and_counts() -> None:

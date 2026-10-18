@@ -69,6 +69,6 @@ def test_projection_privacy_and_leaderboards():
     serial=json.dumps([r,list(tr.values()),list(ho.values()),ps])
     for forbidden in ('/Users/','/tmp/','pipeline.sqlite','candidate_id','prompt_id','response_id','reasoningTrace','API_KEY'):assert forbidden not in serial
     assert all(p['rawResponse'] is None and p['response'] is None and p['thinking'] is None for p in ps)
-    text=(BENCH/'docs/leaderboard.md').read_text()
+    text=(BENCH/'docs/leaderboard_holdout_v1.md').read_text()
     assert '| Gemini 4 Argon | 37.0% (37/100) | 57/100 (57.0%) | 100/100 | 45.5 / 18.0 | 57.8 |' in text
     assert '| Gemini 4 Argon | 37.5% (24/64) | 42/64 (65.6%) | 64/64 | 55.9 / 18.0 |' in text

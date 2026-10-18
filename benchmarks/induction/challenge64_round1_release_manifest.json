@@ -27,8 +27,8 @@
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_results.md",
-      "sha256": "dc6ae7719949fbdcbc794398297f62243b4ccddca2549d95c877c3dce4bfcf2b",
-      "sizeBytes": 4589
+      "sha256": "e6fa62f820c705e6181228b366f2c9d6ff794193ae4dd84b31187babea37e175",
+      "sizeBytes": 4408
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_provenance.md",
@@ -37,8 +37,8 @@
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge64_round1_table.py",
-      "sha256": "85110318ad179c198fb93d56b5db870d4fc351dfa5c6e8408495c5456ed29cb7",
-      "sizeBytes": 5987
+      "sha256": "9d0f7348a559084eec60471126d483aa8d9f6e27792ff3c44ec7c7ea5491b8b6",
+      "sizeBytes": 6914
     },
     {
       "path": "benchmarks/induction/eval/grok_4_7_challenge100_round1_report.json",
@@ -121,8 +121,11 @@
     "predictionRows": 3072,
     "trainEvalRows": 3072
   },
+  "currentLeaderboardManifest": "holdout_v2_evaluation_release_manifest.json",
+  "currentLeaderboardVersion": "challenge-holdouts-v2",
   "denominator": 64,
   "excludedModels": [],
+  "historicalScoreFilesPreserved": true,
   "holdout": {
     "sidecarSchema": "silc_fol_generated_iid_holdout_sidecar_v1",
     "sidecarTasksWithWorlds": 63,

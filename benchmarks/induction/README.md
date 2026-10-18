@@ -39,8 +39,9 @@ coverage for Gemini 3.5 Flash.
 ## Challenge64 Leaderboard
 
 The additive [holdout-complete Challenge100 / Challenge64 v2 bundle](docs/challenge_holdouts_v2.md)
-has exactly five holdout worlds per task (500 / 320 total). Solver prompts and
-all existing v1 artifacts remain unchanged. Existing score tables are not v2 scores.
+has exactly five holdout worlds per task (500 / 320 total). Leaderboards now use
+v2; only the 14 changed tasks were re-evaluated. Solver inputs and v1 score files
+are unchanged; historical tables remain linked from the current leaderboards.
 
 [**View the Challenge64 Round-1 pre-symbolic leaderboard**](docs/challenge64_round1_results.md).
 It compares one direct Round-1 formula per task across the released
@@ -151,6 +152,8 @@ The additive Challenge64 release contains normalized **pre-symbolic Round-1** fo
 - `analysis/make_challenge64_round1_table.py`
 
 The canonical rendered table is [the Challenge64 leaderboard](docs/challenge64_round1_results.md).
+Current v2 holdout scores use `eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl`;
+the `_v1` files above remain historical results.
 
 The fixed generated-holdout diagnostic is post-selection only and is not part of the benchmark task or solver input.
 <!-- END CHALLENGE64 ROUND1 -->
@@ -302,4 +305,14 @@ Public artifacts:
 - `eval/challenge100_output_token_usage.json` (known output across all attempts, including unsuccessful responses)
 - `analysis/make_challenge100_leaderboard.py`
 - `challenge100_round1_release_manifest.json`
+
+Current holdout-v2 tables use `docs/challenge100_round1_model_registry_holdout_v2.yaml`
+and `docs/challenge64_round1_model_registry_holdout_v2.yaml`. To reproduce both
+leaderboards from the frozen scores (no rescoring):
+
+```bash
+python benchmarks/induction/analysis/make_holdout_v2_leaderboards.py
+```
+
+See `holdout_v2_evaluation_release_manifest.json` for the score-version checksums.
 <!-- END CHALLENGE100 ROUND1 -->
