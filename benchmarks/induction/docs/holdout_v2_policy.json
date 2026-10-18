@@ -1,0 +1,21 @@
+{
+  "version": "challenge-holdouts-v2",
+  "seed_namespace": "concept-synth-challenge-holdouts-v2-20261017",
+  "worlds_per_task": 5,
+  "preserve_existing_worlds": true,
+  "training_and_prompt_changes": false,
+  "model_responses_used_for_generation": false,
+  "selection_uses_model_scores": false,
+  "target_positive_fraction": [0.15, 0.85],
+  "domain_sizes": "Uniform choice from the task's distinct original training domain sizes on each proposal",
+  "regular_budget_per_incomplete_task": 1000,
+  "regular_sampler": "P and Q: independently uniform subset with size uniform from max(1,floor(.15*n)) through min(n-1,floor(.85*n)). Each node has exactly 2 distinct outgoing edges for each of R and S; self edges allowed.",
+  "structural_regular_skip": {"hard_070": "Gold is identically true under positive regular R out-degree, so no balanced regular proposal can pass."},
+  "fallback_budget_per_incomplete_task": 10000,
+  "fallback_sampler": "Keep unary sampler; independently choose R and S edge probabilities uniformly from binary_probability_grid per proposal, then sample each directed edge independently. Self edges and zero out-degree nodes are allowed.",
+  "binary_probability_grid": [0.1, 0.2, 0.35, 0.5, 0.65],
+  "acceptance": "Accept in proposal order only when gold labels are balanced, structure is not a duplicate of a training or already retained holdout world, and fewer than five worlds have been retained. Never use a model answer or counterexample search.",
+  "seed": "First 16 SHA256 hex digits of seed_namespace + ':' + task_id + ':' + stage, interpreted as an integer; Python random.Random, separate regular/fallback streams",
+  "failure": "Fail the entire build if any task remains short. Never emit a partial release.",
+  "distribution_note": "Versioned completion of legacy rejection-sampled worlds with a declared variable-degree fallback; NOT an unchanged IID sample from the legacy regular-degree sampler."
+}

@@ -6,13 +6,17 @@ model predictions, evaluation tools, and reproducible results.
 <!-- BEGIN INDUCTION CHALLENGE LEADERBOARDS -->
 ## INDUCTION Challenge100
 
-[**Challenge100 dataset (YAML, gzip)**](benchmarks/induction/data/induction_fullobs_challenge100_v1.yaml.gz)
+[**Challenge100 v2 dataset (YAML, gzip)**](benchmarks/induction/data/challenge_holdouts_v2/induction_fullobs_challenge100_v2.yaml.gz)
 · [**Leaderboards**](benchmarks/induction/docs/leaderboard.md)
 · [Benchmark details](benchmarks/induction/docs/challenge100_round1_provenance.md)
 
 Challenge100 is the maintained 100-task benchmark, combining the frozen
 Challenge64 set with 36 additional challenging problems. The leaderboards report
 Challenge100 results and the Challenge64 projection.
+
+[**Holdout-complete v2 datasets**](benchmarks/induction/docs/challenge_holdouts_v2.md)
+provide five holdout worlds per problem. Leaderboards now use v2; only the 14
+changed tasks were re-evaluated, with unchanged solver inputs and responses.
 <!-- END INDUCTION CHALLENGE LEADERBOARDS -->
 
 Explore the full releases: [ABD](benchmarks/abduction/) · [INDUCTION](benchmarks/induction/).

@@ -1,0 +1,10 @@
+{
+  "added": 51,
+  "all_gold_labels_exact": true,
+  "duplicate_holdouts": 0,
+  "model_api_calls": 0,
+  "preserved": 449,
+  "tasks": 100,
+  "training_overlap": 0,
+  "worlds": 500
+}

@@ -42,8 +42,8 @@
     },
     {
       "path": "benchmarks/induction/docs/leaderboard.md",
-      "sha256": "81b04102d863455dd04a645f5e7ab002985da66cef13a6fa565a66ee50116228",
-      "sizeBytes": 8265
+      "sha256": "67c3ab59e3b6c949e7ea26199ef633e0743655f31cffdf07481c28a0e9b246cf",
+      "sizeBytes": 8267
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_provenance.md",
@@ -52,8 +52,8 @@
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge100_leaderboard.py",
-      "sha256": "ce6efb05ee423682c5ed13cb7149f20e9f391f3306c5b35886fbcc54b653eee3",
-      "sizeBytes": 17877
+      "sha256": "1ec90ac2c6e577eb5cf17090bba041fdcf8dac0792c01258e262632d1cb3ea50",
+      "sizeBytes": 18781
     },
     {
       "path": "benchmarks/induction/eval/deepseek_v4_1_flash_challenge100_round1_report.json",
@@ -132,8 +132,8 @@
     },
     {
       "path": "benchmarks/induction/docs/challenge100_leaderboard.svg",
-      "sha256": "4de5536dc5b35aae8e33b6d3461f431d327d17726e11ff2134970cff54337af5",
-      "sizeBytes": 21024
+      "sha256": "5e26483885afa2c07025c154de9b5930babbc7b3793363b33f4ebd8c9df4d855",
+      "sizeBytes": 21026
     },
     {
       "path": "benchmarks/induction/eval/challenge100_output_token_usage.json",
@@ -163,7 +163,10 @@
     "challenge100Tasks": 100,
     "challenge64Tasks": 64
   },
+  "currentLeaderboardManifest": "holdout_v2_evaluation_release_manifest.json",
+  "currentLeaderboardVersion": "challenge-holdouts-v2",
   "generatedOn": "2026-10-13",
+  "historicalScoreFilesPreserved": true,
   "license": "MIT",
   "releaseTag": "induction-challenge100-round1-v1.0",
   "schemaVersion": "induction_challenge100_round1_release_manifest_v1"

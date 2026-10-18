@@ -1,0 +1,2373 @@
+[
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_024"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_018"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_003"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_011"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_005"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_023"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_010"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_006"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_016"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_009"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_022"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_002"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_085"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_081"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_063"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_032"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_079"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_023"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_017"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_046"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_023"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_088"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_014"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_009"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_007"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_019"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_008"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_015"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_022"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_011"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 17,
+        "seed": 18142401861263947029,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "527766528bc9aa70970c37a1b6e6109e4738f44aa0f6781fe77290c02fafae5c"
+      }
+    ],
+    "added": 1,
+    "preserved": 4,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 1,
+        "balance_rejected": 16,
+        "duplicate_rejected": 0,
+        "proposals": 17
+      }
+    },
+    "task_id": "extreme_context_004"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_003"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_013"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_021"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_026"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_027"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_086"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_036"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_073"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_044"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_060"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 6,
+        "seed": 2005806324234691147,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "03ab94bf9769d2948dc175cb2b9f59c51b777544a9099c5e64e5556053f82e1e"
+      },
+      {
+        "proposal": 9,
+        "seed": 2005806324234691147,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_2",
+        "world_sha256": "4b3ff0e6681ed0eb440a31ef46b31aa66dff41c350068fb77e70fa2bb034b2cc"
+      },
+      {
+        "proposal": 12,
+        "seed": 2005806324234691147,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_3",
+        "world_sha256": "0ffe5d3047508d3a0896508189699bbf0bbb666d1c4fb2b2c8a705a1e92e2e11"
+      },
+      {
+        "proposal": 13,
+        "seed": 2005806324234691147,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_4",
+        "world_sha256": "4f4c98e0b3ecf0d0a907905262a4d5e93a7face504192250c782055ea83b019e"
+      },
+      {
+        "proposal": 16,
+        "seed": 2005806324234691147,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_5",
+        "world_sha256": "b3b65c6709e4f6f6616b4ba2829ef1dd3ea0f85caba147b219cd9498f98a3b17"
+      }
+    ],
+    "added": 5,
+    "preserved": 0,
+    "sampling": {
+      "fallback": {
+        "accepted": 5,
+        "balance_rejected": 11,
+        "duplicate_rejected": 0,
+        "proposals": 16
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_070"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 2,
+        "seed": 7713899725203187696,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "6a6be6b03410cd21666a430ded0785e5c6947ddff2f1a2709112668e525a437b"
+      }
+    ],
+    "added": 1,
+    "preserved": 4,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 1,
+        "balance_rejected": 1,
+        "duplicate_rejected": 0,
+        "proposals": 2
+      }
+    },
+    "task_id": "hard_029"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_019"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_024"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_008"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_003"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "medium_023"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_009"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_038"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_024"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_018"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_014"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_logic_025"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "extreme_context_017"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_005"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_012"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_033"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_035"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_049"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_051"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_053"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_067"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "hard_097"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 2,
+        "seed": 9598677013888898501,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "7e193ef835fd15ec5bf56df59cd93719adf20a4a8e06e62546f92e83d343d0a1"
+      },
+      {
+        "proposal": 4,
+        "seed": 9598677013888898501,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_2",
+        "world_sha256": "bb13d6fbaed401636ba1d38e014b0aa15038af49fe2346ff046f38361dcdfd72"
+      },
+      {
+        "proposal": 6,
+        "seed": 9598677013888898501,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_3",
+        "world_sha256": "3b62a6d30a3a845947386d90e2562737aed585f881e55d63f5b02a829880c4e4"
+      },
+      {
+        "proposal": 13,
+        "seed": 9598677013888898501,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_4",
+        "world_sha256": "e4b66ce1fe8215267d4b5f393aaa0917d321dd045d95ccbc438f6ca8a4c87632"
+      },
+      {
+        "proposal": 16,
+        "seed": 9598677013888898501,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_5",
+        "world_sha256": "f7469b616f7e202eb67c381ee1656ce39ae38e5aed7fe6ff84defac5f20bca56"
+      }
+    ],
+    "added": 5,
+    "preserved": 0,
+    "sampling": {
+      "fallback": {
+        "accepted": 5,
+        "balance_rejected": 11,
+        "duplicate_rejected": 0,
+        "proposals": 16
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 1000,
+        "duplicate_rejected": 0,
+        "proposals": 1000
+      }
+    },
+    "task_id": "fullobs_v2_guardless_cross_scope_lift_qd2_001"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_guardless_cross_scope_lift_qd2_003"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 9,
+        "seed": 11477689442526863736,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "b35fdc92893102976d0d8ecded1aff3694c5e2a13bdf4b45f85ec008d4332c56"
+      },
+      {
+        "proposal": 10,
+        "seed": 11477689442526863736,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_2",
+        "world_sha256": "f155eb11996b9cf77f912a4eb94c04c39033234416520ccfe325fc52f9fb4221"
+      },
+      {
+        "proposal": 14,
+        "seed": 11477689442526863736,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_3",
+        "world_sha256": "f1f96cc05b0dd940427dc66ad3e545bdc776dd77e07c59c68fea320d39e48e7a"
+      },
+      {
+        "proposal": 15,
+        "seed": 11477689442526863736,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_4",
+        "world_sha256": "055a4d768dbf67c7dbc5442af83e7f5c8ad1dbb73dd52586186dd16513cd45b7"
+      },
+      {
+        "proposal": 18,
+        "seed": 11477689442526863736,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_5",
+        "world_sha256": "50a703e09d77054a6d5cdeee7573b227875abcca2693dca3274828851725383b"
+      }
+    ],
+    "added": 5,
+    "preserved": 0,
+    "sampling": {
+      "fallback": {
+        "accepted": 5,
+        "balance_rejected": 13,
+        "duplicate_rejected": 0,
+        "proposals": 18
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 1000,
+        "duplicate_rejected": 0,
+        "proposals": 1000
+      }
+    },
+    "task_id": "fullobs_v2_guardless_cross_scope_lift_qd2_010"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 2,
+        "seed": 16240335792662040636,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "4477bbfd63a566b640944deb3f9f13cf6d7ca0a5b6cbe97ca5db1ae0552dbd80"
+      },
+      {
+        "proposal": 111,
+        "seed": 16240335792662040636,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_2",
+        "world_sha256": "191b5a63129233188e6cb89066bed82b2a965bbbc82151dbe7074ba469d8a1fb"
+      },
+      {
+        "proposal": 131,
+        "seed": 16240335792662040636,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_3",
+        "world_sha256": "f7c479b25eb0d9014d022e2b06a3b5d774a7d5a34520391d3d87a7126871e9a6"
+      },
+      {
+        "proposal": 133,
+        "seed": 16240335792662040636,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_4",
+        "world_sha256": "199ea91c33380fa8d8b183613e0bc534ee3fbde5c61eae30bb32050cff3082cc"
+      },
+      {
+        "proposal": 611,
+        "seed": 16240335792662040636,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_5",
+        "world_sha256": "686d38f26db2fcafd990b1da2bab64da0c36885f00550f4a4e02d95c6232fd2d"
+      }
+    ],
+    "added": 5,
+    "preserved": 0,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 5,
+        "balance_rejected": 606,
+        "duplicate_rejected": 0,
+        "proposals": 611
+      }
+    },
+    "task_id": "fullobs_v2_guardless_same_relation_scope_lift_qd2_002"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 301,
+        "seed": 4536330007467595672,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "e3ae090ed6698f87eeca193595e978ebf0e2b8b167d154a45c34c89b2ac5448b"
+      },
+      {
+        "proposal": 313,
+        "seed": 4536330007467595672,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_2",
+        "world_sha256": "9d097443fbd67fdf6664f360f2bb48b15e07362b24b8e8785afb6f3a5dde4aa4"
+      },
+      {
+        "proposal": 657,
+        "seed": 4536330007467595672,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_3",
+        "world_sha256": "a1a810fcfbd51dc4bb3d3991cae281be7106bd38cb9f21830b487b1addb9955c"
+      }
+    ],
+    "added": 3,
+    "preserved": 2,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 3,
+        "balance_rejected": 654,
+        "duplicate_rejected": 0,
+        "proposals": 657
+      }
+    },
+    "task_id": "fullobs_v2_guardless_same_relation_scope_lift_qd2_003"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_guardless_same_relation_scope_lift_qd2_008"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_dual_role_cross_lift_qd2_001"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 384,
+        "seed": 5845192894278646111,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "6b0764703ff7430dc413f1153520217becf7bc0224a06b6754975b834c5be84f"
+      },
+      {
+        "proposal": 387,
+        "seed": 5845192894278646111,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_2",
+        "world_sha256": "5c123e593e8e04d5c53c340f32bec9e5de942f416be2bbc07f2aa1206092e709"
+      },
+      {
+        "proposal": 411,
+        "seed": 5845192894278646111,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_3",
+        "world_sha256": "54e845c8e1ad8a9e8b02eb8f41f9aec9a91733981a51a97ecd8306d914757345"
+      },
+      {
+        "proposal": 824,
+        "seed": 5845192894278646111,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_4",
+        "world_sha256": "6f0bf0c4faed07fae1c91da70156be6e4f47b88370b444644cd3db850dd07bed"
+      },
+      {
+        "proposal": 848,
+        "seed": 5845192894278646111,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_5",
+        "world_sha256": "e03d806cdf7401d38a254a3c78fc05787379cab8b36582353ff9f9612014aa8c"
+      }
+    ],
+    "added": 5,
+    "preserved": 0,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 5,
+        "balance_rejected": 843,
+        "duplicate_rejected": 0,
+        "proposals": 848
+      }
+    },
+    "task_id": "fullobs_v2_dual_role_cross_lift_qd2_003"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 330,
+        "seed": 9455501600898275765,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "67f8884ba030c4daef6bdede317f0536eb73022d3d62c95054e56a6a057caec8"
+      },
+      {
+        "proposal": 789,
+        "seed": 9455501600898275765,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_2",
+        "world_sha256": "7e173df70d1ab2779da500ffb8775e371887fdf8ef01cdfee834ad181ee63deb"
+      },
+      {
+        "proposal": 845,
+        "seed": 9455501600898275765,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_3",
+        "world_sha256": "4b858e2cd9351a846bbbd20aaf406e6564f3be81fc6021da11cf7c36dda46221"
+      },
+      {
+        "proposal": 5,
+        "seed": 14788412631295118967,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_4",
+        "world_sha256": "38b6a0d62f6ff7c0c05037500a1545eced8ee0e13ae62d3caae94dd85df8219e"
+      },
+      {
+        "proposal": 10,
+        "seed": 14788412631295118967,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_5",
+        "world_sha256": "d7bb48a7f443e7c98372bb4b344b2d42fec94625a89b56db0c65388c2395ae1b"
+      }
+    ],
+    "added": 5,
+    "preserved": 0,
+    "sampling": {
+      "fallback": {
+        "accepted": 2,
+        "balance_rejected": 8,
+        "duplicate_rejected": 0,
+        "proposals": 10
+      },
+      "regular": {
+        "accepted": 3,
+        "balance_rejected": 997,
+        "duplicate_rejected": 0,
+        "proposals": 1000
+      }
+    },
+    "task_id": "fullobs_v2_dual_role_cross_lift_qd2_007"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_dual_role_cross_lift_qd2_009"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_003"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_007"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_008"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_009"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_binary_guard_incoming_lift_qd2_010"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_filtered_ef_lift_qd2_002"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_filtered_ef_lift_qd2_005"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_filtered_ef_lift_qd2_006"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_filtered_ef_lift_qd2_009"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 603,
+        "seed": 15581679770746116074,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "e90a3f698a2e44320170b2d187e76ac5517afa8b76ef54d4b19a5e9b9600fb85"
+      },
+      {
+        "proposal": 2,
+        "seed": 14462388599116709243,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_2",
+        "world_sha256": "3cad72d0f8a2f959ea45fd388412c0763dfc64c479ec97e8e5e133c18779d7a8"
+      },
+      {
+        "proposal": 7,
+        "seed": 14462388599116709243,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_3",
+        "world_sha256": "26013328bc0e268229e6766ec9696dc239007abb540f3a9e5ab99fba3c307409"
+      }
+    ],
+    "added": 3,
+    "preserved": 2,
+    "sampling": {
+      "fallback": {
+        "accepted": 2,
+        "balance_rejected": 5,
+        "duplicate_rejected": 0,
+        "proposals": 7
+      },
+      "regular": {
+        "accepted": 1,
+        "balance_rejected": 999,
+        "duplicate_rejected": 0,
+        "proposals": 1000
+      }
+    },
+    "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_002"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 191,
+        "seed": 6591224458207147366,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "f14bb12b4594a78652cdb2a47493f7ebf3af1a7a44490c303fd2da2598aca089"
+      },
+      {
+        "proposal": 235,
+        "seed": 6591224458207147366,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_2",
+        "world_sha256": "d10c5c421fada40527d05f84c26eb4595beb1a4ebd098c5b4b6b4a7c44d78ebc"
+      },
+      {
+        "proposal": 403,
+        "seed": 6591224458207147366,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_3",
+        "world_sha256": "10bfb8d4e4485f67ed0abc2efd47f3e14092aaef335300e30d057ed3e807d41e"
+      },
+      {
+        "proposal": 6,
+        "seed": 1334031524021819073,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_4",
+        "world_sha256": "850b55eadef6a338dafbfc1ccf20a1c79390f34b6e622257b1f3ab9451212b86"
+      },
+      {
+        "proposal": 12,
+        "seed": 1334031524021819073,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_5",
+        "world_sha256": "133f21a6295794b2917c2a652ba048e4be8b0113424fbfdf19cc1254f23fb8d1"
+      }
+    ],
+    "added": 5,
+    "preserved": 0,
+    "sampling": {
+      "fallback": {
+        "accepted": 2,
+        "balance_rejected": 10,
+        "duplicate_rejected": 0,
+        "proposals": 12
+      },
+      "regular": {
+        "accepted": 3,
+        "balance_rejected": 997,
+        "duplicate_rejected": 0,
+        "proposals": 1000
+      }
+    },
+    "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_003"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 15,
+        "seed": 14375480382001519221,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "5aa0e468251194d2e720d6e684df4517b038ee61b31f5e6203a9737d7ddcffcf"
+      },
+      {
+        "proposal": 39,
+        "seed": 14375480382001519221,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_2",
+        "world_sha256": "a9207ac0a033533661f55131a7f0fd6c1beefe1718e014c66deb0e7254cecdb4"
+      },
+      {
+        "proposal": 55,
+        "seed": 14375480382001519221,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_3",
+        "world_sha256": "9ecfe49995e9fc934f07a14c866d715c566f08563d9d4416a77e109cac9c91da"
+      },
+      {
+        "proposal": 57,
+        "seed": 14375480382001519221,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_4",
+        "world_sha256": "b9b786f372901676b453ce4c96bf2c83d303d021b7af81d50e2b701859dedfd6"
+      },
+      {
+        "proposal": 66,
+        "seed": 14375480382001519221,
+        "stage": "fallback",
+        "world_id": "holdout_v2_added_5",
+        "world_sha256": "e220c6202a690ef5d10d6a4cf03809a0c10cfc0fdc43bc96b934463f325aa5bc"
+      }
+    ],
+    "added": 5,
+    "preserved": 0,
+    "sampling": {
+      "fallback": {
+        "accepted": 5,
+        "balance_rejected": 61,
+        "duplicate_rejected": 0,
+        "proposals": 66
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 1000,
+        "duplicate_rejected": 0,
+        "proposals": 1000
+      }
+    },
+    "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_006"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_filtered_dual_role_lift_qd2_009"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_compact_ef_lift_qd2_001"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_compact_ef_lift_qd2_004"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_compact_ef_lift_qd2_009"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_compact_ef_lift_qd2_010"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_compact_response_qd3_007"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_compact_response_qd3_008"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_compact_response_qd3_009"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_nested_containment_qd3_003"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_nested_containment_qd3_006"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_nested_containment_qd3_007"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 3,
+        "seed": 7885158703921728708,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "e6c801f57412cc7fa4071f76457fca471d8e4bb9bf3e866251b84681107b3437"
+      }
+    ],
+    "added": 1,
+    "preserved": 4,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 1,
+        "balance_rejected": 2,
+        "duplicate_rejected": 0,
+        "proposals": 3
+      }
+    },
+    "task_id": "fullobs_v2_universal_nested_response_qd3_002"
+  },
+  {
+    "accepted": [
+      {
+        "proposal": 43,
+        "seed": 16165161347129648162,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_1",
+        "world_sha256": "f0fdf7499e6f35a76ad3e09b2213d51d6a4fe4e19a0c3ffba6736cf6cbc12fde"
+      },
+      {
+        "proposal": 59,
+        "seed": 16165161347129648162,
+        "stage": "regular",
+        "world_id": "holdout_v2_added_2",
+        "world_sha256": "005e3f4bba8329de3df5d280e91aaa26ee978bc8ef2407b68984a7ff76f932b2"
+      }
+    ],
+    "added": 2,
+    "preserved": 3,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 2,
+        "balance_rejected": 57,
+        "duplicate_rejected": 0,
+        "proposals": 59
+      }
+    },
+    "task_id": "fullobs_v2_universal_nested_response_qd3_005"
+  },
+  {
+    "accepted": [],
+    "added": 0,
+    "preserved": 5,
+    "sampling": {
+      "fallback": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      },
+      "regular": {
+        "accepted": 0,
+        "balance_rejected": 0,
+        "duplicate_rejected": 0,
+        "proposals": 0
+      }
+    },
+    "task_id": "fullobs_v2_universal_nested_response_qd3_008"
+  }
+]

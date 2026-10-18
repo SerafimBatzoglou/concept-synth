@@ -48,6 +48,7 @@ def render(
 ) -> str:
     denominator = load_dataset_size(dataset_path)
     registry = yaml.safe_load(registry_path.read_text(encoding="utf-8"))
+    holdout_v2 = registry.get('holdout_version') == 'challenge-holdouts-v2'
     models = registry["models"]
     by_model: dict[str, list[dict[str, Any]]] = {}
     for row in iter_jsonl(eval_path):
@@ -111,18 +112,29 @@ def render(
         "|---|---:|---:|---:|---:|",
         *(line for _, _, _, _, line in rendered),
         "",
+        ("Holdout Correct %: train-correct formulas verified correct on all five holdout worlds, divided by all "
+         "64 problems. Unscored outcomes remain unknown, not measured failures, and receive no verified credit. "
+         "Train correctness, evaluability, formula complexity and response selection are unchanged."
+         if holdout_v2 else
         "Holdout Correct %: train-correct formulas verified correct on all available generated holdout worlds, "
         "divided by all 64 problems, not just available holdout evaluations. Tasks without verified holdout success "
         "contribute no credit, including tasks missing holdout worlds; missing outcomes remain unknown in the "
         "underlying records, not asserted failures. Train Correct: train-world exact-match validity out of 64. "
         "Evaluable: parser-valid formula under the exact FullObs evaluator. Formula complexity summarizes "
-        "train-correct direct formulas. Only reporting and ranking change; no model training or evaluation changes.",
+        "train-correct direct formulas. Only reporting and ranking change; no model training or evaluation changes."),
         "",
+        ("The v2 sidecar contains exactly five worlds for all 64 tasks. It is a post-selection diagnostic, "
+         "never used for model prompting, response selection or symbolic search."
+         if holdout_v2 else
         "The fixed holdout sidecar contains five generated worlds where generation succeeded (63/64 tasks); "
         "it is only a post-selection reporting diagnostic. It was not used for model prompting, candidate "
-        "selection, or symbolic search.",
+        "selection, or symbolic search."),
         "",
     ]
+    if holdout_v2:
+        lines[2:2] = [
+            "**Holdouts v2:** five worlds per task; only the three changed Challenge64 tasks re-evaluated. "
+            "[Version details](challenge_holdouts_v2.md) · [v1 results](challenge64_round1_results_holdout_v1.md).", ""]
     return "\n".join(lines)
 
 

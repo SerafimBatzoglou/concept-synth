@@ -137,6 +137,6 @@ def test_public_projection_privacy_and_source_hashes():
     assert r['final_combined_report_sha256'] == '1a9258a794240ff575b866a28b3b4ced5893d6cd86c115fe1cc37b436e99befc'
     assert r['campaign_completion_sha256'] == 'de7f5435edbd097191638b52defc8f3261372e0a367abdb52d3616d45691691a'
     assert r['verification']['source_files_preserved'] == 2958
-    text = (BENCH / 'docs/leaderboard.md').read_text()
+    text = (BENCH / 'docs/leaderboard_holdout_v1.md').read_text()
     assert '| GPT-6.1 Sol | 62.0% (62/100) | 90/100 (90.0%) | 98/100 | 61.9 / 18.0 |' in text
     assert '| GPT-6.1 Sol | 65.6% (42/64) | 61/64 (95.3%) | 63/64 | 45.7 / 18.0 |' in text

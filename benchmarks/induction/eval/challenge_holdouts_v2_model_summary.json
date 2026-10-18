@@ -1,0 +1,1007 @@
+{
+  "holdout_version": "challenge-holdouts-v2",
+  "models": [
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 0,
+        "train_correct_unchanged": 0,
+        "v2_holdout_correct": 0
+      },
+      "display_name": "Claude Opus 4.5",
+      "evaluated_rows": 0,
+      "model_id": "claude-opus-4.5"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 4,
+        "train_correct_unchanged": 5,
+        "v2_holdout_correct": 5
+      },
+      "display_name": "Claude Opus 4.6",
+      "evaluated_rows": 1,
+      "model_id": "claude-opus-4.6"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 1,
+        "train_correct_unchanged": 1,
+        "v2_holdout_correct": 1
+      },
+      "display_name": "DeepSeek Reasoner",
+      "evaluated_rows": 0,
+      "model_id": "deepseek-reasoner"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 1,
+        "train_correct_unchanged": 3,
+        "v2_holdout_correct": 1
+      },
+      "display_name": "Gemini 3 Pro Preview",
+      "evaluated_rows": 0,
+      "model_id": "gemini-3-pro-preview"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 0,
+        "train_correct_unchanged": 1,
+        "v2_holdout_correct": 1
+      },
+      "display_name": "Gemini 3.1 Pro",
+      "evaluated_rows": 1,
+      "model_id": "gemini-3.1-pro-preview"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 0,
+        "train_correct_unchanged": 0,
+        "v2_holdout_correct": 0
+      },
+      "display_name": "GPT-4o",
+      "evaluated_rows": 0,
+      "model_id": "gpt-4o"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 2,
+        "train_correct_unchanged": 9,
+        "v2_holdout_correct": 3
+      },
+      "display_name": "GPT-5.2",
+      "evaluated_rows": 2,
+      "model_id": "gpt-5.2"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 9,
+        "train_correct_unchanged": 12,
+        "v2_holdout_correct": 10
+      },
+      "display_name": "GPT-5.4",
+      "evaluated_rows": 3,
+      "model_id": "gpt-5.4"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 11,
+        "train_correct_unchanged": 13,
+        "v2_holdout_correct": 12
+      },
+      "display_name": "Grok 4",
+      "evaluated_rows": 2,
+      "model_id": "grok-4"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 5,
+        "train_correct_unchanged": 6,
+        "v2_holdout_correct": 6
+      },
+      "display_name": "Grok 4.1 Fast",
+      "evaluated_rows": 1,
+      "model_id": "grok-4.1-fast"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 0,
+        "train_correct_unchanged": 0,
+        "v2_holdout_correct": 0
+      },
+      "display_name": "Hermes 4",
+      "evaluated_rows": 0,
+      "model_id": "hermes-4"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 0,
+        "train_correct_unchanged": 0,
+        "v2_holdout_correct": 0
+      },
+      "display_name": "Qwen 3.5",
+      "evaluated_rows": 0,
+      "model_id": "qwen-3.5"
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 0,
+        "denominator": 100,
+        "old_holdout_correct": 4,
+        "train_correct_unchanged": 6,
+        "v2_holdout_correct": 4
+      },
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 4,
+        "train_correct_unchanged": 6,
+        "v2_holdout_correct": 4
+      },
+      "display_name": "DeepSeek V4 Pro",
+      "evaluated_rows": 1,
+      "model_id": "deepseek-v4-pro",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 5,
+        "train_correct_unchanged": 15,
+        "v2_holdout_correct": 6
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 5,
+        "train_correct_unchanged": 15,
+        "v2_holdout_correct": 6
+      },
+      "display_name": "DeepSeek V4 Pro 0813",
+      "evaluated_rows": 3,
+      "model_id": "deepseek-v4-pro-0813",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 1,
+        "train_correct_unchanged": 6,
+        "v2_holdout_correct": 2
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 1,
+        "train_correct_unchanged": 6,
+        "v2_holdout_correct": 2
+      },
+      "display_name": "DeepSeek V4 Flash",
+      "evaluated_rows": 1,
+      "model_id": "deepseek-v4-flash",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 0,
+        "denominator": 100,
+        "old_holdout_correct": 6,
+        "train_correct_unchanged": 7,
+        "v2_holdout_correct": 6
+      },
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 6,
+        "train_correct_unchanged": 7,
+        "v2_holdout_correct": 6
+      },
+      "display_name": "Gemini 3.5 Flash",
+      "evaluated_rows": 1,
+      "model_id": "gemini-3.5-flash",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 3,
+        "train_correct_unchanged": 5,
+        "v2_holdout_correct": 4
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 3,
+        "train_correct_unchanged": 5,
+        "v2_holdout_correct": 4
+      },
+      "display_name": "Gemini 3.6 Flash",
+      "evaluated_rows": 2,
+      "model_id": "gemini-3.6-flash",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 9,
+        "train_correct_unchanged": 11,
+        "v2_holdout_correct": 10
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 9,
+        "train_correct_unchanged": 11,
+        "v2_holdout_correct": 10
+      },
+      "display_name": "Gemini 3.7 Flash",
+      "evaluated_rows": 2,
+      "model_id": "gemini-3.7-flash",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 8,
+        "train_correct_unchanged": 9,
+        "v2_holdout_correct": 9
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 8,
+        "train_correct_unchanged": 9,
+        "v2_holdout_correct": 9
+      },
+      "display_name": "Gemini 3.8 Flash",
+      "evaluated_rows": 2,
+      "model_id": "gemini-3.8-flash",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 2,
+        "train_correct_unchanged": 2,
+        "v2_holdout_correct": 2
+      },
+      "display_name": "Grok 4.3",
+      "evaluated_rows": 1,
+      "model_id": "grok-4.3"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 3,
+        "train_correct_unchanged": 3,
+        "v2_holdout_correct": 3
+      },
+      "display_name": "Kimi K2.6",
+      "evaluated_rows": 1,
+      "model_id": "kimi-k2.6"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 3,
+        "train_correct_unchanged": 5,
+        "v2_holdout_correct": 4
+      },
+      "display_name": "Kimi K2.7 Code",
+      "evaluated_rows": 1,
+      "model_id": "kimi-k2.7-code"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 5,
+        "train_correct_unchanged": 7,
+        "v2_holdout_correct": 5
+      },
+      "display_name": "Kimi K3",
+      "evaluated_rows": 1,
+      "model_id": "kimi-k3"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 3,
+        "train_correct_unchanged": 4,
+        "v2_holdout_correct": 4
+      },
+      "display_name": "Claude Opus 4.8",
+      "evaluated_rows": 2,
+      "model_id": "claude-opus-4.8"
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 20,
+        "train_correct_unchanged": 24,
+        "v2_holdout_correct": 21
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 17,
+        "train_correct_unchanged": 21,
+        "v2_holdout_correct": 18
+      },
+      "display_name": "Claude Opus 5",
+      "evaluated_rows": 3,
+      "model_id": "claude-opus-5",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 3,
+        "v2_holdout_correct": 3
+      }
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 2,
+        "train_correct_unchanged": 3,
+        "v2_holdout_correct": 3
+      },
+      "display_name": "Claude Sonnet 5",
+      "evaluated_rows": 1,
+      "model_id": "claude-sonnet-5"
+    },
+    {
+      "affected_rows": 3,
+      "challenge64": {
+        "delta": 0,
+        "denominator": 64,
+        "old_holdout_correct": 0,
+        "train_correct_unchanged": 0,
+        "v2_holdout_correct": 0
+      },
+      "display_name": "Qwen 3.7 Max",
+      "evaluated_rows": 0,
+      "model_id": "qwen-3.7-max"
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 14,
+        "train_correct_unchanged": 27,
+        "v2_holdout_correct": 15
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 14,
+        "train_correct_unchanged": 27,
+        "v2_holdout_correct": 15
+      },
+      "display_name": "Qwen 3.8 Max",
+      "evaluated_rows": 3,
+      "model_id": "qwen-3.8-max",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 6,
+        "denominator": 100,
+        "old_holdout_correct": 79,
+        "train_correct_unchanged": 94,
+        "v2_holdout_correct": 85
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 55,
+        "train_correct_unchanged": 63,
+        "v2_holdout_correct": 56
+      },
+      "display_name": "GPT-6 Astra",
+      "evaluated_rows": 14,
+      "model_id": "gpt-6-astra",
+      "new36": {
+        "delta": 5,
+        "denominator": 36,
+        "old_holdout_correct": 24,
+        "v2_holdout_correct": 29
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 4,
+        "denominator": 100,
+        "old_holdout_correct": 22,
+        "train_correct_unchanged": 43,
+        "v2_holdout_correct": 26
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 19,
+        "train_correct_unchanged": 37,
+        "v2_holdout_correct": 20
+      },
+      "display_name": "GPT-5.6 Sol",
+      "evaluated_rows": 6,
+      "model_id": "gpt-5.6-sol-xhigh",
+      "new36": {
+        "delta": 3,
+        "denominator": 36,
+        "old_holdout_correct": 3,
+        "v2_holdout_correct": 6
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 17,
+        "train_correct_unchanged": 25,
+        "v2_holdout_correct": 18
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 16,
+        "train_correct_unchanged": 24,
+        "v2_holdout_correct": 17
+      },
+      "display_name": "GPT-5.6 Terra",
+      "evaluated_rows": 3,
+      "model_id": "gpt-5.6-terra-xhigh",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 1,
+        "v2_holdout_correct": 1
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 2,
+        "denominator": 100,
+        "old_holdout_correct": 7,
+        "train_correct_unchanged": 16,
+        "v2_holdout_correct": 9
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 7,
+        "train_correct_unchanged": 15,
+        "v2_holdout_correct": 8
+      },
+      "display_name": "GPT-5.6 Luna",
+      "evaluated_rows": 3,
+      "model_id": "gpt-5.6-luna-xhigh",
+      "new36": {
+        "delta": 1,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 1
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 8,
+        "train_correct_unchanged": 11,
+        "v2_holdout_correct": 9
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 8,
+        "train_correct_unchanged": 11,
+        "v2_holdout_correct": 9
+      },
+      "display_name": "Grok 4.5",
+      "evaluated_rows": 2,
+      "model_id": "grok-4.5-high",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 17,
+        "train_correct_unchanged": 25,
+        "v2_holdout_correct": 18
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 15,
+        "train_correct_unchanged": 23,
+        "v2_holdout_correct": 16
+      },
+      "display_name": "Grok 4.6",
+      "evaluated_rows": 3,
+      "model_id": "grok-4.6-high",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 2,
+        "v2_holdout_correct": 2
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 19,
+        "train_correct_unchanged": 31,
+        "v2_holdout_correct": 20
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 15,
+        "train_correct_unchanged": 27,
+        "v2_holdout_correct": 16
+      },
+      "display_name": "Fable 5",
+      "evaluated_rows": 3,
+      "model_id": "claude-fable-5-medium-low",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 4,
+        "v2_holdout_correct": 4
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 30,
+        "train_correct_unchanged": 33,
+        "v2_holdout_correct": 31
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 19,
+        "train_correct_unchanged": 22,
+        "v2_holdout_correct": 20
+      },
+      "display_name": "Fable 5.1",
+      "evaluated_rows": 4,
+      "model_id": "claude-fable-5-1",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 11,
+        "v2_holdout_correct": 11
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 14,
+        "train_correct_unchanged": 21,
+        "v2_holdout_correct": 15
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 14,
+        "train_correct_unchanged": 21,
+        "v2_holdout_correct": 15
+      },
+      "display_name": "Muse Spark 1.1",
+      "evaluated_rows": 3,
+      "model_id": "muse-spark-1.1",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 15,
+        "train_correct_unchanged": 23,
+        "v2_holdout_correct": 16
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 15,
+        "train_correct_unchanged": 23,
+        "v2_holdout_correct": 16
+      },
+      "display_name": "Muse Spark 1.3",
+      "evaluated_rows": 3,
+      "model_id": "muse-spark-1.3",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 8,
+        "train_correct_unchanged": 12,
+        "v2_holdout_correct": 9
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 8,
+        "train_correct_unchanged": 12,
+        "v2_holdout_correct": 9
+      },
+      "display_name": "Ox Alpha",
+      "evaluated_rows": 2,
+      "model_id": "ox-alpha",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 7,
+        "train_correct_unchanged": 11,
+        "v2_holdout_correct": 8
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 7,
+        "train_correct_unchanged": 11,
+        "v2_holdout_correct": 8
+      },
+      "display_name": "Muse Spark 1.2",
+      "evaluated_rows": 2,
+      "model_id": "muse-spark-1.2",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 3,
+        "train_correct_unchanged": 11,
+        "v2_holdout_correct": 4
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 3,
+        "train_correct_unchanged": 11,
+        "v2_holdout_correct": 4
+      },
+      "display_name": "DeepSeek V4.1 Flash",
+      "evaluated_rows": 2,
+      "model_id": "deepseek-v4.1-flash",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 14,
+        "train_correct_unchanged": 24,
+        "v2_holdout_correct": 15
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 12,
+        "train_correct_unchanged": 22,
+        "v2_holdout_correct": 13
+      },
+      "display_name": "Grok 4.7",
+      "evaluated_rows": 3,
+      "model_id": "grok-4.7",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 2,
+        "v2_holdout_correct": 2
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 5,
+        "denominator": 100,
+        "old_holdout_correct": 50,
+        "train_correct_unchanged": 65,
+        "v2_holdout_correct": 55
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 35,
+        "train_correct_unchanged": 46,
+        "v2_holdout_correct": 36
+      },
+      "display_name": "Claude Opus 5.5",
+      "evaluated_rows": 9,
+      "model_id": "claude-opus-5-5",
+      "new36": {
+        "delta": 4,
+        "denominator": 36,
+        "old_holdout_correct": 15,
+        "v2_holdout_correct": 19
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 4,
+        "denominator": 100,
+        "old_holdout_correct": 35,
+        "train_correct_unchanged": 57,
+        "v2_holdout_correct": 39
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 24,
+        "train_correct_unchanged": 42,
+        "v2_holdout_correct": 25
+      },
+      "display_name": "GPT-6 Sol",
+      "evaluated_rows": 8,
+      "model_id": "gpt-6-sol",
+      "new36": {
+        "delta": 3,
+        "denominator": 36,
+        "old_holdout_correct": 11,
+        "v2_holdout_correct": 14
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 1,
+        "denominator": 100,
+        "old_holdout_correct": 12,
+        "train_correct_unchanged": 18,
+        "v2_holdout_correct": 13
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 12,
+        "train_correct_unchanged": 18,
+        "v2_holdout_correct": 13
+      },
+      "display_name": "GPT-6 Luna",
+      "evaluated_rows": 2,
+      "model_id": "gpt-6-luna",
+      "new36": {
+        "delta": 0,
+        "denominator": 36,
+        "old_holdout_correct": 0,
+        "v2_holdout_correct": 0
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 2,
+        "denominator": 100,
+        "old_holdout_correct": 37,
+        "train_correct_unchanged": 44,
+        "v2_holdout_correct": 39
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 26,
+        "train_correct_unchanged": 32,
+        "v2_holdout_correct": 27
+      },
+      "display_name": "Claude Sonnet 5.5",
+      "evaluated_rows": 7,
+      "model_id": "claude-sonnet-5-5",
+      "new36": {
+        "delta": 1,
+        "denominator": 36,
+        "old_holdout_correct": 11,
+        "v2_holdout_correct": 12
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 5,
+        "denominator": 100,
+        "old_holdout_correct": 62,
+        "train_correct_unchanged": 90,
+        "v2_holdout_correct": 67
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 42,
+        "train_correct_unchanged": 61,
+        "v2_holdout_correct": 43
+      },
+      "display_name": "GPT-6.1 Sol",
+      "evaluated_rows": 12,
+      "model_id": "gpt-6.1-sol",
+      "new36": {
+        "delta": 4,
+        "denominator": 36,
+        "old_holdout_correct": 20,
+        "v2_holdout_correct": 24
+      }
+    },
+    {
+      "affected_rows": 14,
+      "challenge100": {
+        "delta": 3,
+        "denominator": 100,
+        "old_holdout_correct": 37,
+        "train_correct_unchanged": 57,
+        "v2_holdout_correct": 40
+      },
+      "challenge64": {
+        "delta": 1,
+        "denominator": 64,
+        "old_holdout_correct": 24,
+        "train_correct_unchanged": 42,
+        "v2_holdout_correct": 25
+      },
+      "display_name": "Gemini 4 Argon",
+      "evaluated_rows": 7,
+      "model_id": "gemini-4-argon",
+      "new36": {
+        "delta": 2,
+        "denominator": 36,
+        "old_holdout_correct": 13,
+        "v2_holdout_correct": 15
+      }
+    }
+  ],
+  "note": "Holdout v2: only the 14 changed tasks were re-evaluated; unaffected scores, train results, response selection and token usage are unchanged."
+}

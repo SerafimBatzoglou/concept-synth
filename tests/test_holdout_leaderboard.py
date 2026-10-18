@@ -42,8 +42,8 @@ def test_published_tables_use_total_denominator_and_holdout_sort():
         dataset_path=BENCH / 'data/induction_fullobs_challenge64_v1.yaml.gz',
         eval_path=eval_path, holdout_path=holdout_path, registry_path=registry64)
     assert table_rows(standalone) == rows64
-    assert standalone == (BENCH / 'docs/challenge64_round1_results.md').read_text()
-    for path in ['docs/leaderboard.md', 'docs/challenge64_round1_results.md']:
+    assert standalone == (BENCH / 'docs/challenge64_round1_results_holdout_v1.md').read_text()
+    for path in ['docs/leaderboard_holdout_v1.md', 'docs/challenge64_round1_results_holdout_v1.md']:
         text = (BENCH / path).read_text()
         assert '| Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable |' in text
         assert 'missing' in text and 'unknown' in text

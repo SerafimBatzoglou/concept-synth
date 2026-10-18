@@ -1,0 +1,85 @@
+{
+  "artifacts": [
+    {
+      "path": "benchmarks/induction/data/challenge_holdouts_v2/challenge100_holdouts_v2.jsonl",
+      "sha256": "75e527f802cdb8428f539d6e779734da516f94b2d39d0fa715ea7b1c4171b904",
+      "sizeBytes": 370085
+    },
+    {
+      "path": "benchmarks/induction/data/challenge_holdouts_v2/challenge64_holdouts_v2.jsonl",
+      "sha256": "2dd4285e9fb69efb5efb99dd25014834e3236f23b827d96d4554da3a0935ec9c",
+      "sizeBytes": 225120
+    },
+    {
+      "path": "benchmarks/induction/data/challenge_holdouts_v2/generation_trace.json",
+      "sha256": "c30498302cacad7eff3444aad61366e67ed80e1bf812ccbfe651086ac31ea012",
+      "sizeBytes": 53053
+    },
+    {
+      "path": "benchmarks/induction/data/challenge_holdouts_v2/induction_fullobs_challenge100_v2.yaml.gz",
+      "sha256": "b81d23a39ff0c57bffc2ba0343a699897a6c2d873e5138a8c7b14e36184078cd",
+      "sizeBytes": 119795
+    },
+    {
+      "path": "benchmarks/induction/data/challenge_holdouts_v2/induction_fullobs_challenge64_v2.yaml.gz",
+      "sha256": "989dd42298203c934f355fe7e850dcab74d1febd89743b869c5b3cc5a948dc8b",
+      "sizeBytes": 70845
+    },
+    {
+      "path": "benchmarks/induction/data/challenge_holdouts_v2/manifest.json",
+      "sha256": "4278adaff0f1a17ccac637da7ac86ce370bbfa9ad0bb00010f77a4ce7f6e730d",
+      "sizeBytes": 2025
+    },
+    {
+      "path": "benchmarks/induction/data/challenge_holdouts_v2/policy.json",
+      "sha256": "54a229c6143d8dca57ae697698c2066e574a2f36dfbce199ca1cf724f98fb42f",
+      "sizeBytes": 1934
+    },
+    {
+      "path": "benchmarks/induction/data/challenge_holdouts_v2/validation.json",
+      "sha256": "4369d285c4d5237b538f684962f32770405ab37e0945a1acd1e57ef6474f229e",
+      "sizeBytes": 180
+    },
+    {
+      "path": "benchmarks/induction/data/challenge100_legacy_holdouts_v1.jsonl",
+      "sha256": "fa967a8ec5e9d2d9203869ab0f0d4b86e3a88a3b26ad229c8fbc8a058640b636",
+      "sizeBytes": 324903
+    },
+    {
+      "path": "benchmarks/induction/docs/holdout_v2_policy.json",
+      "sha256": "54a229c6143d8dca57ae697698c2066e574a2f36dfbce199ca1cf724f98fb42f",
+      "sizeBytes": 1934
+    },
+    {
+      "path": "benchmarks/induction/docs/holdout_v2_verification.json",
+      "sha256": "eb4cc7ecb894e91a758fb6ec97c1b7180e7f0dcd552a450d574b35b97d71b758",
+      "sizeBytes": 951
+    },
+    {
+      "path": "benchmarks/induction/docs/challenge_holdouts_v2.md",
+      "sha256": "1ebdce4b9cac7c8a81281af41673322ddc6e76aa2156699c547252185d567395",
+      "sizeBytes": 7066
+    },
+    {
+      "path": "src/concept_synth/induction/complete_holdouts.py",
+      "sha256": "50ec0c1fbcc95bae6e0385fc37a87b4d337d6f74b273f56b2ca3167ff1ff71ff",
+      "sizeBytes": 9703
+    },
+    {
+      "path": "tests/test_complete_holdouts.py",
+      "sha256": "a6e4b6c92495566727b64d3682ef707d708e7076136978268a849816515790fa",
+      "sizeBytes": 4902
+    }
+  ],
+  "schemaVersion": "induction_challenge_holdouts_release_manifest_v2",
+  "scope": "Additive holdout-complete evaluation datasets only; existing scores and model selections unchanged",
+  "tasks": {
+    "challenge100": 100,
+    "challenge64": 64
+  },
+  "version": "challenge-holdouts-v2",
+  "worlds": {
+    "challenge100": 500,
+    "challenge64": 320
+  }
+}
