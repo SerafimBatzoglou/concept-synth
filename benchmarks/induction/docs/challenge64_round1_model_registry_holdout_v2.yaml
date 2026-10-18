@@ -287,5 +287,13 @@ models:
     token budget. First parser-evaluable by actual launch order; never correctness.
   source_type: verified_stored_score_copy
   source_release: gemini_argon_challenge100_20261013
+- id: deepseek-v4.1-flash-1017
+  display_name: DeepSeek 4.1 Flash-1017
+  protocol: MAX first trials; 25 same-MAX transport recoveries; one conditional HIGH
+    retry for a confirmed non-evaluable response. First parser-evaluable by actual
+    launch order, never correctness. Initial75 cap384000; other51 cap393216. Shared25
+    workers; no tools or symbolic processing.
+  source_type: verified_stored_score_copy
+  source_release: deepseek_flash1017_holdout_v2
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge64_round1_model_registry.yaml

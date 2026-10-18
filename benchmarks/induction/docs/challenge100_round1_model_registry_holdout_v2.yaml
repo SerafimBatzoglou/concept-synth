@@ -662,5 +662,24 @@ models:
   challenge100:
     evaluable: 100
     correct: 57
+- id: deepseek-v4.1-flash-1017
+  display_name: DeepSeek 4.1 Flash-1017
+  protocol: MAX first trials; 25 same-MAX transport recoveries; one conditional HIGH
+    retry for a confirmed non-evaluable response. First parser-evaluable by actual
+    launch order, never correctness. Initial75 cap384000; other51 cap393216. Shared25
+    workers; no tools or symbolic processing.
+  challenge64:
+    registry_id: deepseek-v4.1-flash-1017
+    evaluable: 64
+    correct: 21
+  benchmarked36:
+    evaluable: 36
+    correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
+  challenge100:
+    evaluable: 100
+    correct: 21
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge100_round1_model_registry.yaml

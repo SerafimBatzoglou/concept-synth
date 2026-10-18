@@ -300,7 +300,7 @@ def render(
         "",
         "Output tokens include reasoning once and all known attempts, including non-evaluable responses. "
         "Unreported usage is excluded; these figures are lower bounds where usage is missing. "
-        "[Token data](../eval/challenge100_output_token_usage.json).",
+        f"[Token data](../eval/{token_usage_path.name}).",
         "",
         "<details>",
         "<summary>Text-only leaderboard and token usage</summary>",

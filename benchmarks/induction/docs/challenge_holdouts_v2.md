@@ -105,7 +105,10 @@ holdout successes; no previous pass was lost. The other 86 tasks were not rescor
 
 Original v1 predictions, scores, registries and active campaign inputs are
 unchanged. [Historical v1 tables](leaderboard_holdout_v1.md) remain available.
-The unfinished Flash-1017 campaign is excluded from this release.
+The final [DeepSeek 4.1 Flash-1017 result](deepseek_flash1017_results.md) was
+added after its campaign completed: 100 evaluable, 21 train-correct and 9/100
+holdout-correct. Holdouts v2 use five worlds per task; only the 14 changed tasks
+were re-evaluated. The original 48-model release and v1 score files are preserved.
 
 Versioned evidence:
 

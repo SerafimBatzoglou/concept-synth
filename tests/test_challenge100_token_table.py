@@ -14,14 +14,14 @@ SPEC = importlib.util.spec_from_file_location('token_table_renderer', BENCH / 'a
 RENDER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(RENDER)
 REGISTRY = yaml.safe_load((BENCH / 'docs/challenge100_round1_model_registry_holdout_v2.yaml').read_text())
-USAGE_PATH = BENCH / 'eval/challenge100_output_token_usage.json'
+USAGE_PATH = BENCH / 'eval/challenge100_output_token_usage_v2.json'
 NS = {'s': 'http://www.w3.org/2000/svg'}
 
 
 def aligned_rows():
     rows = RENDER.render_challenge100(
         registry=REGISTRY,
-        eval_path=BENCH / 'eval/induction_challenge64_round1_eval_cache_v1.jsonl',
+        eval_path=BENCH / 'eval/induction_challenge64_round1_eval_cache_v2.jsonl',
         holdout_path=BENCH / 'eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl')
     return RENDER.token_aligned_rows(rows, REGISTRY, RENDER.load_token_usage(USAGE_PATH, REGISTRY))
 
@@ -53,7 +53,7 @@ def test_output_totals_include_unsuccessful_attempts_and_reasoning_once():
 
 def test_separate_tables_have_identical_row_positions_and_no_repeated_model_names():
     rows = aligned_rows()
-    assert len(rows) == 29
+    assert len(rows) == 30
     assert all(row[5] == '—*' or re.fullmatch(r'\d+\.\d', row[5]) for row in rows)
     assert rows[0][0] == 'GPT-6 Astra' and rows[0][5:] == ['2.0']
     svg = RENDER.render_challenge100_svg(rows)
@@ -64,7 +64,7 @@ def test_separate_tables_have_identical_row_positions_and_no_repeated_model_name
     assert int(right.attrib['data-x']) - int(left.attrib['data-width']) == 24
     left_rows = left.findall("s:g[@class='data-row']", NS)
     right_rows = right.findall("s:g[@class='data-row']", NS)
-    assert len(left_rows) == len(right_rows) == 29
+    assert len(left_rows) == len(right_rows) == 30
     for i, (lrow, rrow) in enumerate(zip(left_rows, right_rows)):
         ltext = lrow.findall('s:text', NS)
         rtext = rrow.findall('s:text', NS)
@@ -88,7 +88,7 @@ def test_missing_challenge64_usage_is_marked_without_removing_scores():
     assert marked == {'GPT-5.6 Sol', 'GPT-5.6 Terra', 'GPT-5.6 Luna', 'DeepSeek V4 Pro'}
     original = RENDER.render_challenge100(
         registry=REGISTRY,
-        eval_path=BENCH / 'eval/induction_challenge64_round1_eval_cache_v1.jsonl',
+        eval_path=BENCH / 'eval/induction_challenge64_round1_eval_cache_v2.jsonl',
         holdout_path=BENCH / 'eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl')
     assert [row[:5] for row in rows] == [
         [cell.strip() for cell in row.strip('|').split('|')] for row in original]
