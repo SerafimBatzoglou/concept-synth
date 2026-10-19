@@ -159,6 +159,7 @@ def test_predictions_privacy_registries_and_rendered_results():
         assert pred['extractedFormula'] == source[pred['instanceId']]['formula']
         assert pred['rawResponse'] is pred['response'] is pred['thinking'] is None
         assert 'evaluation' not in pred and 'score' not in pred
+        assert not {'strict_correct', 'train_correct', 'holdout_correct'}.intersection(pred['metadata'])
     text = json.dumps([r, preds])
     for forbidden in ('/Users/', '/tmp/', 'pipeline.sqlite', 'candidate_id', 'prompt_id',
                       'response_id', 'api_call_id', 'provider_usage', 'reasoning_content', 'raw_text', 'API_KEY'):

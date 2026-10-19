@@ -147,8 +147,8 @@
     },
     {
       "path": "benchmarks/induction/predictions/mercury3_challenge100_predictions_v2.jsonl.gz",
-      "sha256": "d956efe290408586fff4549b285376a03a3011b1b5960da251078ece35a44351",
-      "sizeBytes": 5668
+      "sha256": "0896b53d23cb1892136927f43b9f8ba6ff93c5e493aa9f4724e82ab92754e185",
+      "sizeBytes": 5628
     },
     {
       "path": "benchmarks/induction/docs/mercury3_results.md",
@@ -157,8 +157,8 @@
     },
     {
       "path": "tests/test_mercury3_results.py",
-      "sha256": "63606221a7a13a94dc766527a9b00e5e33b1d871f3803fc9ab653ef866a2d51e",
-      "sizeBytes": 9168
+      "sha256": "6b4b5547ca3653a0ea2e0adca32fbec222f67f3f8cf106f15d54fee02cc3c772",
+      "sizeBytes": 9273
     }
   ],
   "counts": {
