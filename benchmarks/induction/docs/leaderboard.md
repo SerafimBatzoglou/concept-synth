@@ -2,7 +2,9 @@
 
 **Holdouts v2:** five worlds per task; only the 14 changed tasks re-evaluated. [Version details](challenge_holdouts_v2.md) · [v1 results](leaderboard_holdout_v1.md).
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 30 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
+Inception Mercury 3 used holdouts v2 from the start and includes authorized non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).
+
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 31 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -49,6 +51,7 @@ Output tokens include reasoning once and all known attempts, including non-evalu
 | Muse Spark 1.2 | 8.0% (8/100) | 11/100 (11.0%) | 92/100 | 29.1 / 17.0 | 14.9 |
 | DeepSeek V4 Pro 0813 | 6.0% (6/100) | 15/100 (15.0%) | 98/100 | 130.9 / 77.0 | 8.4 |
 | Gemini 3.5 Flash | 6.0% (6/100) | 7/100 (7.0%) | 98/100 | 16.6 / 15.0 | 6.8 |
+| Inception Mercury 3 | 5.0% (5/100) | 9/100 (9.0%) | 96/100 | 88.1 / 18.0 | 11.6 |
 | DeepSeek V4.1 Flash | 4.0% (4/100) | 11/100 (11.0%) | 97/100 | 92.7 / 37.0 | 14.8 |
 | DeepSeek V4 Pro | 4.0% (4/100) | 6/100 (6.0%) | 94/100 | 31.5 / 16.0 | —* |
 | Gemini 3.6 Flash | 4.0% (4/100) | 5/100 (5.0%) | 93/100 | 16.6 / 16.0 | 7.4 |
@@ -93,6 +96,7 @@ Rows are ranked by Holdout Correct % (out of 64), then Train Correct, Evaluable 
 | DeepSeek V4 Pro 0813 | 9.4% (6/64) | 15/64 (23.4%) | 64/64 | 130.9 / 77.0 |
 | Gemini 3.5 Flash | 9.4% (6/64) | 7/64 (10.9%) | 63/64 | 16.6 / 15.0 |
 | Grok 4.1 Fast | 9.4% (6/64) | 6/64 (9.4%) | 64/64 | 14.8 / 14.5 |
+| Inception Mercury 3 | 7.8% (5/64) | 9/64 (14.1%) | 60/64 | 88.1 / 18.0 |
 | Kimi K3 | 7.8% (5/64) | 7/64 (10.9%) | 64/64 | 22.9 / 17.0 |
 | Claude Opus 4.6 | 7.8% (5/64) | 5/64 (7.8%) | 64/64 | 14.8 / 15.0 |
 | DeepSeek V4.1 Flash | 6.2% (4/64) | 11/64 (17.2%) | 63/64 | 92.7 / 37.0 |

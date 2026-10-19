@@ -681,5 +681,25 @@ models:
   challenge100:
     evaluable: 100
     correct: 21
+- id: inception/mercury-3
+  display_name: Inception Mercury 3
+  protocol: HIGH originals; one HIGH then one MEDIUM non-evaluable retry; human-authorized
+    residual25 HIGH then conditional MEDIUM; residual5 MEDIUM once. First parser-evaluable
+    by actual launch order, never correctness; original exclusion if none. 131072
+    max tokens, shared40 live-local workers; pilot10 used10 workers. No tools, prior
+    outputs or symbolic repair.
+  challenge64:
+    registry_id: inception/mercury-3
+    evaluable: 60
+    correct: 9
+  benchmarked36:
+    evaluable: 36
+    correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
+  challenge100:
+    evaluable: 96
+    correct: 9
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge100_round1_model_registry.yaml

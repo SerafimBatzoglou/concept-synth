@@ -334,6 +334,10 @@ def render(
         lines[2:2] = [
             "**Holdouts v2:** five worlds per task; only the 14 changed tasks re-evaluated. "
             "[Version details](challenge_holdouts_v2.md) · [v1 results](leaderboard_holdout_v1.md).", ""]
+        if any(m['id'] == 'inception/mercury-3' for m in c100['models']):
+            lines[4:4] = [
+                "Inception Mercury 3 used holdouts v2 from the start and includes authorized "
+                "non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).", ""]
     return "\n".join(lines)
 
 

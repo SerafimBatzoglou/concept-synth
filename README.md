@@ -15,8 +15,11 @@ Challenge64 set with 36 additional challenging problems. The leaderboards report
 Challenge100 results and the Challenge64 projection.
 
 [**Holdout-complete v2 datasets**](benchmarks/induction/docs/challenge_holdouts_v2.md)
-provide five holdout worlds per problem. Leaderboards now use v2; only the 14
-changed tasks were re-evaluated, with unchanged solver inputs and responses.
+provide five holdout worlds per problem. Leaderboards now use v2; for previously
+released configurations, only the 14 changed tasks were re-evaluated, with
+unchanged solver inputs and responses. The final
+[Inception Mercury 3 results](benchmarks/induction/docs/mercury3_results.md)
+use holdouts v2 from the start and include the documented non-evaluable-only retry sequence.
 <!-- END INDUCTION CHALLENGE LEADERBOARDS -->
 
 Explore the full releases: [ABD](benchmarks/abduction/) · [INDUCTION](benchmarks/induction/).
