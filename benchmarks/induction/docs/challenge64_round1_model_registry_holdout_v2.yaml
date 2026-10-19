@@ -295,5 +295,14 @@ models:
     workers; no tools or symbolic processing.
   source_type: verified_stored_score_copy
   source_release: deepseek_flash1017_holdout_v2
+- id: inception/mercury-3
+  display_name: Inception Mercury 3
+  protocol: HIGH originals; one HIGH then one MEDIUM non-evaluable retry; human-authorized
+    residual25 HIGH then conditional MEDIUM; residual5 MEDIUM once. First parser-evaluable
+    by actual launch order, never correctness; original exclusion if none. 131072
+    max tokens, shared40 live-local workers; pilot10 used10 workers. No tools, prior
+    outputs or symbolic repair.
+  source_type: verified_stored_score_copy
+  source_release: mercury3_holdout_v2
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge64_round1_model_registry.yaml

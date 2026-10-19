@@ -309,7 +309,8 @@ Public artifacts:
 Current holdout-v2 tables use `docs/challenge100_round1_model_registry_holdout_v2.yaml`
 and `docs/challenge64_round1_model_registry_holdout_v2.yaml`, with the additive
 `eval/induction_challenge64_round1_eval_cache_v2.jsonl` training cache. The final
-[DeepSeek 4.1 Flash-1017 result](docs/deepseek_flash1017_results.md) is included;
+[DeepSeek 4.1 Flash-1017 result](docs/deepseek_flash1017_results.md) and
+[Inception Mercury 3 result](docs/mercury3_results.md) are included;
 historical v1 files remain unchanged. To reproduce both
 leaderboards from the frozen scores (no rescoring):
 

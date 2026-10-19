@@ -1,5 +1,5 @@
 {
-  "as_of_date": "2026-10-18",
+  "as_of_date": "2026-10-19",
   "deduplication": "Reused probes, snapshots and copied response records are counted once; distinct actual retries are included.",
   "models": [
     {
@@ -163,6 +163,14 @@
       "reasoning_included_once": true,
       "source_accounting_sha256": "41ea50214eb02839850d55a66912b35b666e002fc6348ab21b553724d994222a",
       "unreported_responses_lower_bound": 25
+    },
+    {
+      "model_id": "inception/mercury-3",
+      "output_tokens": 11584662,
+      "physical_attempts": 222,
+      "reasoning_included_once": true,
+      "source_accounting_sha256": "7a21a39b67561b0563839d9486fa377d7d0c0f87530022d6460048d0ed2fc037",
+      "unreported_responses_lower_bound": 108
     }
   ],
   "schema_version": "challenge100_output_token_usage_v1",

@@ -2,6 +2,8 @@
 
 **Holdouts v2:** five worlds per task; only the three changed Challenge64 tasks re-evaluated. [Version details](challenge_holdouts_v2.md) · [v1 results](challenge64_round1_results_holdout_v1.md).
 
+Inception Mercury 3 used holdouts v2 from the start and includes authorized non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).
+
 Each configuration contributes one direct Round-1 formula per task. The release contains no symbolic repair or simplification outputs. Rows are ranked by Holdout Correct % over all problems, then Train Correct, Evaluable coverage, and model name.
 
 | Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) |
@@ -35,6 +37,7 @@ Each configuration contributes one direct Round-1 formula per task. The release 
 | DeepSeek V4 Pro 0813 | 9.4% (6/64) | 15/64 (23.4%) | 64/64 | 130.9 / 77.0 |
 | Gemini 3.5 Flash | 9.4% (6/64) | 7/64 (10.9%) | 63/64 | 16.6 / 15.0 |
 | Grok 4.1 Fast | 9.4% (6/64) | 6/64 (9.4%) | 64/64 | 14.8 / 14.5 |
+| Inception Mercury 3 | 7.8% (5/64) | 9/64 (14.1%) | 60/64 | 88.1 / 18.0 |
 | Kimi K3 | 7.8% (5/64) | 7/64 (10.9%) | 64/64 | 22.9 / 17.0 |
 | Claude Opus 4.6 | 7.8% (5/64) | 5/64 (7.8%) | 64/64 | 14.8 / 15.0 |
 | DeepSeek V4.1 Flash | 6.2% (4/64) | 11/64 (17.2%) | 63/64 | 92.7 / 37.0 |

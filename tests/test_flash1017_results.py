@@ -37,13 +37,14 @@ def test_final_results_and_attempt_accounting():
 def test_current_caches_exact_old_prefix_and_new_stored_scores():
     old=rows(B/'eval/induction_challenge64_round1_eval_cache_v1.jsonl')
     train=rows(B/'eval/induction_challenge64_round1_eval_cache_v2.jsonl')
-    assert train[:-64]==old and len(train)==3136
-    assert {x['model_id'] for x in train[-64:]}=={MID}
+    assert train[:3072]==old and len(train)==3200
+    flash_train=train[3072:3136]
+    assert {x['model_id'] for x in flash_train}=={MID}
     holds=[x for x in rows(B/'eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl') if x['model_id']==MID]
     source={t['task_id']:t for t in load(B/'eval/deepseek_flash1017_challenge100_holdout_v2.json')['tasks']}
     validator=jsonschema.Draft202012Validator(load(B/'schemas/eval_cache_record.schema.json'))
-    for row in train[-64:]+holds:validator.validate(row)
-    for row in train[-64:]:
+    for row in flash_train+holds:validator.validate(row)
+    for row in flash_train:
         t=source[row['instance_id']];s=t['stored_train_score']
         assert row['prediction']['formula']==t['formula'] and row['valid']==t['train_correct']
         for k in ('ast_size','quantifier_depth','equality_count'):assert row['prediction'][k]==s[k]
@@ -71,10 +72,11 @@ def test_affected_only_patch_predictions_and_privacy():
         for forbidden in ('/Users/','/tmp/','pipeline.sqlite','prompt_id','response_id','api_call_id','reasoning_content','raw_text','API_KEY'):assert forbidden not in text
     old=load(B/'eval/challenge100_output_token_usage.json')
     new=load(B/'eval/challenge100_output_token_usage_v2.json')
-    assert new['models'][:-1]==old['models'] and new['models'][-1]['unreported_responses_lower_bound']==25
-    for n,count in ((100,30),(64,49)):
+    assert new['models'][:len(old['models'])]==old['models']
+    assert next(m for m in new['models'] if m['model_id']==MID)['unreported_responses_lower_bound']==25
+    for n,count in ((100,31),(64,50)):
         registry=yaml.safe_load((B/f'docs/challenge{n}_round1_model_registry_holdout_v2.yaml').read_text())
-        assert len(registry['models'])==count and registry['models'][-1]['id']==MID
+        assert len(registry['models'])==count and registry['models'][-2]['id']==MID
 
 def test_current_rendered_flash_scores():
     text=(B/'docs/leaderboard.md').read_text()

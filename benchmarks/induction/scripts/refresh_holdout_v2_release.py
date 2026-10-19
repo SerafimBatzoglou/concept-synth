@@ -50,10 +50,14 @@ def main():
         BENCH/'predictions/deepseek_flash1017_challenge100_predictions_v2.jsonl.gz',
         BENCH/'docs/deepseek_flash1017_results.md',ROOT/'tests/test_flash1017_results.py',
         ROOT/'tests/test_challenge100_token_table.py',
+        BENCH/'eval/mercury3_challenge100_holdout_v2.json',
+        BENCH/'predictions/mercury3_challenge100_predictions_v2.jsonl.gz',
+        BENCH/'docs/mercury3_results.md',ROOT/'tests/test_mercury3_results.py',
     ]
     save(MANIFEST,{'schemaVersion':'induction_holdout_evaluation_release_manifest_v2',
-        'version':'challenge-holdouts-v2','date':'2026-10-18','license':'MIT',
-        'scope':'Verified completed configurations: 49 Challenge64, 30 Challenge100, including final Flash-1017.',
+        'version':'challenge-holdouts-v2','date':'2026-10-19','license':'MIT',
+        'scope':'Verified completed configurations: 50 Challenge64, 31 Challenge100, including final Flash-1017 and Mercury 3.',
+        'currentConfigurations':{'challenge64':50,'challenge100':31},
         'counts':{'affectedTasks':14,'affectedModelTaskRows':477,'eligibleHoldoutEvaluations':136,
                   'skippedIneligibleRows':341,'unchangedTasksNotRescored':86,'newlyMeasurablePasses':60},
         'initialRelease':{'challenge64Configurations':48,'challenge100Configurations':29,
@@ -62,6 +66,11 @@ def main():
         'flash1017Supplement':{'affectedRows':14,'eligibleHoldoutEvaluations':3,'skippedIneligibleRows':11,
             'report':'benchmarks/induction/eval/deepseek_flash1017_challenge100_holdout_v2.json',
             'previous48ModelsPreserved':True,'initialV2TrainingRowsCopiedExactly':3072},
+        'mercury3Supplement':{'selectedTasks':100,'evaluable':96,'strictEvaluable':95,
+            'trainCorrect':9,'holdoutCorrect':5,'physicalRequests':222,
+            'holdoutV2UsedFromStart':True,'previous49ModelsPreserved':True,
+            'previousV2TrainingAndHoldoutRowsCopiedExactly':3136,
+            'report':'benchmarks/induction/eval/mercury3_challenge100_holdout_v2.json'},
         'modelApiCalls':0,'publicationScorerCalls':0,'preservedV1SourceHashes':preserved,
         'artifacts':[artifact(p) for p in paths]})
     print(f'Refreshed {MANIFEST.name}; historical source hashes verified.')
