@@ -20,6 +20,10 @@ released configurations, only the 14 changed tasks were re-evaluated, with
 unchanged solver inputs and responses. The final
 [Inception Mercury 3 results](benchmarks/induction/docs/mercury3_results.md)
 use holdouts v2 from the start and include the documented non-evaluable-only retry sequence.
+The [Kimi K3.1 Pro results](benchmarks/induction/docs/kimi_k31_pro_results.md)
+also use v2 from the start: MAX reasoning, a 500,000-token completion cap including
+thinking, and transport-only retries. Its final result is 34 training-correct and
+21 holdout-correct out of 100, with 99 evaluable answers.
 <!-- END INDUCTION CHALLENGE LEADERBOARDS -->
 
 Explore the full releases: [ABD](benchmarks/abduction/) · [INDUCTION](benchmarks/induction/).

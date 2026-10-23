@@ -12,33 +12,33 @@
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl",
-      "sha256": "2540cfc292679a9d644848e7efad8d6e2aed0f68e69d0f3f3cf71a7f4c06015d",
-      "sizeBytes": 3696006
+      "sha256": "a0d41b49cfd0ff8c670cd88440de7192ca6188d2891d5a5fe495163b3fddce9b",
+      "sizeBytes": 3771022
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_model_registry_holdout_v2.yaml",
-      "sha256": "ce3472d03be11a1ee5828821bd001695f24d94586c4f67cd3fa0086e9f1cd6f1",
-      "sizeBytes": 17014
+      "sha256": "2581d3e0bf28af200df5c2cdebab491a3d6c7a3c2f810623cfb309d2eeb7fd47",
+      "sizeBytes": 17720
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry_holdout_v2.yaml",
-      "sha256": "977e7e1e534d4acabbf9d8be966fb745b3c5b1ddd538701481986001d0e6082a",
-      "sizeBytes": 13128
+      "sha256": "7ca849bf10abbd08250877c95a67c5c30c3dc8c85d6d18e9a04fe800ebb8ad68",
+      "sizeBytes": 13623
     },
     {
       "path": "benchmarks/induction/docs/leaderboard.md",
-      "sha256": "9b840563ce8368e04bf7a064a5c21e5b8c286c929ebd321b2fea60873e4ec97c",
-      "sizeBytes": 8776
+      "sha256": "665cc865f887b7801958e40e53d484996e4322f231c13c6e599477a6d522051b",
+      "sizeBytes": 9174
     },
     {
       "path": "benchmarks/induction/docs/challenge100_leaderboard.svg",
-      "sha256": "7d14b0a0d240d8b94a889135f42050d9dd0a2da1154b0de1af6e3c8607ade567",
-      "sizeBytes": 22384
+      "sha256": "8145551ddddb1e01a72fe49ca90d4d41539ec7b3de83e49fe892a482599e1c62",
+      "sizeBytes": 23117
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_results.md",
-      "sha256": "3f60b5b3f1ae125215bb87bb603781490edbd4520187971724369cd513b26e5d",
-      "sizeBytes": 4738
+      "sha256": "a8035c7263a7dd970b52ade28c90ddad78589356286a1aa200078a7c017c5f3f",
+      "sizeBytes": 4810
     },
     {
       "path": "benchmarks/induction/docs/leaderboard_holdout_v1.md",
@@ -72,8 +72,8 @@
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge100_leaderboard.py",
-      "sha256": "d9af18da62eeafe9ef1ba15b418c18cc962e115c9987112937ba8a30e20bcdbe",
-      "sizeBytes": 19084
+      "sha256": "ba8d0d95bb6bbc0fa4e68614209135469f58377404262a0ab59b610676b1b51f",
+      "sizeBytes": 19483
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge64_round1_table.py",
@@ -82,13 +82,13 @@
     },
     {
       "path": "benchmarks/induction/scripts/refresh_holdout_v2_release.py",
-      "sha256": "4c6fd1d126c6403527793c961331fb5aa05ddaedd29d0678915788cc68eb90b6",
-      "sizeBytes": 5291
+      "sha256": "1a19635bef185e78889458fa460c1c045e00df07aa93211eeadfde0efcb13c9a",
+      "sizeBytes": 5984
     },
     {
       "path": "tests/test_holdout_v2_results.py",
-      "sha256": "aa9baf4be4209f1d657b444c62bec2568c50476a2f3441b1a89efeeb2e9d57d5",
-      "sizeBytes": 6209
+      "sha256": "48cfce43211e3c304bc0539260d1631dd4754f562954d1492ea8ad488af1bfc2",
+      "sizeBytes": 6274
     },
     {
       "path": "benchmarks/induction/data/challenge_holdouts_v2/manifest.json",
@@ -97,13 +97,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "44b06a1a13cc687408a6c5c6217a4826ccb37a2ab54c3980bf15e1f613280d4a",
-      "sizeBytes": 3922
+      "sha256": "99259affeac4951888b80d129a6ad47c129b0999e054e8316c56825e5add301f",
+      "sizeBytes": 4225
     },
     {
       "path": "benchmarks/induction/README.md",
-      "sha256": "f9ab072a16bf9f0620018b5e5ad514869e4d11f5a5e4d6911150f8815c089afc",
-      "sizeBytes": 11882
+      "sha256": "0bc791e540461f1eaf48b3d14a04d24a03629c4467f955e517567267325de648",
+      "sizeBytes": 11937
     },
     {
       "path": "benchmarks/induction/eval/deepseek_flash1017_challenge100_holdout_v2.json",
@@ -112,13 +112,13 @@
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v2.jsonl",
-      "sha256": "6a64a8d79098a3520133658c4bbf013848cd52cd838130a2b48a18dedaa5b8cd",
-      "sizeBytes": 4493308
+      "sha256": "07dcdd9ae5aa64a2f5396f17d95d877f71b570d2ea252c759a60742851fcfbec",
+      "sizeBytes": 4599500
     },
     {
       "path": "benchmarks/induction/eval/challenge100_output_token_usage_v2.json",
-      "sha256": "62dc01d4eddf68cc1f0f7e8d6e928dbfde36779119ac4c5070ffe21b4a155fcb",
-      "sizeBytes": 5669
+      "sha256": "a577224e9da95a84585968b665acb668e96d2baebb7a2fe0ee986b8c5ad9053a",
+      "sizeBytes": 5968
     },
     {
       "path": "benchmarks/induction/predictions/deepseek_flash1017_challenge100_predictions_v2.jsonl.gz",
@@ -132,12 +132,12 @@
     },
     {
       "path": "tests/test_flash1017_results.py",
-      "sha256": "bcaa86a685bcf99d638650c936cd09748d9b31e284541e20537e62257a094d02",
+      "sha256": "c344dd9050d4ddda7758952248191cb80e65564a83262ea0754e3e81f7a3a602",
       "sizeBytes": 5277
     },
     {
       "path": "tests/test_challenge100_token_table.py",
-      "sha256": "ecbda1528160c0730ccbc99b69f0f12d43b85d2f58a1ccc6896d7c7dc53a89df",
+      "sha256": "f3d8a9b96fdf80e144b16de048eb5e599e7abb278602a098c81f6add82a7a4d5",
       "sizeBytes": 5893
     },
     {
@@ -157,8 +157,28 @@
     },
     {
       "path": "tests/test_mercury3_results.py",
-      "sha256": "6b4b5547ca3653a0ea2e0adca32fbec222f67f3f8cf106f15d54fee02cc3c772",
-      "sizeBytes": 9273
+      "sha256": "690eb9ec60367d2254b07a56a6d145a2b50808ddbf77594fc0e2699686b4e105",
+      "sizeBytes": 9277
+    },
+    {
+      "path": "benchmarks/induction/eval/kimi_k31_pro_challenge100_holdout_v2.json",
+      "sha256": "2c587691aec1f1282b177222480f866d6c016e763dc7aaf03cfb35b075cd679a",
+      "sizeBytes": 314904
+    },
+    {
+      "path": "benchmarks/induction/predictions/kimi_k31_pro_challenge100_predictions_v2.jsonl.gz",
+      "sha256": "79680b396f04d67c75ed3151b0fdca484cf94b9c5c8248e2ac09b995b34c2b26",
+      "sizeBytes": 3973
+    },
+    {
+      "path": "benchmarks/induction/docs/kimi_k31_pro_results.md",
+      "sha256": "dab44870d1d0cc7ffa558a89de5229f93ed5158200599952729a55f2fda335bc",
+      "sizeBytes": 4817
+    },
+    {
+      "path": "tests/test_kimi_k31_pro_results.py",
+      "sha256": "79a1a4751b7f228044820d9905d4999bcbc0b6bd4336637a19465c6bec05fb66",
+      "sizeBytes": 8619
     }
   ],
   "counts": {
@@ -170,10 +190,10 @@
     "unchangedTasksNotRescored": 86
   },
   "currentConfigurations": {
-    "challenge100": 31,
-    "challenge64": 50
+    "challenge100": 32,
+    "challenge64": 51
   },
-  "date": "2026-10-19",
+  "date": "2026-10-23",
   "flash1017Supplement": {
     "affectedRows": 14,
     "eligibleHoldoutEvaluations": 3,
@@ -189,6 +209,20 @@
     "eligibleHoldoutEvaluations": 133,
     "evidence": "benchmarks/induction/docs/holdout_v2_evaluation_verification.json",
     "skippedIneligibleRows": 330
+  },
+  "kimiK31ProSupplement": {
+    "evaluable": 99,
+    "holdoutCorrect": 21,
+    "holdoutV2UsedFromStart": true,
+    "physicalRequests": 138,
+    "previous50ModelsPreserved": true,
+    "previousV2TrainingAndHoldoutRowsCopiedExactly": 3200,
+    "remoteUnknownRequests": 38,
+    "report": "benchmarks/induction/eval/kimi_k31_pro_challenge100_holdout_v2.json",
+    "selectedTasks": 100,
+    "strictEvaluable": 98,
+    "trainCorrect": 34,
+    "transportRetries": 38
   },
   "license": "MIT",
   "mercury3Supplement": {
@@ -235,6 +269,6 @@
   },
   "publicationScorerCalls": 0,
   "schemaVersion": "induction_holdout_evaluation_release_manifest_v2",
-  "scope": "Verified completed configurations: 50 Challenge64, 31 Challenge100, including final Flash-1017 and Mercury 3.",
+  "scope": "Verified completed configurations: 51 Challenge64, 32 Challenge100, including final Flash-1017, Mercury 3 and Kimi K3.1 Pro.",
   "version": "challenge-holdouts-v2"
 }

@@ -37,7 +37,7 @@ def test_final_results_and_attempt_accounting():
 def test_current_caches_exact_old_prefix_and_new_stored_scores():
     old=rows(B/'eval/induction_challenge64_round1_eval_cache_v1.jsonl')
     train=rows(B/'eval/induction_challenge64_round1_eval_cache_v2.jsonl')
-    assert train[:3072]==old and len(train)==3200
+    assert train[:3072]==old and len(train)==3264
     flash_train=train[3072:3136]
     assert {x['model_id'] for x in flash_train}=={MID}
     holds=[x for x in rows(B/'eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl') if x['model_id']==MID]
@@ -74,9 +74,9 @@ def test_affected_only_patch_predictions_and_privacy():
     new=load(B/'eval/challenge100_output_token_usage_v2.json')
     assert new['models'][:len(old['models'])]==old['models']
     assert next(m for m in new['models'] if m['model_id']==MID)['unreported_responses_lower_bound']==25
-    for n,count in ((100,31),(64,50)):
+    for n,count in ((100,32),(64,51)):
         registry=yaml.safe_load((B/f'docs/challenge{n}_round1_model_registry_holdout_v2.yaml').read_text())
-        assert len(registry['models'])==count and registry['models'][-2]['id']==MID
+        assert len(registry['models'])==count and registry['models'][-3]['id']==MID
 
 def test_current_rendered_flash_scores():
     text=(B/'docs/leaderboard.md').read_text()

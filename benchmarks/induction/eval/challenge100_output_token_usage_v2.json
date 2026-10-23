@@ -1,5 +1,5 @@
 {
-  "as_of_date": "2026-10-19",
+  "as_of_date": "2026-10-23",
   "deduplication": "Reused probes, snapshots and copied response records are counted once; distinct actual retries are included.",
   "models": [
     {
@@ -171,6 +171,14 @@
       "reasoning_included_once": true,
       "source_accounting_sha256": "7a21a39b67561b0563839d9486fa377d7d0c0f87530022d6460048d0ed2fc037",
       "unreported_responses_lower_bound": 108
+    },
+    {
+      "model_id": "kimi-k3.1-pro",
+      "output_tokens": 11539644,
+      "physical_attempts": 138,
+      "reasoning_included_once": true,
+      "source_accounting_sha256": "9f504fd57d47f31b9d0cd59308387c74d402fd96566b0b3bd187e13b2302d33a",
+      "unreported_responses_lower_bound": 38
     }
   ],
   "schema_version": "challenge100_output_token_usage_v1",

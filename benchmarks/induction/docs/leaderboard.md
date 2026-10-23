@@ -2,9 +2,11 @@
 
 **Holdouts v2:** five worlds per task; only the 14 changed tasks re-evaluated. [Version details](challenge_holdouts_v2.md) · [v1 results](leaderboard_holdout_v1.md).
 
+Kimi K3.1 Pro used holdouts v2 from the start, MAX reasoning and a 500,000-token completion cap including thinking. Its 38 transport retries preserve unknown usage for interrupted originals. [Protocol and accounting](kimi_k31_pro_results.md).
+
 Inception Mercury 3 used holdouts v2 from the start and includes authorized non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 31 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 32 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -33,6 +35,7 @@ Output tokens include reasoning once and all known attempts, including non-evalu
 | Claude Sonnet 5.5 | 39.0% (39/100) | 44/100 (44.0%) | 100/100 | 19.0 / 17.0 | 56.0 |
 | Fable 5.1 | 31.0% (31/100) | 33/100 (33.0%) | 66/100 | 18.1 / 16.0 | 32.1 |
 | GPT-5.6 Sol | 26.0% (26/100) | 43/100 (43.0%) | 99/100 | 125.0 / 18.0 | —* |
+| Kimi K3.1 Pro | 21.0% (21/100) | 34/100 (34.0%) | 99/100 | 45.4 / 18.0 | 11.5 |
 | Claude Opus 5 | 21.0% (21/100) | 24/100 (24.0%) | 97/100 | 18.8 / 16.0 | 27.1 |
 | Fable 5 | 20.0% (20/100) | 31/100 (31.0%) | 96/100 | 46.1 / 18.0 | 16.4 |
 | GPT-5.6 Terra | 18.0% (18/100) | 25/100 (25.0%) | 98/100 | 66.6 / 18.0 | —* |
@@ -76,6 +79,7 @@ Rows are ranked by Holdout Correct % (out of 64), then Train Correct, Evaluable 
 | GPT-5.6 Sol | 31.2% (20/64) | 37/64 (57.8%) | 63/64 | 143.0 / 18.0 |
 | Fable 5.1 | 31.2% (20/64) | 22/64 (34.4%) | 47/64 | 17.6 / 16.0 |
 | Claude Opus 5 | 28.1% (18/64) | 21/64 (32.8%) | 62/64 | 19.2 / 16.0 |
+| Kimi K3.1 Pro | 26.6% (17/64) | 30/64 (46.9%) | 63/64 | 49.3 / 20.5 |
 | GPT-5.6 Terra | 26.6% (17/64) | 24/64 (37.5%) | 62/64 | 68.8 / 18.0 |
 | Fable 5 | 25.0% (16/64) | 27/64 (42.2%) | 63/64 | 50.3 / 18.0 |
 | Grok 4.6 | 25.0% (16/64) | 23/64 (35.9%) | 62/64 | 76.9 / 17.0 |
