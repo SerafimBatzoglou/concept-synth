@@ -304,5 +304,14 @@ models:
     outputs or symbolic repair.
   source_type: verified_stored_score_copy
   source_release: mercury3_holdout_v2
+- id: kimi-k3.1-pro
+  display_name: Kimi K3.1 Pro
+  protocol: MAX reasoning, 500000 completion tokens including thinking, direct Moonshot.
+    Random pilot10 (seed20261023), remaining90; at most50 concurrent local workers.
+    Up to three same-settings retries for closed accepted disconnected streams only;
+    38 first retries used, no second or third retries. No tools, prior outputs or
+    symbolic repair.
+  source_type: verified_stored_score_copy
+  source_release: kimi_k31_pro_holdout_v2
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge64_round1_model_registry.yaml

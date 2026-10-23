@@ -338,6 +338,11 @@ def render(
             lines[4:4] = [
                 "Inception Mercury 3 used holdouts v2 from the start and includes authorized "
                 "non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).", ""]
+        if any(m['id'] == 'kimi-k3.1-pro' for m in c100['models']):
+            lines[4:4] = [
+                "Kimi K3.1 Pro used holdouts v2 from the start, MAX reasoning and a 500,000-token "
+                "completion cap including thinking. Its 38 transport retries preserve unknown usage "
+                "for interrupted originals. [Protocol and accounting](kimi_k31_pro_results.md).", ""]
     return "\n".join(lines)
 
 
