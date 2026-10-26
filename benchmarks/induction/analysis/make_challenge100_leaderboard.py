@@ -343,6 +343,12 @@ def render(
                 "Kimi K3.1 Pro used holdouts v2 from the start, MAX reasoning and a 500,000-token "
                 "completion cap including thinking. Its 38 transport retries preserve unknown usage "
                 "for interrupted originals. [Protocol and accounting](kimi_k31_pro_results.md).", ""]
+        if any(m['id'] == 'claude-haiku-5-5' for m in c100['models']):
+            lines[4:4] = [
+                "Claude Haiku 5.5 used holdouts v2 from the start and a 128,000-token inclusive cap. "
+                "The pilot used MAX through MEDIUM; remaining90 used XHIGH, then non-evaluable-only "
+                "HIGH/MEDIUM retries. Six failed streams retain unknown final usage. "
+                "[Protocol and accounting](haiku55_results.md).", ""]
     return "\n".join(lines)
 
 

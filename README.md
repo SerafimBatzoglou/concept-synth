@@ -24,6 +24,10 @@ The [Kimi K3.1 Pro results](benchmarks/induction/docs/kimi_k31_pro_results.md)
 also use v2 from the start: MAX reasoning, a 500,000-token completion cap including
 thinking, and transport-only retries. Its final result is 34 training-correct and
 21 holdout-correct out of 100, with 99 evaluable answers.
+The [Claude Haiku 5.5 results](benchmarks/induction/docs/haiku55_results.md)
+use adaptive thinking with a 128,000-token inclusive cap and bounded,
+non-evaluable-only lower-effort retries: 16 training-correct and 15 holdout-correct
+out of 100, with 99 strictly evaluable answers.
 <!-- END INDUCTION CHALLENGE LEADERBOARDS -->
 
 Explore the full releases: [ABD](benchmarks/abduction/) · [INDUCTION](benchmarks/induction/).

@@ -2,11 +2,13 @@
 
 **Holdouts v2:** five worlds per task; only the 14 changed tasks re-evaluated. [Version details](challenge_holdouts_v2.md) · [v1 results](leaderboard_holdout_v1.md).
 
+Claude Haiku 5.5 used holdouts v2 from the start and a 128,000-token inclusive cap. The pilot used MAX through MEDIUM; remaining90 used XHIGH, then non-evaluable-only HIGH/MEDIUM retries. Six failed streams retain unknown final usage. [Protocol and accounting](haiku55_results.md).
+
 Kimi K3.1 Pro used holdouts v2 from the start, MAX reasoning and a 500,000-token completion cap including thinking. Its 38 transport retries preserve unknown usage for interrupted originals. [Protocol and accounting](kimi_k31_pro_results.md).
 
 Inception Mercury 3 used holdouts v2 from the start and includes authorized non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 32 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 33 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -44,6 +46,7 @@ Output tokens include reasoning once and all known attempts, including non-evalu
 | Qwen 3.8 Max | 15.0% (15/100) | 27/100 (27.0%) | 83/100 | 82.5 / 18.0 | 11.8 |
 | Grok 4.7 | 15.0% (15/100) | 24/100 (24.0%) | 100/100 | 59.0 / 17.0 | 18.1 |
 | Muse Spark 1.1 | 15.0% (15/100) | 21/100 (21.0%) | 86/100 | 49.8 / 17.0 | 20.7 |
+| Claude Haiku 5.5 | 15.0% (15/100) | 16/100 (16.0%) | 99/100 | 16.4 / 16.0 | 23.3 |
 | GPT-6 Luna | 13.0% (13/100) | 18/100 (18.0%) | 100/100 | 21.4 / 16.5 | 13.3 |
 | Gemini 3.7 Flash | 10.0% (10/100) | 11/100 (11.0%) | 100/100 | 16.4 / 15.0 | 5.6 |
 | DeepSeek 4.1 Flash-1017 | 9.0% (9/100) | 21/100 (21.0%) | 100/100 | 118.9 / 40.0 | 12.5 |
@@ -86,6 +89,7 @@ Rows are ranked by Holdout Correct % (out of 64), then Train Correct, Evaluable 
 | Muse Spark 1.3 | 25.0% (16/64) | 23/64 (35.9%) | 59/64 | 47.6 / 17.0 |
 | Qwen 3.8 Max | 23.4% (15/64) | 27/64 (42.2%) | 63/64 | 82.5 / 18.0 |
 | Muse Spark 1.1 | 23.4% (15/64) | 21/64 (32.8%) | 56/64 | 49.8 / 17.0 |
+| Claude Haiku 5.5 | 21.9% (14/64) | 15/64 (23.4%) | 63/64 | 16.4 / 16.0 |
 | Grok 4.7 | 20.3% (13/64) | 22/64 (34.4%) | 64/64 | 62.9 / 17.5 |
 | GPT-6 Luna | 20.3% (13/64) | 18/64 (28.1%) | 64/64 | 21.4 / 16.5 |
 | Grok 4 | 18.8% (12/64) | 13/64 (20.3%) | 59/64 | 17.7 / 16.0 |

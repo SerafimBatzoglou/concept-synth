@@ -1,5 +1,5 @@
 {
-  "as_of_date": "2026-10-23",
+  "as_of_date": "2026-10-26",
   "deduplication": "Reused probes, snapshots and copied response records are counted once; distinct actual retries are included.",
   "models": [
     {
@@ -179,6 +179,14 @@
       "reasoning_included_once": true,
       "source_accounting_sha256": "9f504fd57d47f31b9d0cd59308387c74d402fd96566b0b3bd187e13b2302d33a",
       "unreported_responses_lower_bound": 38
+    },
+    {
+      "model_id": "claude-haiku-5-5",
+      "output_tokens": 23323724,
+      "physical_attempts": 234,
+      "reasoning_included_once": true,
+      "source_accounting_sha256": "d1a4e5d5f4376012bde26f129a56397a3030c1b8af2b665a5088c500cc38a308",
+      "unreported_responses_lower_bound": 6
     }
   ],
   "schema_version": "challenge100_output_token_usage_v1",

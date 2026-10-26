@@ -125,7 +125,7 @@ def test_exact_prior_cache_bytes_and_new_stored_scores():
                           ('induction_challenge64_round1_holdout_eval_cache_v2.jsonl', True)]:
         path = B / 'eval' / name
         lines = path.read_bytes().splitlines(keepends=True)
-        assert len(lines) == 3264
+        assert len(lines) == 3328
         assert hashlib.sha256(b''.join(lines[:3136])).hexdigest() == before[str(path.relative_to(ROOT))]
         added = [json.loads(line) for line in lines[3136:3200]]
         assert len({row['instance_id'] for row in added}) == 64
@@ -164,9 +164,9 @@ def test_predictions_privacy_registries_and_rendered_results():
     for forbidden in ('/Users/', '/tmp/', 'pipeline.sqlite', 'candidate_id', 'prompt_id',
                       'response_id', 'api_call_id', 'provider_usage', 'reasoning_content', 'raw_text', 'API_KEY'):
         assert forbidden not in text
-    for n, count in [(100, 32), (64, 51)]:
+    for n, count in [(100, 33), (64, 52)]:
         registry = yaml.safe_load((B / f'docs/challenge{n}_round1_model_registry_holdout_v2.yaml').read_text())
-        assert len(registry['models']) == count and registry['models'][-2]['id'] == MID
+        assert len(registry['models']) == count and registry['models'][-3]['id'] == MID
     table = (B / 'docs/leaderboard.md').read_text()
     assert '| Inception Mercury 3 | 5.0% (5/100) | 9/100 (9.0%) | 96/100 | 88.1 / 18.0 | 11.6 |' in table
     assert '| Inception Mercury 3 | 7.8% (5/64) | 9/64 (14.1%) | 60/64 | 88.1 / 18.0 |' in table
