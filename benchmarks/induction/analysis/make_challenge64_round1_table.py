@@ -139,6 +139,10 @@ def render(
             lines[4:4] = [
                 "Inception Mercury 3 used holdouts v2 from the start and includes authorized "
                 "non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).", ""]
+        if any(m['id'] == 'claude-haiku-5-5' for m in models):
+            lines[4:4] = [
+                "Claude Haiku 5.5 used holdouts v2 from the start with bounded non-evaluable-only "
+                "lower-effort retries. [Protocol and accounting](haiku55_results.md).", ""]
     return "\n".join(lines)
 
 

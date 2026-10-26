@@ -2,6 +2,8 @@
 
 **Holdouts v2:** five worlds per task; only the three changed Challenge64 tasks re-evaluated. [Version details](challenge_holdouts_v2.md) · [v1 results](challenge64_round1_results_holdout_v1.md).
 
+Claude Haiku 5.5 used holdouts v2 from the start with bounded non-evaluable-only lower-effort retries. [Protocol and accounting](haiku55_results.md).
+
 Inception Mercury 3 used holdouts v2 from the start and includes authorized non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).
 
 Each configuration contributes one direct Round-1 formula per task. The release contains no symbolic repair or simplification outputs. Rows are ranked by Holdout Correct % over all problems, then Train Correct, Evaluable coverage, and model name.
@@ -24,6 +26,7 @@ Each configuration contributes one direct Round-1 formula per task. The release 
 | Muse Spark 1.3 | 25.0% (16/64) | 23/64 (35.9%) | 59/64 | 47.6 / 17.0 |
 | Qwen 3.8 Max | 23.4% (15/64) | 27/64 (42.2%) | 63/64 | 82.5 / 18.0 |
 | Muse Spark 1.1 | 23.4% (15/64) | 21/64 (32.8%) | 56/64 | 49.8 / 17.0 |
+| Claude Haiku 5.5 | 21.9% (14/64) | 15/64 (23.4%) | 63/64 | 16.4 / 16.0 |
 | Grok 4.7 | 20.3% (13/64) | 22/64 (34.4%) | 64/64 | 62.9 / 17.5 |
 | GPT-6 Luna | 20.3% (13/64) | 18/64 (28.1%) | 64/64 | 21.4 / 16.5 |
 | Grok 4 | 18.8% (12/64) | 13/64 (20.3%) | 59/64 | 17.7 / 16.0 |

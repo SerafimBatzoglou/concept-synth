@@ -313,5 +313,14 @@ models:
     symbolic repair.
   source_type: verified_stored_score_copy
   source_release: kimi_k31_pro_holdout_v2
+- id: claude-haiku-5-5
+  display_name: Claude Haiku 5.5
+  protocol: 'Direct Anthropic adaptive thinking, 128000 tokens including thinking.
+    Random pilot10 seed20261025: MAX then non-evaluable-only XHIGH/HIGH/MEDIUM; remaining90:
+    XHIGH then non-evaluable-only HIGH/MEDIUM. Rolling retries under50 local workers.
+    First evaluable response retained, including incorrect answers. No tools, prior
+    outputs or symbolic repair.'
+  source_type: verified_stored_score_copy
+  source_release: haiku55_holdout_v2
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge64_round1_model_registry.yaml

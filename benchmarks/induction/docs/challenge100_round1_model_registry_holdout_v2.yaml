@@ -725,5 +725,26 @@ models:
   challenge100:
     evaluable: 99
     correct: 34
+- id: claude-haiku-5-5
+  display_name: Claude Haiku 5.5
+  protocol: 'Direct Anthropic adaptive thinking, 128000 tokens including thinking.
+    Random pilot10 seed20261025: MAX then non-evaluable-only XHIGH/HIGH/MEDIUM; remaining90:
+    XHIGH then non-evaluable-only HIGH/MEDIUM. Rolling retries under50 local workers.
+    First evaluable response retained, including incorrect answers. No tools, prior
+    outputs or symbolic repair.'
+  challenge64:
+    registry_id: claude-haiku-5-5
+    evaluable: 63
+    correct: 15
+  benchmarked36:
+    evaluable: 36
+    correct: 1
+    correct_formula_ast_sizes:
+    - 16
+    holdout_evaluable: 1
+    holdout_correct: 1
+  challenge100:
+    evaluable: 99
+    correct: 16
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge100_round1_model_registry.yaml
