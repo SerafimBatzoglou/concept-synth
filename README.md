@@ -28,6 +28,10 @@ The [Claude Haiku 5.5 results](benchmarks/induction/docs/haiku55_results.md)
 use adaptive thinking with a 128,000-token inclusive cap and bounded,
 non-evaluable-only lower-effort retries: 16 training-correct and 15 holdout-correct
 out of 100, with 99 strictly evaluable answers.
+The [GPT-6.1 Terra results](benchmarks/induction/docs/terra61_results.md)
+use Flex, MAX reasoning and a 128,000-token inclusive output cap, with rolling
+non-evaluable-only XHIGH retries: 67 training-correct and 33 holdout-correct
+out of 100, with 100 evaluable answers (99 strict).
 <!-- END INDUCTION CHALLENGE LEADERBOARDS -->
 
 Explore the full releases: [ABD](benchmarks/abduction/) · [INDUCTION](benchmarks/induction/).

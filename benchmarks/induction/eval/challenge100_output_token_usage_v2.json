@@ -187,6 +187,14 @@
       "reasoning_included_once": true,
       "source_accounting_sha256": "d1a4e5d5f4376012bde26f129a56397a3030c1b8af2b665a5088c500cc38a308",
       "unreported_responses_lower_bound": 6
+    },
+    {
+      "model_id": "gpt-6.1-terra",
+      "output_tokens": 11959948,
+      "physical_attempts": 159,
+      "reasoning_included_once": true,
+      "source_accounting_sha256": "885419166b660157670ceb92149a735da440804decd25f95bc01a163f7850095",
+      "unreported_responses_lower_bound": 1
     }
   ],
   "schema_version": "challenge100_output_token_usage_v1",

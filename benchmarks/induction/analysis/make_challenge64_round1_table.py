@@ -143,6 +143,10 @@ def render(
             lines[4:4] = [
                 "Claude Haiku 5.5 used holdouts v2 from the start with bounded non-evaluable-only "
                 "lower-effort retries. [Protocol and accounting](haiku55_results.md).", ""]
+        if any(m['id'] == 'gpt-6.1-terra' for m in models):
+            lines[4:4] = [
+                "GPT-6.1 Terra used holdouts v2 from the start, Flex and bounded non-evaluable-only "
+                "lower-effort retries. [Protocol and accounting](terra61_results.md).", ""]
     return "\n".join(lines)
 
 
