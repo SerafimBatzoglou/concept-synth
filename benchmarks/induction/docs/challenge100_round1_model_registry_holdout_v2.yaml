@@ -746,5 +746,39 @@ models:
   challenge100:
     evaluable: 99
     correct: 16
+- id: gpt-6.1-terra
+  display_name: GPT-6.1 Terra
+  protocol: Direct OpenAI Responses, MAX then non-evaluable-only XHIGH/HIGH, 128000
+    output tokens including reasoning,50 rolling local workers. Flex first; standard
+    fallback only after explicit unaccepted Flex unavailability. All159 accepted calls
+    used Flex. First evaluable retained including incorrect answers. No tools, prior
+    outputs or symbolic repair.
+  challenge64:
+    registry_id: gpt-6.1-terra
+    evaluable: 64
+    correct: 53
+  benchmarked36:
+    evaluable: 36
+    correct: 14
+    correct_formula_ast_sizes:
+    - 673
+    - 843
+    - 11
+    - 347
+    - 11
+    - 12
+    - 16
+    - 16
+    - 528
+    - 16
+    - 21
+    - 15
+    - 15
+    - 23
+    holdout_evaluable: 14
+    holdout_correct: 10
+  challenge100:
+    evaluable: 100
+    correct: 67
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge100_round1_model_registry.yaml

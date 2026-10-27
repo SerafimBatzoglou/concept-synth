@@ -2,6 +2,8 @@
 
 **Holdouts v2:** five worlds per task; only the three changed Challenge64 tasks re-evaluated. [Version details](challenge_holdouts_v2.md) · [v1 results](challenge64_round1_results_holdout_v1.md).
 
+GPT-6.1 Terra used holdouts v2 from the start, Flex and bounded non-evaluable-only lower-effort retries. [Protocol and accounting](terra61_results.md).
+
 Claude Haiku 5.5 used holdouts v2 from the start with bounded non-evaluable-only lower-effort retries. [Protocol and accounting](haiku55_results.md).
 
 Inception Mercury 3 used holdouts v2 from the start and includes authorized non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).
@@ -16,6 +18,7 @@ Each configuration contributes one direct Round-1 formula per task. The release 
 | Claude Sonnet 5.5 | 42.2% (27/64) | 32/64 (50.0%) | 64/64 | 19.6 / 18.0 |
 | GPT-6 Sol | 39.1% (25/64) | 42/64 (65.6%) | 64/64 | 93.0 / 18.0 |
 | Gemini 4 Argon | 39.1% (25/64) | 42/64 (65.6%) | 64/64 | 55.9 / 18.0 |
+| GPT-6.1 Terra | 35.9% (23/64) | 53/64 (82.8%) | 64/64 | 134.9 / 38.0 |
 | GPT-5.6 Sol | 31.2% (20/64) | 37/64 (57.8%) | 63/64 | 143.0 / 18.0 |
 | Fable 5.1 | 31.2% (20/64) | 22/64 (34.4%) | 47/64 | 17.6 / 16.0 |
 | Claude Opus 5 | 28.1% (18/64) | 21/64 (32.8%) | 62/64 | 19.2 / 16.0 |

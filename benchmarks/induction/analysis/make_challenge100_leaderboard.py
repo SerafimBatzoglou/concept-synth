@@ -349,6 +349,12 @@ def render(
                 "The pilot used MAX through MEDIUM; remaining90 used XHIGH, then non-evaluable-only "
                 "HIGH/MEDIUM retries. Six failed streams retain unknown final usage. "
                 "[Protocol and accounting](haiku55_results.md).", ""]
+        if any(m['id'] == 'gpt-6.1-terra' for m in c100['models']):
+            lines[4:4] = [
+                "GPT-6.1 Terra used holdouts v2 from the start, Flex and a 128,000-token inclusive cap. "
+                "MAX originals were followed by non-evaluable-only XHIGH retries; no HIGH calls were needed. "
+                "One disconnected original retains unknown final usage. "
+                "[Protocol and accounting](terra61_results.md).", ""]
     return "\n".join(lines)
 
 

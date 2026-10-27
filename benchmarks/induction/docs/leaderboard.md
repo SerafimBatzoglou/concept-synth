@@ -2,13 +2,15 @@
 
 **Holdouts v2:** five worlds per task; only the 14 changed tasks re-evaluated. [Version details](challenge_holdouts_v2.md) · [v1 results](leaderboard_holdout_v1.md).
 
+GPT-6.1 Terra used holdouts v2 from the start, Flex and a 128,000-token inclusive cap. MAX originals were followed by non-evaluable-only XHIGH retries; no HIGH calls were needed. One disconnected original retains unknown final usage. [Protocol and accounting](terra61_results.md).
+
 Claude Haiku 5.5 used holdouts v2 from the start and a 128,000-token inclusive cap. The pilot used MAX through MEDIUM; remaining90 used XHIGH, then non-evaluable-only HIGH/MEDIUM retries. Six failed streams retain unknown final usage. [Protocol and accounting](haiku55_results.md).
 
 Kimi K3.1 Pro used holdouts v2 from the start, MAX reasoning and a 500,000-token completion cap including thinking. Its 38 transport retries preserve unknown usage for interrupted originals. [Protocol and accounting](kimi_k31_pro_results.md).
 
 Inception Mercury 3 used holdouts v2 from the start and includes authorized non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 33 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 34 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -35,6 +37,7 @@ Output tokens include reasoning once and all known attempts, including non-evalu
 | Gemini 4 Argon | 40.0% (40/100) | 57/100 (57.0%) | 100/100 | 45.5 / 18.0 | 57.8 |
 | GPT-6 Sol | 39.0% (39/100) | 57/100 (57.0%) | 100/100 | 73.4 / 18.0 | 4.7 |
 | Claude Sonnet 5.5 | 39.0% (39/100) | 44/100 (44.0%) | 100/100 | 19.0 / 17.0 | 56.0 |
+| GPT-6.1 Terra | 33.0% (33/100) | 67/100 (67.0%) | 100/100 | 144.7 / 23.0 | 12.0 |
 | Fable 5.1 | 31.0% (31/100) | 33/100 (33.0%) | 66/100 | 18.1 / 16.0 | 32.1 |
 | GPT-5.6 Sol | 26.0% (26/100) | 43/100 (43.0%) | 99/100 | 125.0 / 18.0 | —* |
 | Kimi K3.1 Pro | 21.0% (21/100) | 34/100 (34.0%) | 99/100 | 45.4 / 18.0 | 11.5 |
@@ -79,6 +82,7 @@ Rows are ranked by Holdout Correct % (out of 64), then Train Correct, Evaluable 
 | Claude Sonnet 5.5 | 42.2% (27/64) | 32/64 (50.0%) | 64/64 | 19.6 / 18.0 |
 | GPT-6 Sol | 39.1% (25/64) | 42/64 (65.6%) | 64/64 | 93.0 / 18.0 |
 | Gemini 4 Argon | 39.1% (25/64) | 42/64 (65.6%) | 64/64 | 55.9 / 18.0 |
+| GPT-6.1 Terra | 35.9% (23/64) | 53/64 (82.8%) | 64/64 | 134.9 / 38.0 |
 | GPT-5.6 Sol | 31.2% (20/64) | 37/64 (57.8%) | 63/64 | 143.0 / 18.0 |
 | Fable 5.1 | 31.2% (20/64) | 22/64 (34.4%) | 47/64 | 17.6 / 16.0 |
 | Claude Opus 5 | 28.1% (18/64) | 21/64 (32.8%) | 62/64 | 19.2 / 16.0 |
