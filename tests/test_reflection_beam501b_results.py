@@ -3,6 +3,7 @@ from collections import Counter
 import gzip
 import hashlib
 import json
+import math
 from pathlib import Path
 import jsonschema
 import yaml
@@ -55,7 +56,11 @@ def test_bounded_attempts_unknowns_and_usage():
     assert len(excluded['physical_history'])==1 and excluded['physical_history'][0]['http_status']==529
     for k,total in r['usage']['known_totals'].items():
         vals=[h['usage'][k] for h in hs if h['usage'][k] is not None]
-        assert total==(sum(vals) if vals else None)
+        expected=sum(vals) if vals else None
+        if 'cost' in k and expected is not None:
+            assert math.isclose(total,expected,rel_tol=0,abs_tol=1e-12)
+        else:
+            assert total==expected
         assert r['usage']['unknown_counts'][k]==sum(h['usage'][k] is None for h in hs)
     u=r['usage']['known_totals']
     assert (u['input_tokens'],u['output_tokens'],u['total_tokens'])==(602368,8568426,9170794)
