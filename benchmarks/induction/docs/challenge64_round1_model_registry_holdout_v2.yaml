@@ -331,5 +331,15 @@ models:
     outputs or symbolic repair.
   source_type: verified_stored_score_copy
   source_release: terra61_holdout_v2
+- id: reflection/beam-1.0-501b-a23b
+  display_name: Reflection Beam 501B
+  protocol: OpenRouter Reflection Beam 501B pinned Nebius FP4, MAX reasoning and 131072
+    tokens including reasoning. Up to three non-evaluable-only same-settings residuals.
+    Initially10 workers, remaining42 adopted with50-worker cap. First evaluable retained,
+    including incorrect/normalized answers. No tools, prior outputs or symbolic repair.
+    One HTTP529 outcome retained as an unresolved exclusion under explicit publication
+    authorization.
+  source_type: verified_stored_score_copy
+  source_release: reflection_beam501b_holdout_v2
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge64_round1_model_registry.yaml

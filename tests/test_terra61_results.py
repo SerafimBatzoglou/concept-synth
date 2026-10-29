@@ -96,8 +96,8 @@ def test_cache_prefix_preserved_and_scores_copied():
     for name,hold in [('induction_challenge64_round1_eval_cache_v2.jsonl',False),
                       ('induction_challenge64_round1_holdout_eval_cache_v2.jsonl',True)]:
         p=B/'eval'/name; lines=p.read_bytes().splitlines(keepends=True)
-        assert len(lines)==3392 and hashlib.sha256(b''.join(lines[:3328])).hexdigest()==before[str(p.relative_to(ROOT))]
-        added=[json.loads(x) for x in lines[3328:]]; assert len({t['instance_id'] for t in added})==64
+        assert len(lines)==3456 and hashlib.sha256(b''.join(lines[:3328])).hexdigest()==before[str(p.relative_to(ROOT))]
+        added=[json.loads(x) for x in lines[3328:3392]]; assert len({t['instance_id'] for t in added})==64
         for row in added:
             validate(row);assert row['model_id']==MID
             t=tasks[row['instance_id']];s=t['stored_holdout_v2_score' if hold else 'stored_train_score']
@@ -121,9 +121,9 @@ def test_privacy_predictions_and_leaderboards():
         assert not {'strict_correct','train_correct','holdout_correct'}.intersection(p['metadata'])
     for bad in ('/Users/','/tmp/','pipeline.sqlite','candidate_id','response_id','prompt_id','api_call_id',
                 'provider_usage','reasoning_content','raw_text','API_KEY','Bearer '):assert bad not in json.dumps([r,ps])
-    for n,count in [(100,34),(64,53)]:
+    for n,count in [(100,35),(64,54)]:
         reg=yaml.safe_load((B/f'docs/challenge{n}_round1_model_registry_holdout_v2.yaml').read_text())
-        assert len(reg['models'])==count and reg['models'][-1]['id']==MID
+        assert len(reg['models'])==count and reg['models'][-2]['id']==MID
     table=(B/'docs/leaderboard.md').read_text()
     assert '| GPT-6.1 Terra | 33.0% (33/100) | 67/100 (67.0%) | 100/100 | 144.7 / 23.0 | 12.0 |' in table
     assert '| GPT-6.1 Terra | 35.9% (23/64) | 53/64 (82.8%) | 64/64 | 134.9 / 38.0 |' in table

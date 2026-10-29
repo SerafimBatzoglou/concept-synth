@@ -102,7 +102,7 @@ def test_cache_prefix_preserved_and_scores_copied():
     for name,hold in [('induction_challenge64_round1_eval_cache_v2.jsonl',False),
                       ('induction_challenge64_round1_holdout_eval_cache_v2.jsonl',True)]:
         p=B/'eval'/name; lines=p.read_bytes().splitlines(keepends=True)
-        assert len(lines)==3392 and hashlib.sha256(b''.join(lines[:3200])).hexdigest()==before[str(p.relative_to(ROOT))]
+        assert len(lines)==3456 and hashlib.sha256(b''.join(lines[:3200])).hexdigest()==before[str(p.relative_to(ROOT))]
         added=[json.loads(x) for x in lines[3200:3264]]; assert len({t['instance_id'] for t in added})==64
         for row in added:
             validate(row);assert row['model_id']==MID
@@ -127,9 +127,9 @@ def test_privacy_predictions_and_leaderboards():
         assert not {'strict_correct','train_correct','holdout_correct'}.intersection(p['metadata'])
     for bad in ('/Users/','/tmp/','pipeline.sqlite','candidate_id','response_id','prompt_id','api_call_id',
                 'provider_usage','reasoning_content','raw_text','API_KEY','Bearer '):assert bad not in json.dumps([r,ps])
-    for n,count in [(100,34),(64,53)]:
+    for n,count in [(100,35),(64,54)]:
         reg=yaml.safe_load((B/f'docs/challenge{n}_round1_model_registry_holdout_v2.yaml').read_text())
-        assert len(reg['models'])==count and reg['models'][-3]['id']==MID
+        assert len(reg['models'])==count and reg['models'][-4]['id']==MID
     table=(B/'docs/leaderboard.md').read_text()
     assert '| Kimi K3.1 Pro | 21.0% (21/100) | 34/100 (34.0%) | 99/100 | 45.4 / 18.0 | 11.5 |' in table
     assert '| Kimi K3.1 Pro | 26.6% (17/64) | 30/64 (46.9%) | 63/64 | 49.3 / 20.5 |' in table

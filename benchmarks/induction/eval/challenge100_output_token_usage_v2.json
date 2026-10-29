@@ -1,5 +1,5 @@
 {
-  "as_of_date": "2026-10-26",
+  "as_of_date": "2026-10-28",
   "deduplication": "Reused probes, snapshots and copied response records are counted once; distinct actual retries are included.",
   "models": [
     {
@@ -195,6 +195,14 @@
       "reasoning_included_once": true,
       "source_accounting_sha256": "885419166b660157670ceb92149a735da440804decd25f95bc01a163f7850095",
       "unreported_responses_lower_bound": 1
+    },
+    {
+      "model_id": "reflection/beam-1.0-501b-a23b",
+      "output_tokens": 8568426,
+      "physical_attempts": 104,
+      "reasoning_included_once": true,
+      "source_accounting_sha256": "00caed11e562bd29224e64b639387642ea66e4d6331eb3ed7d9166d7bc649e6a",
+      "unreported_responses_lower_bound": 3
     }
   ],
   "schema_version": "challenge100_output_token_usage_v1",
