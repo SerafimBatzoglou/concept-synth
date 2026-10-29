@@ -313,7 +313,9 @@ and `docs/challenge64_round1_model_registry_holdout_v2.yaml`, with the additive
 [Inception Mercury 3 result](docs/mercury3_results.md),
 [Kimi K3.1 Pro result](docs/kimi_k31_pro_results.md),
 [Claude Haiku 5.5 result](docs/haiku55_results.md), and
-[GPT-6.1 Terra result](docs/terra61_results.md) are included;
+[GPT-6.1 Terra result](docs/terra61_results.md), and
+[Reflection Beam 501B result](docs/reflection_beam501b_results.md) are included;
+Reflection Beam retains one explicitly unresolved HTTP529 exclusion.
 historical v1 files remain unchanged. To reproduce both
 leaderboards from the frozen scores (no rescoring):
 

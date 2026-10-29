@@ -780,5 +780,26 @@ models:
   challenge100:
     evaluable: 100
     correct: 67
+- id: reflection/beam-1.0-501b-a23b
+  display_name: Reflection Beam 501B
+  protocol: OpenRouter Reflection Beam 501B pinned Nebius FP4, MAX reasoning and 131072
+    tokens including reasoning. Up to three non-evaluable-only same-settings residuals.
+    Initially10 workers, remaining42 adopted with50-worker cap. First evaluable retained,
+    including incorrect/normalized answers. No tools, prior outputs or symbolic repair.
+    One HTTP529 outcome retained as an unresolved exclusion under explicit publication
+    authorization.
+  challenge64:
+    registry_id: reflection/beam-1.0-501b-a23b
+    evaluable: 63
+    correct: 11
+  benchmarked36:
+    evaluable: 36
+    correct: 0
+    correct_formula_ast_sizes: []
+    holdout_evaluable: 0
+    holdout_correct: 0
+  challenge100:
+    evaluable: 99
+    correct: 11
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge100_round1_model_registry.yaml

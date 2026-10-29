@@ -2,6 +2,8 @@
 
 **Holdouts v2:** five worlds per task; only the 14 changed tasks re-evaluated. [Version details](challenge_holdouts_v2.md) · [v1 results](leaderboard_holdout_v1.md).
 
+Reflection Beam 501B used holdouts v2 from the start, MAX reasoning and a 131,072-token inclusive cap. Four non-evaluable-only residual calls were made. One HTTP529 task remains excluded; three historical outcomes retain unknown final usage. [Protocol and accounting](reflection_beam501b_results.md).
+
 GPT-6.1 Terra used holdouts v2 from the start, Flex and a 128,000-token inclusive cap. MAX originals were followed by non-evaluable-only XHIGH retries; no HIGH calls were needed. One disconnected original retains unknown final usage. [Protocol and accounting](terra61_results.md).
 
 Claude Haiku 5.5 used holdouts v2 from the start and a 128,000-token inclusive cap. The pilot used MAX through MEDIUM; remaining90 used XHIGH, then non-evaluable-only HIGH/MEDIUM retries. Six failed streams retain unknown final usage. [Protocol and accounting](haiku55_results.md).
@@ -10,7 +12,7 @@ Kimi K3.1 Pro used holdouts v2 from the start, MAX reasoning and a 500,000-token
 
 Inception Mercury 3 used holdouts v2 from the start and includes authorized non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 34 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 35 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -57,6 +59,7 @@ Output tokens include reasoning once and all known attempts, including non-evalu
 | Ox Alpha | 9.0% (9/100) | 12/100 (12.0%) | 87/100 | 25.5 / 16.0 | 25.3 |
 | Grok 4.5 | 9.0% (9/100) | 11/100 (11.0%) | 100/100 | 20.1 / 15.0 | 8.0 |
 | Gemini 3.8 Flash | 9.0% (9/100) | 9/100 (9.0%) | 100/100 | 15.6 / 16.0 | 4.1 |
+| Reflection Beam 501B | 8.0% (8/100) | 11/100 (11.0%) | 99/100 | 37.0 / 16.0 | 8.6 |
 | Muse Spark 1.2 | 8.0% (8/100) | 11/100 (11.0%) | 92/100 | 29.1 / 17.0 | 14.9 |
 | DeepSeek V4 Pro 0813 | 6.0% (6/100) | 15/100 (15.0%) | 98/100 | 130.9 / 77.0 | 8.4 |
 | Gemini 3.5 Flash | 6.0% (6/100) | 7/100 (7.0%) | 98/100 | 16.6 / 15.0 | 6.8 |
@@ -104,6 +107,7 @@ Rows are ranked by Holdout Correct % (out of 64), then Train Correct, Evaluable 
 | Grok 4.5 | 14.1% (9/64) | 11/64 (17.2%) | 64/64 | 20.1 / 15.0 |
 | Gemini 3.8 Flash | 14.1% (9/64) | 9/64 (14.1%) | 64/64 | 15.6 / 16.0 |
 | GPT-5.6 Luna | 12.5% (8/64) | 15/64 (23.4%) | 61/64 | 108.9 / 18.0 |
+| Reflection Beam 501B | 12.5% (8/64) | 11/64 (17.2%) | 63/64 | 37.0 / 16.0 |
 | Muse Spark 1.2 | 12.5% (8/64) | 11/64 (17.2%) | 59/64 | 29.1 / 17.0 |
 | DeepSeek V4 Pro 0813 | 9.4% (6/64) | 15/64 (23.4%) | 64/64 | 130.9 / 77.0 |
 | Gemini 3.5 Flash | 9.4% (6/64) | 7/64 (10.9%) | 63/64 | 16.6 / 15.0 |

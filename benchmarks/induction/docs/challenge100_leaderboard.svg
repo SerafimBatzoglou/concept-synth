@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="912" height="1146" viewBox="0 0 912 1146" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="912" height="1178" viewBox="0 0 912 1178" role="img" aria-labelledby="title description">
 <title id="title">Challenge100 leaderboard and output token usage</title>
 <desc id="description">Two separate row-aligned tables. Output tokens are in millions, include reasoning once and all known attempts, and exclude unreported usage. A dash with an asterisk means Challenge64 usage is missing. An expandable text table accompanies this image.</desc>
 <style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px;fill:#1f2328}.header{font-weight:600;font-size:13px}.border{stroke:#d1d9e0;stroke-width:1;fill:none}.stripe{fill:#f6f8fa}.background{fill:#fff}</style>
 <g id="leaderboard" data-x="0" data-width="764">
-<rect class="background" x="0" y="1" width="764" height="1144"/>
+<rect class="background" x="0" y="1" width="764" height="1176"/>
 <rect class="stripe" x="0" y="88" width="764" height="32"/>
 <rect class="stripe" x="0" y="152" width="764" height="32"/>
 <rect class="stripe" x="0" y="216" width="764" height="32"/>
@@ -211,60 +211,67 @@
 <text class="value" x="752" y="877" text-anchor="end">15.6 / 16.0</text>
 </g>
 <g class="data-row" data-row="26">
-<text class="value" x="12" y="909" text-anchor="start">Muse Spark 1.2</text>
+<text class="value" x="12" y="909" text-anchor="start">Reflection Beam 501B</text>
 <text class="value" x="346" y="909" text-anchor="end">8.0% (8/100)</text>
 <text class="value" x="494" y="909" text-anchor="end">11/100 (11.0%)</text>
-<text class="value" x="588" y="909" text-anchor="end">92/100</text>
-<text class="value" x="752" y="909" text-anchor="end">29.1 / 17.0</text>
+<text class="value" x="588" y="909" text-anchor="end">99/100</text>
+<text class="value" x="752" y="909" text-anchor="end">37.0 / 16.0</text>
 </g>
 <g class="data-row" data-row="27">
-<text class="value" x="12" y="941" text-anchor="start">DeepSeek V4 Pro 0813</text>
-<text class="value" x="346" y="941" text-anchor="end">6.0% (6/100)</text>
-<text class="value" x="494" y="941" text-anchor="end">15/100 (15.0%)</text>
-<text class="value" x="588" y="941" text-anchor="end">98/100</text>
-<text class="value" x="752" y="941" text-anchor="end">130.9 / 77.0</text>
+<text class="value" x="12" y="941" text-anchor="start">Muse Spark 1.2</text>
+<text class="value" x="346" y="941" text-anchor="end">8.0% (8/100)</text>
+<text class="value" x="494" y="941" text-anchor="end">11/100 (11.0%)</text>
+<text class="value" x="588" y="941" text-anchor="end">92/100</text>
+<text class="value" x="752" y="941" text-anchor="end">29.1 / 17.0</text>
 </g>
 <g class="data-row" data-row="28">
-<text class="value" x="12" y="973" text-anchor="start">Gemini 3.5 Flash</text>
+<text class="value" x="12" y="973" text-anchor="start">DeepSeek V4 Pro 0813</text>
 <text class="value" x="346" y="973" text-anchor="end">6.0% (6/100)</text>
-<text class="value" x="494" y="973" text-anchor="end">7/100 (7.0%)</text>
+<text class="value" x="494" y="973" text-anchor="end">15/100 (15.0%)</text>
 <text class="value" x="588" y="973" text-anchor="end">98/100</text>
-<text class="value" x="752" y="973" text-anchor="end">16.6 / 15.0</text>
+<text class="value" x="752" y="973" text-anchor="end">130.9 / 77.0</text>
 </g>
 <g class="data-row" data-row="29">
-<text class="value" x="12" y="1005" text-anchor="start">Inception Mercury 3</text>
-<text class="value" x="346" y="1005" text-anchor="end">5.0% (5/100)</text>
-<text class="value" x="494" y="1005" text-anchor="end">9/100 (9.0%)</text>
-<text class="value" x="588" y="1005" text-anchor="end">96/100</text>
-<text class="value" x="752" y="1005" text-anchor="end">88.1 / 18.0</text>
+<text class="value" x="12" y="1005" text-anchor="start">Gemini 3.5 Flash</text>
+<text class="value" x="346" y="1005" text-anchor="end">6.0% (6/100)</text>
+<text class="value" x="494" y="1005" text-anchor="end">7/100 (7.0%)</text>
+<text class="value" x="588" y="1005" text-anchor="end">98/100</text>
+<text class="value" x="752" y="1005" text-anchor="end">16.6 / 15.0</text>
 </g>
 <g class="data-row" data-row="30">
-<text class="value" x="12" y="1037" text-anchor="start">DeepSeek V4.1 Flash</text>
-<text class="value" x="346" y="1037" text-anchor="end">4.0% (4/100)</text>
-<text class="value" x="494" y="1037" text-anchor="end">11/100 (11.0%)</text>
-<text class="value" x="588" y="1037" text-anchor="end">97/100</text>
-<text class="value" x="752" y="1037" text-anchor="end">92.7 / 37.0</text>
+<text class="value" x="12" y="1037" text-anchor="start">Inception Mercury 3</text>
+<text class="value" x="346" y="1037" text-anchor="end">5.0% (5/100)</text>
+<text class="value" x="494" y="1037" text-anchor="end">9/100 (9.0%)</text>
+<text class="value" x="588" y="1037" text-anchor="end">96/100</text>
+<text class="value" x="752" y="1037" text-anchor="end">88.1 / 18.0</text>
 </g>
 <g class="data-row" data-row="31">
-<text class="value" x="12" y="1069" text-anchor="start">DeepSeek V4 Pro</text>
+<text class="value" x="12" y="1069" text-anchor="start">DeepSeek V4.1 Flash</text>
 <text class="value" x="346" y="1069" text-anchor="end">4.0% (4/100)</text>
-<text class="value" x="494" y="1069" text-anchor="end">6/100 (6.0%)</text>
-<text class="value" x="588" y="1069" text-anchor="end">94/100</text>
-<text class="value" x="752" y="1069" text-anchor="end">31.5 / 16.0</text>
+<text class="value" x="494" y="1069" text-anchor="end">11/100 (11.0%)</text>
+<text class="value" x="588" y="1069" text-anchor="end">97/100</text>
+<text class="value" x="752" y="1069" text-anchor="end">92.7 / 37.0</text>
 </g>
 <g class="data-row" data-row="32">
-<text class="value" x="12" y="1101" text-anchor="start">Gemini 3.6 Flash</text>
+<text class="value" x="12" y="1101" text-anchor="start">DeepSeek V4 Pro</text>
 <text class="value" x="346" y="1101" text-anchor="end">4.0% (4/100)</text>
-<text class="value" x="494" y="1101" text-anchor="end">5/100 (5.0%)</text>
-<text class="value" x="588" y="1101" text-anchor="end">93/100</text>
-<text class="value" x="752" y="1101" text-anchor="end">16.6 / 16.0</text>
+<text class="value" x="494" y="1101" text-anchor="end">6/100 (6.0%)</text>
+<text class="value" x="588" y="1101" text-anchor="end">94/100</text>
+<text class="value" x="752" y="1101" text-anchor="end">31.5 / 16.0</text>
 </g>
 <g class="data-row" data-row="33">
-<text class="value" x="12" y="1133" text-anchor="start">DeepSeek V4 Flash</text>
-<text class="value" x="346" y="1133" text-anchor="end">2.0% (2/100)</text>
-<text class="value" x="494" y="1133" text-anchor="end">6/100 (6.0%)</text>
-<text class="value" x="588" y="1133" text-anchor="end">97/100</text>
-<text class="value" x="752" y="1133" text-anchor="end">77.8 / 48.0</text>
+<text class="value" x="12" y="1133" text-anchor="start">Gemini 3.6 Flash</text>
+<text class="value" x="346" y="1133" text-anchor="end">4.0% (4/100)</text>
+<text class="value" x="494" y="1133" text-anchor="end">5/100 (5.0%)</text>
+<text class="value" x="588" y="1133" text-anchor="end">93/100</text>
+<text class="value" x="752" y="1133" text-anchor="end">16.6 / 16.0</text>
+</g>
+<g class="data-row" data-row="34">
+<text class="value" x="12" y="1165" text-anchor="start">DeepSeek V4 Flash</text>
+<text class="value" x="346" y="1165" text-anchor="end">2.0% (2/100)</text>
+<text class="value" x="494" y="1165" text-anchor="end">6/100 (6.0%)</text>
+<text class="value" x="588" y="1165" text-anchor="end">97/100</text>
+<text class="value" x="752" y="1165" text-anchor="end">77.8 / 48.0</text>
 </g>
 <path class="border" d="M 0 56 H 764"/>
 <path class="border" d="M 0 88 H 764"/>
@@ -300,14 +307,15 @@
 <path class="border" d="M 0 1048 H 764"/>
 <path class="border" d="M 0 1080 H 764"/>
 <path class="border" d="M 0 1112 H 764"/>
-<path class="border" d="M 190 1 V 1145"/>
-<path class="border" d="M 358 1 V 1145"/>
-<path class="border" d="M 506 1 V 1145"/>
-<path class="border" d="M 600 1 V 1145"/>
-<rect class="border" x="0.5" y="1" width="763" height="1144"/>
+<path class="border" d="M 0 1144 H 764"/>
+<path class="border" d="M 190 1 V 1177"/>
+<path class="border" d="M 358 1 V 1177"/>
+<path class="border" d="M 506 1 V 1177"/>
+<path class="border" d="M 600 1 V 1177"/>
+<rect class="border" x="0.5" y="1" width="763" height="1176"/>
 </g>
 <g id="token-usage" data-x="788" data-width="124">
-<rect class="background" x="788" y="1" width="124" height="1144"/>
+<rect class="background" x="788" y="1" width="124" height="1176"/>
 <rect class="stripe" x="788" y="88" width="124" height="32"/>
 <rect class="stripe" x="788" y="152" width="124" height="32"/>
 <rect class="stripe" x="788" y="216" width="124" height="32"/>
@@ -406,28 +414,31 @@
 <text class="value" x="900" y="877" text-anchor="end">4.1</text>
 </g>
 <g class="data-row" data-row="26">
-<text class="value" x="900" y="909" text-anchor="end">14.9</text>
+<text class="value" x="900" y="909" text-anchor="end">8.6</text>
 </g>
 <g class="data-row" data-row="27">
-<text class="value" x="900" y="941" text-anchor="end">8.4</text>
+<text class="value" x="900" y="941" text-anchor="end">14.9</text>
 </g>
 <g class="data-row" data-row="28">
-<text class="value" x="900" y="973" text-anchor="end">6.8</text>
+<text class="value" x="900" y="973" text-anchor="end">8.4</text>
 </g>
 <g class="data-row" data-row="29">
-<text class="value" x="900" y="1005" text-anchor="end">11.6</text>
+<text class="value" x="900" y="1005" text-anchor="end">6.8</text>
 </g>
 <g class="data-row" data-row="30">
-<text class="value" x="900" y="1037" text-anchor="end">14.8</text>
+<text class="value" x="900" y="1037" text-anchor="end">11.6</text>
 </g>
 <g class="data-row" data-row="31">
-<text class="value" x="900" y="1069" text-anchor="end">—*</text>
+<text class="value" x="900" y="1069" text-anchor="end">14.8</text>
 </g>
 <g class="data-row" data-row="32">
-<text class="value" x="900" y="1101" text-anchor="end">7.4</text>
+<text class="value" x="900" y="1101" text-anchor="end">—*</text>
 </g>
 <g class="data-row" data-row="33">
-<text class="value" x="900" y="1133" text-anchor="end">8.1</text>
+<text class="value" x="900" y="1133" text-anchor="end">7.4</text>
+</g>
+<g class="data-row" data-row="34">
+<text class="value" x="900" y="1165" text-anchor="end">8.1</text>
 </g>
 <path class="border" d="M 788 56 H 912"/>
 <path class="border" d="M 788 88 H 912"/>
@@ -463,6 +474,7 @@
 <path class="border" d="M 788 1048 H 912"/>
 <path class="border" d="M 788 1080 H 912"/>
 <path class="border" d="M 788 1112 H 912"/>
-<rect class="border" x="788.5" y="1" width="123" height="1144"/>
+<path class="border" d="M 788 1144 H 912"/>
+<rect class="border" x="788.5" y="1" width="123" height="1176"/>
 </g>
 </svg>

@@ -355,6 +355,12 @@ def render(
                 "MAX originals were followed by non-evaluable-only XHIGH retries; no HIGH calls were needed. "
                 "One disconnected original retains unknown final usage. "
                 "[Protocol and accounting](terra61_results.md).", ""]
+        if any(m['id'] == 'reflection/beam-1.0-501b-a23b' for m in c100['models']):
+            lines[4:4] = [
+                "Reflection Beam 501B used holdouts v2 from the start, MAX reasoning and a 131,072-token inclusive cap. "
+                "Four non-evaluable-only residual calls were made. One HTTP529 task remains excluded; "
+                "three historical outcomes retain unknown final usage. "
+                "[Protocol and accounting](reflection_beam501b_results.md).", ""]
     return "\n".join(lines)
 
 

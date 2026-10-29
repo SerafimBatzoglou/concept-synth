@@ -32,6 +32,10 @@ The [GPT-6.1 Terra results](benchmarks/induction/docs/terra61_results.md)
 use Flex, MAX reasoning and a 128,000-token inclusive output cap, with rolling
 non-evaluable-only XHIGH retries: 67 training-correct and 33 holdout-correct
 out of 100, with 100 evaluable answers (99 strict).
+The [Reflection Beam 501B results](benchmarks/induction/docs/reflection_beam501b_results.md)
+use MAX reasoning and a 131,072-token inclusive cap: 11 training-correct and
+8 holdout-correct out of 100, with 99 evaluable answers (92 strict).
+One HTTP529 task remains explicitly excluded; unknown usage is retained.
 <!-- END INDUCTION CHALLENGE LEADERBOARDS -->
 
 Explore the full releases: [ABD](benchmarks/abduction/) · [INDUCTION](benchmarks/induction/).
