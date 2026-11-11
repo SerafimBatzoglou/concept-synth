@@ -801,5 +801,49 @@ models:
   challenge100:
     evaluable: 99
     correct: 11
+- id: gemini-4-carbon
+  display_name: Gemini Carbon
+  protocol: Direct Gemini 4 Carbon, HIGH thinking, stored background interactions.
+    Full 1048576-token window minus counted input. Original responses, bounded INTERNAL
+    retries, and 11 explicitly authorized same-settings replacements. No tools or
+    symbolic repair.
+  challenge64:
+    registry_id: gemini-4-carbon
+    evaluable: 64
+    correct: 57
+  benchmarked36:
+    evaluable: 36
+    correct: 25
+    correct_formula_ast_sizes:
+    - 11
+    - 12
+    - 18
+    - 11
+    - 11
+    - 22
+    - 26
+    - 16
+    - 16
+    - 16
+    - 16
+    - 16
+    - 15
+    - 15
+    - 19
+    - 20
+    - 29
+    - 15
+    - 15
+    - 15
+    - 15
+    - 22
+    - 23
+    - 23
+    - 23
+    holdout_evaluable: 25
+    holdout_correct: 23
+  challenge100:
+    evaluable: 100
+    correct: 82
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge100_round1_model_registry.yaml

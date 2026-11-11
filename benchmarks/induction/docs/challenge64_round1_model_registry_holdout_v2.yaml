@@ -341,5 +341,13 @@ models:
     authorization.
   source_type: verified_stored_score_copy
   source_release: reflection_beam501b_holdout_v2
+- id: gemini-4-carbon
+  display_name: Gemini Carbon
+  protocol: Direct Gemini 4 Carbon, HIGH thinking, stored background interactions.
+    Full 1048576-token window minus counted input. Original responses, bounded INTERNAL
+    retries, and 11 explicitly authorized same-settings replacements. No tools or
+    symbolic repair.
+  source_type: verified_stored_score_copy
+  source_release: gemini_carbon_holdout_v2
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge64_round1_model_registry.yaml
