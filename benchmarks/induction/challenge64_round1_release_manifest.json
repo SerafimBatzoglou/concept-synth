@@ -27,8 +27,8 @@
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_results.md",
-      "sha256": "d3d1766adc27425dd4ba65f522c0f4c6fadfe09c7d584541be593da33dbba212",
-      "sizeBytes": 5340
+      "sha256": "ac852f99adc45320ed18c62e854fcb8b7b3489c459c9ff6e54d6791f86750517",
+      "sizeBytes": 5412
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_provenance.md",

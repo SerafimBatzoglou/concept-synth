@@ -13,6 +13,7 @@ Each configuration contributes one direct Round-1 formula per task. The release 
 | Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) |
 |---|---:|---:|---:|---:|
 | GPT-6 Astra | 87.5% (56/64) | 63/64 (98.4%) | 63/64 | 20.6 / 18.0 |
+| Gemini Carbon | 73.4% (47/64) | 57/64 (89.1%) | 64/64 | 30.8 / 18.0 |
 | GPT-6.1 Sol | 67.2% (43/64) | 61/64 (95.3%) | 63/64 | 45.7 / 18.0 |
 | Claude Opus 5.5 | 56.2% (36/64) | 46/64 (71.9%) | 59/64 | 26.0 / 18.0 |
 | Claude Sonnet 5.5 | 42.2% (27/64) | 32/64 (50.0%) | 64/64 | 19.6 / 18.0 |

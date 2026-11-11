@@ -74,9 +74,9 @@ def test_additive_cache_and_stored_scores():
     validator=jsonschema.Draft202012Validator(load(B/'schemas/eval_cache_record.schema.json'))
     for name,hold in [('induction_challenge64_round1_eval_cache_v2.jsonl',False),('induction_challenge64_round1_holdout_eval_cache_v2.jsonl',True)]:
         p=B/'eval'/name;lines=p.read_bytes().splitlines(keepends=True)
-        assert len(lines)==3456
+        assert len(lines)==3520
         assert hashlib.sha256(b''.join(lines[:3392])).hexdigest()==r['prior_release_preservation']['file_sha256_before_append'][str(p.relative_to(ROOT))]
-        for line in lines[3392:]:
+        for line in lines[3392:3456]:
             row=json.loads(line);validator.validate(row);assert row['model_id']==MID
             t=tasks[row['instance_id']];s=t['stored_holdout_v2_score' if hold else 'stored_train_score']
             assert row['prediction']['formula']==t['formula']
@@ -93,9 +93,9 @@ def test_privacy_manifest_and_leaderboards():
         validator.validate(p);assert p['rawResponse'] is p['response'] is p['thinking'] is None
         assert not {'train_correct','holdout_correct','strict_correct'} & p['metadata'].keys()
     for bad in ('/Users/','/tmp/','pipeline.sqlite','candidate_id','response_id','prompt_id','api_call_id','provider_usage','reasoning_content','raw_text','API_KEY','Bearer '):assert bad not in json.dumps([r,ps])
-    for n,count in [(100,35),(64,54)]:
+    for n,count in [(100,36),(64,55)]:
         reg=yaml.safe_load((B/f'docs/challenge{n}_round1_model_registry_holdout_v2.yaml').read_text())
-        assert len(reg['models'])==count and reg['models'][-1]['id']==MID
+        assert len(reg['models'])==count and reg['models'][-2]['id']==MID
     table=(B/'docs/leaderboard.md').read_text()
     assert '| Reflection Beam 501B | 8.0% (8/100) | 11/100 (11.0%) | 99/100 | 37.0 / 16.0 | 8.6 |' in table
     assert '| Reflection Beam 501B | 12.5% (8/64) | 11/64 (17.2%) | 63/64 | 37.0 / 16.0 |' in table

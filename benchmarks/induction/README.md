@@ -316,6 +316,8 @@ and `docs/challenge64_round1_model_registry_holdout_v2.yaml`, with the additive
 [GPT-6.1 Terra result](docs/terra61_results.md), and
 [Reflection Beam 501B result](docs/reflection_beam501b_results.md) are included;
 Reflection Beam retains one explicitly unresolved HTTP529 exclusion.
+The [Gemini Carbon release](docs/gemini_carbon_results.md) adds 100 strictly evaluable
+answers and 70 holdout passes. Its token total excludes submissions with missing usage.
 historical v1 files remain unchanged. To reproduce both
 leaderboards from the frozen scores (no rescoring):
 

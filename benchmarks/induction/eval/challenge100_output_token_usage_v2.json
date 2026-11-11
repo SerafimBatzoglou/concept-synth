@@ -1,5 +1,5 @@
 {
-  "as_of_date": "2026-10-28",
+  "as_of_date": "2026-11-11",
   "deduplication": "Reused probes, snapshots and copied response records are counted once; distinct actual retries are included.",
   "models": [
     {
@@ -203,6 +203,14 @@
       "reasoning_included_once": true,
       "source_accounting_sha256": "00caed11e562bd29224e64b639387642ea66e4d6331eb3ed7d9166d7bc649e6a",
       "unreported_responses_lower_bound": 3
+    },
+    {
+      "model_id": "gemini-4-carbon",
+      "output_tokens": 27158517,
+      "physical_attempts": 120,
+      "reasoning_included_once": true,
+      "source_accounting_sha256": "acc6087dad4a54aebe7282b37d8bbd84469dc0a1e37d3b79b24382acc32e304c",
+      "unreported_responses_lower_bound": 12
     }
   ],
   "schema_version": "challenge100_output_token_usage_v1",
