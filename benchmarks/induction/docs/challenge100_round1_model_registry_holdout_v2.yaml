@@ -845,5 +845,43 @@ models:
   challenge100:
     evaluable: 100
     correct: 82
+- id: gemini-4-hydrogen
+  display_name: Gemini Hydrogen
+  protocol: Direct Gemini 4 Hydrogen, XHIGH thinking, stored background interactions.
+    Full 1048576-token window minus counted input. One original per problem; no retries,
+    tools or symbolic repair.
+  challenge64:
+    registry_id: gemini-4-hydrogen
+    evaluable: 61
+    correct: 53
+  benchmarked36:
+    evaluable: 34
+    correct: 20
+    correct_formula_ast_sizes:
+    - 11
+    - 11
+    - 11
+    - 11
+    - 22
+    - 26
+    - 16
+    - 16
+    - 16
+    - 16
+    - 16
+    - 21
+    - 26
+    - 15
+    - 15
+    - 15
+    - 15
+    - 22
+    - 23
+    - 23
+    holdout_evaluable: 20
+    holdout_correct: 20
+  challenge100:
+    evaluable: 95
+    correct: 73
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge100_round1_model_registry.yaml

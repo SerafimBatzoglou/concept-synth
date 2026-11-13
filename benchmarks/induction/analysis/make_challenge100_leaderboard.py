@@ -359,6 +359,10 @@ def render(
             lines[4:4] = [
                 "Gemini Carbon passed holdout-v2 on 70/100. Its output-token total is a lower bound: "
                 "12 submissions lacked final usage at the cutoff. [Protocol and accounting](gemini_carbon_results.md).", ""]
+        if any(m['id'] == 'gemini-4-hydrogen' for m in c100['models']):
+            lines[4:4] = [
+                "Gemini Hydrogen passed holdout-v2 on 52/100 first attempts. Five responses reached their output cap "
+                "and were not retried. [Protocol and accounting](gemini_hydrogen_results.md).", ""]
         if any(m['id'] == 'reflection/beam-1.0-501b-a23b' for m in c100['models']):
             lines[4:4] = [
                 "Reflection Beam 501B used holdouts v2 from the start, MAX reasoning and a 131,072-token inclusive cap. "
