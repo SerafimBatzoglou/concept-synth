@@ -349,5 +349,12 @@ models:
     symbolic repair.
   source_type: verified_stored_score_copy
   source_release: gemini_carbon_holdout_v2
+- id: gemini-4-hydrogen
+  display_name: Gemini Hydrogen
+  protocol: Direct Gemini 4 Hydrogen, XHIGH thinking, stored background interactions.
+    Full 1048576-token window minus counted input. One original per problem; no retries,
+    tools or symbolic repair.
+  source_type: verified_stored_score_copy
+  source_release: gemini_hydrogen_holdout_v2
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge64_round1_model_registry.yaml

@@ -318,7 +318,9 @@ and `docs/challenge64_round1_model_registry_holdout_v2.yaml`, with the additive
 Reflection Beam retains one explicitly unresolved HTTP529 exclusion.
 The [Gemini Carbon release](docs/gemini_carbon_results.md) adds 100 strictly evaluable
 answers and 70 holdout passes. Its token total excludes submissions with missing usage.
-historical v1 files remain unchanged. To reproduce both
+The [Gemini Hydrogen release](docs/gemini_hydrogen_results.md) adds 95 strictly
+evaluable answers and 52 holdout passes from 100 first attempts.
+Historical v1 files remain unchanged. To reproduce both
 leaderboards from the frozen scores (no rescoring):
 
 ```bash
