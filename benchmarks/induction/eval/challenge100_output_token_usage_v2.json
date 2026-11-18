@@ -1,5 +1,5 @@
 {
-  "as_of_date": "2026-11-12",
+  "as_of_date": "2026-11-17",
   "deduplication": "Reused probes, snapshots and copied response records are counted once; distinct actual retries are included.",
   "models": [
     {
@@ -218,6 +218,22 @@
       "physical_attempts": 100,
       "reasoning_included_once": true,
       "source_accounting_sha256": "9a141fecd5bbf94558eb303236e67ebdefd081b27446464161814a593805dd23",
+      "unreported_responses_lower_bound": 0
+    },
+    {
+      "model_id": "gpt-6.2-astra",
+      "output_tokens": 1521265,
+      "physical_attempts": 100,
+      "reasoning_included_once": true,
+      "source_accounting_sha256": "eaf73d24559aa347e921c6cad2e93ee36a806338169675b11418f9891f016078",
+      "unreported_responses_lower_bound": 0
+    },
+    {
+      "model_id": "gpt-6.2-sol",
+      "output_tokens": 5446141,
+      "physical_attempts": 105,
+      "reasoning_included_once": true,
+      "source_accounting_sha256": "5621822622f8a11b96df01aa868cf58fc2f939965f88785002f2e59caeaa9579",
       "unreported_responses_lower_bound": 0
     }
   ],

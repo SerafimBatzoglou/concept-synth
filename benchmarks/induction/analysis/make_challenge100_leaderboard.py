@@ -363,6 +363,11 @@ def render(
             lines[4:4] = [
                 "Gemini Hydrogen passed holdout-v2 on 52/100 first attempts. Five responses reached their output cap "
                 "and were not retried. [Protocol and accounting](gemini_hydrogen_results.md).", ""]
+        if {'gpt-6.2-astra', 'gpt-6.2-sol'} <= {m['id'] for m in c100['models']}:
+            lines[4:4] = [
+                "GPT-6.2 Astra and Sol passed holdout-v2 on 97/100 and 73/100, respectively. "
+                "Astra needed no retries; five capped Sol originals became evaluable on their first retry. "
+                "[Protocol and accounting](gpt62_astra_sol_results.md).", ""]
         if any(m['id'] == 'reflection/beam-1.0-501b-a23b' for m in c100['models']):
             lines[4:4] = [
                 "Reflection Beam 501B used holdouts v2 from the start, MAX reasoning and a 131,072-token inclusive cap. "

@@ -4,6 +4,8 @@
 
 Reflection Beam 501B used holdouts v2 from the start, MAX reasoning and a 131,072-token inclusive cap. Four non-evaluable-only residual calls were made. One HTTP529 task remains excluded; three historical outcomes retain unknown final usage. [Protocol and accounting](reflection_beam501b_results.md).
 
+GPT-6.2 Astra and Sol passed holdout-v2 on 97/100 and 73/100, respectively. Astra needed no retries; five capped Sol originals became evaluable on their first retry. [Protocol and accounting](gpt62_astra_sol_results.md).
+
 Gemini Hydrogen passed holdout-v2 on 52/100 first attempts. Five responses reached their output cap and were not retried. [Protocol and accounting](gemini_hydrogen_results.md).
 
 Gemini Carbon passed holdout-v2 on 70/100. Its output-token total is a lower bound: 12 submissions lacked final usage at the cutoff. [Protocol and accounting](gemini_carbon_results.md).
@@ -16,7 +18,7 @@ Kimi K3.1 Pro used holdouts v2 from the start, MAX reasoning and a 500,000-token
 
 Inception Mercury 3 used holdouts v2 from the start and includes authorized non-evaluable-only retries and residual passes. [Protocol and accounting](mercury3_results.md).
 
-Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 37 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
+Challenge100 is the ordered union of the frozen Challenge64 benchmark and the disjoint New36 component. All 39 Challenge100 models appear in the Challenge64 table, alongside 19 additional models with Challenge64 results. Each table is ranked independently by Holdout Correct % over all problems in its task set, so model order differs.
 
 Missing, provider-error, empty, output-limit-incomplete, and parse-invalid responses count as incorrect. A multi-formula response is evaluable if any submitted formula parses and correct if any submitted formula is train-valid. Residual cascades use parser-evaluable priority only, never correctness or holdout outcomes.
 
@@ -37,7 +39,9 @@ Output tokens include reasoning once and all known attempts, including non-evalu
 
 | Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) | Output tokens (M) |
 |---|---:|---:|---:|---:|---:|
+| GPT-6.2 Astra | 97.0% (97/100) | 100/100 (100.0%) | 100/100 | 18.0 / 16.0 | 1.5 |
 | GPT-6 Astra | 85.0% (85/100) | 94/100 (94.0%) | 94/100 | 22.0 / 16.0 | 2.0 |
+| GPT-6.2 Sol | 73.0% (73/100) | 98/100 (98.0%) | 100/100 | 27.6 / 18.0 | 5.4 |
 | Gemini Carbon | 70.0% (70/100) | 82/100 (82.0%) | 100/100 | 26.8 / 18.0 | 27.2 |
 | GPT-6.1 Sol | 67.0% (67/100) | 90/100 (90.0%) | 98/100 | 61.9 / 18.0 | 4.1 |
 | Claude Opus 5.5 | 55.0% (55/100) | 65/100 (65.0%) | 91/100 | 23.2 / 17.0 | 50.6 |
@@ -85,9 +89,11 @@ Rows are ranked by Holdout Correct % (out of 64), then Train Correct, Evaluable 
 
 | Model | Holdout Correct %<br>(all problems) | Train Correct | Evaluable | Formula Complexity<br>(AST mean/median) |
 |---|---:|---:|---:|---:|
+| GPT-6.2 Astra | 96.9% (62/64) | 64/64 (100.0%) | 64/64 | 16.7 / 18.0 |
 | GPT-6 Astra | 87.5% (56/64) | 63/64 (98.4%) | 63/64 | 20.6 / 18.0 |
 | Gemini Carbon | 73.4% (47/64) | 57/64 (89.1%) | 64/64 | 30.8 / 18.0 |
 | GPT-6.1 Sol | 67.2% (43/64) | 61/64 (95.3%) | 63/64 | 45.7 / 18.0 |
+| GPT-6.2 Sol | 60.9% (39/64) | 62/64 (96.9%) | 64/64 | 33.1 / 18.0 |
 | Claude Opus 5.5 | 56.2% (36/64) | 46/64 (71.9%) | 59/64 | 26.0 / 18.0 |
 | Gemini Hydrogen | 50.0% (32/64) | 53/64 (82.8%) | 61/64 | 49.7 / 18.0 |
 | Claude Sonnet 5.5 | 42.2% (27/64) | 32/64 (50.0%) | 64/64 | 19.6 / 18.0 |

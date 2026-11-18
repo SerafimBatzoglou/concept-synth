@@ -42,7 +42,7 @@ def test_c64_copy_only_projection_and_schema():
     new=rows(BENCH/'eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl')
     patch={(r['model_id'],r['task_id']):r for r in rows(BENCH/'eval/challenge_holdouts_v2_affected_results.jsonl') if r['subset']=='challenge64'}
     validator=jsonschema.Draft202012Validator(read(BENCH/'schemas/eval_cache_record.schema.json'))
-    assert len(old)==3072 and len(new)==3584
+    assert len(old)==3072 and len(new)==3712
     # The first release's 48 models are unchanged; supplements are additive.
     assert {r['model_id'] for r in new[3072:3136]}=={'deepseek-v4.1-flash-1017'}
     assert {r['model_id'] for r in new[3136:3200]}=={'inception/mercury-3'}
@@ -51,7 +51,9 @@ def test_c64_copy_only_projection_and_schema():
     assert {r['model_id'] for r in new[3328:3392]}=={'gpt-6.1-terra'}
     assert {r['model_id'] for r in new[3392:3456]}=={'reflection/beam-1.0-501b-a23b'}
     assert {r['model_id'] for r in new[3456:3520]}=={'gemini-4-carbon'}
-    assert {r['model_id'] for r in new[3520:]}=={'gemini-4-hydrogen'}
+    assert {r['model_id'] for r in new[3520:3584]}=={'gemini-4-hydrogen'}
+    assert {r['model_id'] for r in new[3584:3648]}=={'gpt-6.2-astra'}
+    assert {r['model_id'] for r in new[3648:]}=={'gpt-6.2-sol'}
     unchanged=0
     for before,after in zip(old,new):
         key=(before['model_id'],before['instance_id'])
@@ -73,7 +75,7 @@ def test_v2_totals_registry_and_preserved_training():
     old=yaml.safe_load((BENCH/'docs/challenge100_round1_model_registry.yaml').read_text())
     new=yaml.safe_load((BENCH/'docs/challenge100_round1_model_registry_holdout_v2.yaml').read_text())
     summary={m['model_id']:m for m in read(BENCH/'eval/challenge_holdouts_v2_model_summary.json')['models']}
-    assert len(summary)==48 and len(new['models'])==37
+    assert len(summary)==48 and len(new['models'])==39
     holds=rows(BENCH/'eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl')
     for before,after in zip(old['models'],new['models']):
         mid=before['id'];m=summary[mid]
