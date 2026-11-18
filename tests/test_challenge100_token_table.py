@@ -53,9 +53,10 @@ def test_output_totals_include_unsuccessful_attempts_and_reasoning_once():
 
 def test_separate_tables_have_identical_row_positions_and_no_repeated_model_names():
     rows = aligned_rows()
-    assert len(rows) == 37
+    assert len(rows) == 39
     assert all(row[5] == '—*' or re.fullmatch(r'\d+\.\d', row[5]) for row in rows)
-    assert rows[0][0] == 'GPT-6 Astra' and rows[0][5:] == ['2.0']
+    for name, tokens in [('GPT-6.2 Astra', '1.5'), ('GPT-6 Astra', '2.0'), ('GPT-6.2 Sol', '5.4')]:
+        assert next(row[5] for row in rows if row[0] == name) == tokens
     svg = RENDER.render_challenge100_svg(rows)
     assert svg == (BENCH / 'docs/challenge100_leaderboard.svg').read_text()
     root = ET.fromstring(svg)
@@ -64,7 +65,7 @@ def test_separate_tables_have_identical_row_positions_and_no_repeated_model_name
     assert int(right.attrib['data-x']) - int(left.attrib['data-width']) == 24
     left_rows = left.findall("s:g[@class='data-row']", NS)
     right_rows = right.findall("s:g[@class='data-row']", NS)
-    assert len(left_rows) == len(right_rows) == 37
+    assert len(left_rows) == len(right_rows) == 39
     for i, (lrow, rrow) in enumerate(zip(left_rows, right_rows)):
         ltext = lrow.findall('s:text', NS)
         rtext = rrow.findall('s:text', NS)

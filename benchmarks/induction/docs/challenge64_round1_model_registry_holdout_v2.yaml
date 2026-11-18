@@ -356,5 +356,21 @@ models:
     tools or symbolic repair.
   source_type: verified_stored_score_copy
   source_release: gemini_hydrogen_holdout_v2
+- id: gpt-6.2-astra
+  display_name: GPT-6.2 Astra
+  protocol: Direct OpenAI Responses API, Standard tier, MAX reasoning, 128000-token
+    inclusive output cap. Ten paired pilot tasks plus remaining90; shared 60 workers,
+    up to two same-settings retries for audited terminal non-evaluable results. No
+    tools or symbolic repair.
+  source_type: verified_stored_score_copy
+  source_release: gpt62_astra_holdout_v2
+- id: gpt-6.2-sol
+  display_name: GPT-6.2 Sol
+  protocol: Direct OpenAI Responses API, Standard tier, MAX reasoning, 128000-token
+    inclusive output cap. Ten paired pilot tasks plus remaining90; shared 60 workers,
+    up to two same-settings retries for audited terminal non-evaluable results. No
+    tools or symbolic repair.
+  source_type: verified_stored_score_copy
+  source_release: gpt62_sol_holdout_v2
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge64_round1_model_registry.yaml
