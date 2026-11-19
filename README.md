@@ -17,6 +17,9 @@ Challenge100 results and the Challenge64 projection.
 [GPT-6.2 Astra and Sol](benchmarks/induction/docs/gpt62_astra_sol_results.md)
 passed holdout-v2 on 97/100 and 73/100 tasks, respectively.
 
+[Gemini 4 Neon](benchmarks/induction/docs/gemini_neon_results.md) returned 100
+strictly evaluable answers, with 77/100 training passes and 73/100 holdout-v2 passes.
+
 [**Holdout-complete v2 datasets**](benchmarks/induction/docs/challenge_holdouts_v2.md)
 provide five holdout worlds per problem. Leaderboards now use v2; for previously
 released configurations, only the 14 changed tasks were re-evaluated, with

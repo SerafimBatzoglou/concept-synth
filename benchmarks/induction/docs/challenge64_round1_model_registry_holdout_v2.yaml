@@ -372,5 +372,13 @@ models:
     tools or symbolic repair.
   source_type: verified_stored_score_copy
   source_release: gpt62_sol_holdout_v2
+- id: gemini-4-neon
+  display_name: Gemini 4 Neon
+  protocol: Direct Google Gemini Interactions, Flex, 128000 tokens including thinking.
+    XHIGH originals; bounded HIGH and MEDIUM cap retries and same-effort provider-error
+    retries; separately authorized final MEDIUM and LOW passes. No tools or symbolic
+    repair.
+  source_type: verified_stored_score_copy
+  source_release: gemini_neon_holdout_v2
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge64_round1_model_registry.yaml
