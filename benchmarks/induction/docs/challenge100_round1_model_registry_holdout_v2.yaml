@@ -993,5 +993,50 @@ models:
     - 23
     holdout_evaluable: 36
     holdout_correct: 34
+- id: gemini-4-neon
+  display_name: Gemini 4 Neon
+  protocol: Direct Google Gemini Interactions, Flex, 128000 tokens including thinking.
+    XHIGH originals; bounded HIGH and MEDIUM cap retries and same-effort provider-error
+    retries; separately authorized final MEDIUM and LOW passes. No tools or symbolic
+    repair.
+  challenge64:
+    evaluable: 64
+    correct: 51
+    registry_id: gemini-4-neon
+  challenge100:
+    evaluable: 100
+    correct: 77
+  benchmarked36:
+    evaluable: 36
+    correct: 26
+    correct_formula_ast_sizes:
+    - 11
+    - 11
+    - 11
+    - 11
+    - 16
+    - 26
+    - 16
+    - 16
+    - 16
+    - 16
+    - 16
+    - 15
+    - 15
+    - 15
+    - 19
+    - 26
+    - 29
+    - 26
+    - 15
+    - 15
+    - 15
+    - 15
+    - 22
+    - 22
+    - 23
+    - 23
+    holdout_evaluable: 26
+    holdout_correct: 25
 holdout_version: challenge-holdouts-v2
 v1_registry: challenge100_round1_model_registry.yaml

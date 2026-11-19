@@ -12,33 +12,33 @@
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_holdout_eval_cache_v2.jsonl",
-      "sha256": "3733fff4447a4cb53b15d8e7b2b8358c01f4bffc9422d0960030edbc44ff9638",
-      "sizeBytes": 4314185
+      "sha256": "2f6e2cc4dc86556de19731e2b1c0ea4e8784e9034638e21ba8dd31678de02151",
+      "sizeBytes": 4384555
     },
     {
       "path": "benchmarks/induction/docs/challenge100_round1_model_registry_holdout_v2.yaml",
-      "sha256": "724c248cabb0b82bb39500b77dac4401d4bd69ab77d9fa790a276dcb1dc95dc8",
-      "sizeBytes": 23412
+      "sha256": "71f5449b364c252d86eb8f42fe29b852e1b0f8c9160525f8435b3447a98ce899",
+      "sizeBytes": 24231
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_model_registry_holdout_v2.yaml",
-      "sha256": "88083f1699e3b07b33a94ee8b7b3f9389bba1ce1b1c4be37fb0043f26e9192fe",
-      "sizeBytes": 16848
+      "sha256": "59a11aa469da553fde386b1e6650b678012e436ddc311fcdf55a14e440eb08b3",
+      "sizeBytes": 17253
     },
     {
       "path": "benchmarks/induction/docs/leaderboard.md",
-      "sha256": "68f54db7de0fc31a85b801ddcbb82cd91280353f58c46fa6914fefa9bd7f4a0e",
-      "sizeBytes": 11729
+      "sha256": "911511d35383cf0ad0b96e0da2c456320fbf583ccb3a1764567a409412b17c6b",
+      "sizeBytes": 12081
     },
     {
       "path": "benchmarks/induction/docs/challenge100_leaderboard.svg",
-      "sha256": "006cf731a4ded7daadc6403339a74a7fdaa3e018c98bdb68caa29d320131af25",
-      "sizeBytes": 27756
+      "sha256": "204ec617d96483459af3e2a89b535e4c66fbf2f07a09a3c83455652aa3c8858c",
+      "sizeBytes": 28490
     },
     {
       "path": "benchmarks/induction/docs/challenge64_round1_results.md",
-      "sha256": "275d55384f3f48036576c4c75bbff148765323396fbbaeaf8c8800c1293655d9",
-      "sizeBytes": 5629
+      "sha256": "b5a89eec76b27acc3f93e945bf2a66eb4cc27aa4fc0a65ad051e7dea9cdcce64",
+      "sizeBytes": 5701
     },
     {
       "path": "benchmarks/induction/docs/leaderboard_holdout_v1.md",
@@ -72,8 +72,8 @@
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge100_leaderboard.py",
-      "sha256": "456b45d502f90334dccddbebadcbf4676a09358677b6b039de8023c46d06fd40",
-      "sizeBytes": 21925
+      "sha256": "67110078834ad97f358fe0c3f0ea9cf71d1963a5baf355bf6958c44cacf45e8b",
+      "sizeBytes": 22277
     },
     {
       "path": "benchmarks/induction/analysis/make_challenge64_round1_table.py",
@@ -87,8 +87,8 @@
     },
     {
       "path": "tests/test_holdout_v2_results.py",
-      "sha256": "7cbbb99b0663be2f1d63ae83a45c42e1533089d063303b08ddd870fe704d139a",
-      "sizeBytes": 6787
+      "sha256": "0951744cbc583fe6666e505fc12986de46a2ff2ba76a069737551ff48dbc50e2",
+      "sizeBytes": 6857
     },
     {
       "path": "benchmarks/induction/data/challenge_holdouts_v2/manifest.json",
@@ -97,13 +97,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "bf9797b4bf04558bf177b1fe977242e042ed0c8c5fe997fe0d9b5b65f4dec63a",
-      "sizeBytes": 5621
+      "sha256": "ee31a702a448d73befe2820953f3c5e35837a07fdb6ad7e1cf67cdd5c08f9481",
+      "sizeBytes": 5787
     },
     {
       "path": "benchmarks/induction/README.md",
-      "sha256": "06226f3261ae762be95fc619dc47eb83ee299657173dce8a50413711d2911f75",
-      "sizeBytes": 12655
+      "sha256": "1cff6a5df82ddcce939bdb8db657213c009173c61421b152b3b0365479a04547",
+      "sizeBytes": 12862
     },
     {
       "path": "benchmarks/induction/eval/deepseek_flash1017_challenge100_holdout_v2.json",
@@ -112,13 +112,13 @@
     },
     {
       "path": "benchmarks/induction/eval/induction_challenge64_round1_eval_cache_v2.jsonl",
-      "sha256": "7723bc90aa36847f3dfc670a378d77f325a7293751d95765ea4983a6b32bead6",
-      "sizeBytes": 5356611
+      "sha256": "1c1b599d76a3b5e46dac2218097916450f5c9f8da11ad88561499c6d1e71fc17",
+      "sizeBytes": 5454644
     },
     {
       "path": "benchmarks/induction/eval/challenge100_output_token_usage_v2.json",
-      "sha256": "cc3f0b8e62110205b202131cf9e7401ae5ab288ffbd7e8051eb9ca6ace06dea4",
-      "sizeBytes": 8075
+      "sha256": "00efe6159fe47de288ea99e5368084b7f4d3c839068fb8f388c38477b89353d5",
+      "sizeBytes": 8373
     },
     {
       "path": "benchmarks/induction/predictions/deepseek_flash1017_challenge100_predictions_v2.jsonl.gz",
@@ -132,13 +132,13 @@
     },
     {
       "path": "tests/test_flash1017_results.py",
-      "sha256": "11fae28c690abf3beb7da6e3e3a4b721808a16156f6cff1938a45aaa2ccaf108",
+      "sha256": "d776dcd1b96e0401a99ed08d589025669a4c9d4c80547e087564a2acaa3a4f5c",
       "sizeBytes": 5278
     },
     {
       "path": "tests/test_challenge100_token_table.py",
-      "sha256": "8c7ccb6355ef87790f1b73490f90d166ac6f759cf800af866e5807a29adb39b8",
-      "sizeBytes": 5999
+      "sha256": "09eb3237d54fdf0efd8109b657443a93f6f92e43098470842229feacfe91c0fa",
+      "sizeBytes": 6026
     },
     {
       "path": "benchmarks/induction/eval/mercury3_challenge100_holdout_v2.json",
@@ -157,8 +157,8 @@
     },
     {
       "path": "tests/test_mercury3_results.py",
-      "sha256": "c55df9eee57ef9f7aaac97d82bcc5a9935f679cd3bce6b056c6f367ef2b676ef",
-      "sizeBytes": 9277
+      "sha256": "eb1501e8ad8d0ec020ebd9902e3dcfb0cd5da5f26d00c2ea191ae5dab7df60c9",
+      "sizeBytes": 9278
     },
     {
       "path": "benchmarks/induction/eval/kimi_k31_pro_challenge100_holdout_v2.json",
@@ -177,7 +177,7 @@
     },
     {
       "path": "tests/test_kimi_k31_pro_results.py",
-      "sha256": "1921d87ab707ef80269a19769422e9e5b9ce5d5b77cafe157eb70711e9619eb2",
+      "sha256": "f0e1d861dc2580eab5cf71ada5aab42e4de28c8a95b1b3058285941407c1efd7",
       "sizeBytes": 8623
     },
     {
@@ -197,7 +197,7 @@
     },
     {
       "path": "tests/test_haiku55_results.py",
-      "sha256": "6e4491b2b3ddd34f44702ca80986c9d1e71096a07bdacfc374539b0c6aa9a700",
+      "sha256": "57b4715ab8eb0fd03cad764d6c817b4f6f2991132ad27a2ca69dc8777e61bc25",
       "sizeBytes": 8169
     },
     {
@@ -217,7 +217,7 @@
     },
     {
       "path": "tests/test_terra61_results.py",
-      "sha256": "221042fd9301bd975b4204a7b9226079e086d1410a11c4b722b99ff850dff6d1",
+      "sha256": "1d97888ff8b82c077446336c5475f95c9a8c2c19a0fca252bf10c3cb4a5f8946",
       "sizeBytes": 8402
     },
     {
@@ -237,7 +237,7 @@
     },
     {
       "path": "tests/test_reflection_beam501b_results.py",
-      "sha256": "1ca1949c65aa9cc1e863194274deb84cc66124e0eced6b3006fd6afafe310188",
+      "sha256": "707309730f8367bc7619488bbfcf635a6c37af95b206627d1b2ed07db88520a0",
       "sizeBytes": 6958
     },
     {
@@ -309,6 +309,26 @@
       "path": "benchmarks/induction/predictions/gpt62_sol_challenge100_predictions_v2.jsonl.gz",
       "sha256": "79c8de6ae1d8838105a7795c828bbb32e79342754215d459631a91883756d065",
       "sizeBytes": 3858
+    },
+    {
+      "path": "benchmarks/induction/eval/gemini_neon_challenge100_holdout_v2.json",
+      "sha256": "0689c8fc5e3a468951668d47211b56b0f0d6a73d3cf881afbcdffe9c394d7dde",
+      "sizeBytes": 309455
+    },
+    {
+      "path": "benchmarks/induction/docs/gemini_neon_results.md",
+      "sha256": "f8149abbd1a503ba7715bad062253f9220f368466f714d0abb03561d4202b5b5",
+      "sizeBytes": 1891
+    },
+    {
+      "path": "benchmarks/induction/predictions/gemini_neon_challenge100_predictions_v2.jsonl.gz",
+      "sha256": "c444e59557f03850c29c4f1fb7706e65c6aa3fbe2b78999a2dbf5e713a3a403a",
+      "sizeBytes": 2740
+    },
+    {
+      "path": "tests/test_gemini_neon_results.py",
+      "sha256": "e0f1ff23a0eb472050ef92a9c48d91d3a6ee4c8ab0e97cc7ba963344f7c02985",
+      "sizeBytes": 3597
     }
   ],
   "counts": {
@@ -320,10 +340,10 @@
     "unchangedTasksNotRescored": 86
   },
   "currentConfigurations": {
-    "challenge100": 39,
-    "challenge64": 58
+    "challenge100": 40,
+    "challenge64": 59
   },
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "flash1017Supplement": {
     "affectedRows": 14,
     "eligibleHoldoutEvaluations": 3,
@@ -371,6 +391,21 @@
     "selectedTasks": 100,
     "strictEvaluable": 95,
     "trainCorrect": 73
+  },
+  "geminiNeonSupplement": {
+    "acceptedGenerations": 262,
+    "acceptedRetries": 162,
+    "evaluable": 100,
+    "finalUsageUnknownRequests": 0,
+    "holdoutCorrect": 73,
+    "holdoutV2UsedFromStart": true,
+    "precedingChallenge64RowsPreservedPerCache": 3712,
+    "publicationModelCalls": 0,
+    "publicationScorerCalls": 0,
+    "report": "benchmarks/induction/eval/gemini_neon_challenge100_holdout_v2.json",
+    "serviceTier": "flex",
+    "strictEvaluable": 100,
+    "trainCorrect": 77
   },
   "gpt62AstraSolSupplement": {
     "holdoutV2UsedFromStart": true,
@@ -503,7 +538,7 @@
     "trainCorrect": 11
   },
   "schemaVersion": "induction_holdout_evaluation_release_manifest_v2",
-  "scope": "Verified published configurations: 58 Challenge64, 39 Challenge100. GPT-6.2 Astra and Sol add matched Standard/MAX runs with complete usage.",
+  "scope": "Verified published configurations: 59 Challenge64, 40 Challenge100. Gemini 4 Neon adds a fully evaluable Flex run with complete usage and documented residual passes.",
   "terra61Supplement": {
     "evaluable": 100,
     "finalUsageUnknownRequests": 1,

@@ -322,6 +322,9 @@ The [Gemini Hydrogen release](docs/gemini_hydrogen_results.md) adds 95 strictly
 evaluable answers and 52 holdout passes from 100 first attempts.
 The [GPT-6.2 Astra and Sol release](docs/gpt62_astra_sol_results.md) adds 97
 and 73 holdout passes, respectively. Astra needed no retries; Sol needed five.
+The [Gemini 4 Neon release](docs/gemini_neon_results.md) adds 73 holdout passes
+from 100 strictly evaluable answers. The final LOW pass improved evaluability
+without changing the training or holdout scores.
 Historical v1 files remain unchanged. To reproduce both
 leaderboards from the frozen scores (no rescoring):
 
